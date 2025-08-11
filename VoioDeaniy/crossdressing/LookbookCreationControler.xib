@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LookbookCreationControler" customModule="VoioDeaniy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reakligo" translatesAutoresizingMaskIntoConstraints="NO" id="QsY-Gg-eHh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-Ur-O25">
+                    <rect key="frame" x="22" y="363" width="140" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="4OO-pf-Hc0"/>
+                        <constraint firstAttribute="height" constant="34" id="PIk-Rd-fbo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="   Password" image="wardrobeOven">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-H5-svs">
+                    <rect key="frame" x="22" y="283" width="331" height="50"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vgT-Gl-Chy"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="styleKiln" translatesAutoresizingMaskIntoConstraints="NO" id="9ea-eU-yhM">
+                    <rect key="frame" x="93" y="55" width="189" height="154"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="189" id="RQe-af-MPs"/>
+                        <constraint firstAttribute="height" constant="154" id="YS3-Ud-RGo"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-Zc-E18">
+                    <rect key="frame" x="22" y="623" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="C4Z-Sa-xdB"/>
+                        <constraint firstAttribute="height" constant="22" id="f0b-Mt-AwU"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="styleToaster"/>
+                    <state key="selected" image="outfitBroiler"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By registering, you agree to the " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbg-Xz-PMI">
+                    <rect key="frame" x="52" y="623" width="194" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90b-OB-InJ">
+                    <rect key="frame" x="248" y="614" width="123" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="aW9-JB-8Ur"/>
+                        <constraint firstAttribute="width" constant="123" id="maW-zA-l4M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="&lt;Terms of Use&gt;">
+                        <color key="titleColor" red="0.5725490196078431" green="0.23921568627450979" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvb-DU-jyN">
+                    <rect key="frame" x="22" y="535" width="331" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="zvx-Jo-NHn"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="wardrobeGrill"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-H9-enc">
+                    <rect key="frame" x="126" y="639" width="123" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="22N-LW-GEf"/>
+                        <constraint firstAttribute="width" constant="123" id="LHX-B4-bzt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="&lt;Privacy Policy&gt;">
+                        <color key="titleColor" red="0.57254901960000004" green="0.23921568630000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-CG-yit">
+                    <rect key="frame" x="22" y="409" width="331" height="50"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DgI-D9-15F"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsI-yf-Lc7">
+                    <rect key="frame" x="22" y="242" width="107" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="107" id="2BZ-k5-Btj"/>
+                        <constraint firstAttribute="height" constant="29" id="XXw-M2-OIG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="   Email" image="wardrobeOven">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vvb-DU-jyN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="065-Hk-YSw"/>
+                <constraint firstAttribute="bottom" secondItem="QsY-Gg-eHh" secondAttribute="bottom" id="20u-iP-lbc"/>
+                <constraint firstItem="CsI-yf-Lc7" firstAttribute="top" secondItem="9ea-eU-yhM" secondAttribute="bottom" constant="33" id="2x0-dS-Ob6"/>
+                <constraint firstItem="QsY-Gg-eHh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5f2-Ez-T0g"/>
+                <constraint firstItem="9ea-eU-yhM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="60W-cf-CaW"/>
+                <constraint firstItem="wdd-H5-svs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="6LF-64-bFR"/>
+                <constraint firstItem="iLc-Ur-O25" firstAttribute="leading" secondItem="CsI-yf-Lc7" secondAttribute="leading" id="7pY-PK-zkR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B5F-CG-yit" secondAttribute="trailing" constant="22" id="8Kz-2g-y8i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vvb-DU-jyN" secondAttribute="trailing" constant="22" id="8Xx-Mv-o0O"/>
+                <constraint firstItem="wdd-H5-svs" firstAttribute="top" secondItem="CsI-yf-Lc7" secondAttribute="bottom" constant="12" id="AvX-dK-wpo"/>
+                <constraint firstItem="B5F-CG-yit" firstAttribute="top" secondItem="iLc-Ur-O25" secondAttribute="bottom" constant="12" id="Fki-F6-Ba6"/>
+                <constraint firstItem="CsI-yf-Lc7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="GjN-Ja-3HG"/>
+                <constraint firstItem="90b-OB-InJ" firstAttribute="top" secondItem="vvb-DU-jyN" secondAttribute="bottom" constant="27" id="IKj-ZM-I0q"/>
+                <constraint firstItem="90b-OB-InJ" firstAttribute="centerY" secondItem="Dbg-Xz-PMI" secondAttribute="centerY" id="R0V-jZ-feD"/>
+                <constraint firstItem="QsY-Gg-eHh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SXG-iS-ars"/>
+                <constraint firstItem="U2I-Zc-E18" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="UFz-Qk-nqk"/>
+                <constraint firstItem="B5F-CG-yit" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="Xh6-6u-jxJ"/>
+                <constraint firstItem="Dbg-Xz-PMI" firstAttribute="leading" secondItem="U2I-Zc-E18" secondAttribute="trailing" constant="8" symbolic="YES" id="abU-0O-bNM"/>
+                <constraint firstItem="Dbg-Xz-PMI" firstAttribute="top" secondItem="U2I-Zc-E18" secondAttribute="top" id="adE-Wf-gJU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wdd-H5-svs" secondAttribute="trailing" constant="22" id="bLZ-Wh-oXy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="U2I-Zc-E18" secondAttribute="bottom" constant="22" id="bgw-dB-Rje"/>
+                <constraint firstItem="QsY-Gg-eHh" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="c6h-4r-Yo5"/>
+                <constraint firstItem="Tnh-H9-enc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gC6-IJ-qVH"/>
+                <constraint firstItem="Tnh-H9-enc" firstAttribute="top" secondItem="Dbg-Xz-PMI" secondAttribute="bottom" id="ngf-7b-Od6"/>
+                <constraint firstItem="iLc-Ur-O25" firstAttribute="top" secondItem="wdd-H5-svs" secondAttribute="bottom" constant="30" id="uFm-c4-uBR"/>
+                <constraint firstItem="9ea-eU-yhM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="us1-TA-uVA"/>
+                <constraint firstItem="90b-OB-InJ" firstAttribute="leading" secondItem="Dbg-Xz-PMI" secondAttribute="trailing" constant="2" id="y3S-5P-ygg"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="20.239880059970016"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="outfitBroiler" width="22" height="22"/>
+        <image name="reakligo" width="375" height="812"/>
+        <image name="styleKiln" width="189" height="154"/>
+        <image name="styleToaster" width="22" height="22"/>
+        <image name="wardrobeGrill" width="335" height="52"/>
+        <image name="wardrobeOven" width="34" height="34"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
