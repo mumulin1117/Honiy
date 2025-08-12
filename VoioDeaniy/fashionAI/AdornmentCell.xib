@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQX-F3-asp">
-                        <rect key="frame" x="12" y="0.0" width="76" height="24"/>
+                        <rect key="frame" x="12" y="12" width="76" height="24"/>
                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AkP-7E-MGo">
-                        <rect key="frame" x="12" y="34" width="493" height="300"/>
+                        <rect key="frame" x="12" y="46" width="493" height="300"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="300" id="T91-uL-1gd"/>
@@ -40,13 +40,16 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="XQX-F3-asp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="6kq-u0-FF1"/>
-                    <constraint firstItem="XQX-F3-asp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="avk-n7-Wwb"/>
+                    <constraint firstItem="XQX-F3-asp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="avk-n7-Wwb"/>
                     <constraint firstItem="AkP-7E-MGo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="h7r-Fm-p3n"/>
                     <constraint firstAttribute="trailing" secondItem="AkP-7E-MGo" secondAttribute="trailing" id="saJ-0c-vjP"/>
                     <constraint firstItem="AkP-7E-MGo" firstAttribute="top" secondItem="XQX-F3-asp" secondAttribute="bottom" constant="10" id="u7D-Ep-qdd"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="outfitDecoration" destination="AkP-7E-MGo" id="f6D-LE-9Rj"/>
+            </connections>
             <point key="canvasLocation" x="-58.778625954198468" y="122.53521126760565"/>
         </tableViewCell>
     </objects>

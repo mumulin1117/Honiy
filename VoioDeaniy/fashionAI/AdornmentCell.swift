@@ -2,23 +2,28 @@
 //  AdornmentCell.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/11.
+//  Created by  on 2025/8/11.
 //
 
 import UIKit
 protocol AdornmentCelldelegate {
-    func adornmentCell(_ data: Dictionary<String,String>)
-    
+    func adornmentCell(_ data: Dictionary<String,Any>)
+    func giventerUserInafomation(_ dataID: Int?)
 }
 class AdornmentCell: UITableViewCell {
     @IBOutlet weak var outfitDecoration: UICollectionView!
     
     var darm:AdornmentCelldelegate?
     
-    var Elowen = Array<Dictionary<String,String>>() // Replace Any with the actual type you expect to use
+    var Elowen = Array<Dictionary<String,Any>>() {
+        didSet{
+            self.outfitDecoration.reloadData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .clear
         styleEmbellishment()
     }
 
@@ -48,6 +53,10 @@ extension AdornmentCell:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let outfitFinery = collectionView.dequeueReusableCell(withReuseIdentifier: "StyleRaimentCell", for: indexPath) as! StyleRaimentCell
         outfitFinery.wardrobeAccoutrement(outfit: Elowen[indexPath.row])
+        outfitFinery.outfitDecoration.tag = indexPath.row
+        outfitFinery.outfitDecoration.addTarget(self, action: #selector(giventerUserInafomation(sua:)), for: .touchUpInside)
+        outfitFinery.styleEmbellishment.tag = 1000 + indexPath.row
+        outfitFinery.styleEmbellishment.addTarget(self, action: #selector(giventerUserInafomation(sua:)), for: .touchUpInside)
         return outfitFinery
         
     }
@@ -55,6 +64,21 @@ extension AdornmentCell:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if self.darm != nil {
             self.darm?.adornmentCell(Elowen[indexPath.row])
+        }
+    }
+    
+    @objc func giventerUserInafomation(sua:UIButton)  {
+        
+        if sua.tag > 900 {
+            if self.darm != nil {
+                self.darm?.giventerUserInafomation(nil)
+            }
+            
+            return
+        }
+        let isukkk =  Elowen[sua.tag]["outfitChallenge"] as? Int ?? 0
+        if self.darm != nil {
+            self.darm?.giventerUserInafomation(isukkk)
         }
     }
     

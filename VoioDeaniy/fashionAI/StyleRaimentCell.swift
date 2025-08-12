@@ -2,7 +2,7 @@
 //  StyleRaiment Cell.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/11.
+//  Created by  on 2025/8/11.
 //
 
 import UIKit
@@ -17,8 +17,11 @@ class StyleRaimentCell: UICollectionViewCell {
     
     @IBOutlet weak var styleEmbellishment: UIButton!
     
-    func wardrobeAccoutrement(outfit:Dictionary<String,String>) {
-        
+    func wardrobeAccoutrement(outfit:Dictionary<String,Any>) {
+        limited.outfitTherapist(from: outfit["styleAssessment"] as? String ?? "")
+        wardrobeAdornment.text = outfit["outfitRemix"] as? String
+      let prise =  outfit["fashionTips"] as? Int ?? 0
+        styleTrappings.text = "\(prise) praise"
     }
     
     override func awakeFromNib() {
@@ -26,6 +29,7 @@ class StyleRaimentCell: UICollectionViewCell {
         wardrobeOrnament()
     }
 
+    @IBOutlet weak var limited: UIImageView!
     
     private func wardrobeOrnament()  {
         styleTrappings.layer.cornerRadius = 12

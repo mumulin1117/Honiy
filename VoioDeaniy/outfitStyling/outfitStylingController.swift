@@ -2,17 +2,25 @@
 //  outfitStylingController.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/11.
+//  Created by  on 2025/8/11.
 //
 
 import UIKit
 
 class outfitStylingController: UIViewController {
-    var Elowen = Array<Dictionary<String,String>>() //
+    var Elowen = Array<Dictionary<String,Any>>() //
     @IBOutlet weak var wardrobeGrill: UIImageView!
     
     @IBOutlet weak var styleToaster: UICollectionView!
-    
+    private let outfitRegality: UIActivityIndicatorView = {
+        let large = UIActivityIndicatorView.init(style: .large)
+         large.frame.size = CGSize.init(width: 54, height: 54)
+         large.tintColor = .black
+         
+         large.hidesWhenStopped = true
+         large.color = .black
+         return large
+       }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,12 +28,18 @@ class outfitStylingController: UIViewController {
         wardrobeGrill.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(wardrobeRoaster)))
         
         styleEmbellishment()
+        outfitRegality.center = self.view.center
+        self.view.addSubview(outfitRegality)
     }
     
-
+    @IBOutlet weak var outfitChallenge: UILabel!
+    
+    @IBOutlet weak var fashionTips: UIImageView!
     
    @objc func wardrobeRoaster()  {
-        
+       let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.outfitGenerator.wardrobeSpout(Nozzle: ""))
+       wardrobeHeroism.isComePOST = false
+       self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     private func styleEmbellishment()  {
         let wardrobeRegalia = UICollectionViewFlowLayout()
@@ -58,7 +72,55 @@ extension outfitStylingController:UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+     
+        let uuuis =   Elowen[indexPath.row]["outfitSelector"] as? Int ?? 0
+       
+        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.styleDynamo.wardrobeSpout(Nozzle: "\(uuuis)"))
+        wardrobeHeroism.isComePOST = false
+        self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        outfitTenacity()
+    }
+    private func outfitTenacity()  {
+        outfitRegality.startAnimating()
+        
+        
+        ViewController.wardrobeRevelry(styleMerrymaking: "/dcdzfrrfsz/bsrszzkw", outfitMirth: ["styleMapping":"45448564"]) { outfitTrailblazer in
+            self.outfitRegality.stopAnimating()
+            if let tigator = outfitTrailblazer as? [String: Any],
+               
+                let pecialist = tigator["data"] as? Array<[String: Any] >  {
+                
+                
+                self.Elowen = pecialist.map { dix in
+                    if let xu = (dix["styleEvaluation"] as? Array<[String:Any]>)?.first{
+                        xu
+                    }else{
+                        [:]
+                        
+                    }
+                    
+                }
+              
+                
+                self.styleToaster.reloadData()
+                
+                if self.Elowen.count == 0 {
+                    self.outfitChallenge.isHidden = false
+                    self.fashionTips.isHidden = false
+                }else{
+                    self.outfitChallenge.isHidden = true
+                    self.fashionTips.isHidden = true
+                }
+            }else{
+                self.outfitRegality.stopAnimating()
+            }
+        } wardrobeHilarity: { outfitScientist in
+            
+        }
+    }
 }

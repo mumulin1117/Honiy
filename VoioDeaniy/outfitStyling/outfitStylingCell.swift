@@ -2,7 +2,7 @@
 //  outfitStylingCell.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/11.
+//  Created by  on 2025/8/11.
 //
 
 import UIKit
@@ -28,8 +28,12 @@ class outfitStylingCell: UICollectionViewCell {
         wardrobeReservoir.layer.cornerRadius = 25
         wardrobeReservoir.layer.masksToBounds = true
     }
-    func wardrobeAccoutrement(outfit:Dictionary<String,String>) {
+    func wardrobeAccoutrement(outfit:Dictionary<String,Any>) {
+        outfitAquifer.text =  outfit["styleConsultant"]    as? String
         
+        styleWell.text =  outfit["wardrobeRevamp"]    as? String
+        
+        wardrobeReservoir.outfitTherapist(from: outfit["styleConsultant"] as? String ?? "")
     }
     
     

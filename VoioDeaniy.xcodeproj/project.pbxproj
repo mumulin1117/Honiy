@@ -215,6 +215,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoioDeaniy/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Unlock your creativity! Honiy uses the camera to help you capture festive outfits, explore styling ideas, and share joyful moments with friends. Your photos stay private unless you choose to share them.";
@@ -222,7 +224,7 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your wardrobe, your rules! Honiy accesses your photo library only to help you mix-and-match outfits, save inspirations, or share your favorite holiday looks—always with your approval.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -251,6 +253,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoioDeaniy/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Unlock your creativity! Honiy uses the camera to help you capture festive outfits, explore styling ideas, and share joyful moments with friends. Your photos stay private unless you choose to share them.";
@@ -258,7 +262,7 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your wardrobe, your rules! Honiy accesses your photo library only to help you mix-and-match outfits, save inspirations, or share your favorite holiday looks—always with your approval.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;

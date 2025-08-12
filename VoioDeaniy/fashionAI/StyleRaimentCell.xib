@@ -54,14 +54,14 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="outfitWay"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 fans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN5-4b-DIF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 praise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN5-4b-DIF">
                                 <rect key="frame" x="12" y="40" width="58" height="24"/>
                                 <color key="backgroundColor" red="1" green="0.99607843137254903" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="PtQ-rR-wwn"/>
                                     <constraint firstAttribute="width" constant="58" id="bRZ-3C-d1x"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -96,6 +96,7 @@
             </constraints>
             <size key="customSize" width="359" height="543"/>
             <connections>
+                <outlet property="limited" destination="pgE-FW-dSr" id="8hM-99-CCe"/>
                 <outlet property="outfitDecoration" destination="pPn-ZG-pfF" id="HlW-7U-WQB"/>
                 <outlet property="styleEmbellishment" destination="AiG-9F-RgK" id="NAG-kT-H2d"/>
                 <outlet property="styleTrappings" destination="gN5-4b-DIF" id="arf-5s-XGi"/>

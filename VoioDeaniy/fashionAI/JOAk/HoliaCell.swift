@@ -2,24 +2,30 @@
 //  HoliaCell.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/11.
+//  Created by  on 2025/8/11.
 //
 
 import UIKit
-
+protocol HoliaCellDelegate {
+    func userFillFuull(uidFeifei:Int)
+}
 class HoliaCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = .clear
     }
-    var darm:AdornmentCelldelegate?
+    var darm:HoliaCellDelegate?
     
-    var Elowen = Array<Dictionary<String,String>>() // Replace Any with the actual
+    var Elowen = Array<Dictionary<String,Any>>(){
+        didSet{
+            self.outfitDecoration.reloadData()
+        }
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        self.backgroundColor = .clear
         styleEmbellishment()
     }
     
@@ -65,7 +71,7 @@ extension HoliaCell:UICollectionViewDelegate,UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if self.darm != nil {
-            self.darm?.adornmentCell(Elowen[indexPath.row])
+            self.darm?.userFillFuull(uidFeifei:Elowen[indexPath.row]["outfitStyling"] as? Int ?? 0)
         }
     }
     

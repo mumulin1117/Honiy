@@ -11,7 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LookbookCreationControler" customModule="VoioDeaniy" customModuleProvider="target">
             <connections>
+                <outlet property="styleBalcony" destination="wdd-H5-svs" id="Bvj-vt-TfP"/>
+                <outlet property="swiftVh" destination="U2I-Zc-E18" id="MF0-d8-oPz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wardrobeConduit" destination="VBn-xR-vEs" id="gTe-T9-V4I"/>
+                <outlet property="wardrobeTerrace" destination="B5F-CG-yit" id="jxR-pL-jhL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -60,6 +64,9 @@
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" image="styleToaster"/>
                     <state key="selected" image="outfitBroiler"/>
+                    <connections>
+                        <action selector="wardrobeCourtyard:" destination="-1" eventType="touchUpInside" id="9L8-wJ-I9P"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By registering, you agree to the " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbg-Xz-PMI">
                     <rect key="frame" x="52" y="623" width="194" height="16"/>
@@ -67,7 +74,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90b-OB-InJ">
+                <button opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90b-OB-InJ">
                     <rect key="frame" x="248" y="614" width="123" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="aW9-JB-8Ur"/>
@@ -78,6 +85,9 @@
                     <state key="normal" title="&lt;Terms of Use&gt;">
                         <color key="titleColor" red="0.5725490196078431" green="0.23921568627450979" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="wardrobeAvenue:" destination="-1" eventType="touchUpInside" id="hhm-hj-sqD"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvb-DU-jyN">
                     <rect key="frame" x="22" y="535" width="331" height="52"/>
@@ -86,8 +96,11 @@
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" backgroundImage="wardrobeGrill"/>
+                    <connections>
+                        <action selector="stylePatio:" destination="-1" eventType="touchUpInside" id="E36-6l-33o"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-H9-enc">
+                <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-H9-enc">
                     <rect key="frame" x="126" y="639" width="123" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="22N-LW-GEf"/>
@@ -98,6 +111,9 @@
                     <state key="normal" title="&lt;Privacy Policy&gt;">
                         <color key="titleColor" red="0.57254901960000004" green="0.23921568630000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="wardrobeAvenue:" destination="-1" eventType="touchUpInside" id="YbR-hO-Ba9"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-CG-yit">
                     <rect key="frame" x="22" y="409" width="331" height="50"/>
@@ -121,6 +137,12 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If no account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBn-xR-vEs">
+                    <rect key="frame" x="148" y="467" width="79.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -138,6 +160,7 @@
                 <constraint firstItem="B5F-CG-yit" firstAttribute="top" secondItem="iLc-Ur-O25" secondAttribute="bottom" constant="12" id="Fki-F6-Ba6"/>
                 <constraint firstItem="CsI-yf-Lc7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="GjN-Ja-3HG"/>
                 <constraint firstItem="90b-OB-InJ" firstAttribute="top" secondItem="vvb-DU-jyN" secondAttribute="bottom" constant="27" id="IKj-ZM-I0q"/>
+                <constraint firstItem="VBn-xR-vEs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nm6-kO-v9n"/>
                 <constraint firstItem="90b-OB-InJ" firstAttribute="centerY" secondItem="Dbg-Xz-PMI" secondAttribute="centerY" id="R0V-jZ-feD"/>
                 <constraint firstItem="QsY-Gg-eHh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SXG-iS-ars"/>
                 <constraint firstItem="U2I-Zc-E18" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="UFz-Qk-nqk"/>
@@ -147,6 +170,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wdd-H5-svs" secondAttribute="trailing" constant="22" id="bLZ-Wh-oXy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="U2I-Zc-E18" secondAttribute="bottom" constant="22" id="bgw-dB-Rje"/>
                 <constraint firstItem="QsY-Gg-eHh" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="c6h-4r-Yo5"/>
+                <constraint firstItem="VBn-xR-vEs" firstAttribute="top" secondItem="B5F-CG-yit" secondAttribute="bottom" constant="8" symbolic="YES" id="fA3-AG-BaZ"/>
                 <constraint firstItem="Tnh-H9-enc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gC6-IJ-qVH"/>
                 <constraint firstItem="Tnh-H9-enc" firstAttribute="top" secondItem="Dbg-Xz-PMI" secondAttribute="bottom" id="ngf-7b-Od6"/>
                 <constraint firstItem="iLc-Ur-O25" firstAttribute="top" secondItem="wdd-H5-svs" secondAttribute="bottom" constant="30" id="uFm-c4-uBR"/>

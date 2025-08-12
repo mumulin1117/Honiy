@@ -101,6 +101,8 @@
             </constraints>
             <size key="customSize" width="423" height="348"/>
             <connections>
+                <outlet property="laongoide" destination="dH4-np-6Vf" id="XBo-Xg-888"/>
+                <outlet property="laonheng" destination="bFp-Z2-qNg" id="k5G-Rw-DMi"/>
                 <outlet property="outfitFurnace" destination="PqH-zn-uTJ" id="xBa-x3-MW8"/>
                 <outlet property="outfitStove" destination="XKR-Cn-Z34" id="6ZD-jB-go5"/>
                 <outlet property="styleCooker" destination="3c0-MF-4m5" id="POL-EU-WOn"/>

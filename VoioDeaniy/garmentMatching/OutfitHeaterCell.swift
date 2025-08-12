@@ -2,7 +2,7 @@
 //  OutfitHeaterCell.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/11.
+//  Created by  on 2025/8/11.
 //
 
 import UIKit
@@ -19,7 +19,9 @@ class OutfitHeaterCell: UICollectionViewCell {
     
     @IBOutlet weak var styleCooker: UIImageView!
     
+    @IBOutlet weak var laonheng: UILabel!
     
+    @IBOutlet weak var laongoide: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         outfitStove.layer.cornerRadius = 32
@@ -35,8 +37,13 @@ class OutfitHeaterCell: UICollectionViewCell {
         
     }
     
-    func wardrobeAccoutrement(outfit:Dictionary<String,String>) {
+    func wardrobeAccoutrement(outfit:Dictionary<String,Any>) {
+        styleKiln.outfitTherapist(from: (outfit["outfitGenerator"] as? Array<String>)?.first ?? "")
+        styleCooker.outfitTherapist(from: outfit["styleArchetype"] as? String ?? "")
+       
+        laonheng.text = outfit["colorAnalysis"] as? String
         
+        laongoide.text = outfit["outfitRemix"] as? String
     }
 
 }

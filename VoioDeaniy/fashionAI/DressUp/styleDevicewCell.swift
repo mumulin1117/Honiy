@@ -2,24 +2,29 @@
 //  styleDevicewCell.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/11.
+//  Created by  on 2025/8/11.
 //
 
 import UIKit
 
 protocol styleDevicewCelldelegate {
-    func adornmentCell(_ data: Dictionary<String,String>)
+    func styleDevicetCell(_ data: Dictionary<String,Any>?)
     
 }
 class styleDevicewCell: UITableViewCell {
     var darm:styleDevicewCelldelegate?
     
     @IBOutlet weak var outfitDecoration: UICollectionView!
-    var Elowen = Array<Dictionary<String,String>>() // Replace Any with the actual type you expect to use
+    var Elowen = Array<Dictionary<String,Any>>(){
+        didSet{
+            outfitDecoration.reloadData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         styleEmbellishment()
+        self.backgroundColor = .clear
     }
 
     private func styleEmbellishment()  {
@@ -48,13 +53,20 @@ extension styleDevicewCell:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let outfitFinery = collectionView.dequeueReusableCell(withReuseIdentifier: "DeraaNweimflCell", for: indexPath) as! DeraaNweimflCell
         outfitFinery.wardrobeAccoutrement(outfit: Elowen[indexPath.row])
+        outfitFinery.outfitDecoration.addTarget(self, action: #selector(sjOIShguReport), for: .touchUpInside)
         return outfitFinery
         
     }
     
+    
+   @objc func sjOIShguReport()  {
+       if self.darm != nil {
+           self.darm?.styleDevicetCell(nil)
+       }
+    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if self.darm != nil {
-            self.darm?.adornmentCell(Elowen[indexPath.row])
+            self.darm?.styleDevicetCell(Elowen[indexPath.row])
         }
     }
     
