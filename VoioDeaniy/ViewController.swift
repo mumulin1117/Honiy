@@ -20,7 +20,7 @@ class ViewController: UIViewController {
             }()
             
             let _cosmicStoryboard = UIStoryboard(
-                name: AppDelegate.unravelEncrypted(Landmarks: String(_phantomKey.reversed())),
+                name: "Main",
                 bundle: nil
             )
             
@@ -29,8 +29,7 @@ class ViewController: UIViewController {
         
         // 条件判断重组
         let _stellarDecision: () -> UIViewController = {
-            guard let _galacticWardrobe = Mirror(reflecting: WardrobeVatontroller.self)
-                .descendant("outfitExplorer") as? AnyHashable else {
+            guard WardrobeVatontroller.outfitExplorer != nil else {
                 return LookbookCreationControler()
             }
             return _nebulaRootControllerSetup()

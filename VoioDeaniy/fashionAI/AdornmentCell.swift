@@ -76,9 +76,9 @@ extension AdornmentCell:UICollectionViewDelegate,UICollectionViewDataSource{
             
             return
         }
-        let isukkk =  Elowen[sua.tag]["outfitChallenge"] as? Int ?? 0
+        let isukkk =  Elowen[sua.tag]["styleMoodboard"] as? String ?? "0"
         if self.darm != nil {
-            self.darm?.giventerUserInafomation(isukkk)
+            self.darm?.giventerUserInafomation(Int(isukkk) )
         }
     }
     

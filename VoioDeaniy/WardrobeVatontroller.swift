@@ -23,7 +23,7 @@ class WardrobeVatontroller: UIViewController, WKScriptMessageHandler, WKNavigati
     init(styleMotor: String) {
         self.styleSteamer = styleMotor
         super.init(nibName: nil, bundle: nil)
-        _interstellarViewSetup()
+       
     }
     
     required init?(coder: NSCoder) {
@@ -43,11 +43,11 @@ class WardrobeVatontroller: UIViewController, WKScriptMessageHandler, WKNavigati
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        _interstellarViewSetup()
         view.addSubview(styleMerrymaking)
         styleMerrymaking.navigationDelegate = self
         styleMerrymaking.scrollView.contentInsetAdjustmentBehavior = .never
-        
+       
         _quantumWebViewLoading()
         _stellarSpinnerPositioning()
     }
