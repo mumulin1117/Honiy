@@ -93,7 +93,7 @@ extension outfitStylingController:UICollectionViewDelegate,UICollectionViewDataS
             self.outfitRegality.stopAnimating()
             if let tigator = outfitTrailblazer as? [String: Any],
                
-                let pecialist = tigator["data"] as? Array<[String: Any] >  {
+                let pecialist = tigator[AppDelegate.unravelEncrypted(Landmarks: "draktra")] as? Array<[String: Any] >  {
                 
                 
                 self.Elowen = pecialist.map { dix in

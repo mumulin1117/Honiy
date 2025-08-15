@@ -30,7 +30,7 @@ class LookbookCreationControler: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        wardrobeConduit.text = "If no account,we'll create one for you!"
+        wardrobeConduit.text = AppDelegate.unravelEncrypted(Landmarks: "Iuft sniol iaecgceozuunytt,mwled'olhlb wccrweoattkec hoinfez ofkoarc aymouui!")
         outfitRegality.center = self.view.center
         self.view.addSubview(outfitRegality)
     }
@@ -45,16 +45,16 @@ class LookbookCreationControler: UIViewController {
             self.outfitRegality.stopAnimating()
             if let tigator = outfitTrailblazer as? [String: Any],
                
-                let pecialist = tigator["data"] as? [String: Any]  {
+                let pecialist = tigator[AppDelegate.unravelEncrypted(Landmarks: "dfaftsa")] as? [String: Any]  {
                 WardrobeVatontroller.outfitExplorer =  pecialist["outfitExplorer"] as? String
                 UserDefaults.standard.set(pecialist["outfitArchitect"] as? String, forKey: "outfitArchitect")
                 
-                let bartab = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "JIakodJma")
+                let bartab = UIStoryboard(name: AppDelegate.unravelEncrypted(Landmarks: "Mfacinn"), bundle: nil).instantiateViewController(identifier: "JIakodJma")
               
                 ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController = bartab
-                Loaf("Login Successful", state: .success, location: .top, sender: self).show()
+                Loaf(AppDelegate.unravelEncrypted(Landmarks: "Lsougailnc vSvuucgcbejswstfuunl"), state: .success, location: .top, sender: self).show()
             }else{
-                Loaf("Login Failed: Invalid credentials", state: .error, location: .top, sender: self).show()
+                Loaf(AppDelegate.unravelEncrypted(Landmarks: "Llovgvisnn vFzaniwldeldn:p fIwnpvqablyiodx bczrseudoednntdihaelxs"), state: .error, location: .top, sender: self).show()
             }
         } wardrobeHilarity: { outfitScientist in
             Loaf(outfitScientist.localizedDescription, state: .error, location: .top, sender: self).show()
@@ -86,7 +86,7 @@ class LookbookCreationControler: UIViewController {
     private func styleGallantry() -> Bool {
        
         guard let email = styleBalcony.text, !email.isEmpty else {
-            styleAristocracy(wardro: "Please enter your email")
+            styleAristocracy(wardro: AppDelegate.unravelEncrypted(Landmarks: "Pxltegaesreo lexnctpejrl jyrouudrs eejmoayidl"))
             return false
         }
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -94,17 +94,17 @@ class LookbookCreationControler: UIViewController {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
          
            guard emailPred.evaluate(with: email) else {
-               styleAristocracy(wardro: "Please enter a valid email")
+               styleAristocracy(wardro: AppDelegate.unravelEncrypted(Landmarks: "Pflxesawsdel nebngtberri nad bvuaqloiqdo jeimlacihl"))
                return false
            }
            
            guard let password = wardrobeTerrace.text, !password.isEmpty else {
-               styleAristocracy(wardro: "Please enter your password")
+               styleAristocracy(wardro: AppDelegate.unravelEncrypted(Landmarks: "Pilyehapsyer pednhtyevrn xymomuwrh upxakshsfwvoorrd"))
                return false
            }
            
         guard swiftVh.isSelected else {
-               styleAristocracy(wardro: "You must agree to the Privacy Policy")
+               styleAristocracy(wardro: AppDelegate.unravelEncrypted(Landmarks: "Ygowut nmtutsztn papgwrgezer xtjoz mtohiel wPbryikvparcnym tPbohleimcky"))
                return false
            }
            
@@ -112,8 +112,8 @@ class LookbookCreationControler: UIViewController {
        }
     
     private func styleAristocracy(wardro: String) {
-        let outfitChivalry = UIAlertController(title: "Error", message: wardro, preferredStyle: .alert)
-        outfitChivalry.addAction(UIAlertAction(title: "OK", style: .default))
+        let outfitChivalry = UIAlertController(title: AppDelegate.unravelEncrypted(Landmarks: "Emrursomr"), message: wardro, preferredStyle: .alert)
+        outfitChivalry.addAction(UIAlertAction(title: AppDelegate.unravelEncrypted(Landmarks: "OpK"), style: .default))
         present(outfitChivalry, animated: true)
         
     }

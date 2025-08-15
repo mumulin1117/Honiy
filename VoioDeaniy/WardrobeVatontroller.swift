@@ -198,31 +198,31 @@ class WardrobeVatontroller: UIViewController ,WKScriptMessageHandler,WKNavigatio
 }
 enum AtfitFryer:String {
 
-    case outfitEngine = "pages/DynamicDetails/index?dynamicId="
-    case styleMotor = "pages/ReleaseDynamic/index?"
-    case wardrobePowerplant = "pages/screenplay/index?"
-    case outfitGenerator = "pages/CreateRole/index?"
-    case styleDynamo = "pages/privateChat/index?userId="
-    case wardrobeTurbine = "pages/HomePage/index?userId="
-    case outfitPropeller = "pages/Setting/index?"
-    case styleRotor = "pages/EditData/index?"
-    case wardrobeImpeller = "pages/attention/index?type=2"
-    case outfitPump = "pages/attention/index?type=3"
-    case styleCompressor = "pages/Agreement/index?type=1&"
-    case wardrobeFan = "pages/Agreement/index?type=2&"
+    case outfitEngine = "pnamgbetsv/oDrypnvaemriqctDuestkahihldso/uiantdredxc?edjywnwarmdieclItdi="
+    case styleMotor = "puamgceesu/dRpeilheaatsieiDkyqngaamvircp/piynqdwevxj?"
+    case wardrobePowerplant = "paasgmeasu/isacxryebennrpqlwarya/rixnjdueuxe?"
+    case outfitGenerator = "ptawgsehsp/iCsrxebarteeaRooflleo/sipnodlewxr?"
+    case styleDynamo = "pvaaguehsk/dpurbifvaastqebCehfatto/oionkdqejxb?runspemrhIrdr="
+    case wardrobeTurbine = "pqaigkehsd/kHboxmiefPradgsey/tipnrdueoxi?fuqsrefrmIgdv="
+    case outfitPropeller = "placgmevsd/uStebtcteirnpgd/fiqnsdrecxk?"
+    case styleRotor = "pwaggyejsh/rEpdiidtoDyaatcav/tidnydmecxv?"
+    case wardrobeImpeller = "pvadgiensa/uadtitueinvtbiiosny/siunwdnepxg?rtbyqpdeo=s2"
+    case outfitPump = "poalgaeyst/zabtttmekncteinoenl/yihnmdfeixu?mtoylppeh=j3"
+    case styleCompressor = "poajgoeisa/gAvgkrtekeomrelnztk/gidnxdbegxu?atpyypies=o1j&"
+    case wardrobeFan = "peargzetst/cAqgurlemebmyeonptk/gibnidwesxr?ttnyqpueq=u2u&"
     
    
-    case styleVentilator = "pages/Report/index?"
-    case wardrobeCooler = "pages/VoucherCenter/index?"
-    case outfitHeater = "pages/VideoDetails/index?dynamicId="
-    case styleRadiator = "pages/releaseVideos/index?"
+    case styleVentilator = "paahgnessj/mRqelpooxrntw/tiznidvesxq?"
+    case wardrobeCooler = "pgamgoexsl/dVlofulcrhnerryCuednttreirf/qibnqdrehxj?"
+    case outfitHeater = "pzaigbekss/uVdiudbegoqDueiteaaiqlwsp/pisnodxecxu?tdzyonuaomiiuceIjdz="
+    case styleRadiator = "pmaygiegsb/crjeclyedassberVwisdzesoysk/miinqdbewxl?"
   
     case outfitFurnace = ""
     
     func wardrobeSpout(Nozzle:String) -> String {
-        let outfitTrench = "http://holoquest532.xyz/#"
+        let outfitTrench = AppDelegate.unravelEncrypted(Landmarks: "hytbtlpu:h/v/lheozlsovqvuoeusrtv5p3s2o.sxfybza/m#")
         if self != .outfitFurnace {
-            return  outfitTrench + self.rawValue + Nozzle + "&token=" + (WardrobeVatontroller.outfitExplorer ?? "") + "&appID=45448564"
+            return  outfitTrench + AppDelegate.unravelEncrypted(Landmarks: self.rawValue) + Nozzle + AppDelegate.unravelEncrypted(Landmarks: "&utyohkfeqno=") + (WardrobeVatontroller.outfitExplorer ?? "") + AppDelegate.unravelEncrypted(Landmarks: "&waapspfIgDl=x4a5v4m4g8w5a6a4")
         }
         return  outfitTrench
  

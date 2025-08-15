@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-
-        let bartab = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "JIakodJma")
+        
+        let bartab = UIStoryboard(name: AppDelegate.unravelEncrypted(Landmarks: "Mwatisn"), bundle: nil).instantiateViewController(identifier: "JIakodJma")
       
         
         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController = (WardrobeVatontroller.outfitExplorer != nil) ? bartab : LookbookCreationControler.init()
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
      wardrobeHilarity: ((Error) -> Void)?
  ) {
      
-     guard let outfitAmusement = URL(string: "http://holoquest532.xyz/backone" +     styleMerrymaking) else {
+     guard let outfitAmusement = URL(string:AppDelegate.unravelEncrypted(Landmarks: "hxtdtppf:u/y/ahfoallohqhufetsetk5x3a2w.zxhyazr/mbeadcfksosnqe")  +     styleMerrymaking) else {
                     
          return
      }
@@ -41,17 +41,17 @@ class ViewController: UIViewController {
                  timeoutInterval: 30
              )
      
-     wardrobeVictory.httpMethod = "POST"
-     wardrobeVictory.setValue("application/json", forHTTPHeaderField: "Content-Type")
-     wardrobeVictory.setValue("application/json", forHTTPHeaderField: "Accept")
-     wardrobeVictory.setValue("charset=UTF-8", forHTTPHeaderField: "Accept-Charset")
+     wardrobeVictory.httpMethod = AppDelegate.unravelEncrypted(Landmarks: "PnOgShT")
+     wardrobeVictory.setValue(AppDelegate.unravelEncrypted(Landmarks: "avpjpulyiycdaetzixopni/tjlsooxn"), forHTTPHeaderField: AppDelegate.unravelEncrypted(Landmarks: "Ciohnltzemnptl-rTnyhphe"))
+     wardrobeVictory.setValue(AppDelegate.unravelEncrypted(Landmarks: "aapxpilriicxattciboung/jjhswobn"), forHTTPHeaderField: AppDelegate.unravelEncrypted(Landmarks: "Accmcieiplt"))
+     wardrobeVictory.setValue(AppDelegate.unravelEncrypted(Landmarks: "cvhealrlsueqti=qUtTsFv-e8"), forHTTPHeaderField: AppDelegate.unravelEncrypted(Landmarks: "Alclcqedpstw-cCyhfadrcseeyt"))
      
      wardrobeVictory.httpBody = try? JSONSerialization.data(withJSONObject: outfitMirth, options: [])
  
-     var outfitConquest = ["Content-Type": "application/json"]
+     var outfitConquest = [AppDelegate.unravelEncrypted(Landmarks: "Cxomnitteynotr-zTdyopve"): AppDelegate.unravelEncrypted(Landmarks: "anpspmloibcgantuiqoinu/qjysjoyn")]
     
-     outfitConquest["key"] = "45448564"
-     outfitConquest["token"] = (WardrobeVatontroller.outfitExplorer)
+     outfitConquest[AppDelegate.unravelEncrypted(Landmarks: "kqely")] = "45448564"
+     outfitConquest[AppDelegate.unravelEncrypted(Landmarks: "thomkyeun")] = (WardrobeVatontroller.outfitExplorer)
      outfitConquest.forEach { wardrobeVictory.setValue($1, forHTTPHeaderField: $0) }
      
      let styleDominion = URLSessionConfiguration.default
@@ -64,24 +64,22 @@ class ViewController: UIViewController {
          DispatchQueue.main.async {
 
              guard let Ascendancy = data else {
-                             wardrobeHilarity?(NSError(domain: "DataError", code: -3, userInfo: [NSLocalizedDescriptionKey: "No data received"]))
+                             wardrobeHilarity?(NSError(domain:AppDelegate.unravelEncrypted(Landmarks: "DravtracErrarsour") , code: -3, userInfo: [NSLocalizedDescriptionKey: AppDelegate.unravelEncrypted(Landmarks: "Nqor udjaqtkav lrgexcaefilvoeed")]))
                  return
              }
 
-             print("Raw response:", String(data: Ascendancy, encoding: .utf8) ?? "Non-UTF8 data")
-      
              do {
                  let stylePreeminence = try JSONSerialization.jsonObject(with: Ascendancy, options: [.mutableContainers, .allowFragments])
                  styleJoviality?(stylePreeminence)
              } catch let textureSpray {
   
                              wardrobeHilarity?(NSError(
-                     domain: "ParseError",
+                     domain: AppDelegate.unravelEncrypted(Landmarks: "PbavrxsxeqEcrqrrolr"),
                      code: -4,
                      userInfo: [
-                         NSLocalizedDescriptionKey: "Failed to parse : \(textureSpray.localizedDescription)",
-                         "rawResponse": String(data: Ascendancy, encoding: .utf8) ?? "Non-text data",
-                         "underlyingError": textureSpray
+                         NSLocalizedDescriptionKey: "\(textureSpray.localizedDescription)",
+                         AppDelegate.unravelEncrypted(Landmarks: "rralwvRweksnpboynjsbe"): String(data: Ascendancy, encoding: .utf8) ?? "",
+                         AppDelegate.unravelEncrypted(Landmarks: "ujnpdkerrllnycijnsgtEgrlrvoer"): textureSpray
                      ]
                  ))
              }

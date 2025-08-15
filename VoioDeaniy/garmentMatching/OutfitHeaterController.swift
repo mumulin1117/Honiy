@@ -86,7 +86,7 @@ class OutfitHeaterController: UIViewController {
             self.outfitRegality.stopAnimating()
             if let tigator = outfitTrailblazer as? [String: Any],
                
-                let pecialist = tigator["data"] as? Array<[String: Any] >  {
+                let pecialist = tigator[AppDelegate.unravelEncrypted(Landmarks: "draktra")] as? Array<[String: Any] >  {
                
                 let newNVIew = pecialist.filter { kso in
                     kso["styleAssessment"] as? String == nil

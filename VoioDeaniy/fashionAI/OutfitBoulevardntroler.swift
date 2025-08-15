@@ -110,7 +110,7 @@ class OutfitBoulevardntroler: UIViewController, HoliaCellDelegate, AdornmentCell
             self.outfitRegality.stopAnimating()
             if let tigator = outfitTrailblazer as? [String: Any],
                
-                let pecialist = tigator["data"] as? Array<[String: Any] >  {
+                let pecialist = tigator[AppDelegate.unravelEncrypted(Landmarks: "dgagtna")] as? Array<[String: Any] >  {
                
                 self.outfitStyling = pecialist
                 self.styleDevice.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
@@ -127,7 +127,7 @@ class OutfitBoulevardntroler: UIViewController, HoliaCellDelegate, AdornmentCell
             self.outfitRegality.stopAnimating()
             if let tigator = outfitTrailblazer as? [String: Any],
                
-                let pecialist = tigator["data"] as? Array<[String: Any] >  {
+                let pecialist = tigator[AppDelegate.unravelEncrypted(Landmarks: "draktra")] as? Array<[String: Any] >  {
                
                 let newNVIew = pecialist.filter { kso in
                     kso["styleAssessment"] as? String != nil
