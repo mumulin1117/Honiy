@@ -37,8 +37,8 @@ class outfitStylingController: UIViewController {
     @IBOutlet weak var fashionTips: UIImageView!
     
    @objc func wardrobeRoaster()  {
-       let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.outfitGenerator.wardrobeSpout(Nozzle: ""))
-       wardrobeHeroism.isComePOST = false
+       let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.outfitGenerator.wardrobeSpout(Nozzle: ""))
+       wardrobeHeroism.outfitShroud = false
        self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     private func styleEmbellishment()  {
@@ -75,8 +75,8 @@ extension outfitStylingController:UICollectionViewDelegate,UICollectionViewDataS
      
         let uuuis =   Elowen[indexPath.row]["outfitSelector"] as? Int ?? 0
        
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.styleDynamo.wardrobeSpout(Nozzle: "\(uuuis)"))
-        wardrobeHeroism.isComePOST = false
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.styleDynamo.wardrobeSpout(Nozzle: "\(uuuis)"))
+        wardrobeHeroism.outfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     

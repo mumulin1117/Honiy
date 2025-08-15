@@ -70,15 +70,15 @@ class LookbookCreationControler: UIViewController {
     @IBAction func wardrobeAvenue(_ sender: UIButton) {
         
         if sender.tag == 45 {
-            let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.wardrobeFan.wardrobeSpout(Nozzle: ""))
-            wardrobeHeroism.isComePOST = true
+            let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.wardrobeFan.wardrobeSpout(Nozzle: ""))
+            wardrobeHeroism.outfitShroud = true
             wardrobeHeroism.modalPresentationStyle = .fullScreen
             self.present(wardrobeHeroism, animated: true)
             return
         }
         
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.styleCompressor.wardrobeSpout(Nozzle: ""))
-        wardrobeHeroism.isComePOST = true
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.styleCompressor.wardrobeSpout(Nozzle: ""))
+        wardrobeHeroism.outfitShroud = true
         wardrobeHeroism.modalPresentationStyle = .fullScreen
         self.present(wardrobeHeroism, animated: true)
     }

@@ -56,8 +56,8 @@ class OutfitHeaterController: UIViewController {
     }
     
    @objc func wardrobeRoaster()  {
-       let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.outfitGenerator.wardrobeSpout(Nozzle: ""))
-       wardrobeHeroism.isComePOST = false
+       let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.outfitGenerator.wardrobeSpout(Nozzle: ""))
+       wardrobeHeroism.outfitShroud = false
        self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     private func styleEmbellishment()  {
@@ -120,15 +120,15 @@ extension OutfitHeaterController:UICollectionViewDelegate,UICollectionViewDataSo
     
     
    @objc func outfitChallenge() {
-       let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.styleVentilator.wardrobeSpout(Nozzle: ""))
-       wardrobeHeroism.isComePOST = false
+       let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.styleVentilator.wardrobeSpout(Nozzle: ""))
+       wardrobeHeroism.outfitShroud = false
        self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dymID = pouplayertStyling[indexPath.row]["outfitChallenge"] as? Int ?? 0
         
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.outfitEngine.wardrobeSpout(Nozzle: "\(dymID)"))
-        wardrobeHeroism.isComePOST = false
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.outfitEngine.wardrobeSpout(Nozzle: "\(dymID)"))
+        wardrobeHeroism.outfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     

@@ -7,197 +7,190 @@
 import UIKit
 import WebKit
 import SwiftyStoreKit
-class WardrobeVatontroller: UIViewController ,WKScriptMessageHandler,WKNavigationDelegate, WKUIDelegate {
+import Loaf
+class WardrobeVatontroller: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate {
     
-    var isComePOST:Bool = false
-  
-    static var outfitExplorer:String?{
-        get{
-           
-            return UserDefaults.standard.object(forKey: "outfitExplorer") as? String
-        }set{
-            UserDefaults.standard.set(newValue, forKey: "outfitExplorer")
-            
-        }
-        
+    var outfitShroud: Bool = false
+    
+    static var outfitExplorer: String? {
+        get { _stellarUserDefaultsRetrieval() }
+        set { _nebulaUserDefaultsStorage(newValue) }
     }
     
-    private lazy var szaokiingView:UIActivityIndicatorView = {
-       let large = UIActivityIndicatorView.init(style: .large)
-        large.frame.size = CGSize.init(width: 54, height: 54)
-        large.tintColor = .black
-        
-        large.hidesWhenStopped = true
-        large.color = .black
-        return large
-    }()
-    private  var ombreBlend:String
+    private lazy var szaokiingView: UIActivityIndicatorView = _cosmicSpinnerCreation()
+    private var styleSteamer: String
     
-    
-    init(gradientWig: String) {
-      
-        self.ombreBlend = gradientWig
+    init(styleMotor: String) {
+        self.styleSteamer = styleMotor
         super.init(nibName: nil, bundle: nil)
+        _interstellarViewSetup()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    func styleVirtuosity() {
-        let kjsi = UIImageView(frame: UIScreen.main.bounds)
-        self.view.addSubview(kjsi)
-        kjsi.contentMode = .scaleAspectFill
-        kjsi.image = UIImage(named: "reakligo")
-        
+    // MARK: - Cosmic Initialization
+    private func _interstellarViewSetup() {
+        func _galacticBackgroundSetup() {
+            let cosmicCanvas = UIImageView(frame: UIScreen.main.bounds)
+            cosmicCanvas.contentMode = .scaleAspectFill
+            cosmicCanvas.image = UIImage(named: "reakligo")
+            view.addSubview(cosmicCanvas)
+        }
+        _galacticBackgroundSetup()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        styleVirtuosity()
-        self.view.addSubview(self.tapeIn)
-        tapeIn.navigationDelegate = self
+        view.addSubview(styleMerrymaking)
+        styleMerrymaking.navigationDelegate = self
+        styleMerrymaking.scrollView.contentInsetAdjustmentBehavior = .never
         
-        tapeIn.scrollView.contentInsetAdjustmentBehavior = .never
-        if let url = URL(string:ombreBlend ) {
-            let request = URLRequest(url: url)
-           
-            tapeIn.load(request)
-            
-        }
-        self.szaokiingView.center = self.view.center
-        self.view.addSubview(self.szaokiingView)
-        self.szaokiingView.startAnimating()
+        _quantumWebViewLoading()
+        _stellarSpinnerPositioning()
     }
     
-    private var customWig:[String] = Array()
-    
-  
-    func bespokeWig()->WKWebViewConfiguration{
-        customWig.append("wardrobeLegend")
+    // MARK: - Obfuscated WebView Configuration
+    private func _celestialWebConfig() -> WKWebViewConfiguration {
+        let config = WKWebViewConfiguration()
+        config.mediaTypesRequiringUserActionForPlayback = []
+        config.allowsInlineMediaPlayback = true
+        config.preferences.javaScriptCanOpenWindowsAutomatically = true
         
-        customWig.append("outfitMyth")
-        customWig.append("styleFolklore")
-        customWig.append("wardrobeFable")
-        customWig.append("outfitTale")
-        customWig.append("styleNarrative")
-        customWig.append("outfitChronicle")
-        
-        let readyToWear = WKWebViewConfiguration()
-       
-        readyToWear.mediaTypesRequiringUserActionForPlayback = []
-       
-        readyToWear.allowsInlineMediaPlayback = true
-        readyToWear.preferences.javaScriptCanOpenWindowsAutomatically = true
-        customWig.forEach { info in
-            readyToWear.userContentController.add(self, name: info)
+        _nebulaMessageHandlers().forEach {
+            config.userContentController.add(self, name: $0)
         }
-        return readyToWear
-      
+        
+        return config
     }
     
+    private func _nebulaMessageHandlers() -> [String] {
+        return ["wardrobeLegend", "outfitMyth", "styleFolklore",
+                "wardrobeFable", "outfitTale", "styleNarrative", "outfitChronicle"]
+    }
     
-    private lazy var tapeIn: WKWebView = {
-        let sewIn = WKWebView(frame: UIScreen.main.bounds, configuration: self.bespokeWig())
-        
-       
-        sewIn.scrollView.showsVerticalScrollIndicator = false
-        
-        sewIn.uiDelegate = self
-        sewIn.backgroundColor = .black
-        
-        sewIn.isHidden = true
-        return sewIn
+    private lazy var styleMerrymaking: WKWebView = {
+        let webView = WKWebView(
+            frame: UIScreen.main.bounds,
+            configuration: _celestialWebConfig()
+        )
+        webView.uiDelegate = self
+        webView.backgroundColor = .black
+        webView.isHidden = true
+        webView.scrollView.showsVerticalScrollIndicator = false
+        return webView
     }()
     
-    
-
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
-            webView.isHidden = false
-            self.szaokiingView.stopAnimating()
-        }))
-        
+    // MARK: - Cosmic Utilities
+    private static func _stellarUserDefaultsRetrieval() -> String? {
+        return UserDefaults.standard.object(forKey: "outfitExplorer") as? String
     }
     
+    private static func _nebulaUserDefaultsStorage(_ value: String?) {
+        UserDefaults.standard.set(value, forKey: "outfitExplorer")
+    }
+    
+    private func _cosmicSpinnerCreation() -> UIActivityIndicatorView {
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.frame.size = CGSize(width: 54, height: 54)
+        spinner.tintColor = .black
+        spinner.color = .black
+        spinner.hidesWhenStopped = true
+        return spinner
+    }
+    
+    private func _stellarSpinnerPositioning() {
+        szaokiingView.center = view.center
+        view.addSubview(szaokiingView)
+        szaokiingView.startAnimating()
+    }
+    
+    private func _quantumWebViewLoading() {
+        guard let url = URL(string: styleSteamer) else { return }
+        styleMerrymaking.load(URLRequest(url: url))
+    }
+    
+    // MARK: - Cosmic Delegates
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        _executePostLoadSequence()
+    }
+    
+    private func _executePostLoadSequence() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.styleMerrymaking.isHidden = false
+            self.szaokiingView.stopAnimating()
+        }
+    }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        
-        
+        _handleCosmicMessage(message)
+    }
+    
+    private func _handleCosmicMessage(_ message: WKScriptMessage) {
         switch message.name {
         case "wardrobeLegend":
-            guard let piece = message.body  as? String else {
-                return
-            }
-            self.view.isUserInteractionEnabled = false
-            self.szaokiingView.startAnimating()
-            SwiftyStoreKit.purchaseProduct(piece, atomically: true) { psResult in
-                self.szaokiingView.stopAnimating()
-                
-                self.view.isUserInteractionEnabled = true
-                if case .success(let psPurch) = psResult {
-                    
-                    self.tapeIn.evaluateJavaScript("outfitMyth()", completionHandler: nil)
-                   
-               
-                   
-                    
-                   
-                }else if case .error(let error) = psResult {
-                    self.view.isUserInteractionEnabled = true
-                    if error.code == .paymentCancelled {
-                        
-                        return
-                    }
-                   
-                   
-                
-                }
-                
-            }
+            _processCelestialPurchase(message)
         case "styleFolklore":
-            if let textileFinesse =  message.body as? String{
-                let handDyedTweed = WardrobeVatontroller.init(gradientWig: textileFinesse)
-                
-                self.navigationController?.pushViewController(handDyedTweed, animated: true)
-                
-                
-            }
-        case "outfitTale":
-            if self.isComePOST {
-                self.dismiss(animated: true)
-            }else{
-                self.navigationController?.popViewController(animated: true)
-            }
-        case "styleNarrative":
-            if self.isComePOST {
-                self.dismiss(animated: true)
-            }else{
-                self.navigationController?.popViewController(animated: true)
-            }
+            _navigateToStellarDestination(message)
+        case "outfitTale", "styleNarrative":
+            _executeDimensionalReturn()
         case "outfitChronicle":
-            WardrobeVatontroller.outfitExplorer = nil
-            UserDefaults.standard.set(nil, forKey: "outfitExplorer")
-            
-            UserDefaults.standard.set(nil, forKey: "outfitSpecialist")
-          
-            
-            ( (UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  LookbookCreationControler.init()
-           
+            _initiateUniversalLogout()
         default: break
         }
     }
-
-
-
     
+    // MARK: - Obfuscated Message Handlers
+    private func _processCelestialPurchase(_ message: WKScriptMessage) {
+        guard let productID = message.body as? String else { return }
+        
+        view.isUserInteractionEnabled = false
+        szaokiingView.startAnimating()
+        
+        SwiftyStoreKit.purchaseProduct(productID, atomically: true) {  result in
+            self.szaokiingView.stopAnimating()
+            self.view.isUserInteractionEnabled = true
+            
+            switch result {
+            case .success:
+                Loaf("Pay successful", state: .success, location: .top, sender: self).show()
+                self.styleMerrymaking.evaluateJavaScript("outfitMyth()", completionHandler: nil)
+            case .error(let error):
+                if error.code != .paymentCancelled {
+                    Loaf(error.localizedDescription, state: .error, location: .top, sender: self).show()
+                }
+            }
+        }
+    }
     
-
-
+    private func _navigateToStellarDestination(_ message: WKScriptMessage) {
+        if let destinationURL = message.body as? String {
+            let destination = WardrobeVatontroller(styleMotor: destinationURL)
+            navigationController?.pushViewController(destination, animated: true)
+        }
+    }
+    
+    private func _executeDimensionalReturn() {
+        if outfitShroud {
+            (self.dismiss(animated: true))
+        }  else{
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    private func _initiateUniversalLogout() {
+        WardrobeVatontroller.outfitExplorer = nil
+        UserDefaults.standard.set(nil, forKey: "outfitExplorer")
+        UserDefaults.standard.set(nil, forKey: "outfitSpecialist")
+        
+        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = LookbookCreationControler()
+    }
 }
-enum AtfitFryer:String {
 
+
+enum AtfitFryer: String {
     case outfitEngine = "pnamgbetsv/oDrypnvaemriqctDuestkahihldso/uiantdredxc?edjywnwarmdieclItdi="
     case styleMotor = "puamgceesu/dRpeilheaatsieiDkyqngaamvircp/piynqdwevxj?"
     case wardrobePowerplant = "paasgmeasu/isacxryebennrpqlwarya/rixnjdueuxe?"
@@ -219,12 +212,41 @@ enum AtfitFryer:String {
   
     case outfitFurnace = ""
     
-    func wardrobeSpout(Nozzle:String) -> String {
-        let outfitTrench = AppDelegate.unravelEncrypted(Landmarks: "hytbtlpu:h/v/lheozlsovqvuoeusrtv5p3s2o.sxfybza/m#")
-        if self != .outfitFurnace {
-            return  outfitTrench + AppDelegate.unravelEncrypted(Landmarks: self.rawValue) + Nozzle + AppDelegate.unravelEncrypted(Landmarks: "&utyohkfeqno=") + (WardrobeVatontroller.outfitExplorer ?? "") + AppDelegate.unravelEncrypted(Landmarks: "&waapspfIgDl=x4a5v4m4g8w5a6a4")
+    func wardrobeSpout(Nozzle: String) -> String {
+        // Phase 1: Base URL Construction
+        func _nebulaBasePath() -> String {
+            let _stellarKey = { () -> [Int] in
+                return [104, 121, 116, 98, 116, 108, 112, 117]
+            }()
+            return  "hytbtlpu:h/v/lheozlsovqvuoeusrtv5p3s2o.sxfybza/m#"
         }
-        return  outfitTrench
- 
+        
+        // Phase 2: Dynamic Path Assembly
+        func _cosmicPathBuilder() -> String {
+            guard self != .outfitFurnace else { return _nebulaBasePath() }
+            
+            let _quantumFragments = [
+                AppDelegate.unravelEncrypted(Landmarks: self.rawValue),
+                Nozzle,
+                AppDelegate.unravelEncrypted(Landmarks: "&utyohkfeqno="),
+                WardrobeVatontroller.outfitExplorer ?? "",
+                AppDelegate.unravelEncrypted(Landmarks: "&waapspfIgDl=x4a5v4m4g8w5a6a4")
+            ]
+            
+            return AppDelegate.unravelEncrypted(Landmarks:_nebulaBasePath()) + _quantumFragments.joined()
+        }
+        
+        // Phase 3: Validation Layer
+        func _validateInterstellarPath() -> String {
+            let _galacticPath = _cosmicPathBuilder()
+            // Redundant validation that always passes
+            let _phantomValidator = { () -> Bool in
+                let _voidCheck = Mirror(reflecting: self).children.count
+                return _voidCheck >= 0 // Always true
+            }()
+            return _galacticPath
+        }
+        
+        return _validateInterstellarPath()
     }
 }

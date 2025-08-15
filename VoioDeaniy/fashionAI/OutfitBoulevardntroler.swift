@@ -11,28 +11,28 @@ class OutfitBoulevardntroler: UIViewController, HoliaCellDelegate, AdornmentCell
     func giventerUserInafomation(_ dataID: Int?) {
         if dataID == nil {
             
-            let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.styleVentilator.wardrobeSpout(Nozzle: ""))
-            wardrobeHeroism.isComePOST = false
+            let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.styleVentilator.wardrobeSpout(Nozzle: ""))
+            wardrobeHeroism.outfitShroud = false
             self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
             return
         }
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.wardrobeTurbine.wardrobeSpout(Nozzle: "\(dataID!)"))
-        wardrobeHeroism.isComePOST = false
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.wardrobeTurbine.wardrobeSpout(Nozzle: "\(dataID!)"))
+        wardrobeHeroism.outfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     
     func styleDevicetCell(_ data: Dictionary<String, Any>?) {
         if data == nil {
             
-            let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.styleVentilator.wardrobeSpout(Nozzle: ""))
-            wardrobeHeroism.isComePOST = false
+            let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.styleVentilator.wardrobeSpout(Nozzle: ""))
+            wardrobeHeroism.outfitShroud = false
             self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
             return
         }
         let dymID = data?["outfitChallenge"] as? Int ?? 0
         
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.outfitEngine.wardrobeSpout(Nozzle: "\(dymID)"))
-        wardrobeHeroism.isComePOST = false
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.outfitEngine.wardrobeSpout(Nozzle: "\(dymID)"))
+        wardrobeHeroism.outfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     
@@ -41,14 +41,14 @@ class OutfitBoulevardntroler: UIViewController, HoliaCellDelegate, AdornmentCell
         
         let dymID = data["outfitChallenge"] as? Int ?? 0
         
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.outfitEngine.wardrobeSpout(Nozzle: "\(dymID)"))
-        wardrobeHeroism.isComePOST = false
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.outfitEngine.wardrobeSpout(Nozzle: "\(dymID)"))
+        wardrobeHeroism.outfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     
     func userFillFuull(uidFeifei: Int) {
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.wardrobeTurbine.wardrobeSpout(Nozzle: "\(uidFeifei)"))
-        wardrobeHeroism.isComePOST = false
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.wardrobeTurbine.wardrobeSpout(Nozzle: "\(uidFeifei)"))
+        wardrobeHeroism.outfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
     
@@ -96,8 +96,8 @@ class OutfitBoulevardntroler: UIViewController, HoliaCellDelegate, AdornmentCell
     }
 
     @IBAction func wardrobeContraption(_ sender: UIButton) {
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig: AtfitFryer.styleRadiator.wardrobeSpout(Nozzle: ""))
-        wardrobeHeroism.isComePOST = true
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor: AtfitFryer.styleRadiator.wardrobeSpout(Nozzle: ""))
+        wardrobeHeroism.outfitShroud = true
         wardrobeHeroism.modalPresentationStyle = .fullScreen
         self.present(wardrobeHeroism, animated: true)
     }

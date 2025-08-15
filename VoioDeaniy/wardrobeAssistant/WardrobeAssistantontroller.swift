@@ -57,8 +57,8 @@ class WardrobeAssistantontroller: UIViewController {
             
         }
         
-        let wardrobeHeroism =  WardrobeVatontroller.init(gradientWig:feivt)
-        wardrobeHeroism.isComePOST = false
+        let wardrobeHeroism =  WardrobeVatontroller.init(styleMotor:feivt)
+        wardrobeHeroism.outfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
 
