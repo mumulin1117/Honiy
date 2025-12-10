@@ -6,15 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		F4542F69E051D10703478C68 /* Pods_VoioDeaniy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5591EFE23B6969B9D7D3E78 /* Pods_VoioDeaniy.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		04BCABFA2E47451900B2B6E4 /* VoioDeaniy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoioDeaniy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A3725D8866FB6AC3DF234FD /* Pods-VoioDeaniy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoioDeaniy.debug.xcconfig"; path = "Target Support Files/Pods-VoioDeaniy/Pods-VoioDeaniy.debug.xcconfig"; sourceTree = "<group>"; };
-		C21F39D1D66CF4E4FB58BC0C /* Pods-VoioDeaniy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoioDeaniy.release.xcconfig"; path = "Target Support Files/Pods-VoioDeaniy/Pods-VoioDeaniy.release.xcconfig"; sourceTree = "<group>"; };
-		F5591EFE23B6969B9D7D3E78 /* Pods_VoioDeaniy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoioDeaniy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -43,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4542F69E051D10703478C68 /* Pods_VoioDeaniy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +47,6 @@
 			children = (
 				04BCABFC2E47451900B2B6E4 /* VoioDeaniy */,
 				04BCABFB2E47451900B2B6E4 /* Products */,
-				A610A7C2347FEA5B4CF92441 /* Pods */,
 				54B1CEE12BB232927769E0AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -71,18 +62,8 @@
 		54B1CEE12BB232927769E0AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5591EFE23B6969B9D7D3E78 /* Pods_VoioDeaniy.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A610A7C2347FEA5B4CF92441 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3A3725D8866FB6AC3DF234FD /* Pods-VoioDeaniy.debug.xcconfig */,
-				C21F39D1D66CF4E4FB58BC0C /* Pods-VoioDeaniy.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,11 +73,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BCAC0D2E47451C00B2B6E4 /* Build configuration list for PBXNativeTarget "VoioDeaniy" */;
 			buildPhases = (
-				7DE135A484FA5A820072D3AD /* [CP] Check Pods Manifest.lock */,
 				04BCABF62E47451900B2B6E4 /* Sources */,
 				04BCABF72E47451900B2B6E4 /* Frameworks */,
 				04BCABF82E47451900B2B6E4 /* Resources */,
-				9F03916CBB433F3196879B2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,48 +133,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7DE135A484FA5A820072D3AD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VoioDeaniy-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F03916CBB433F3196879B2A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VoioDeaniy/Pods-VoioDeaniy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VoioDeaniy/Pods-VoioDeaniy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoioDeaniy/Pods-VoioDeaniy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		04BCABF62E47451900B2B6E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,7 +146,6 @@
 /* Begin XCBuildConfiguration section */
 		04BCAC0E2E47451C00B2B6E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A3725D8866FB6AC3DF234FD /* Pods-VoioDeaniy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -219,6 +155,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoioDeaniy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Honiy;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Unlock your creativity! Honiy uses the camera to help you capture festive outfits, explore styling ideas, and share joyful moments with friends. Your photos stay private unless you choose to share them.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Turn looks into lively conversations! The microphone lets you chat with friends while styling together, making every dress-up session more fun. We never record without your permission.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your wardrobe, your rules! Honiy accesses your photo library only to help you mix-and-match outfits, save inspirations, or share your favorite holiday looks—always with your approval.";
@@ -247,7 +184,6 @@
 		};
 		04BCAC0F2E47451C00B2B6E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C21F39D1D66CF4E4FB58BC0C /* Pods-VoioDeaniy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -257,6 +193,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoioDeaniy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Honiy;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Unlock your creativity! Honiy uses the camera to help you capture festive outfits, explore styling ideas, and share joyful moments with friends. Your photos stay private unless you choose to share them.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Turn looks into lively conversations! The microphone lets you chat with friends while styling together, making every dress-up session more fun. We never record without your permission.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your wardrobe, your rules! Honiy accesses your photo library only to help you mix-and-match outfits, save inspirations, or share your favorite holiday looks—always with your approval.";

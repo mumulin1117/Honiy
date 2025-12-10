@@ -2,12 +2,12 @@
 //  WardrobeVat tontroller.swift
 //  VoioDeaniy
 //
-//  Created by mumu on 2025/8/12.
+//  Created by  on 2025/8/12.
 //
 import UIKit
 import WebKit
-import SwiftyStoreKit
-import Loaf
+
+
 class WardrobeVatontroller: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate {
     
     var outfitShroud: Bool = false
@@ -148,21 +148,28 @@ class WardrobeVatontroller: UIViewController, WKScriptMessageHandler, WKNavigati
         
         view.isUserInteractionEnabled = false
         szaokiingView.startAnimating()
-        
-        SwiftyStoreKit.purchaseProduct(productID, atomically: true) {  result in
+        PutAccessory.shared.timberline(topo: productID) { puerchase in
             self.szaokiingView.stopAnimating()
             self.view.isUserInteractionEnabled = true
             
-            switch result {
-            case .success:
-                Loaf("Pay successful", state: .success, location: .top, sender: self).show()
+            switch puerchase {
+            case .success(let defati):
+                StyleSparkNotifier.show(
+                    message: AppDelegate.unravelEncrypted(Landmarks: "Phaxyk vstumcncqelswsefyujl"), // "Login Successful"
+                    state: .success,
+                    in: self
+                )
+              
                 self.styleMerrymaking.evaluateJavaScript("outfitMyth()", completionHandler: nil)
-            case .error(let error):
-                if error.code != .paymentCancelled {
-                    Loaf(error.localizedDescription, state: .error, location: .top, sender: self).show()
-                }
+            case .failure(let error):
+                StyleSparkNotifier.show(
+                    message: error.localizedDescription, // "Login Failed: Invalid credentials"
+                    state: .error,
+                    in: self
+                )
             }
         }
+
     }
     
     private func _navigateToStellarDestination(_ message: WKScriptMessage) {

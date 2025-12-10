@@ -9,30 +9,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    private let agreementLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Honiy"
+        label.font = UIFont.boldSystemFont(ofSize: 21)
+        label.textAlignment = .center
+        label.textColor = .black
+        return label
+    }()
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     
-        func _nebulaRootControllerSetup() -> UIViewController {
-            let _phantomKey = { () -> String in
-                let _moonPhase = [82, 97, 119, 97, 107, 117, 115].map { UnicodeScalar($0)!.description }
-                return _moonPhase.joined()
-            }()
-            
-            let _cosmicStoryboard = UIStoryboard(
-                name: "Main",
-                bundle: nil
-            )
-            
-            return _cosmicStoryboard.instantiateViewController(identifier: "JIakodJma")
-        }
+        let maingubg = UIImageView(image: UIImage.init(named: "reakligo"))
+        maingubg.frame = UIScreen.main.bounds
+        maingubg.contentMode = .scaleAspectFill
+        self.view.addSubview(maingubg)
         
+        let maingulogbg = UIImageView(image: UIImage.init(named: "bznodu"))
+        maingulogbg.frame = CGRect.init(x: 0, y: 200, width: 120, height: 129)
+        maingulogbg.center.x = view.center.x
+        
+        self.view.addSubview(maingulogbg)
+        
+        agreementLabel.frame = CGRect.init(x: 0, y: 200 + 129 + 15, width: 100, height: 30)
+        agreementLabel.center.x = self.view.center.x
+        self.view.addSubview(agreementLabel)
         // 条件判断重组
         let _stellarDecision: () -> UIViewController = {
             guard WardrobeVatontroller.outfitExplorer != nil else {
                 return LookbookCreationControler()
             }
-            return _nebulaRootControllerSetup()
+            return createRootNavigationController()
         }
         
         // 延迟设置rootViewController
@@ -187,29 +194,3 @@ class ViewController: UIViewController {
 
 
 
-
-class StyleHighway: UITabBarController {
-    
-    override func viewDidLoad() {
-           super.viewDidLoad()
-           self.delegate = self
-       }
-   }
-
-   extension StyleHighway: UITabBarControllerDelegate {
-       func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-           // 检查是否点击的是中间的 Item（假设是第2个，索引从0开始）
-           if viewController == tabBarController.viewControllers?[2] {
-               presentCustomViewController()
-               return false // 阻止默认的切换行为
-           }
-           return true
-       }
-       
-       private func presentCustomViewController() {
-           let customVC = WardrobeVatontroller.init(styleMotor: AtfitFryer.styleMotor.wardrobeSpout(Nozzle: "")) // 你要 present 的控制器
-           customVC.outfitShroud = true
-           customVC.modalPresentationStyle = .fullScreen // 或 .pageSheet 等
-           present(customVC, animated: true, completion: nil)
-       }
-   }

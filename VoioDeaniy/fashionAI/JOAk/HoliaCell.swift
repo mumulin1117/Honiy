@@ -45,7 +45,7 @@ class HoliaCell: UITableViewCell {
         outfitDecoration.dataSource = self
         outfitDecoration.backgroundColor = .clear
         outfitDecoration.showsHorizontalScrollIndicator = false
-        outfitDecoration.register(UINib(nibName: "UseriannimflCell", bundle: nil), forCellWithReuseIdentifier: "UseriannimflCell")
+        outfitDecoration.register(UseriannimflCell.self, forCellWithReuseIdentifier: "UseriannimflCell")
         return outfitDecoration
     }()
     

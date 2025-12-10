@@ -14,9 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let interactiveMaps = AppDelegate.unravelEncrypted(Landmarks: "Moagisn")
+//        let interactiveMaps = AppDelegate.unravelEncrypted(Landmarks: "Moagisn")
         
-        let bartab = UIStoryboard(name: interactiveMaps, bundle: nil).instantiateViewController(identifier: "OJaubKeou")
+        let bartab = ViewController()
       
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.rootViewController =  bartab
