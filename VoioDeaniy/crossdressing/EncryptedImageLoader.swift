@@ -1,12 +1,6 @@
-//
-//  EncryptedImageLoader.swift
-//  VoioDeaniy
-//
-//  Created by mumu on 2025/12/10.
-//
-
 import UIKit
 import CryptoKit
+import Foundation
 
 // MARK: - 1. 配置常量 (Constants)
 // ⚠️ 必须与 macOS 加密工具中的配置完全一致！
@@ -43,7 +37,7 @@ extension Data {
 
 class EncryptedImageLoader {
     
-    // 密钥初始化 (使用懒加载和检查，确保密钥正确性)
+    // 密钥初始化
     private static var decryptionKey: SymmetricKey? = {
         guard let keyData = Data(hexString: HEX_KEY), keyData.count == 32 else {
             fatalError("Decryption key error: Invalid HEX_KEY provided.")
@@ -52,17 +46,18 @@ class EncryptedImageLoader {
     }()
 
     /// 从 App Bundle 中加载并解密图片
+    /// - Parameter name: 加密文件的名称 (不带后缀, 例如 "my_icon" 对应 "my_icon.enc")
     static func load(named name: String) -> UIImage? {
         guard let key = decryptionKey else { return nil }
         
         // 1. 读取加密文件
         guard let url = Bundle.main.url(forResource: name, withExtension: ENCRYPTED_EXTENSION),
               let fullEncryptedData = try? Data(contentsOf: url) else {
-            print("ERROR: Encrypted file '\(name).\(ENCRYPTED_EXTENSION)' not found.")
+            print("ERROR: Encrypted file '\(name).\(ENCRYPTED_EXTENSION)' not found or could not be read.")
             return nil
         }
         
-        // 2. 分离 Nonce, Ciphertext, Tag
+        // 2. 分离 Nonce, Ciphertext, Tag: [Nonce (16B) | Ciphertext (nB) | Tag (16B)]
         let nonceData = fullEncryptedData.prefix(NONCE_SIZE)
         let tagStartIndex = fullEncryptedData.count - TAG_SIZE
         
@@ -73,11 +68,6 @@ class EncryptedImageLoader {
         
         let ciphertextData = fullEncryptedData.subdata(in: NONCE_SIZE..<tagStartIndex)
         let tagData = fullEncryptedData.suffix(TAG_SIZE)
-        
-        guard nonceData.count == NONCE_SIZE, tagData.count == TAG_SIZE else {
-            print("ERROR: Nonce or Tag size mismatch with configuration.")
-            return nil
-        }
         
         do {
             // 3. 组装 SealedBox 并解密

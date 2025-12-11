@@ -6,30 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		04DC68912EE989B700028658 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04BCABF22E47451900B2B6E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 040C4FD12EE984C500256D84;
-			remoteInfo = ImageEncryptor;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		040C4FD02EE984C500256D84 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		040C4FD22EE984C500256D84 /* ImageEncryptor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ImageEncryptor; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BCABFA2E47451900B2B6E4 /* VoioDeaniy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoioDeaniy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -38,59 +15,12 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				SourceImages/HNONWYCELhairstyleGenerator0.png,
-				SourceImages/HNONWYCELhairstyleGenerator1.png,
-				SourceImages/HNONWYCELhairstyleGenerator2.png,
-				SourceImages/HNONWYCELhairstyleGenerator3.png,
-				SourceImages/HNONWYCELhairstyleGenerator4.png,
-				SourceImages/HNONWYCELRbznodu.png,
-				SourceImages/HNONWYCELRContraption.png,
-				SourceImages/HNONWYCELRDapingu.png,
-				SourceImages/HNONWYCELREdijtu.png,
-				SourceImages/HNONWYCELReppaloei.png,
-				SourceImages/HNONWYCEoutfitApparatus.png,
-				SourceImages/HNONWYCoutfitAs.png,
-				SourceImages/HNONWYCoutfitBroiler.png,
-				SourceImages/HNONWYCoutfitDistiller.png,
-				SourceImages/HNONWYCoutfitFryer.png,
-				SourceImages/HNONWYCoutfitView.png,
-				SourceImages/HNONWYCoutfitWay.png,
-				SourceImages/HNONWYCPowerplant.png,
-				SourceImages/HNONWYCqinfu.png,
-				SourceImages/HNONWYCreakligo.png,
-				SourceImages/HNONWYCsstyleInstrument.png,
-				SourceImages/HNONWYCsstyleKiln.png,
-				SourceImages/HNONWYCstyleCooker.png,
-				SourceImages/HNONWYCstyleMechanism.png,
-				SourceImages/HNONWYCstyleMotor..png,
-				SourceImages/HNONWYCstyleOut.png,
-				SourceImages/HNONWYCstyleSteamer.png,
-				SourceImages/HNONWYCstyleTerrace.png,
-				SourceImages/HNONWYCstyleVentilator.png,
-				SourceImages/HNONWYCvirtual0.png,
-				SourceImages/HNONWYCvirtual1.png,
-				SourceImages/HNONWYCvirtual3.png,
-				SourceImages/HNONWYCvirtual4.png,
-				SourceImages/HNONWYCwardrobeBrewer.png,
-				SourceImages/HNONWYCwardrobeCooler.png,
-				SourceImages/HNONWYCwardrobeGrill.png,
-				SourceImages/HNONWYCwardrobeImplement.png,
-				SourceImages/HNONWYCwardrobeMachine.png,
-				SourceImages/HNONWYCwardrobeOven.png,
-				SourceImages/HNONWYCwardrobePowerplant.png,
-				SourceImages/HNONWYCwardrobeVat.png,
-				SourceImages/HNONWYCwardrobeVista.png,
 			);
 			target = 04BCABF92E47451900B2B6E4 /* VoioDeaniy */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		040C4FD32EE984C500256D84 /* ImageEncryptor */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageEncryptor;
-			sourceTree = "<group>";
-		};
 		04BCABFC2E47451900B2B6E4 /* VoioDeaniy */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -102,13 +32,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		040C4FCF2EE984C500256D84 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04BCABF72E47451900B2B6E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,7 +45,6 @@
 		04BCABF12E47451900B2B6E4 = {
 			isa = PBXGroup;
 			children = (
-				040C4FD32EE984C500256D84 /* ImageEncryptor */,
 				04BCABFB2E47451900B2B6E4 /* Products */,
 				54B1CEE12BB232927769E0AC /* Frameworks */,
 				04BCABFC2E47451900B2B6E4 /* VoioDeaniy */,
@@ -133,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				04BCABFA2E47451900B2B6E4 /* VoioDeaniy.app */,
-				040C4FD22EE984C500256D84 /* ImageEncryptor */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,28 +69,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		040C4FD12EE984C500256D84 /* ImageEncryptor */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 040C4FD62EE984C500256D84 /* Build configuration list for PBXNativeTarget "ImageEncryptor" */;
-			buildPhases = (
-				040C4FCE2EE984C500256D84 /* Sources */,
-				040C4FCF2EE984C500256D84 /* Frameworks */,
-				040C4FD02EE984C500256D84 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				040C4FD32EE984C500256D84 /* ImageEncryptor */,
-			);
-			name = ImageEncryptor;
-			packageProductDependencies = (
-			);
-			productName = ImageEncryptor;
-			productReference = 040C4FD22EE984C500256D84 /* ImageEncryptor */;
-			productType = "com.apple.product-type.tool";
-		};
 		04BCABF92E47451900B2B6E4 /* VoioDeaniy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BCAC0D2E47451C00B2B6E4 /* Build configuration list for PBXNativeTarget "VoioDeaniy" */;
@@ -177,12 +76,10 @@
 				04BCABF62E47451900B2B6E4 /* Sources */,
 				04BCABF72E47451900B2B6E4 /* Frameworks */,
 				04BCABF82E47451900B2B6E4 /* Resources */,
-				04DC68932EE989D200028658 /* Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				04DC68922EE989B700028658 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				04BCABFC2E47451900B2B6E4 /* VoioDeaniy */,
@@ -202,9 +99,6 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					040C4FD12EE984C500256D84 = {
-						CreatedOnToolsVersion = 16.1;
-					};
 					04BCABF92E47451900B2B6E4 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -225,7 +119,6 @@
 			projectRoot = "";
 			targets = (
 				04BCABF92E47451900B2B6E4 /* VoioDeaniy */,
-				040C4FD12EE984C500256D84 /* ImageEncryptor */,
 			);
 		};
 /* End PBXProject section */
@@ -240,35 +133,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		04DC68932EE989D200028658 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "INPUT_DIR=\"${SRCROOT}/SourceImages\"\nOUTPUT_DIR=\"${SRCROOT}/EncryptedAssets\"\nTOOL=\"${SRCROOT}/ImageEncryptor/build/Release/ImageEncryptor\"\n\nKEY=\"1234567890123456\"\nIV=\"1234567890123456\"\n\necho \"🔐 开始自动加密图片...\"\n\n$TOOL \\\n    --input \"$INPUT_DIR\" \\\n    --output \"$OUTPUT_DIR\" \\\n    --key \"$KEY\" \\\n    --iv \"$IV\"\n\necho \"🎉 图片加密完成\"\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		040C4FCE2EE984C500256D84 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04BCABF62E47451900B2B6E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,37 +143,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		04DC68922EE989B700028658 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 040C4FD12EE984C500256D84 /* ImageEncryptor */;
-			targetProxy = 04DC68912EE989B700028658 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		040C4FD72EE984C500256D84 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		040C4FD82EE984C500256D84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		04BCAC0E2E47451C00B2B6E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -507,15 +342,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		040C4FD62EE984C500256D84 /* Build configuration list for PBXNativeTarget "ImageEncryptor" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				040C4FD72EE984C500256D84 /* Debug */,
-				040C4FD82EE984C500256D84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		04BCABF52E47451900B2B6E4 /* Build configuration list for PBXProject "VoioDeaniy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
