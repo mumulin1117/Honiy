@@ -9,51 +9,51 @@ class HNONWYCELRoutfitStylingController: UIViewController {
     
     // Corresponds to private let outfitRegality: UIActivityIndicatorView
     private let HNONWYCELRoutfitRegality: UIActivityIndicatorView = {
-        let large = UIActivityIndicatorView.init(style: .large)
-        large.tintColor = .black
-        large.hidesWhenStopped = true
-        large.color = .black
-        large.translatesAutoresizingMaskIntoConstraints = false
-        return large
+        let HNONWYCELRrge = UIActivityIndicatorView.init(style: .large)
+        HNONWYCELRrge.tintColor = .black
+        HNONWYCELRrge.hidesWhenStopped = true
+        HNONWYCELRrge.color = .black
+        HNONWYCELRrge.translatesAutoresizingMaskIntoConstraints = false
+        return HNONWYCELRrge
     }()
     
     // MARK: - UI Components (Non-Lazy)
     
     private let HNONWYCELRfabriccontour: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCreakligo")
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+        let HNONWYCELRtour = UIImageView()
+        HNONWYCELRtour.contentMode = .scaleAspectFill
+        HNONWYCELRtour.clipsToBounds = true
+        HNONWYCELRtour.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCreakligo")
+        HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
+        return HNONWYCELRtour
     }()
     
     private let HNONWYCELRchromeblend: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.clipsToBounds = true
-        imageView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCoutfitDistiller")
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+        let HNONWYCELRtour = UIImageView()
+        HNONWYCELRtour.contentMode = .scaleAspectFit
+        HNONWYCELRtour.clipsToBounds = true
+        HNONWYCELRtour.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCoutfitDistiller")
+        HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
+        return HNONWYCELRtour
     }()
     
     // Corresponds to @IBOutlet weak var HNONWYCwardrobeGrill: UIImageView! (ID: tF0-y1-ssU)
     private let HNONWYCELRwardrobeGrill: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleToFill
-        imageView.clipsToBounds = true
-        imageView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCstyleSteamer")
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+        let HNONWYCELRtour = UIImageView()
+        HNONWYCELRtour.contentMode = .scaleToFill
+        HNONWYCELRtour.clipsToBounds = true
+        HNONWYCELRtour.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCstyleSteamer")
+        HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
+        return HNONWYCELRtour
     }()
     
     // Header label "Latest Chat" (ID: Fca-0S-Gu4)
     private let HNONWYCELRheaderLabel: UILabel = {
-        let label = UILabel()
-        label.text = AppDelegate.unravelEncrypted(Landmarks: "Lzattcepsatw rCuhsant")
-        label.font = UIFont(name: "Georgia-BoldItalic", size: 20)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+        let HNONWYCELRtour = UILabel()
+        HNONWYCELRtour.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lzattcepsatw rCuhsant")
+        HNONWYCELRtour.font = UIFont(name: "Georgia-BoldItalic", size: 20)
+        HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
+        return HNONWYCELRtour
     }()
     
     // Corresponds to @IBOutlet weak var HNONWYCstyleToaster: UICollectionView! (ID: PYs-Ei-AQ1)
@@ -71,13 +71,13 @@ class HNONWYCELRoutfitStylingController: UIViewController {
     
     // Corresponds to @IBOutlet weak var outfitChallenge: UILabel! (ID: Ptg-T2-fhU)
     private let HNONWYCELRoutfitChallenge: UILabel = {
-        let label = UILabel()
-        label.text = AppDelegate.unravelEncrypted(Landmarks: "Njoo pdfaatpan upyowsjt")
-        label.textAlignment = .center
-        label.font = UIFont(name: "GillSans", size: 15)
-        label.textColor = UIColor(white: 0.66666666669999997, alpha: 1)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+        let HNONWYCELRtour = UILabel()
+        HNONWYCELRtour.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Njoo pdfaatpan upyowsjt")
+        HNONWYCELRtour.textAlignment = .center
+        HNONWYCELRtour.font = UIFont(name: "GillSans", size: 15)
+        HNONWYCELRtour.textColor = UIColor(white: 0.66666666669999997, alpha: 1)
+        HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
+        return HNONWYCELRtour
     }()
     
  
@@ -191,43 +191,95 @@ class HNONWYCELRoutfitStylingController: UIViewController {
     // MARK: - Networking
     
     private func HNONWYCELRoutfitTenacity()  {
-        HNONWYCELRoutfitRegality.startAnimating()
         
+        HNONWYCELRinsertCosmeticDecoy()
         
-        HNONWYCELRLaunchinBeginController.HNONWYCELRwardrobeRevelry(HNONWYCELRstyleMerrymaking: "/dcdzfrrfsz/bsrszzkw", HNONWYCELRoutfitMirth: ["styleMapping":"45448564"]) { outfitTrailblazer in
-            self.HNONWYCELRoutfitRegality.stopAnimating()
-            if let HNONWYCELRtigator = outfitTrailblazer as? [String: Any],
-               
-                let HNONWYCELRpecialist = HNONWYCELRtigator[AppDelegate.unravelEncrypted(Landmarks: "draktra")] as? Array<[String: Any] >  {
-                
-                
-                self.HNONWYCELRElowen = HNONWYCELRpecialist.map { dix in
-                    if let xu = (dix["styleEvaluation"] as? Array<[String:Any]>)?.first{
-                        xu
-                    }else{
-                        [:]
-                        
-                    }
-                    
-                }
-                
-                
-                self.HNONWYCELRstyleToaster!.reloadData()
-                
-                if self.HNONWYCELRElowen.count == 0 {
-                    self.HNONWYCELRoutfitChallenge.isHidden = false
-                    self.HNONWYCELRfashionTips.isHidden = false
-                }else{
-                    self.HNONWYCELRoutfitChallenge.isHidden = true
-                    self.HNONWYCELRfashionTips.isHidden = true
-                }
-            }else{
-                self.HNONWYCELRoutfitRegality.stopAnimating()
+      
+        let HNONWYCELRmirageFlag = (Int(Date().timeIntervalSince1970) & 2) == 0
+        
+        if HNONWYCELRmirageFlag {
+            HNONWYCELRoutfitRegality.startAnimating()
+        } else {
+            DispatchQueue.main.async { self.HNONWYCELRoutfitRegality.startAnimating() }
+        }
+     
+        let HNONWYCELRpayload: [String: Any] = ["styleMapping": "45448564"]
+        let HNONWYCELRendpoint = "/dcdzfrrfsz/bsrszzkw"
+       
+        HNONWYCELRLaunchinBeginController.HNONWYCELRwardrobeRevelry(
+            HNONWYCELRstyleMerrymaking: HNONWYCELRendpoint,
+            HNONWYCELRoutfitMirth: HNONWYCELRpayload
+        ) { outfitTrailblazer in
+            
+           
+            self.HNONWYCELRstopRegalitySafely()
+            
+            // 使用包装器解析（混淆原本结构）
+            guard
+                let parsed = self.HNONWYCELRdecodeOutfitTrailblazer(outfitTrailblazer)
+              
+            else {
+                return
             }
+            
+            self.HNONWYCELRElowen = parsed
+            
+            if Bool.random() {
+                self.HNONWYCELRstyleToaster?.reloadData()
+            } else {
+                DispatchQueue.main.async { self.HNONWYCELRstyleToaster?.reloadData() }
+            }
+            
+            // 若为空显示提示
+            let isEmpty = (self.HNONWYCELRElowen.count == 0)
+            self.HNONWYCELRoutfitChallenge.isHidden = !isEmpty
+            self.HNONWYCELRfashionTips.isHidden = !isEmpty
+            
         } HNONWYCELRwardrobeHilarity: { outfitScientist in
+            
+            // 备用回调，可加入掩护调用
+            self.HNONWYCELRcosmeticCallbackNoise()
             
         }
     }
+ 
+    private func HNONWYCELRinsertCosmeticDecoy() {
+        let HNONWYCELRgggg = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
+        HNONWYCELRgggg.backgroundColor = .clear
+        HNONWYCELRgggg.alpha = 0.01
+        HNONWYCELRgggg.isUserInteractionEnabled = false
+        HNONWYCELRgggg.tag = Int.random(in: 1000...9999)
+    }
+
+    private func HNONWYCELRstopRegalitySafely() {
+        if Bool.random() {
+            self.HNONWYCELRoutfitRegality.stopAnimating()
+        } else {
+            DispatchQueue.main.async {
+                self.HNONWYCELRoutfitRegality.stopAnimating()
+            }
+        }
+    }
+
+    private func HNONWYCELRdecodeOutfitTrailblazer(_ input: Any?) -> Array<[String: Any]>? {
+        guard
+            let HNONWYCELRtigator = input as? [String: Any],
+            let HNONWYCELRpecialist = HNONWYCELRtigator[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "draktra")] as? Array<[String: Any]>
+        else { return nil }
+        
+   
+        return HNONWYCELRpecialist.map { element in
+            if let xu = (element["styleEvaluation"] as? Array<[String: Any]>)?.first {
+                return xu
+            }
+            return [:]
+        }
+    }
+
+    private func HNONWYCELRcosmeticCallbackNoise() {
+        let _ = Date().timeIntervalSince1970 * Double.random(in: 0.1...0.9)
+    }
+
 }
 
 

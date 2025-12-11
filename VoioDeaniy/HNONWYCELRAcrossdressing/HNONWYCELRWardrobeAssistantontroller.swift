@@ -49,7 +49,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let HNONWYCELRlabel = UILabel()
         HNONWYCELRlabel.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRlabel.textAlignment = .center
-        HNONWYCELRlabel.text = AppDelegate.unravelEncrypted(Landmarks: "Nsop zNuacmde")
+        HNONWYCELRlabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nsop zNuacmde")
         HNONWYCELRlabel.font = UIFont.systemFont(ofSize: 22, weight: .heavy)
         HNONWYCELRlabel.textColor = .black
         return HNONWYCELRlabel
@@ -69,7 +69,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let HNONWYCELRgui = UIButton(type: .custom)
         HNONWYCELRgui.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRgui.tag = 90
-        HNONWYCELRgui.setTitle(AppDelegate.unravelEncrypted(Landmarks: "Frozldlqozwxetrns"), for: .normal)
+        HNONWYCELRgui.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Frozldlqozwxetrns"), for: .normal)
         HNONWYCELRgui.backgroundColor = UIColor(red: 0.96078, green: 0.96078, blue: 0.96078, alpha: 1)
         HNONWYCELRgui.setTitleColor(UIColor(white: 0.0, alpha: 0.51068638389999998), for: .normal)
         HNONWYCELRgui.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
@@ -81,7 +81,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let HNONWYCELRntn = UIButton(type: .custom)
         HNONWYCELRntn.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRntn.tag = 100
-        HNONWYCELRntn.setTitle(AppDelegate.unravelEncrypted(Landmarks: "Fuasnvs"), for: .normal)
+        HNONWYCELRntn.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fuasnvs"), for: .normal)
         HNONWYCELRntn.backgroundColor = UIColor(red: 0.96078, green: 0.96078, blue: 0.96078, alpha: 1)
         HNONWYCELRntn.setTitleColor(UIColor(white: 0.0, alpha: 0.51068638389999998), for: .normal)
         HNONWYCELRntn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
@@ -93,7 +93,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let HNONWYCELRbtn = UIButton(type: .custom)
         HNONWYCELRbtn.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRbtn.tag = 110
-        HNONWYCELRbtn.setTitle(AppDelegate.unravelEncrypted(Landmarks: "Wqaelslcedt"), for: .normal)
+        HNONWYCELRbtn.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Wqaelslcedt"), for: .normal)
         HNONWYCELRbtn.backgroundColor = UIColor(red: 0.96078, green: 0.96078, blue: 0.96078, alpha: 1)
         HNONWYCELRbtn.setTitleColor(UIColor(white: 0.0, alpha: 0.51068638389999998), for: .normal)
         HNONWYCELRbtn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
@@ -104,7 +104,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
     private let HNONWYCELRmyPostLabel: UILabel = {
         let HNONWYCELRbtn = UILabel()
         HNONWYCELRbtn.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRbtn.text = AppDelegate.unravelEncrypted(Landmarks: "Miym iPqovsyt")
+        HNONWYCELRbtn.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Miym iPqovsyt")
         HNONWYCELRbtn.font = UIFont(name: "GillSans-BoldItalic", size: 22) // 使用 xib 中的指定字体
         HNONWYCELRbtn.textColor = .black
         return HNONWYCELRbtn
@@ -124,7 +124,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
     private let HNONWYCELRnoDataLabel: UILabel = {
         let HNONWYCELRlbl = UILabel()
         HNONWYCELRlbl.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRlbl.text = AppDelegate.unravelEncrypted(Landmarks: "Neoo fdeaqtvaq kpkowsmt")
+        HNONWYCELRlbl.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Neoo fdeaqtvaq kpkowsmt")
         HNONWYCELRlbl.textAlignment = .center
         HNONWYCELRlbl.font = UIFont(name: "GillSans", size: 15) // 使用 xib 中的指定字体
         HNONWYCELRlbl.textColor = .lightGray

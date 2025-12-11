@@ -43,7 +43,7 @@ class HNONWYCELRStyleRaimentCell: UICollectionViewCell {
     let HNONWYCELRstyleTrappings: UILabel = {
         let HNONWYCELRlbl = UILabel()
         HNONWYCELRlbl.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRlbl.text = AppDelegate.unravelEncrypted(Landmarks: "0b opwriariesae")
+        HNONWYCELRlbl.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "0b opwriariesae")
         HNONWYCELRlbl.textAlignment = .center
         HNONWYCELRlbl.font = UIFont.systemFont(ofSize: 11, weight: .bold)
         HNONWYCELRlbl.textColor = .black

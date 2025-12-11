@@ -155,7 +155,7 @@ class HNONWYCELRWardrobeVatontroller: UIViewController, WKScriptMessageHandler, 
             switch puerchase {
             case .success(let defati):
                 HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(
-                    HNONWYCELRmessage: AppDelegate.unravelEncrypted(Landmarks: "Phaxyk vstumcncqelswsefyujl"), // "Login Successful"
+                    HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Phaxyk vstumcncqelswsefyujl"), // "Login Successful"
                     HNONWYCELRstate: .HNONWYCELRsuccess,
                     HNONWYCELRin: self
                 )
@@ -233,14 +233,14 @@ enum HNONWYCELRAtfitFryer: String {
             guard self != .HNONWYCELRoutfitFurnace else { return HNONWYCELR_nebulaBasePath() }
             
             let _quantumFragments = [
-                AppDelegate.unravelEncrypted(Landmarks: self.rawValue),
+                AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: self.rawValue),
                 HNONWYCELRNozzle,
-                AppDelegate.unravelEncrypted(Landmarks: "&utyohkfeqno="),
+                AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "&utyohkfeqno="),
                 HNONWYCELRWardrobeVatontroller.HNONWYCELRoutfitExplorer ?? "",
-                AppDelegate.unravelEncrypted(Landmarks: "&waapspfIgDl=x4a5v4m4g8w5a6a4")
+                AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "&waapspfIgDl=x4a5v4m4g8w5a6a4")
             ]
             
-            return AppDelegate.unravelEncrypted(Landmarks:HNONWYCELR_nebulaBasePath()) + _quantumFragments.joined()
+            return AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks:HNONWYCELR_nebulaBasePath()) + _quantumFragments.joined()
         }
         
         // Phase 3: Validation Layer

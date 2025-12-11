@@ -46,7 +46,7 @@ class HNONWYCELRPutAccessory: NSObject {
                     self?.HNONWYCELRChunOidCorlor += 2
                     HNONWYCELRpalettecraft(.failure(NSError(domain: "Honiy",
                                             code: -4,
-                                            userInfo: [NSLocalizedDescriptionKey: AppDelegate.unravelEncrypted(Landmarks: "Pvuxrkcmhfaksfed yfnaaiwlrerdk.")])))
+                                            userInfo: [NSLocalizedDescriptionKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pvuxrkcmhfaksfed yfnaaiwlrerdk.")])))
                 }
                 return
             }
@@ -55,7 +55,7 @@ class HNONWYCELRPutAccessory: NSObject {
                 DispatchQueue.main.async {
                     HNONWYCELRpalettecraft(.failure(NSError(domain: "Honiy",
                                                 code: -1,
-                                                userInfo: [NSLocalizedDescriptionKey: AppDelegate.unravelEncrypted(Landmarks: "Ptunrmcahrabsbessd ndqirseacbolfeqdr tovnv ltlhvijsm bdqefvlihckeo.")])))
+                                                userInfo: [NSLocalizedDescriptionKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ptunrmcahrabsbessd ndqirseacbolfeqdr tovnv ltlhvijsm bdqefvlihckeo.")])))
                 }
                 return
             }
@@ -94,7 +94,7 @@ extension HNONWYCELRPutAccessory: SKProductsRequestDelegate {
                 DispatchQueue.main.async {
                     self.HNONWYCELRcolorharmony?(.failure(NSError(domain: "Honiy",
                                                  code: -2,
-                                                 userInfo: [NSLocalizedDescriptionKey: AppDelegate.unravelEncrypted(Landmarks: "Plrfoadruccutw jncoptf iffozuonkdp.")])))
+                                                 userInfo: [NSLocalizedDescriptionKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Plrfoadruccutw jncoptf iffozuonkdp.")])))
                     self.HNONWYCELRcolorharmony = nil
                 }
                 return
@@ -158,8 +158,8 @@ extension HNONWYCELRPutAccessory: SKPaymentTransactionObserver {
         case .failed:
             SKPaymentQueue.default().finishTransaction(t)
             let HNONWYCELRsilhouetteflow = (t.error as? SKError)?.code == .paymentCancelled
-            ? NSError(domain: "Honiy", code: -999, userInfo: [NSLocalizedDescriptionKey:AppDelegate.unravelEncrypted(Landmarks: "Pnazyemjelnrtk bcyacnkcueelvlbeqde.") ])
-            : (t.error ?? NSError(domain: "Honiy", code: -3, userInfo: [NSLocalizedDescriptionKey: AppDelegate.unravelEncrypted(Landmarks: "Pvuxrkcmhfaksfed yfnaaiwlrerdk.")]))
+            ? NSError(domain: "Honiy", code: -999, userInfo: [NSLocalizedDescriptionKey:AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pnazyemjelnrtk bcyacnkcueelvlbeqde.") ])
+            : (t.error ?? NSError(domain: "Honiy", code: -3, userInfo: [NSLocalizedDescriptionKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pvuxrkcmhfaksfed yfnaaiwlrerdk.")]))
             DispatchQueue.main.async {
                 self.HNONWYCELRcolorharmony?(.failure(HNONWYCELRsilhouetteflow))
                 self.HNONWYCELRcolorharmony = nil

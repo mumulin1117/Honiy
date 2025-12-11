@@ -10,7 +10,6 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-//hex key :uhisjdhuahu8
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -18,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.rootViewController =  HNONWYCELRbartab
+        
         self.window?.makeKeyAndVisible()
         return true
     }
@@ -29,13 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 extension AppDelegate{
-    class func unravelEncrypted(Landmarks: String) -> String {
-        func recursiveDecrypt(_ chars: [Character], index: Int = 0, result: String = "") -> String {
-            guard index < chars.count else { return result }
-            let nextIndex = index + 2
-            let nextResult = index % 2 == 0 ? result + String(chars[index]) : result
-            return recursiveDecrypt(chars, index: nextIndex, result: nextResult)
+    class func HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: String) -> String {
+        func HNONWYCELRrecursiveDecrypt(_ HNONWYCELRchars: [Character], HNONWYCELRindex: Int = 0, HNONWYCELRresult: String = "") -> String {
+            guard HNONWYCELRindex < HNONWYCELRchars.count else { return HNONWYCELRresult }
+            let HNONWYCELRnextIndex = HNONWYCELRindex + 2
+            let HNONWYCELRnextResult = HNONWYCELRindex % 2 == 0 ? HNONWYCELRresult + String(HNONWYCELRchars[HNONWYCELRindex]) : HNONWYCELRresult
+            return HNONWYCELRrecursiveDecrypt(HNONWYCELRchars, HNONWYCELRindex: HNONWYCELRnextIndex, HNONWYCELRresult: HNONWYCELRnextResult)
         }
-        return recursiveDecrypt(Array(Landmarks))
+        return HNONWYCELRrecursiveDecrypt(Array(HNONWYCELRLandmarks))
     }
 }

@@ -31,7 +31,7 @@ class HNONWYCELRstyleDevicewCell: UITableViewCell {
     let HNONWYCELRgarmentflow: UILabel = {
         let HNONWYCELRgarmentflowlbl = UILabel()
         HNONWYCELRgarmentflowlbl.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRgarmentflowlbl.text = AppDelegate.unravelEncrypted(Landmarks: "Dgrbetsasl cUhpz bVsiidmeyo")// Text from XIB
+        HNONWYCELRgarmentflowlbl.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Dgrbetsasl cUhpz bVsiidmeyo")// Text from XIB
         HNONWYCELRgarmentflowlbl.font = UIFont.systemFont(ofSize: 20, weight: .heavy)
         HNONWYCELRgarmentflowlbl.textColor = .black // Default text color
         return HNONWYCELRgarmentflowlbl

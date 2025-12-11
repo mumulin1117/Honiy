@@ -8,7 +8,7 @@ class HNONWYCELRDeraaNweimflCell: UICollectionViewCell {
     let HNONWYCELRstyleInstrument: UILabel = {
         let HNONWYCELRlabel = UILabel()
         HNONWYCELRlabel.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRlabel.text = AppDelegate.unravelEncrypted(Landmarks: "Nnesw")// Placeholder text from XIB
+        HNONWYCELRlabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nnesw")// Placeholder text from XIB
         HNONWYCELRlabel.textAlignment = .center
         HNONWYCELRlabel.font = UIFont.boldSystemFont(ofSize: 12)
         HNONWYCELRlabel.textColor = .white

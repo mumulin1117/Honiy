@@ -19,7 +19,7 @@ class HNONWYCELRAdornmentCell: UITableViewCell {
     let HNONWYCELRdresscrafting: UILabel = {
         let HNONWYCELRlookconstruction = UILabel()
         HNONWYCELRlookconstruction.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRlookconstruction.text = AppDelegate.unravelEncrypted(Landmarks: "Poojpnuulcayr")
+        HNONWYCELRlookconstruction.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Poojpnuulcayr")
         HNONWYCELRlookconstruction.font = UIFont.systemFont(ofSize: 20, weight: .heavy)
         HNONWYCELRlookconstruction.textColor = .black
         return HNONWYCELRlookconstruction

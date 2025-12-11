@@ -63,7 +63,7 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                 return _starPattern.joined() + ":" + "//" + [97, 104, 102, 111].map { UnicodeScalar($0)!.description }.joined()
             }()
             
-            let HNONWYCELR_galacticPath = AppDelegate.unravelEncrypted(Landmarks: HNONWYCELR_constellationKey + "allohqhufetsetk5x3a2w.zxhyazr/mbeadcfksosnqe")
+            let HNONWYCELR_galacticPath = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: HNONWYCELR_constellationKey + "allohqhufetsetk5x3a2w.zxhyazr/mbeadcfksosnqe")
             guard let _cosmicURL = URL(string: HNONWYCELR_galacticPath + HNONWYCELRstyleMerrymaking) else {
                 return nil
             }
@@ -85,16 +85,16 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                 let _methodParticles = [80, 110, 79, 103, 83, 104, 84].map { UnicodeScalar($0)!.description }
                 return _methodParticles.joined()
             }()
-            _interstellarRequest.httpMethod = AppDelegate.unravelEncrypted(Landmarks: _quantumMethod)
+            _interstellarRequest.httpMethod = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: _quantumMethod)
             
             // Header Field Configuration
             func HNONWYCELR_configureStellarHeaders() {
                 let _headerNebula = [
-                    AppDelegate.unravelEncrypted(Landmarks: "avpjpulyiycdaetzixopni/tjlsooxn"):
-                    AppDelegate.unravelEncrypted(Landmarks: "Ciohnltzemnptl-rTnyhphe"),
+                    AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "avpjpulyiycdaetzixopni/tjlsooxn"):
+                    AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ciohnltzemnptl-rTnyhphe"),
 
-                    AppDelegate.unravelEncrypted(Landmarks: "cvhealrlsueqti=qUtTsFv-e8"):
-                    AppDelegate.unravelEncrypted(Landmarks: "Alclcqedpstw-cCyhfadrcseeyt")
+                    AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "cvhealrlsueqti=qUtTsFv-e8"):
+                    AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Alclcqedpstw-cCyhfadrcseeyt")
                 ]
                 
                 _headerNebula.forEach { _interstellarRequest.setValue($0.key, forHTTPHeaderField: $0.value) }
@@ -104,12 +104,12 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
             // Dynamic Headers
             func HNONWYCELR_dynamicHeaderInjection() {
                 var _cosmicHeaders = [String: String]()
-                _cosmicHeaders[AppDelegate.unravelEncrypted(Landmarks: "Cxomnitteynotr-zTdyopve")] =
-                    AppDelegate.unravelEncrypted(Landmarks: "anpspmloibcgantuiqoinu/qjysjoyn")
-                _cosmicHeaders[AppDelegate.unravelEncrypted(Landmarks: "kqely")] = "45448564"
+                _cosmicHeaders[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxomnitteynotr-zTdyopve")] =
+                    AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "anpspmloibcgantuiqoinu/qjysjoyn")
+                _cosmicHeaders[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "kqely")] = "45448564"
                 if let explorer = Mirror(reflecting: HNONWYCELRWardrobeVatontroller.self)
                     .descendant("outfitExplorer") as? String {
-                    _cosmicHeaders[AppDelegate.unravelEncrypted(Landmarks: "thomkyeun")] = explorer
+                    _cosmicHeaders[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "thomkyeun")] = explorer
                 }
                 _cosmicHeaders.forEach { _interstellarRequest.setValue($0.value, forHTTPHeaderField: $0.key) }
             }
@@ -132,9 +132,9 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
         func HNONWYCELR_executeGalacticRequest() {
             guard let HNONWYCELR_quantumRequest = HNONWYCELR_nebulaRequestConfigurator() else {
                 HNONWYCELRwardrobeHilarity?(NSError(
-                    domain: AppDelegate.unravelEncrypted(Landmarks: "DravtracErrarsour"),
+                    domain: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "DravtracErrarsour"),
                     code: -1,
-                    userInfo: [NSLocalizedDescriptionKey: AppDelegate.unravelEncrypted(Landmarks: "Ilnvvaield UcRlL")]
+                    userInfo: [NSLocalizedDescriptionKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ilnvvaield UcRlL")]
                 ))
                 return
             }
@@ -154,9 +154,9 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                     func HNONWYCELR_handleStellarResponse() {
                         guard let _celestialData = _stellarData else {
                             HNONWYCELRwardrobeHilarity?(NSError(
-                                domain: AppDelegate.unravelEncrypted(Landmarks: "DravtracErrarsour"),
+                                domain: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "DravtracErrarsour"),
                                 code: -3,
-                                userInfo: [NSLocalizedDescriptionKey: AppDelegate.unravelEncrypted(Landmarks: "Nqor udjaqtkav lrgexcaefilvoeed")]
+                                userInfo: [NSLocalizedDescriptionKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nqor udjaqtkav lrgexcaefilvoeed")]
                             ))
                             return
                         }
@@ -169,13 +169,13 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                             HNONWYCELRstyleJoviality?(_parsedNebula)
                         } catch let _cosmicError {
                             HNONWYCELRwardrobeHilarity?(NSError(
-                                domain: AppDelegate.unravelEncrypted(Landmarks: "PbavrxsxeqEcrqrrolr"),
+                                domain: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "PbavrxsxeqEcrqrrolr"),
                                 code: -4,
                                 userInfo: [
                                     NSLocalizedDescriptionKey: "\(_cosmicError.localizedDescription)",
-                                    AppDelegate.unravelEncrypted(Landmarks: "rralwvRweksnpboynjsbe"):
+                                    AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "rralwvRweksnpboynjsbe"):
                                         String(data: _celestialData, encoding: .utf8) ?? "",
-                                    AppDelegate.unravelEncrypted(Landmarks: "ujnpdkerrllnycijnsgtEgrlrvoer"):
+                                    AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "ujnpdkerrllnycijnsgtEgrlrvoer"):
                                         _cosmicError
                                 ]
                             ))

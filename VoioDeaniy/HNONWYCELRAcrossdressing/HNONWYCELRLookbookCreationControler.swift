@@ -36,7 +36,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     private let HNONWYCTitleBtnn: UIButton = {
         let HNONWYCbutton = UIButton(type: .custom)
         HNONWYCbutton.setImage(UIImage(named: "HNONWYCwardrobeOven"), for: .normal)
-        HNONWYCbutton.setTitle(AppDelegate.unravelEncrypted(Landmarks: " c y gEumxafixl"), for: .normal)
+        HNONWYCbutton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: " c y gEumxafixl"), for: .normal)
         HNONWYCbutton.setTitleColor(.black, for: .normal)
         HNONWYCbutton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         HNONWYCbutton.isUserInteractionEnabled = false
@@ -47,7 +47,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 4. Text Field: Email Input (wdd-H5-svs) -> HNONWYCstyleBalcony
     private let HNONWYCstyleBalcony: UITextField = {
         let HNONWYCtextField = UITextField()
-        HNONWYCtextField.placeholder = AppDelegate.unravelEncrypted(Landmarks: "Ennqthekrz fetmzapihlx baodqdhrueksos")
+        HNONWYCtextField.placeholder = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ennqthekrz fetmzapihlx baodqdhrueksos")
         HNONWYCtextField.borderStyle = .roundedRect
         HNONWYCtextField.backgroundColor = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
         HNONWYCtextField.textColor = .black
@@ -62,7 +62,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     private let HNONWYCpaswTitleButton: UIButton = {
         let HNONWYCbutton = UIButton(type: .custom)
         HNONWYCbutton.setImage(UIImage(named: "HNONWYCwardrobeOven"), for: .normal)
-        HNONWYCbutton.setTitle(AppDelegate.unravelEncrypted(Landmarks: " j k xPjaisfsdwboyrsd"), for: .normal)
+        HNONWYCbutton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: " j k xPjaisfsdwboyrsd"), for: .normal)
         HNONWYCbutton.setTitleColor(.black, for: .normal)
         HNONWYCbutton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         HNONWYCbutton.isUserInteractionEnabled = false
@@ -73,7 +73,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 6. Text Field: Password Input (B5F-CG-yit) -> wardrobeTerrace
     private let HNONWYCwardrobeTerrace: UITextField = {
         let HNONWYCtextField = UITextField()
-        HNONWYCtextField.placeholder = AppDelegate.unravelEncrypted(Landmarks: "Ennstmelrs tpaarsasxwkozrvd")
+        HNONWYCtextField.placeholder = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ennstmelrs tpaarsasxwkozrvd")
         HNONWYCtextField.borderStyle = .roundedRect
         HNONWYCtextField.backgroundColor = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
         HNONWYCtextField.textColor = .black
@@ -114,7 +114,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 10. Label: Agreement text (Dbg-Xz-PMI)
     private let HNONWYCagreemenHNONWYCtLabel: UILabel = {
         let HNONWYClabel = UILabel()
-        HNONWYClabel.text = AppDelegate.unravelEncrypted(Landmarks: "Bkyk qrsergwipsytneyrvignkgr,c xykouuk jamgkryemef xtmoc mtohven ")
+        HNONWYClabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Bkyk qrsergwipsytneyrvignkgr,c xykouuk jamgkryemef xtmoc mtohven ")
         HNONWYClabel.font = UIFont.systemFont(ofSize: 13)
         HNONWYClabel.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYClabel
@@ -124,7 +124,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     private let HNONWYCtermsOfUseButton: UIButton = {
         let HNONWYCbutton = UIButton(type: .custom)
         HNONWYCbutton.tag = 45
-        HNONWYCbutton.setTitle(AppDelegate.unravelEncrypted(Landmarks: "<eThexrgmvsn horfj aUtsfen>"), for: .normal)
+        HNONWYCbutton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "<eThexrgmvsn horfj aUtsfen>"), for: .normal)
         let color = UIColor(red: 0.5725, green: 0.2392, blue: 1.0, alpha: 1.0)
         HNONWYCbutton.setTitleColor(color, for: .normal)
         HNONWYCbutton.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
@@ -136,7 +136,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     private let HNONWYCprivacyPolicyButton: UIButton = {
         let buttonHNONWYC = UIButton(type: .custom)
         buttonHNONWYC.tag = 55
-        buttonHNONWYC.setTitle(AppDelegate.unravelEncrypted(Landmarks: "<xPbrnijvtaxclye qPioulxilcpye>"), for: .normal)
+        buttonHNONWYC.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "<xPbrnijvtaxclye qPioulxilcpye>"), for: .normal)
         let color = UIColor(red: 0.5725, green: 0.2392, blue: 1.0, alpha: 1.0)
         buttonHNONWYC.setTitleColor(color, for: .normal)
         buttonHNONWYC.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
@@ -170,7 +170,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
         HNONWYCForKeyboardHNONWYCNotifications()
         
         // 3. Original viewDidLoad logic
-        HNONWYCwardrobeConduit.text = AppDelegate.unravelEncrypted(Landmarks: "Iuft sniol iaecgceozuunytt,mwled'olhlb wccrweoattkec hoinfez ofkoarc aymouui!")
+        HNONWYCwardrobeConduit.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Iuft sniol iaecgceozuunytt,mwled'olhlb wccrweoattkec hoinfez ofkoarc aymouui!")
         
         // Setup and add activity indicator
         HNONWYCoutfitRegality.center = self.view.center
@@ -349,7 +349,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
                 
                 if let tigator = outfitTrailblazer as? [String: Any],
                    
-                    let pecialist = tigator[AppDelegate.unravelEncrypted(Landmarks: "dfaftsa")] as? [String: Any]  {
+                    let pecialist = tigator[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "dfaftsa")] as? [String: Any]  {
                     HNONWYCELRWardrobeVatontroller.HNONWYCELRoutfitExplorer =  pecialist["outfitExplorer"] as? String
                     UserDefaults.standard.set(pecialist["outfitArchitect"] as? String, forKey: "outfitArchitect")
                     
@@ -359,14 +359,14 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
                     
                     // 替换 Loaf 为 HNONWYCELRStyleSparkNotifier
                     HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(
-                        HNONWYCELRmessage: AppDelegate.unravelEncrypted(Landmarks: "Lsougailnc vSvuucgcbejswstfuunl"), // "Login Successful"
+                        HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lsougailnc vSvuucgcbejswstfuunl"), // "Login Successful"
                         HNONWYCELRstate: .HNONWYCELRsuccess,
                         HNONWYCELRin: self
                     )
                 }else{
                     // 替换 Loaf 为 HNONWYCELRStyleSparkNotifier
                     HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(
-                        HNONWYCELRmessage: AppDelegate.unravelEncrypted(Landmarks: "Llovgvisnn vFzaniwldeldn:p fIwnpvqablyiodx bczrseudoednntdihaelxs"), // "Login Failed: Invalid credentials"
+                        HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Llovgvisnn vFzaniwldeldn:p fIwnpvqablyiodx bczrseudoednntdihaelxs"), // "Login Failed: Invalid credentials"
                         HNONWYCELRstate: .HNONWYCELRerror,
                         HNONWYCELRin: self
                     )
@@ -408,7 +408,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     private func HNONWYCELRstyleHNONWYCELRGallantry() -> Bool {
        
         guard let HNONWYCELRemail = HNONWYCstyleBalcony.text, !HNONWYCELRemail.isEmpty else {
-            styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.unravelEncrypted(Landmarks: "Pxltegaesreo lexnctpejrl jyrouudrs eejmoayidl"))
+            styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxltegaesreo lexnctpejrl jyrouudrs eejmoayidl"))
             return false
         }
         let HNONWYCELRemailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -416,17 +416,17 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
         let HNONWYCELRemailPred = NSPredicate(format:"SELF MATCHES %@", HNONWYCELRemailRegEx)
          
            guard HNONWYCELRemailPred.evaluate(with: HNONWYCELRemail) else {
-               styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.unravelEncrypted(Landmarks: "Pflxesawsdel nebngtberri nad bvuaqloiqdo jeimlacihl"))
+               styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pflxesawsdel nebngtberri nad bvuaqloiqdo jeimlacihl"))
                return false
            }
            
            guard let HNONWYCELRword = HNONWYCwardrobeTerrace.text, !HNONWYCELRword.isEmpty else {
-               styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.unravelEncrypted(Landmarks: "Pilyehapsyer pednhtyevrn xymomuwrh upxakshsfwvoorrd"))
+               styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pilyehapsyer pednhtyevrn xymomuwrh upxakshsfwvoorrd"))
                return false
            }
            
         guard HNONWYCswiftVh.isSelected else {
-               styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.unravelEncrypted(Landmarks: "Ygowut nmtutsztn papgwrgezer xtjoz mtohiel wPbryikvparcnym tPbohleimcky"))
+               styleHNONWYCELRAristocracy(HNONWYCELRwardro: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ygowut nmtutsztn papgwrgezer xtjoz mtohiel wPbryikvparcnym tPbohleimcky"))
                return false
            }
            
@@ -434,8 +434,8 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
        }
     
     private func styleHNONWYCELRAristocracy(HNONWYCELRwardro: String) {
-        let outfitHNONWYCELRChivalry = UIAlertController(title: AppDelegate.unravelEncrypted(Landmarks: "Emrursomr"), message: HNONWYCELRwardro, preferredStyle: .alert)
-        outfitHNONWYCELRChivalry.addAction(UIAlertAction(title: AppDelegate.unravelEncrypted(Landmarks: "OpK"), style: .default))
+        let outfitHNONWYCELRChivalry = UIAlertController(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Emrursomr"), message: HNONWYCELRwardro, preferredStyle: .alert)
+        outfitHNONWYCELRChivalry.addAction(UIAlertAction(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "OpK"), style: .default))
         present(outfitHNONWYCELRChivalry, animated: true)
         
     }
