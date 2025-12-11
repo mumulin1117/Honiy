@@ -65,7 +65,7 @@ class HNONWYCEOutfitHeaterCell: UICollectionViewCell {
         HNONWYCELRcelebrationwearf.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRcelebrationwearf.clipsToBounds = true
         HNONWYCELRcelebrationwearf.contentMode = .scaleAspectFit
-        HNONWYCELRcelebrationwearf.image = UIImage(named: "HNONWYCoutfitAs") // Assumes image asset exists
+        HNONWYCELRcelebrationwearf.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCoutfitAs") // Assumes image asset exists
         return HNONWYCELRcelebrationwearf
     }()
     
@@ -75,7 +75,7 @@ class HNONWYCEOutfitHeaterCell: UICollectionViewCell {
         HNONWYCELRfestiveconceptg.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRfestiveconceptg.clipsToBounds = true
         HNONWYCELRfestiveconceptg.contentMode = .scaleAspectFit
-        HNONWYCELRfestiveconceptg.image = UIImage(named: "HNONWYCwardrobeCooler") // Assumes image asset exists
+        HNONWYCELRfestiveconceptg.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCwardrobeCooler") // Assumes image asset exists
         return HNONWYCELRfestiveconceptg
     }()
     
@@ -83,7 +83,7 @@ class HNONWYCEOutfitHeaterCell: UICollectionViewCell {
     let HNONWYCEoutfitFurnace: UIButton = {
         let HNONWYCELRseasonalglowd = UIButton(type: .custom)
         HNONWYCELRseasonalglowd.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRseasonalglowd.setImage(UIImage(named: "HNONWYCsstyleInstrument"), for: .normal) // Assumes image asset exists
+        HNONWYCELRseasonalglowd.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCsstyleInstrument"), for: .normal) // Assumes image asset exists
         return HNONWYCELRseasonalglowd
     }()
     

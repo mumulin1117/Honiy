@@ -56,6 +56,7 @@ class HNONWYCELRUseriannimflCell: UICollectionViewCell {
             HNONWYCELRstyleGear.heightAnchor.constraint(equalToConstant: 60), // YQf-NO-xxb
             
             // wardrobeParaphernalia (Label: kbW-xf-3xI) Constraints
+            HNONWYCELRwardrobeParaphernalia.widthAnchor.constraint(equalToConstant: 60),
             HNONWYCELRwardrobeParaphernalia.centerXAnchor.constraint(equalTo: contentView.centerXAnchor), // 8ur-dw-q4K
             HNONWYCELRwardrobeParaphernalia.topAnchor.constraint(equalTo: HNONWYCELRstyleGear.bottomAnchor, constant: 6), // XTI-5Y-QSo
         ])

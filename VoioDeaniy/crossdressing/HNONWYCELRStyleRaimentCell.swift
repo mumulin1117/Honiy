@@ -57,7 +57,7 @@ class HNONWYCELRStyleRaimentCell: UICollectionViewCell {
         let HNONWYCELRtton = UIButton(type: .custom)
         HNONWYCELRtton.translatesAutoresizingMaskIntoConstraints = false
         // Assumes "HNONWYCoutfitWay" is an asset available
-        HNONWYCELRtton.setImage(UIImage(named: "HNONWYCoutfitWay"), for: .normal)
+        HNONWYCELRtton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCoutfitWay"), for: .normal)
         return HNONWYCELRtton
     }()
     
@@ -66,7 +66,7 @@ class HNONWYCELRStyleRaimentCell: UICollectionViewCell {
         let HNONWYCELRton = UIButton(type: .custom)
         HNONWYCELRton.translatesAutoresizingMaskIntoConstraints = false
         // Assumes "HNONWYCqinfu" is an asset available
-        HNONWYCELRton.setImage(UIImage(named: "HNONWYCqinfu"), for: .normal)
+        HNONWYCELRton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCqinfu"), for: .normal)
         return HNONWYCELRton
     }()
     
@@ -77,7 +77,7 @@ class HNONWYCELRStyleRaimentCell: UICollectionViewCell {
         HNONWYCELRimg.clipsToBounds = true
         HNONWYCELRimg.contentMode = .scaleAspectFit
         // Assumes "HNONWYCstyleOut" is an asset available
-        HNONWYCELRimg.image = UIImage(named: "HNONWYCstyleOut")
+        HNONWYCELRimg.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCstyleOut")
         return HNONWYCELRimg
     }()
     

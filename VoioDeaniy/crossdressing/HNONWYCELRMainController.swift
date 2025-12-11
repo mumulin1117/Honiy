@@ -48,40 +48,40 @@ extension HNONWYCELRStyleHighway {
      let HNONWYCELRoutfitBoulevard = HNONWYCELROutfitBoulevardntroler()
      HNONWYCELRoutfitBoulevard.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "HNONWYCvirtual0"),
-         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator0")
+         image: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCvirtual0")?.withRenderingMode(.alwaysOriginal),
+         selectedImage: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELhairstyleGenerator0")?.withRenderingMode(.alwaysOriginal)
      )
 
      // 2. Outfit Heater Controller (HNONWYCvirtual1 / HNONWYCELhairstyleGenerator1)
      let HNONWYCELRoutfitHeater = HNONWYCELROutfitHeaterController()
      HNONWYCELRoutfitHeater.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "HNONWYCvirtual1"),
-         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator1")
+         image: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCvirtual1")?.withRenderingMode(.alwaysOriginal),
+         selectedImage: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELhairstyleGenerator1")?.withRenderingMode(.alwaysOriginal)
      )
 
      // 3. DefaultViewController3 (HNONWYCELhairstyleGenerator2 / HNONWYCELhairstyleGenerator2)
      let HNONWYCELRdefaultVC3 = UIViewController()
      HNONWYCELRdefaultVC3.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "virtual2"),
-         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator3")
+         image: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELhairstyleGenerator2")?.withRenderingMode(.alwaysOriginal),
+         selectedImage: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELhairstyleGenerator2")?.withRenderingMode(.alwaysOriginal)
      )
 
      // 4. outfitStylingController (VNS-kv-egy - Missing item in XML, using a default)
      let HNONWYCELRoutfitStyling = HNONWYCELRoutfitStylingController()
      HNONWYCELRoutfitStyling.tabBarItem = UITabBarItem(
-         title: "",
-         image: UIImage(named: "HNONWYCvirtual3"), // Image missing in XML, set to nil
-         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator3")
+        title: "",
+     image: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCvirtual3")?.withRenderingMode(.alwaysOriginal), // Image missing in XML, set to nil
+        selectedImage: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELhairstyleGenerator3")?.withRenderingMode(.alwaysOriginal)
      )
 
      // 5. DefaultViewController5 (ACq-Oi-3Wd - Missing scene/item in XML, using a default)
      let HNONWYCELRltVC5 = HNONWYCELRWardrobeAssistantontroller()
      HNONWYCELRltVC5.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "HNONWYCvirtual4"), // Image missing in XML, set to nil
-         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator4")
+         image: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCvirtual4")?.withRenderingMode(.alwaysOriginal), // Image missing in XML, set to nil
+         selectedImage: HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCELhairstyleGenerator4")?.withRenderingMode(.alwaysOriginal)
      )
 
      // Set the view controllers in the Tab Bar Controller

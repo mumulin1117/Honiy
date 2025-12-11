@@ -35,7 +35,7 @@ class HNONWYCELRWardrobeVatontroller: UIViewController, WKScriptMessageHandler, 
         func _galacticBackgroundSetup() {
             let cosmicCanvas = UIImageView(frame: UIScreen.main.bounds)
             cosmicCanvas.contentMode = .scaleAspectFill
-            cosmicCanvas.image = UIImage(named: "HNONWYCreakligo")
+            cosmicCanvas.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCreakligo")
             view.addSubview(cosmicCanvas)
         }
         _galacticBackgroundSetup()

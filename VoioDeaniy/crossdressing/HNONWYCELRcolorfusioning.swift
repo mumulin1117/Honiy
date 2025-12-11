@@ -35,10 +35,10 @@ extension Data {
 
 // MARK: - 3. 图片解密加载器 (Image Decryption Loader)
 
-class EncryptedImageLoader {
+class HNONWYCELRcolorfusioning {
     
     // 密钥初始化
-    private static var decryptionKey: SymmetricKey? = {
+    private static var HNONWYCELRfabricsurface: SymmetricKey? = {
         guard let keyData = Data(hexString: HEX_KEY), keyData.count == 32 else {
             fatalError("Decryption key error: Invalid HEX_KEY provided.")
         }
@@ -47,8 +47,8 @@ class EncryptedImageLoader {
 
     /// 从 App Bundle 中加载并解密图片
     /// - Parameter name: 加密文件的名称 (不带后缀, 例如 "my_icon" 对应 "my_icon.enc")
-    static func load(named name: String) -> UIImage? {
-        guard let key = decryptionKey else { return nil }
+    static func HNONWYCELRgarmentripple(HNONWYCELRpaletteform name: String) -> UIImage? {
+        guard let key = HNONWYCELRfabricsurface else { return nil }
         
         // 1. 读取加密文件
         guard let url = Bundle.main.url(forResource: name, withExtension: ENCRYPTED_EXTENSION),
@@ -76,8 +76,16 @@ class EncryptedImageLoader {
             
             let decryptedData = try AES.GCM.open(sealedBox, using: key)
             
-            // 4. 转换为 UIImage
-            return UIImage(data: decryptedData)
+            // 4. 创建 UIImage（此处 scale 默认=1，必须修复）
+                  
+            guard let decoded = UIImage(data: decryptedData) else { return nil }
+            
+            // 关键修复：假设所有图片都是 @3x
+            if let cg = decoded.cgImage {
+                return UIImage(cgImage: cg, scale: 3, orientation: .up)
+            } else {
+                return decoded
+            }
             
         } catch {
             print("DECRYPTION FAILED for \(name): \(error.localizedDescription)")

@@ -11,7 +11,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         vieHNONWYCELRw.translatesAutoresizingMaskIntoConstraints = false
         vieHNONWYCELRw.clipsToBounds = true
         vieHNONWYCELRw.contentMode = .scaleAspectFill
-        vieHNONWYCELRw.image = UIImage(named: "HNONWYCreakligo")
+        vieHNONWYCELRw.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCreakligo")
         return vieHNONWYCELRw
     }()
     
@@ -21,7 +21,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         viewHNONWYCELR.translatesAutoresizingMaskIntoConstraints = false
         viewHNONWYCELR.clipsToBounds = true
         viewHNONWYCELR.contentMode = .scaleAspectFit
-        viewHNONWYCELR.image = UIImage(named: "HNONWYCstyleTerrace")
+        viewHNONWYCELR.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCstyleTerrace")
         return viewHNONWYCELR
     }()
     
@@ -30,7 +30,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let HNONWYCELRton = UIButton(type: .custom)
         HNONWYCELRton.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRton.tag = 70
-        HNONWYCELRton.setImage(UIImage(named: "HNONWYCwardrobeBrewer"), for: .normal)
+        HNONWYCELRton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCwardrobeBrewer"), for: .normal)
         return HNONWYCELRton
     }()
     
@@ -40,7 +40,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         HNONWYCELRview.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRview.clipsToBounds = true
         HNONWYCELRview.contentMode = .scaleAspectFill
-        HNONWYCELRview.image = UIImage(named: "HNONWYCELRbznodu")
+        HNONWYCELRview.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELRbznodu")
         return HNONWYCELRview
     }()
     
@@ -60,7 +60,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let HNONWYCELRnbtn = UIButton(type: .custom)
         HNONWYCELRnbtn.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRnbtn.tag = 80
-        HNONWYCELRnbtn.setImage(UIImage(named: "HNONWYCELREdijtu"), for: .normal)
+        HNONWYCELRnbtn.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCELREdijtu"), for: .normal)
         return HNONWYCELRnbtn
     }()
     
@@ -116,7 +116,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         HNONWYCELRview.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRview.clipsToBounds = true
         HNONWYCELRview.contentMode = .scaleAspectFit
-        HNONWYCELRview.image = UIImage(named: "HNONWYCELReppaloei")
+        HNONWYCELRview.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELReppaloei")
         return HNONWYCELRview
     }()
     
@@ -136,8 +136,8 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         // 设置 Tab Bar Item
-        let tabBarImage = UIImage(named: "HNONWYCvirtual4")
-        let selectedTabBarImage = UIImage(named: "HNONWYCELhairstyleGenerator4")
+        let tabBarImage = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCvirtual4")
+        let selectedTabBarImage = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELhairstyleGenerator4")
         self.tabBarItem = UITabBarItem(title: "", image: tabBarImage, selectedImage: selectedTabBarImage)
     }
     

@@ -18,7 +18,7 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         let HNONWYCELRdesignfabric = UIImageView()
         HNONWYCELRdesignfabric.contentMode = .scaleAspectFill
         HNONWYCELRdesignfabric.clipsToBounds = true
-        HNONWYCELRdesignfabric.image = UIImage(named: "HNONWYCreakligo")
+        HNONWYCELRdesignfabric.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCreakligo")
         HNONWYCELRdesignfabric.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRdesignfabric
     }()
@@ -27,7 +27,7 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         let HNONWYCELRcolorfield = UIImageView()
         HNONWYCELRcolorfield.contentMode = .scaleAspectFit
         HNONWYCELRcolorfield.clipsToBounds = true
-        HNONWYCELRcolorfield.image = UIImage(named: "HNONWYCstyleMotor")
+        HNONWYCELRcolorfield.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCstyleMotor")
         HNONWYCELRcolorfield.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRcolorfield
     }()
@@ -37,7 +37,7 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         let HNONWYCELRtextileflow = UIImageView()
         HNONWYCELRtextileflow.contentMode = .scaleToFill
         HNONWYCELRtextileflow.clipsToBounds = true
-        HNONWYCELRtextileflow.image = UIImage(named: "HNONWYCwardrobeImplement")
+        HNONWYCELRtextileflow.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCwardrobeImplement")
         HNONWYCELRtextileflow.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRtextileflow
     }()
@@ -46,8 +46,8 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         let HNONWYCELRchromaenhance = UIButton(type: .custom)
         HNONWYCELRchromaenhance.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRchromaenhance.tag = HNONWYCELRtag
-        HNONWYCELRchromaenhance.setBackgroundImage(UIImage(named: HNONWYCELRnormalImage), for: .normal)
-        HNONWYCELRchromaenhance.setBackgroundImage(UIImage(named: HNONWYCELRselectedImage), for: .selected)
+        HNONWYCELRchromaenhance.setBackgroundImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:HNONWYCELRnormalImage), for: .normal)
+        HNONWYCELRchromaenhance.setBackgroundImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRselectedImage), for: .selected)
         HNONWYCELRchromaenhance.isSelected = HNONWYCELRisSelected
         HNONWYCELRchromaenhance.backgroundColor = .clear
         return HNONWYCELRchromaenhance

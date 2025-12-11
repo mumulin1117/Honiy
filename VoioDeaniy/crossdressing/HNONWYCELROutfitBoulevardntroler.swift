@@ -66,7 +66,7 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
         let HNONWYCELRdesignsymmetry = UIImageView()
         HNONWYCELRdesignsymmetry.contentMode = .scaleAspectFill
         HNONWYCELRdesignsymmetry.clipsToBounds = true
-        HNONWYCELRdesignsymmetry.image = UIImage(named: "HNONWYCreakligo")
+        HNONWYCELRdesignsymmetry.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCreakligo")
         HNONWYCELRdesignsymmetry.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRdesignsymmetry
     }()
@@ -75,14 +75,14 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
         let HNONWYCELRaccentweaving = UIImageView()
         HNONWYCELRaccentweaving.contentMode = .scaleAspectFit
         HNONWYCELRaccentweaving.clipsToBounds = true
-        HNONWYCELRaccentweaving.image = UIImage(named: "HNONWYCstyleTerrace")
+        HNONWYCELRaccentweaving.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCstyleTerrace")
         HNONWYCELRaccentweaving.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRaccentweaving
     }()
     
     private let HNONWYCELRwardrobeContraptionButton: UIButton = {
         let HNONWYCELRcooltoneshiftbutton = UIButton(type: .custom)
-        HNONWYCELRcooltoneshiftbutton.setImage(UIImage(named: "HNONWYCwardrobeVista"), for: .normal)
+        HNONWYCELRcooltoneshiftbutton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCwardrobeVista"), for: .normal)
         HNONWYCELRcooltoneshiftbutton.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRcooltoneshiftbutton
     }()

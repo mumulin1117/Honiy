@@ -8,7 +8,6 @@
 
 
 import UIKit
-//import Loaf
 
 class HNONWYCELRLookbookCreationControler: UIViewController {
 
@@ -121,7 +120,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
         return HNONWYClabel
     }()
     
-    // 11. Button: Terms of Use (<Terms of Use>) (90b-OB-InJ)
+   
     private let HNONWYCtermsOfUseButton: UIButton = {
         let HNONWYCbutton = UIButton(type: .custom)
         HNONWYCbutton.tag = 45

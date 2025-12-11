@@ -23,7 +23,7 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.image = UIImage(named: "HNONWYCreakligo")
+        imageView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCreakligo")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -32,7 +32,7 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.image = UIImage(named: "HNONWYCoutfitDistiller")
+        imageView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCoutfitDistiller")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -42,7 +42,7 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
         imageView.clipsToBounds = true
-        imageView.image = UIImage(named: "HNONWYCstyleSteamer")
+        imageView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCstyleSteamer")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -64,7 +64,7 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.image = UIImage(named: "HNONWYCELReppaloei")
+        imageView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELReppaloei")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
