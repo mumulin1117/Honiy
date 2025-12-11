@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reakligo" translatesAutoresizingMaskIntoConstraints="NO" id="HbI-ah-FaM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HNONWYCreakligo" translatesAutoresizingMaskIntoConstraints="NO" id="HbI-ah-FaM">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bznodu" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-EZ-vjf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HNONWYCELRbznodu" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-EZ-vjf">
                                 <rect key="frame" x="132" y="204" width="129" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="5mj-WM-fgg"/>
@@ -54,8 +53,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bznodu" width="100" height="100"/>
-        <image name="reakligo" width="375" height="812"/>
+        <image name="HNONWYCELRbznodu" width="128" height="128"/>
+        <image name="HNONWYCreakligo" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

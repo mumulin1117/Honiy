@@ -10,16 +10,14 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+//hex key :uhisjdhuahu8
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-//        let interactiveMaps = AppDelegate.unravelEncrypted(Landmarks: "Moagisn")
-        
-        let bartab = ViewController()
+
+        let HNONWYCELRbartab = HNONWYCELRLaunchinBeginController()
       
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.rootViewController =  bartab
+        self.window?.rootViewController =  HNONWYCELRbartab
         self.window?.makeKeyAndVisible()
         return true
     }

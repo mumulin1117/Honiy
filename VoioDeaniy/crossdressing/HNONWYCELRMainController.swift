@@ -7,90 +7,90 @@
 
 import UIKit
 
-class StyleHighway:  UITabBarController, UITabBarControllerDelegate {
+class HNONWYCELRStyleHighway:  UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
            super.viewDidLoad()
-        setupStyleHighway()
+        HNONWYCELRsetupStyleHighway()
            self.delegate = self
        }
 
 }
 
 
-extension StyleHighway {
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+extension HNONWYCELRStyleHighway {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect HNONWYCELRviewController: UIViewController) -> Bool {
         // 检查是否点击的是中间的 Item（假设是第2个，索引从0开始）
-        if viewController == tabBarController.viewControllers?[2] {
-            presentCustomViewController()
+        if HNONWYCELRviewController == tabBarController.viewControllers?[2] {
+            HNONWYCELRwController()
             return false // 阻止默认的切换行为
         }
         return true
     }
     
-    private func presentCustomViewController() {
-        let customVC = WardrobeVatontroller.init(styleMotor: AtfitFryer.styleMotor.wardrobeSpout(Nozzle: "")) // 你要 present 的控制器
-        customVC.outfitShroud = true
-        customVC.modalPresentationStyle = .fullScreen // 或 .pageSheet 等
-        present(customVC, animated: true, completion: nil)
+    private func HNONWYCELRwController() {
+        let HNONWYCELRVC = HNONWYCELRWardrobeVatontroller.init(HNONWYCELRstyleMotor: HNONWYCELRAtfitFryer.HNONWYCELRstyleMotor.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: "")) // 你要 present 的控制器
+        HNONWYCELRVC.HNONWYCELRoutfitShroud = true
+        HNONWYCELRVC.modalPresentationStyle = .fullScreen // 或 .pageSheet 等
+        present(HNONWYCELRVC, animated: true, completion: nil)
     }
- func setupStyleHighway() {
+ func HNONWYCELRsetupStyleHighway() {
      // Set Tab Bar appearance
-     let appearance = UITabBarAppearance()
-     appearance.configureWithOpaqueBackground()
-     appearance.backgroundColor = .white // <color key="backgroundColor" white="1"
-     tabBar.standardAppearance = appearance
+     let HNONWYCELRcongif = UITabBarAppearance()
+     HNONWYCELRcongif.configureWithOpaqueBackground()
+     HNONWYCELRcongif.backgroundColor = .white // <color key="backgroundColor" white="1"
+     tabBar.standardAppearance = HNONWYCELRcongif
      if #available(iOS 15.0, *) {
-         tabBar.scrollEdgeAppearance = appearance
+         tabBar.scrollEdgeAppearance = HNONWYCELRcongif
      }
 
-     // 1. Outfit Boulevardntroler (virtual0 / hairstyleGenerator0)
-     let outfitBoulevard = OutfitBoulevardntroler()
-     outfitBoulevard.tabBarItem = UITabBarItem(
+     // 1. Outfit Boulevardntroler (HNONWYCvirtual0 / HNONWYCELhairstyleGenerator0)
+     let HNONWYCELRoutfitBoulevard = HNONWYCELROutfitBoulevardntroler()
+     HNONWYCELRoutfitBoulevard.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "virtual0"),
-         selectedImage: UIImage(named: "hairstyleGenerator0")
+         image: UIImage(named: "HNONWYCvirtual0"),
+         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator0")
      )
 
-     // 2. Outfit Heater Controller (virtual1 / hairstyleGenerator1)
-     let outfitHeater = OutfitHeaterController()
-     outfitHeater.tabBarItem = UITabBarItem(
+     // 2. Outfit Heater Controller (HNONWYCvirtual1 / HNONWYCELhairstyleGenerator1)
+     let HNONWYCELRoutfitHeater = HNONWYCELROutfitHeaterController()
+     HNONWYCELRoutfitHeater.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "virtual1"),
-         selectedImage: UIImage(named: "hairstyleGenerator1")
+         image: UIImage(named: "HNONWYCvirtual1"),
+         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator1")
      )
 
-     // 3. DefaultViewController3 (makeupSimulation2 / makeupSimulation2)
-     let defaultVC3 = UIViewController()
-     defaultVC3.tabBarItem = UITabBarItem(
+     // 3. DefaultViewController3 (HNONWYCELhairstyleGenerator2 / HNONWYCELhairstyleGenerator2)
+     let HNONWYCELRdefaultVC3 = UIViewController()
+     HNONWYCELRdefaultVC3.tabBarItem = UITabBarItem(
          title: "",
          image: UIImage(named: "virtual2"),
-         selectedImage: UIImage(named: "hairstyleGenerator3")
+         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator3")
      )
 
      // 4. outfitStylingController (VNS-kv-egy - Missing item in XML, using a default)
-     let outfitStyling = outfitStylingController()
-     outfitStyling.tabBarItem = UITabBarItem(
+     let HNONWYCELRoutfitStyling = HNONWYCELRoutfitStylingController()
+     HNONWYCELRoutfitStyling.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "virtual3"), // Image missing in XML, set to nil
-         selectedImage: UIImage(named: "hairstyleGenerator3")
+         image: UIImage(named: "HNONWYCvirtual3"), // Image missing in XML, set to nil
+         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator3")
      )
 
      // 5. DefaultViewController5 (ACq-Oi-3Wd - Missing scene/item in XML, using a default)
-     let defaultVC5 = WardrobeAssistantontroller()
-     defaultVC5.tabBarItem = UITabBarItem(
+     let HNONWYCELRltVC5 = HNONWYCELRWardrobeAssistantontroller()
+     HNONWYCELRltVC5.tabBarItem = UITabBarItem(
          title: "",
-         image: UIImage(named: "virtual4"), // Image missing in XML, set to nil
-         selectedImage: UIImage(named: "hairstyleGenerator4")
+         image: UIImage(named: "HNONWYCvirtual4"), // Image missing in XML, set to nil
+         selectedImage: UIImage(named: "HNONWYCELhairstyleGenerator4")
      )
 
      // Set the view controllers in the Tab Bar Controller
      self.setViewControllers([
-         outfitBoulevard,
-         outfitHeater,
-         defaultVC3,
-         outfitStyling,
-         defaultVC5
+         HNONWYCELRoutfitBoulevard,
+         HNONWYCELRoutfitHeater,
+         HNONWYCELRdefaultVC3,
+         HNONWYCELRoutfitStyling,
+         HNONWYCELRltVC5
      ], animated: false)
  }
 
@@ -100,15 +100,15 @@ extension StyleHighway {
 // MARK: - Root Navigation Controller Setup
 
 // Helper function to create the root navigation controller as defined by storyboardIdentifier="JIakodJma"
-func createRootNavigationController() -> UINavigationController {
+func HNONWYCELRRootNavigationController() -> UINavigationController {
     // 1. Instantiate the root view controller (StyleHighway)
-    let styleHighway = StyleHighway()
+    let HNONWYCELRstyleHighway = HNONWYCELRStyleHighway()
     
     // 2. Instantiate the navigation controller with StyleHighway as its root
-    let navigationController = UINavigationController(rootViewController: styleHighway)
+    let HNONWYCELRVC = UINavigationController(rootViewController: HNONWYCELRstyleHighway)
 
     // 3. Apply attributes from the Storyboard
-    navigationController.navigationBar.isHidden = true // hidden="YES"
+    HNONWYCELRVC.navigationBar.isHidden = true // hidden="YES"
    
-    return navigationController
+    return HNONWYCELRVC
 }
