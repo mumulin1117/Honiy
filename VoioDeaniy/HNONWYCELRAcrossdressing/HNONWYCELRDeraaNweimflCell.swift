@@ -57,7 +57,7 @@ class HNONWYCELRDeraaNweimflCell: UICollectionViewCell {
         let HNONWYCELRbutton = UIButton(type: .custom)
         HNONWYCELRbutton.translatesAutoresizingMaskIntoConstraints = false
         // Assumes "HNONWYCEoutfitApparatus" is available in the asset catalog
-        HNONWYCELRbutton.setImage(UIImage(named: "HNONWYCEoutfitApparatus"), for: .normal)
+        HNONWYCELRbutton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCEoutfitApparatus"), for: .normal)
         return HNONWYCELRbutton
     }()
     
@@ -86,7 +86,7 @@ class HNONWYCELRDeraaNweimflCell: UICollectionViewCell {
         HNONWYCELRView.clipsToBounds = true
         HNONWYCELRView.contentMode = .scaleAspectFit
         
-        HNONWYCELRView.image = UIImage(named: "HNONWYCELRDapingu")
+        HNONWYCELRView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCELRDapingu")
         return HNONWYCELRView
     }()
     

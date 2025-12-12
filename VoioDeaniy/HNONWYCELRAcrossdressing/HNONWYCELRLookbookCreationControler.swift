@@ -16,7 +16,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 1. Image View: Background (QsY-Gg-eHh)
     private let HNONWYCELRhoniyBack: UIImageView = {
         let HNONWYCView = UIImageView()
-        HNONWYCView.image = UIImage(named: "HNONWYCreakligo")
+        HNONWYCView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCreakligo")
         HNONWYCView.contentMode = .scaleAspectFill
         HNONWYCView.clipsToBounds = true
         HNONWYCView.translatesAutoresizingMaskIntoConstraints = false
@@ -26,7 +26,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 2. Image View: Logo (9ea-eU-yhM)
     private let HNONWYClogoImageView: UIImageView = {
         let HNONWYCView = UIImageView()
-        HNONWYCView.image = UIImage(named: "HNONWYCsstyleKiln")
+        HNONWYCView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCsstyleKiln")
         HNONWYCView.contentMode = .scaleAspectFit
         HNONWYCView.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCView
@@ -35,7 +35,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 3. Button: Email Title (CsI-yf-Lc7) - Non-interactive text/icon
     private let HNONWYCTitleBtnn: UIButton = {
         let HNONWYCbutton = UIButton(type: .custom)
-        HNONWYCbutton.setImage(UIImage(named: "HNONWYCwardrobeOven"), for: .normal)
+        HNONWYCbutton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCwardrobeOven"), for: .normal)
         HNONWYCbutton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: " c y gEumxafixl"), for: .normal)
         HNONWYCbutton.setTitleColor(.black, for: .normal)
         HNONWYCbutton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -61,7 +61,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 5. Button: Password Title (iLc-Ur-O25) - Non-interactive text/icon
     private let HNONWYCpaswTitleButton: UIButton = {
         let HNONWYCbutton = UIButton(type: .custom)
-        HNONWYCbutton.setImage(UIImage(named: "HNONWYCwardrobeOven"), for: .normal)
+        HNONWYCbutton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCELRstyleCooker"), for: .normal)
         HNONWYCbutton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: " j k xPjaisfsdwboyrsd"), for: .normal)
         HNONWYCbutton.setTitleColor(.black, for: .normal)
         HNONWYCbutton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -97,7 +97,7 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 8. Button: Sign-in (vvb-DU-jyN)
     private let HNONWYCgoInButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setBackgroundImage(UIImage(named: "HNONWYCwardrobeGrill"), for: .normal)
+        button.setBackgroundImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCwardrobeGrill"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -105,8 +105,8 @@ class HNONWYCELRLookbookCreationControler: UIViewController {
     // 9. Button: Checkbox (U2I-Zc-E18) -> swiftVh
     private let HNONWYCswiftVh: UIButton = {
         let HNONWYCbutton = UIButton(type: .custom)
-        HNONWYCbutton.setImage(UIImage(named: "HNONWYCstyleToaster"), for: .normal)
-        HNONWYCbutton.setImage(UIImage(named: "HNONWYCoutfitBroiler"), for: .selected)
+        HNONWYCbutton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCELRstyleToaster"), for: .normal)
+        HNONWYCbutton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform:"HNONWYCELRoutfitBroiler"), for: .selected)
         HNONWYCbutton.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCbutton
     }()
