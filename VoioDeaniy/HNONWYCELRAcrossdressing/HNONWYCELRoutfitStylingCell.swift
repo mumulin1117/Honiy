@@ -102,7 +102,7 @@ class HNONWYCELRoutfitStylingCell: UICollectionViewCell {
     // MARK: - Data Configuration
     
     func HNONWYCELRwardrobeAccoutrement(HNONWYCELRoutfit:Dictionary<String,Any>) {
-        HNONWYCEoutfitAquifer.text =  HNONWYCELRoutfit["styleConsultant"]    as? String
+        HNONWYCEoutfitAquifer.text =  HNONWYCELRoutfit["styleSendBuff"]    as? String
         
         HNONWYCELRstyleWell.text =  HNONWYCELRoutfit["wardrobeRevamp"]    as? String
         
