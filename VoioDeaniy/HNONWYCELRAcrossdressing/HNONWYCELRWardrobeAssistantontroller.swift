@@ -52,6 +52,8 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         HNONWYCELRlabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nsop zNuacmde")
         HNONWYCELRlabel.font = UIFont.systemFont(ofSize: 22, weight: .heavy)
         HNONWYCELRlabel.textColor = .black
+        HNONWYCELRlabel.adjustsFontSizeToFitWidth = true
+        HNONWYCELRlabel.minimumScaleFactor = 0.7
         return HNONWYCELRlabel
     }()
     
@@ -157,6 +159,11 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         HNONWYCELRapplyExistingIBLogic()
         HNONWYCELRsetupActions()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        HNONWYCELRrefreshHoniyPassport()
+    }
     
     // MARK: - Setup
     
@@ -252,6 +259,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
     private func HNONWYCELRapplyExistingIBLogic() {
         // 原有 viewDidLoad 中的逻辑
         HNONWYCELRoutfitDiscovery.text = UserDefaults.standard.object(forKey: "outfitArchitect") as? String
+        HNONWYCELRrefreshHoniyPassport()
         
         HNONWYCELRoutfitValidation.layer.cornerRadius = 15
         HNONWYCELRoutfitValidation.layer.masksToBounds = true
@@ -264,6 +272,16 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         
         HNONWYCELRTriwx.layer.cornerRadius = 15
         HNONWYCELRTriwx.layer.masksToBounds = true
+    }
+
+    private func HNONWYCELRrefreshHoniyPassport() {
+        guard let HNONWYCELRprofile = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyCurrentPassport() else {
+            return
+        }
+        HNONWYCELRoutfitDiscovery.text = HNONWYCELRprofile.HNONWYCELRhoniyDisplayName
+        if let HNONWYCELRportrait = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyAvatarFrame(HNONWYCELRprofile) {
+            HNONWYCELRoutfitValidation.image = HNONWYCELRportrait
+        }
     }
     
     private func HNONWYCELRsetupActions() {
