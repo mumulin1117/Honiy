@@ -96,7 +96,7 @@ class EoutfitCuration: UIViewController  {
 //            BbckgroundImageView.center.x = self.view.center.x
 //            BbckgroundImageView.frame.origin.y = -self.view.safeAreaInsets.bottom - 55
 //
-//            BbckgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+            BbckgroundImageView.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(BbckgroundImageView)
             NSLayoutConstraint.activate([
                 BbckgroundImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),

@@ -3,9 +3,7 @@ import UIKit
 
 class HNONWYCELRWardrobeAssistantontroller: UIViewController {
     
-    // MARK: - UI Components
-    
-    // 背景图片 lOh-KN-6cO
+   
     private let HNONWYCELRfittingmode: UIImageView = {
         let vieHNONWYCELRw = UIImageView()
         vieHNONWYCELRw.translatesAutoresizingMaskIntoConstraints = false
@@ -15,7 +13,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return vieHNONWYCELRw
     }()
     
-    // 顶部 Logo c9O-v3-e32
+  
     private let HNONWYCELRcolorclarity: UIImageView = {
         let viewHNONWYCELR = UIImageView()
         viewHNONWYCELR.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +23,6 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return viewHNONWYCELR
     }()
     
-    // 顶部设置按钮 8fk-1g-6ub
     private let HNONWYCELRfabrictone: UIButton = {
         let HNONWYCELRton = UIButton(type: .custom)
         HNONWYCELRton.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +31,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRton
     }()
     
-    // 用户头像 Way-Hv-4xA (outfitValidation)
+
     private let HNONWYCELRoutfitValidation: UIImageView = {
         let HNONWYCELRview = UIImageView()
         HNONWYCELRview.translatesAutoresizingMaskIntoConstraints = false
@@ -44,7 +41,6 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRview
     }()
     
-    // 用户名标签 D57-Kg-m9r (outfitDiscovery)
     private let HNONWYCELRoutfitDiscovery: UILabel = {
         let HNONWYCELRlabel = UILabel()
         HNONWYCELRlabel.translatesAutoresizingMaskIntoConstraints = false
@@ -57,7 +53,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRlabel
     }()
     
-    // 编辑按钮 gov-DU-CEx
+   
     private let HNONWYCELRoutfitpulse: UIButton = {
         let HNONWYCELRnbtn = UIButton(type: .custom)
         HNONWYCELRnbtn.translatesAutoresizingMaskIntoConstraints = false
@@ -66,7 +62,6 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRnbtn
     }()
     
-    // Followers 按钮 y0L-u2-47l (Triw)
     private let HNONWYCELRTriw: UIButton = {
         let HNONWYCELRgui = UIButton(type: .custom)
         HNONWYCELRgui.translatesAutoresizingMaskIntoConstraints = false
@@ -78,7 +73,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRgui
     }()
     
-    // Fans 按钮 vs0-va-JqV (Triwz)
+  
     private let HNONWYCELRTriwz: UIButton = {
         let HNONWYCELRntn = UIButton(type: .custom)
         HNONWYCELRntn.translatesAutoresizingMaskIntoConstraints = false
@@ -90,7 +85,6 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRntn
     }()
     
-    // Wallet 按钮 SO0-sY-Pyy (Triwx)
     private let HNONWYCELRTriwx: UIButton = {
         let HNONWYCELRbtn = UIButton(type: .custom)
         HNONWYCELRbtn.translatesAutoresizingMaskIntoConstraints = false
@@ -102,7 +96,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRbtn
     }()
     
-    // My Post 标题 p2w-07-33h
+   
     private let HNONWYCELRmyPostLabel: UILabel = {
         let HNONWYCELRbtn = UILabel()
         HNONWYCELRbtn.translatesAutoresizingMaskIntoConstraints = false
@@ -112,7 +106,6 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRbtn
     }()
     
-    // 无数据图片 QKh-mz-Ifg
     private let HNONWYCELRnoDataImageView: UIImageView = {
         let HNONWYCELRview = UIImageView()
         HNONWYCELRview.translatesAutoresizingMaskIntoConstraints = false
@@ -122,7 +115,6 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRview
     }()
     
-    // 无数据文本 3Xb-uB-1eM
     private let HNONWYCELRnoDataLabel: UILabel = {
         let HNONWYCELRlbl = UILabel()
         HNONWYCELRlbl.translatesAutoresizingMaskIntoConstraints = false
@@ -133,11 +125,10 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         return HNONWYCELRlbl
     }()
     
-    // MARK: - Initializers
-    
+
     init() {
         super.init(nibName: nil, bundle: nil)
-        // 设置 Tab Bar Item
+       
         let tabBarImage = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCvirtual4")
         let selectedTabBarImage = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELhairstyleGenerator4")
         self.tabBarItem = UITabBarItem(title: "", image: tabBarImage, selectedImage: selectedTabBarImage)
@@ -147,8 +138,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Lifecycle
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -165,10 +155,9 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         HNONWYCELRrefreshHoniyPassport()
     }
     
-    // MARK: - Setup
-    
+   
     private func HNONWYCELRgarmentmatrix() {
-        // 添加所有子视图
+      
         view.addSubview(HNONWYCELRfittingmode)
         view.addSubview(HNONWYCELRcolorclarity)
         view.addSubview(HNONWYCELRfabrictone)
@@ -187,77 +176,66 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let safeArea = view.safeAreaLayoutGuide
         
         NSLayoutConstraint.activate([
-            // HNONWYCELRhoniyBack (lOh-KN-6cO) - Full screen
+       
             HNONWYCELRfittingmode.topAnchor.constraint(equalTo: view.topAnchor),
             HNONWYCELRfittingmode.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             HNONWYCELRfittingmode.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             HNONWYCELRfittingmode.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
-            // HNONWYClogoImageView (c9O-v3-e32)
             HNONWYCELRcolorclarity.topAnchor.constraint(equalTo: safeArea.topAnchor),
             HNONWYCELRcolorclarity.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
             HNONWYCELRcolorclarity.widthAnchor.constraint(equalToConstant: 97),
             HNONWYCELRcolorclarity.heightAnchor.constraint(equalToConstant: 42),
             
-            // settingsButton (8fk-1g-6ub)
             HNONWYCELRfabrictone.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -12),
             HNONWYCELRfabrictone.centerYAnchor.constraint(equalTo: HNONWYCELRcolorclarity.centerYAnchor),
             HNONWYCELRfabrictone.widthAnchor.constraint(equalToConstant: 42),
             HNONWYCELRfabrictone.heightAnchor.constraint(equalToConstant: 42),
             
-            // outfitValidation (Way-Hv-4xA) - Profile Pic
             HNONWYCELRoutfitValidation.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             HNONWYCELRoutfitValidation.topAnchor.constraint(equalTo: HNONWYCELRcolorclarity.bottomAnchor, constant: 19),
             HNONWYCELRoutfitValidation.widthAnchor.constraint(equalToConstant: 100),
             HNONWYCELRoutfitValidation.heightAnchor.constraint(equalToConstant: 100),
             
-            // outfitDiscovery (D57-Kg-m9r) - Username
             HNONWYCELRoutfitDiscovery.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             HNONWYCELRoutfitDiscovery.topAnchor.constraint(equalTo: HNONWYCELRoutfitValidation.bottomAnchor, constant: 13),
             HNONWYCELRoutfitDiscovery.widthAnchor.constraint(equalToConstant: 80),
             
-            // editButton (gov-DU-CEx)
             HNONWYCELRoutfitpulse.leadingAnchor.constraint(equalTo: HNONWYCELRoutfitDiscovery.trailingAnchor, constant: 2),
             HNONWYCELRoutfitpulse.centerYAnchor.constraint(equalTo: HNONWYCELRoutfitDiscovery.centerYAnchor),
             HNONWYCELRoutfitpulse.widthAnchor.constraint(equalToConstant: 42),
             HNONWYCELRoutfitpulse.heightAnchor.constraint(equalToConstant: 42),
             
-            // Triw (y0L-u2-47l) - Followers Button
             HNONWYCELRTriw.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
-            HNONWYCELRTriw.topAnchor.constraint(equalTo: HNONWYCELRoutfitpulse.bottomAnchor, constant: 20), // 228.5 + 20 = 248.5
+            HNONWYCELRTriw.topAnchor.constraint(equalTo: HNONWYCELRoutfitpulse.bottomAnchor, constant: 20),
             HNONWYCELRTriw.heightAnchor.constraint(equalToConstant: 80),
             
-            // Triwz (vs0-va-JqV) - Fans Button
             HNONWYCELRTriwz.leadingAnchor.constraint(equalTo: HNONWYCELRTriw.trailingAnchor, constant: 10),
             HNONWYCELRTriwz.centerYAnchor.constraint(equalTo: HNONWYCELRTriw.centerYAnchor),
             HNONWYCELRTriwz.heightAnchor.constraint(equalToConstant: 80),
             HNONWYCELRTriwz.widthAnchor.constraint(equalTo: HNONWYCELRTriw.widthAnchor),
             
-            // Triwx (SO0-sY-Pyy) - Wallet Button
             HNONWYCELRTriwx.leadingAnchor.constraint(equalTo: HNONWYCELRTriwz.trailingAnchor, constant: 10),
             HNONWYCELRTriwx.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -12),
             HNONWYCELRTriwx.centerYAnchor.constraint(equalTo: HNONWYCELRTriw.centerYAnchor),
             HNONWYCELRTriwx.heightAnchor.constraint(equalToConstant: 80),
             HNONWYCELRTriwx.widthAnchor.constraint(equalTo: HNONWYCELRTriw.widthAnchor),
             
-            // myPostLabel (p2w-07-33h)
             HNONWYCELRmyPostLabel.leadingAnchor.constraint(equalTo: HNONWYCELRTriw.leadingAnchor),
             HNONWYCELRmyPostLabel.topAnchor.constraint(equalTo: HNONWYCELRTriw.bottomAnchor, constant: 20),
             
-            // noDataImageView (QKh-mz-Ifg)
             HNONWYCELRnoDataImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             HNONWYCELRnoDataImageView.topAnchor.constraint(equalTo: HNONWYCELRmyPostLabel.bottomAnchor, constant: 42.5),
             HNONWYCELRnoDataImageView.widthAnchor.constraint(equalToConstant: 97),
             HNONWYCELRnoDataImageView.heightAnchor.constraint(equalToConstant: 74),
             
-            // noDataLabel (3Xb-uB-1eM)
             HNONWYCELRnoDataLabel.centerXAnchor.constraint(equalTo: HNONWYCELRnoDataImageView.centerXAnchor),
             HNONWYCELRnoDataLabel.topAnchor.constraint(equalTo: HNONWYCELRnoDataImageView.bottomAnchor, constant: 22),
         ])
     }
     
     private func HNONWYCELRapplyExistingIBLogic() {
-        // 原有 viewDidLoad 中的逻辑
+     
         HNONWYCELRoutfitDiscovery.text = UserDefaults.standard.object(forKey: "outfitArchitect") as? String
         HNONWYCELRrefreshHoniyPassport()
         
@@ -293,22 +271,20 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         HNONWYCELRTriwx.addTarget(self, action: #selector(HNONWYCELRwardrobePipe(_:)), for: .touchUpInside)
     }
 
-    // MARK: - Actions (wardrobePipe)
-    
-    // 原有的 @IBAction func wardrobePipe(_ sender: UIButton) 转换为 @objc func
+
     @objc func HNONWYCELRwardrobePipe(_ sender: UIButton) {
         var feivt =  HNONWYCELRAtfitFryer.HNONWYCELRoutfitEngine.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: "")
         
         switch sender.tag  {
-        case 70: // settingsButton
+        case 70:
             feivt = HNONWYCELRAtfitFryer.HNONWYCELRoutfitPropeller.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: "")
-        case 80: // editButton
+        case 80:
             feivt = HNONWYCELRAtfitFryer.HNONWYCELRstyleRotor.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: "")
-        case 90: // Triw (Followers)
+        case 90:
             feivt = HNONWYCELRAtfitFryer.HNONWYCELRwardrobeImpeller.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: "")
-        case 100: // Triwz (Fans)
+        case 100:
             feivt = HNONWYCELRAtfitFryer.HNONWYCELRoutfitPump.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: "")
-        case 110: // Triwx (Wallet)
+        case 110:
             feivt = HNONWYCELRAtfitFryer.HNONWYCELRwardrobeCooler.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: "")
         default:
             break

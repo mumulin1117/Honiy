@@ -2,8 +2,7 @@ import UIKit
 
 class HNONWYCELRUseriannimflCell: UICollectionViewCell {
     
-    // MARK: - UI Components (XIB Outlets)
-
+   
     let HNONWYCELRstyleGear: UIImageView = {
         let HNONWYCELReView = UIImageView()
         HNONWYCELReView.translatesAutoresizingMaskIntoConstraints = false
@@ -37,44 +36,41 @@ class HNONWYCELRUseriannimflCell: UICollectionViewCell {
         HNONWYCELRchromatictwist()
     }
     
-    // MARK: - View Setup and Styling
-
+   
     private func HNONWYCELRfibertexture() {
-        // Set background color from XIB
+        
         self.backgroundColor = .clear
         
-        // Add subviews to the cell's contentView
         contentView.addSubview(HNONWYCELRstyleGear)
         contentView.addSubview(HNONWYCELRwardrobeParaphernalia)
 
-        // Apply Constraints (Based on XIB layout)
+       
         NSLayoutConstraint.activate([
-            // styleGear (Image: 5BU-B5-Uzb) Constraints
-            HNONWYCELRstyleGear.centerXAnchor.constraint(equalTo: contentView.centerXAnchor), // Iek-49-c6J
-            HNONWYCELRstyleGear.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 2), // hEE-kI-MHa
-            HNONWYCELRstyleGear.widthAnchor.constraint(equalToConstant: 60), // 8f2-tz-0WG
-            HNONWYCELRstyleGear.heightAnchor.constraint(equalToConstant: 60), // YQf-NO-xxb
+           
+            HNONWYCELRstyleGear.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            HNONWYCELRstyleGear.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 2),
+            HNONWYCELRstyleGear.widthAnchor.constraint(equalToConstant: 60),
+            HNONWYCELRstyleGear.heightAnchor.constraint(equalToConstant: 60),
             
-            // wardrobeParaphernalia (Label: kbW-xf-3xI) Constraints
+          
             HNONWYCELRwardrobeParaphernalia.widthAnchor.constraint(equalToConstant: 60),
-            HNONWYCELRwardrobeParaphernalia.centerXAnchor.constraint(equalTo: contentView.centerXAnchor), // 8ur-dw-q4K
-            HNONWYCELRwardrobeParaphernalia.topAnchor.constraint(equalTo: HNONWYCELRstyleGear.bottomAnchor, constant: 6), // XTI-5Y-QSo
+            HNONWYCELRwardrobeParaphernalia.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            HNONWYCELRwardrobeParaphernalia.topAnchor.constraint(equalTo: HNONWYCELRstyleGear.bottomAnchor, constant: 6),
         ])
     }
     
     private func HNONWYCELRchromatictwist() {
-        // Styling from original awakeFromNib
+        
         HNONWYCELRstyleGear.layer.cornerRadius = 30
         HNONWYCELRstyleGear.layer.masksToBounds = true
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Ensure styling is applied even if instantiated from XIB (though pure code is preferred)
+        
         HNONWYCELRchromatictwist()
     }
 
-    // MARK: - Data Configuration
 
     func HNONWYCELRwardrobeAccoutrement(HNONWYCELRoutfit: Dictionary<String, Any>) {
         HNONWYCELRstyleGear.HNONWYCELRoutfitTherapist(HNONWYCELRfrom: HNONWYCELRoutfit["wardrobeAssistant"] as? String ?? "")
@@ -82,7 +78,6 @@ class HNONWYCELRUseriannimflCell: UICollectionViewCell {
     }
 }
 
-// MARK: - UIImageView Extension (Image Loading Logic)
 
 extension UIImageView {
     func HNONWYCELRoutfitTherapist(HNONWYCELRfrom Enhancer: String) {

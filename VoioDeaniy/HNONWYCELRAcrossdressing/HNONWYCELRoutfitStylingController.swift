@@ -2,12 +2,10 @@ import UIKit
 
 class HNONWYCELRoutfitStylingController: UIViewController {
     
-    // MARK: - Properties
     
-    // Corresponds to var Elowen = Array<Dictionary<String,Any>>()
     var HNONWYCELRElowen = Array<Dictionary<String,Any>>()
     
-    // Corresponds to private let outfitRegality: UIActivityIndicatorView
+ 
     private let HNONWYCELRoutfitRegality: UIActivityIndicatorView = {
         let HNONWYCELRrge = UIActivityIndicatorView.init(style: .large)
         HNONWYCELRrge.tintColor = .black

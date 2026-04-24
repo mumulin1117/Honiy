@@ -47,16 +47,16 @@ public class TgextileLuster: NSObject {
     
     // MARK: - 5. UI 配置 (宿主应用需配置)
     
-    public var APPPREFIX_LaunchBackgroundImage: String = "characterdesign"//启动页面背景图 ****
-    public var APPPREFIX_mainBackgroundImage: String = "propcollection"//登录和web页面背景图 ****
-    public var APPPREFIX_loginButtonBackImage: String = "vjiajdkld" //登录按钮背景 ****
-    public var APPPREFIX_smallImage: String = "" //登录页如果有小图 ****
+    public var APPPREFIX_LaunchBackgroundImage: String = "realowehiert"//启动页面背景图 ****
+    public var APPPREFIX_mainBackgroundImage: String = "sparkAnimatorhoniy"//登录和web页面背景图 ****
+    public var APPPREFIX_loginButtonBackImage: String = "styleEmitterHoniy" //登录按钮背景 ****
+    public var APPPREFIX_smallImage: String = "outfitRendererHoniy" //登录页如果有小图 ****
     
-    public var APPPREFIX_logButtonWidth: CGFloat = 343//登录按钮宽 ****
-    public var APPPREFIX_logButtonHeight: CGFloat = 49//登录按钮高 ****
-    public var APPPREFIX_logButtonTextColor: UIColor = .black//登录按钮字体颜色 ****
-    public var APPPREFIX_smallImageWidth: CGFloat = 0//登录页面 小图片 宽
-    public var APPPREFIX_smallImageHeight: CGFloat = 0//登录页面 小图片 高
+    public var APPPREFIX_logButtonWidth: CGFloat = 335//登录按钮宽 ****
+    public var APPPREFIX_logButtonHeight: CGFloat = 52//登录按钮高 ****
+    public var APPPREFIX_logButtonTextColor: UIColor = .clear//登录按钮字体颜色 ****
+    public var APPPREFIX_smallImageWidth: CGFloat = 202//登录页面 小图片 宽
+    public var APPPREFIX_smallImageHeight: CGFloat = 115//登录页面 小图片 高
     
     // MARK: - 6. API 路径配置 (宿主应用需配置)
     
