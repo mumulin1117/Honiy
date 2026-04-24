@@ -13,16 +13,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let HNONWYCELRbartab = HNONWYCELRLaunchinBeginController()
+       
       
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.rootViewController =  HNONWYCELRbartab
+        TgextileLuster.shared.APPPREFIX_setting_App_A_Root_Handler = { window in
+            
+            let HNONWYCELRbartab = HNONWYCELRLaunchinBeginController()
+            self.window?.rootViewController =  HNONWYCELRbartab
+        }
+        if let APPPREFIX_window = self.window {
+            HNONWCEwhimsicalMotif.shared.APPPREFIX_initializeSDK(with: APPPREFIX_window)
+        }
+        
+        window?.rootViewController = HNONWCEwhimsicalMotif.shared.APPPREFIX_getLaunchViewController()
+      
+       
         
         self.window?.makeKeyAndVisible()
         return true
     }
 
-   
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+       
+        HNONWCEwhimsicalMotif.shared.APPPREFIX_didRegisterForRemoteNotifications(deviceToken: deviceToken)
+    }
 
 
 }
