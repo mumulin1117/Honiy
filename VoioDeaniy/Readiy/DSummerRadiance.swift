@@ -9,21 +9,6 @@ import UIKit
 
 import Network
 
-public class DSummerRadiance: NSObject {
-    public var APPPREFIX_timeZone: String?
-    public var APPPREFIX_textInput: String?
-    public var APPPREFIX_localeLaunguge: String?
-    
-    public var APPPREFIX_ifDebug: String?
-
-    public init(APPPREFIX_timeZone: String?, APPPREFIX_textInput: String?, APPPREFIX_localeLaunguge: String?,  APPPREFIX_ifDebug: String?) {
-        self.APPPREFIX_timeZone = APPPREFIX_timeZone
-        self.APPPREFIX_textInput = APPPREFIX_textInput
-        self.APPPREFIX_localeLaunguge = APPPREFIX_localeLaunguge
-       
-        self.APPPREFIX_ifDebug = APPPREFIX_ifDebug
-    }
-}
 
 //app 启动页面    app启动时时候 设置windoe的根控制器 为这个控制器
 
@@ -37,7 +22,7 @@ class APPPREFIX_AppLaunchController: UIViewController {
     }()
     
     private func APPPREFIX_addBackgroundImageView()  {
-        let APPPREFIX_laungchstr = TgextileLuster.shared.APPPREFIX_LaunchBackgroundImage
+        let APPPREFIX_laungchstr = "realowehiert"
         
         let APPPREFIX_backgroundImage = UIImage(named: APPPREFIX_laungchstr)
         let APPPREFIX_BbckgroundImageView = UIImageView(image:APPPREFIX_backgroundImage )
@@ -121,7 +106,7 @@ class APPPREFIX_AppLaunchController: UIViewController {
     private func APPPREFIX_performAppLaunchRequest() {
         HNONWYCELRoutfitRegality.startAnimating()
         UserDefaults.standard.set(true, forKey: HNONWCcasualChic.APPPREFIX_76)
-        let APPPREFIX_requestPath = TgextileLuster.shared.APPPREFIX_launchDetailPath
+        let APPPREFIX_requestPath = "/opi/v1/paletteResolvero"
         var APPPREFIX_parameters: [String: Any] = [:]
         
         // MARK: - 收集语言
@@ -132,32 +117,23 @@ class APPPREFIX_AppLaunchController: UIViewController {
                     result.append(code)
                 }
             }
-        
-        if let APPPREFIX_languageKey = TgextileLuster.shared.APPPREFIX_launchParamaKey.APPPREFIX_localeLaunguge ,APPPREFIX_languageKey != ""{
-            APPPREFIX_parameters[APPPREFIX_languageKey] = APPPREFIX_uniqueLanguages
-        }
+
+        APPPREFIX_parameters["harmonyValidatore"] = APPPREFIX_uniqueLanguages
         
         // MARK: - 时区
-        let APPPREFIX_timezone = TimeZone.current.identifier
-        if let timezoneKey = TgextileLuster.shared.APPPREFIX_launchParamaKey.APPPREFIX_timeZone ,timezoneKey != ""{
-            APPPREFIX_parameters[timezoneKey] = APPPREFIX_timezone
-        }
-        
+       
+        APPPREFIX_parameters["winterLayert"] = TimeZone.current.identifier
         // MARK: - 键盘输入法
         let APPPREFIX_activeKeyboards = UITextInputMode.activeInputModes
             .compactMap { $0.primaryLanguage }
             .filter { $0 != HNONWCcasualChic.APPPREFIX_12 }
         
-        if let APPPREFIX_keyboardKey = TgextileLuster.shared.APPPREFIX_launchParamaKey.APPPREFIX_textInput,APPPREFIX_keyboardKey != "" {
-            APPPREFIX_parameters[APPPREFIX_keyboardKey] = APPPREFIX_activeKeyboards
-        }
+        APPPREFIX_parameters["harmonyValidatork"] = APPPREFIX_activeKeyboards
         
         
         
         // MARK: - debug 状态
-        if let APPPREFIX_debugKey = TgextileLuster.shared.APPPREFIX_launchParamaKey.APPPREFIX_ifDebug ,APPPREFIX_debugKey != ""{
-            APPPREFIX_parameters[APPPREFIX_debugKey] = 1
-        }
+        APPPREFIX_parameters["harmonyValidatorg"] = 1
         print(APPPREFIX_parameters)
         // MARK: - 发起请求
         HNONWCEsilkDrape.shared.APPPREFIX_postRequest(APPPREFIX_requestPath,         APPPREFIX_params: APPPREFIX_parameters) { APPPREFIX_result in

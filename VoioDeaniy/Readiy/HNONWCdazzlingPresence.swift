@@ -33,8 +33,7 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
     }()
     private var APPPREFIX_webViewContainer:WKWebView?
    
-    var APPPREFIX_pageLoadStartTime:TimeInterval = Date().timeIntervalSince1970
-    
+     
     private  var APPPREFIX_isQuickLoginEnabled = false
     private var APPPREFIX_initialURLString:String
     
@@ -75,9 +74,8 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
 
  
     private func APPPREFIX_addBackgroundImageView()  {
-        let APPPREFIX_laungchstr = TgextileLuster.shared.APPPREFIX_mainBackgroundImage
-        
-        let APPPREFIX_backgroundImage = UIImage(named: APPPREFIX_laungchstr)
+     
+        let APPPREFIX_backgroundImage = UIImage(named: "sparkAnimatorhoniy")
        
         let APPPREFIX_BbckgroundImageView = UIImageView(image:APPPREFIX_backgroundImage )
         APPPREFIX_BbckgroundImageView.contentMode = .scaleAspectFill
@@ -117,7 +115,7 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
         // 4️⃣ 加载 URL 并记录时间戳
         if let APPPREFIX_url = URL(string: APPPREFIX_initialURLString) {
             APPPREFIX_webViewContainer?.load(URLRequest(url: APPPREFIX_url))
-            APPPREFIX_pageLoadStartTime = Date().timeIntervalSince1970
+           
         }
         
         view.addSubview(APPPREFIX_webViewContainer!)
@@ -128,30 +126,19 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
     }
     private func APPPREFIX_addLoginButton()  {
         let  APPPREFIX_loginButton = UIButton.init()
-        let APPPREFIX_laungchstr = TgextileLuster.shared.APPPREFIX_loginButtonBackImage
         
-        let APPPREFIX_backgroundImage = UIImage(named: APPPREFIX_laungchstr)
+        let APPPREFIX_backgroundImage = UIImage(named: "styleEmitterHoniy")
      
         APPPREFIX_loginButton.setBackgroundImage(APPPREFIX_backgroundImage, for: .normal)
-        if TgextileLuster.shared.APPPREFIX_loginButtonBackImage == "" {
-            APPPREFIX_loginButton.layer.cornerRadius = 10
-            APPPREFIX_loginButton.layer.masksToBounds = true
-            APPPREFIX_loginButton.backgroundColor = .white
-        }
-        
-        APPPREFIX_loginButton.setTitleColor(TgextileLuster.shared.APPPREFIX_logButtonTextColor, for: .normal)
-        APPPREFIX_loginButton.setTitle(HNONWCcasualChic.APPPREFIX_22, for: .normal)
-        APPPREFIX_loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .bold)
-        APPPREFIX_loginButton.isUserInteractionEnabled = false
-        
+       
         view.addSubview(APPPREFIX_loginButton)
        
         APPPREFIX_loginButton.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             APPPREFIX_loginButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            APPPREFIX_loginButton.heightAnchor.constraint(equalToConstant: TgextileLuster.shared.APPPREFIX_logButtonHeight),
-            APPPREFIX_loginButton.widthAnchor.constraint(equalToConstant: TgextileLuster.shared.APPPREFIX_logButtonWidth),
+            APPPREFIX_loginButton.heightAnchor.constraint(equalToConstant: 52),
+            APPPREFIX_loginButton.widthAnchor.constraint(equalToConstant: 335),
             APPPREFIX_loginButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
                                               constant: -self.view.safeAreaInsets.bottom - 55)
         ])
@@ -170,10 +157,10 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
             view.addSubview(APPPREFIX_BbckgroundImageView)
             NSLayoutConstraint.activate([
                 APPPREFIX_BbckgroundImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-                APPPREFIX_BbckgroundImageView.heightAnchor.constraint(equalToConstant:TgextileLuster.shared.APPPREFIX_smallImageHeight),
-                APPPREFIX_BbckgroundImageView.widthAnchor.constraint(equalToConstant: TgextileLuster.shared.APPPREFIX_smallImageWidth),
+                APPPREFIX_BbckgroundImageView.heightAnchor.constraint(equalToConstant:115),
+                APPPREFIX_BbckgroundImageView.widthAnchor.constraint(equalToConstant: 202),
                 APPPREFIX_BbckgroundImageView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
-                                                            constant: -self.view.safeAreaInsets.bottom - 55 - TgextileLuster.shared.APPPREFIX_logButtonHeight - 30)
+                                                            constant: -self.view.safeAreaInsets.bottom - 55 - 52 - 30)
             ])
             
         }
@@ -214,7 +201,7 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
     }
     
     deinit {
-        self.APPPREFIX_webViewContainer?.configuration.userContentController.removeScriptMessageHandler(forName: "openBrowser")
+        self.APPPREFIX_webViewContainer?.configuration.userContentController.removeScriptMessageHandler(forName: HNONWCcasualChic.APPPREFIX_71)
     }
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
        
@@ -251,14 +238,7 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
         }))
        
 
-        // 3️⃣ 上报页面停留时间
-        let APPPREFIX_reportURL = TgextileLuster.shared.APPPREFIX_reportTimePath
-        let APPPREFIX_params: [String: Any] = [
-            TgextileLuster.shared.APPPREFIX_reportTimeParamaKey:
-                "\(Int(Date().timeIntervalSince1970 * 1000 - self.APPPREFIX_pageLoadStartTime * 1000))"
-        ]
-
-        HNONWCEsilkDrape.shared.APPPREFIX_postRequest(APPPREFIX_reportURL,         APPPREFIX_params: APPPREFIX_params)
+       
     }
 
     
@@ -309,17 +289,18 @@ class HNONWCdazzlingPresence: UIViewController ,WKNavigationDelegate, WKUIDelega
                         return
                     }
 
-                    // 3. 请求后端验票据
+                 
+                    
                     HNONWCEsilkDrape.shared.APPPREFIX_postRequest(
-                        TgextileLuster.shared.APPPREFIX_verifyReciptyPath,
+                        "/opi/v1/garmentNodep",
                                 APPPREFIX_params: [
-                            TgextileLuster.shared.APPPREFIX_verifyReciptyParamaKey.APPPREFIX_payload:
+                                    "compositionRootp":
                                 APPPREFIX_receiptData.base64EncodedString(),
 
-                            TgextileLuster.shared.APPPREFIX_verifyReciptyParamaKey.APPPREFIX_transactionId:
+                                    "compositionRoott":
                                 APPPREFIX_transactionID,
 
-                            TgextileLuster.shared.APPPREFIX_verifyReciptyParamaKey.APPPREFIX_callbackResult:
+                                    "compositionRootc":
                                 orderCodeJSONString
                         ],
                                 APPPREFIX_isPaymentFlow: true

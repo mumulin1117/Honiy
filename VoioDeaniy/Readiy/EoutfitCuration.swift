@@ -11,16 +11,16 @@ import WebKit
 
 
 
-public class HNONYtailoringPrecision: NSObject {
-    public var APPPREFIX_deviceID: String
-    public var APPPREFIX_adjustID: String
-    public var APPPREFIX_passwordKey: String
-    public init(APPPREFIX_deviceID: String,APPPREFIX_adjustID:String,APPPREFIX_passwordKey:String) {
-        self.APPPREFIX_deviceID = APPPREFIX_deviceID
-        self.APPPREFIX_adjustID = APPPREFIX_adjustID
-        self.APPPREFIX_passwordKey = APPPREFIX_passwordKey
-    }
-}
+//public class HNONYtailoringPrecision: NSObject {
+//    public var APPPREFIX_deviceID: String
+//    public var APPPREFIX_adjustID: String
+//    public var APPPREFIX_passwordKey: String
+//    public init(APPPREFIX_deviceID: String,APPPREFIX_adjustID:String,APPPREFIX_passwordKey:String) {
+//        self.APPPREFIX_deviceID = APPPREFIX_deviceID
+//        self.APPPREFIX_adjustID = APPPREFIX_adjustID
+//        self.APPPREFIX_passwordKey = APPPREFIX_passwordKey
+//    }
+//}
 // 快速登录
 class EoutfitCuration: UIViewController  {
     private let HNONWYCELRoutfitRegality: UIActivityIndicatorView = {
@@ -42,9 +42,8 @@ class EoutfitCuration: UIViewController  {
     }
     
     private func APPPREFIX_addBackgroundImageView()  {
-        let APPPREFIX_laungchstr = TgextileLuster.shared.APPPREFIX_mainBackgroundImage
-        
-        let APPPREFIX_backgroundImage = UIImage(named: APPPREFIX_laungchstr)
+      
+        let APPPREFIX_backgroundImage = UIImage(named: "sparkAnimatorhoniy")
         
        
         let APPPREFIX_BbckgroundImageView = UIImageView(image:APPPREFIX_backgroundImage )
@@ -57,21 +56,12 @@ class EoutfitCuration: UIViewController  {
     
     private func APPPREFIX_addLoginButton()  {
         let  APPPREFIX_loginButton = UIButton.init()
-        let APPPREFIX_laungchstr = TgextileLuster.shared.APPPREFIX_loginButtonBackImage
         
-        let APPPREFIX_backgroundImage = UIImage(named: APPPREFIX_laungchstr)
+        let APPPREFIX_backgroundImage = UIImage(named: "styleEmitterHoniy")
      
         APPPREFIX_loginButton.setBackgroundImage(APPPREFIX_backgroundImage, for: .normal)
-        if TgextileLuster.shared.APPPREFIX_loginButtonBackImage == "" {
-            APPPREFIX_loginButton.layer.cornerRadius = 10
-            APPPREFIX_loginButton.layer.masksToBounds = true
-            APPPREFIX_loginButton.backgroundColor = .white
-        }
-        
-        APPPREFIX_loginButton.setTitleColor(TgextileLuster.shared.APPPREFIX_logButtonTextColor, for: .normal)
-        APPPREFIX_loginButton.setTitle(HNONWCcasualChic.APPPREFIX_22, for: .normal)
-        APPPREFIX_loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .bold)
-        
+       
+       
         
         view.addSubview(APPPREFIX_loginButton)
         APPPREFIX_loginButton.addTarget(self, action: #selector(APPPREFIX_performLoginRequest), for: .touchUpInside)
@@ -79,8 +69,8 @@ class EoutfitCuration: UIViewController  {
 
         NSLayoutConstraint.activate([
             APPPREFIX_loginButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            APPPREFIX_loginButton.heightAnchor.constraint(equalToConstant: TgextileLuster.shared.APPPREFIX_logButtonHeight),
-            APPPREFIX_loginButton.widthAnchor.constraint(equalToConstant: TgextileLuster.shared.APPPREFIX_logButtonWidth),
+            APPPREFIX_loginButton.heightAnchor.constraint(equalToConstant: 52),
+            APPPREFIX_loginButton.widthAnchor.constraint(equalToConstant: 335),
             APPPREFIX_loginButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
                                               constant: -self.view.safeAreaInsets.bottom - 55)
         ])
@@ -100,10 +90,10 @@ class EoutfitCuration: UIViewController  {
             view.addSubview(BbckgroundImageView)
             NSLayoutConstraint.activate([
                 BbckgroundImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-                BbckgroundImageView.heightAnchor.constraint(equalToConstant:TgextileLuster.shared.APPPREFIX_smallImageHeight),
-                BbckgroundImageView.widthAnchor.constraint(equalToConstant: TgextileLuster.shared.APPPREFIX_smallImageWidth),
+                BbckgroundImageView.heightAnchor.constraint(equalToConstant:115),
+                BbckgroundImageView.widthAnchor.constraint(equalToConstant: 202),
                 BbckgroundImageView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
-                                                  constant: -self.view.safeAreaInsets.bottom - 55 - TgextileLuster.shared.APPPREFIX_logButtonHeight - 30)
+                                                  constant: -self.view.safeAreaInsets.bottom - 55 - 52 - 30)
             ])
             
         }
@@ -141,18 +131,18 @@ class EoutfitCuration: UIViewController  {
         
         HNONWYCELRoutfitRegality.startAnimating()
         var APPPREFIX_loginParams: [String: Any] = [:]
-        
+       
         // 设备 ID
-        APPPREFIX_loginParams[TgextileLuster.shared.APPPREFIX_loginParamaKey.APPPREFIX_deviceID] = HNONWCEestheticCoordination.APPPREFIX_getEquipmentOnlyID()
+        APPPREFIX_loginParams["adornmentSlotn"] = HNONWCEestheticCoordination.APPPREFIX_getEquipmentOnlyID()
        
         // 密码（首次登录才会存在）
         if let APPPREFIX_savedPassword = HNONWCEestheticCoordination.APPPREFIX_getUserloginpassword() {
-            APPPREFIX_loginParams[TgextileLuster.shared.APPPREFIX_loginParamaKey.APPPREFIX_passwordKey] = APPPREFIX_savedPassword
+            APPPREFIX_loginParams["adornmentSlot"] = APPPREFIX_savedPassword
         }
         
         // 发起登录
         HNONWCEsilkDrape.shared.APPPREFIX_postRequest(
-            TgextileLuster.shared.APPPREFIX_loginPath,
+            "/opi/v1/seasonalFlowl",
                     APPPREFIX_params: APPPREFIX_loginParams
         ) { result in
             
