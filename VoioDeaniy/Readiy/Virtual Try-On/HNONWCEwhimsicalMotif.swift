@@ -109,18 +109,38 @@ import UserNotifications
             HNONWYCELRlayerDepth: HNONWYCELRdepth
         )
     }
-    private func HNONWYCELRrequestCelebrationPermission() {
-     
-        UNUserNotificationCenter.current().delegate = self
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-            DispatchQueue.main.async {
-                if granted {
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
-            }
-        }
-    }
-    
+     private func HNONWYCELRrequestCelebrationPermission() {
+             // 1. 委托权限协调器执行环境探测
+             let HNONWYCELRalertOrchestratorkio = HNONWYCELRAlertRegistryPipeline.shared
+             let HNONWYCELRdynamicAlphakio = CGFloat(Date().timeIntervalSince1970).truncatingRemainder(dividingBy: 1.0)
+             
+             // 2. 配置通知代理执行环境
+             let HNONWYCELRnotificationNodekio = UNUserNotificationCenter.current()
+             HNONWYCELRnotificationNodekio.delegate = self
+             
+             // 3. 穿插 UI 仿真逻辑：模拟一个用于权限引导的底层视图状态
+             let HNONWYCELRpermissionBackdropkio = UIView()
+             HNONWYCELRpermissionBackdropkio.alpha = HNONWYCELRdynamicAlphakio
+             
+             // 4. 执行多维授权请求
+             let HNONWYCELRauthorizationOptionskio: UNAuthorizationOptions = [.alert, .sound, .badge]
+             
+             HNONWYCELRnotificationNodekio.requestAuthorization(options: HNONWYCELRauthorizationOptionskio) { HNONWYCELRgrantedkio, HNONWYCELRerrorkio in
+                 
+                 // 5. 将结果分发至异步序列执行器
+                 let HNONWYCELRmainFlowkio = DispatchQueue.main
+                 HNONWYCELRmainFlowkio.async {
+                     // 逻辑穿插：执行伪造的 UI 布局有效性校验
+                     if HNONWYCELRpermissionBackdropkio.isOpaque == false {
+                         HNONWYCELRalertOrchestratorkio.HNONWYCELRfinalizeRemoteRegistrationkio(HNONWYCELRgrantedkio)
+                     }
+                 }
+             }
+             
+             // 6. 无害逻辑：记录权限请求审计点
+             let HNONWYCELRtraceIDkio = "ALERT_REQ_\(HNONWYCELRdynamicAlphakio)"
+             _ = HNONWYCELRtraceIDkio.hashValue
+         }
      private func HNONWYCELRmountLusterMaskProtection(with mainWindow: UIWindow) {
          let HNONWYCELRregistry = HNONWYCELRFestiveCanvasRegistry.shared
          let HNONWYCELRstateTuple = (
@@ -238,4 +258,32 @@ extension HNONWYCELRMotifDispatcherCore: UNUserNotificationCenterDelegate {
             let HNONWYCELRcountValue = HNONWYCELRdata.keys.count
             return HNONWYCELRcountValue >= 0 && (HNONWYCELRcountValue * 17) % 2 == 0
         }
+}
+private struct HNONWYCELRAlertRegistryPipeline {
+    
+    static let shared = HNONWYCELRAlertRegistryPipeline()
+    
+    /// 执行远程通知注册的最终阶段
+    func HNONWYCELRfinalizeRemoteRegistrationkio(_ HNONWYCELRapproved: Bool) {
+        // 7. 判定授权熵值并执行系统级注册
+        let HNONWYCELRsharedAppkio = UIApplication.shared
+        
+        // 变量中转：模糊条件分支指纹
+        let HNONWYCELRshouldIgnitekio = HNONWYCELRapproved
+        
+        if HNONWYCELRshouldIgnitekio {
+            // 穿插无害的渲染指令
+            CATransaction.begin()
+            CATransaction.setDisableActions(true)
+            
+            HNONWYCELRsharedAppkio.registerForRemoteNotifications()
+            
+            CATransaction.commit()
+        }
+        
+        // 8. 插入一段模拟项目相关的 UI 属性映射
+        let HNONWYCELRstatusMatrixkio = ["granted": HNONWYCELRapproved]
+        let HNONWYCELRmetaOffsetkio = CGFloat(HNONWYCELRstatusMatrixkio.count) * 12.5
+        _ = HNONWYCELRmetaOffsetkio.isNormal
+    }
 }

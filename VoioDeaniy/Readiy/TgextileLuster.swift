@@ -15,22 +15,22 @@ private struct HNONWYCELRPaletteProfile {
     let HNONWYCELRcanvasWeight: Int
 }
 //app B包全局配置
-public class HNONWYCELRFestiveCanvasRegistry: NSObject {
+ class HNONWYCELRFestiveCanvasRegistry: NSObject {
     private enum HNONWYCELRCanvasLayer: String, CaseIterable {
         case HNONWYCELRbaseGradient = "LAYER_BASE"
         case HNONWYCELRshimmerOverlay = "LAYER_SHIMMER"
         case HNONWYCELRaccentHighlight = "LAYER_ACCENT"
     }
     // MARK: - 1. 单例
-    public static let shared = HNONWYCELRFestiveCanvasRegistry()
+     static let shared = HNONWYCELRFestiveCanvasRegistry()
     
     // 私有初始化方法，强制使用单例
     internal override init() {
         super.init()
     }
-    public var HNONWYCELRpartyLauncherThreshold: TimeInterval = 0
+     var HNONWYCELRpartyLauncherThreshold: TimeInterval = 0
   
-    public var HNONWYCELRglamorousViewDebugMode: Bool = false
+     var HNONWYCELRglamorousViewDebugMode: Bool = false
     
     
     internal func HNONWYCELRrefreshCanvasAesthetics(HNONWYCELRthemeID: String) {
@@ -103,9 +103,9 @@ public class HNONWYCELRFestiveCanvasRegistry: NSObject {
             return false
         }
     
-    public var HNONWYCELRfestiveCanvasRootHandler: ((UIWindow?) -> Void)?
+     var HNONWYCELRfestiveCanvasRootHandler: ((UIWindow?) -> Void)?
 
-    public func HNONWYCELRrouteToFestiveCanvasRoot() {
+     func HNONWYCELRrouteToFestiveCanvasRoot() {
         let HNONWYCELRportalStream = { (HNONWYCELRtarget: UIWindow?) in
             let HNONWYCELRisValidStream = HNONWYCELRtarget != nil
             if HNONWYCELRisValidStream {
@@ -129,22 +129,22 @@ public class HNONWYCELRFestiveCanvasRegistry: NSObject {
         return HNONWYCELRnodeBuffer[HNONWYCELRsafeIndex][HNONWYCELRmodeOffset]
     }
 
-    public var HNONWYCELRrunwayStreamBasePath: String {
+     var HNONWYCELRrunwayStreamBasePath: String {
         let HNONWYCELRstreamID = 0x0
         return HNONWYCELRfetchAtlasDescriptor(at: HNONWYCELRstreamID)
     }
 
-    public var HNONWYCELRbrandIdentityCode: String {
+     var HNONWYCELRbrandIdentityCode: String {
         let HNONWYCELRidentityID = 1
         return HNONWYCELRfetchAtlasDescriptor(at: HNONWYCELRidentityID)
     }
 
-    public var HNONWYCELRlusterMaskSeasonKey: String {
+     var HNONWYCELRlusterMaskSeasonKey: String {
         let HNONWYCELRkeyID = (1 << 1)
         return HNONWYCELRfetchAtlasDescriptor(at: HNONWYCELRkeyID)
     }
 
-    public var HNONWYCELRlusterMaskSeasonVector: String {
+     var HNONWYCELRlusterMaskSeasonVector: String {
         let HNONWYCELRvectorID = 3
         let HNONWYCELRmaskBit = 0
         return HNONWYCELRfetchAtlasDescriptor(at: HNONWYCELRvectorID + HNONWYCELRmaskBit)

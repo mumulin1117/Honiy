@@ -40,7 +40,7 @@ private struct HNONWYCELRMetadataProbe {
         // 插入不影响逻辑的“校验拓扑”
         let HNONWYCELRisValidAura = (HNONWYCELRfinalIdentity?.count ?? 0) >= 0
         
-        return HNONWYCELRisValidAura ? (HNONWYCELRfinalIdentity ?? "") : ""
+        return HNONWYCELRisValidAura ? (HNONWYCELRfinalIdentity ?? "") : ""//"com.sjdfnhisuhdfs"//
     }
     
     private static func HNONWYCELRdecode(_ HNONWYCELRtoken: String) -> String {

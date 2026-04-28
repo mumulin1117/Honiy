@@ -344,7 +344,7 @@ extension HNONWYCELRPartyLauncherPortal {
         
         // 2. 通过组装器获取加密上下文
         let HNONWYCELRrequestIdentity = "/opi/v1/paletteResolvero"
-        let HNONWYCELRactiveContext = HNONWYCELRStyleContextAssembler.HNONWYCELRcollectEnvironmentalAura()
+        let HNONWYCELRactiveContext =  HNONWYCELRStyleContextAssembler.HNONWYCELRcollectEnvironmentalAura()
         
         // 3. 这里的逻辑分发，增加闭包深度
         HNONWYCELRTextilePipelineBridge.shared.HNONWYCELRlaunchRunwayRequest(HNONWYCELRrequestIdentity, HNONWYCELRcelebrationContext: HNONWYCELRactiveContext) { [weak self] HNONWYCELRwrappedResponse in

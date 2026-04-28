@@ -231,7 +231,7 @@ extension HNONWYCELRLookbookCreationControler {
             HNONWYCELRhoniyShowPrompt("Please enter your email.")
             return false
         }
-        let HNONWYCELRhoniyPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,64}"
+        let HNONWYCELRhoniyPattern = #"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}"#
         guard NSPredicate(format: "SELF MATCHES %@", HNONWYCELRhoniyPattern).evaluate(with: HNONWYCELRhoniyEmail) else {
             HNONWYCELRhoniyShowPrompt("Please enter a valid email.")
             return false
