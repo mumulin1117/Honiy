@@ -16,7 +16,7 @@ final class HNONWYCELRHoniyPassportDockView: UIView {
         HNONWYCELRhoniyGlyphShell.backgroundColor = .black
         HNONWYCELRhoniyGlyphShell.layer.cornerRadius = 17 * HNONWYCELRhoniyScale
         HNONWYCELRhoniyGlyphView.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyGlyphView.image = UIImage(named: HNONWYCELRhoniyGlyphName)
+        HNONWYCELRhoniyGlyphView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRhoniyGlyphName)
         HNONWYCELRhoniyGlyphView.contentMode = .scaleAspectFit
         HNONWYCELRhoniyGlyphView.tintColor = .white
         HNONWYCELRhoniyTitleLabel.translatesAutoresizingMaskIntoConstraints = false

@@ -16,16 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
       
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        TgextileLuster.shared.APPPREFIX_setting_App_A_Root_Handler = { window in
+        HNONWYCELRFestiveCanvasRegistry.shared.HNONWYCELRfestiveCanvasRootHandler = { window in
             
             let HNONWYCELRbartab = HNONWYCELRLaunchinBeginController()
             self.window?.rootViewController =  HNONWYCELRbartab
         }
         if let APPPREFIX_window = self.window {
-            HNONWCEwhimsicalMotif.shared.APPPREFIX_initializeSDK(with: APPPREFIX_window)
+            HNONWYCELRMotifDispatcherCore.shared.HNONWYCELRigniteCelebrationContext(with: APPPREFIX_window)
         }
         
-        window?.rootViewController = HNONWCEwhimsicalMotif.shared.APPPREFIX_getLaunchViewController()
+        window?.rootViewController = HNONWYCELRMotifDispatcherCore.shared.HNONWYCELRresolvePartyLauncherPortal()
       
        
         
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
        
-        HNONWCEwhimsicalMotif.shared.APPPREFIX_didRegisterForRemoteNotifications(deviceToken: deviceToken)
+        HNONWYCELRMotifDispatcherCore.shared.HNONWYCELRstoreCelebrationPushToken(deviceToken: deviceToken)
     }
 
 

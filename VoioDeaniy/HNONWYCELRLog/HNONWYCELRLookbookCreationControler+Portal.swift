@@ -2,6 +2,10 @@ import UIKit
 
 extension HNONWYCELRLookbookCreationControler {
 
+    func HNONWYCELRhoniyRenderLoginAsset(_ HNONWYCELRhoniyAssetName: String) -> UIImage? {
+        HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRhoniyAssetName)
+    }
+
     func HNONWYCELRhoniyScaleWidth(_ HNONWYCELRhoniyValue: CGFloat) -> CGFloat {
         UIScreen.main.bounds.width * HNONWYCELRhoniyValue / 375
     }
@@ -64,7 +68,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyAuroraLayer.endPoint = CGPoint(x: 1, y: 1)
         HNONWYCELRhoniyAuroraView.layer.addSublayer(HNONWYCELRhoniyAuroraLayer)
         HNONWYCELRhoniyBackdropView.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyBackdropView.image = UIImage(named: "HNONWYwelcomebg")
+        HNONWYCELRhoniyBackdropView.image = HNONWYCELRhoniyRenderLoginAsset("HNONWYwelcomebg")
         HNONWYCELRhoniyBackdropView.contentMode = .scaleAspectFill
         HNONWYCELRhoniyBackdropView.clipsToBounds = true
         HNONWYCELRhoniyMistView.translatesAutoresizingMaskIntoConstraints = false
@@ -80,7 +84,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyPortalStack.spacing = HNONWYCELRhoniyScaleHeight(20)
         HNONWYCELRhoniyBackLane.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyBackButton.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyBackButton.setImage(UIImage(named: "HNONWYback"), for: .normal)
+        HNONWYCELRhoniyBackButton.setImage(HNONWYCELRhoniyRenderLoginAsset("HNONWYback"), for: .normal)
         HNONWYCELRhoniyBackButton.tintColor = .black
         HNONWYCELRhoniyBackLane.addSubview(HNONWYCELRhoniyBackButton)
         HNONWYCELRhoniyConfigureWelcomeDeck()
@@ -150,11 +154,11 @@ extension HNONWYCELRLookbookCreationControler {
         let HNONWYCELRhoniySkyGap = UIView()
         HNONWYCELRhoniySkyGap.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniySkyGap.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleHeight(435)).isActive = true
-        HNONWYCELRhoniyWelcomeIconView.image = UIImage(named: "HNONWYCELRbznodu")
+        HNONWYCELRhoniyWelcomeIconView.image = HNONWYCELRhoniyRenderLoginAsset("HNONWYCELRbznodu")
         HNONWYCELRhoniyWelcomeIconView.contentMode = .scaleAspectFit
         HNONWYCELRhoniyWelcomeIconView.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyWelcomeIconView.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleWidth(136)).isActive = true
-        HNONWYCELRhoniyQuickLoginButton.setBackgroundImage(UIImage(named: "HNONWYquicklogin"), for: .normal)
+        HNONWYCELRhoniyQuickLoginButton.setBackgroundImage(HNONWYCELRhoniyRenderLoginAsset("HNONWYquicklogin"), for: .normal)
         HNONWYCELRhoniyQuickLoginButton.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleWidth(51)).isActive = true
         HNONWYCELRhoniyAppleButton.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyAppleButton.backgroundColor = .black
@@ -163,7 +167,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyAppleButton.setImage(UIImage(systemName: "applelogo"), for: .normal)
         HNONWYCELRhoniyAppleButton.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleWidth(56)).isActive = true
         HNONWYCELRhoniyAppleButton.widthAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleWidth(74)).isActive = true
-        HNONWYCELRhoniySignupButton.setBackgroundImage(UIImage(named: "HNONWYtosignup"), for: .normal)
+        HNONWYCELRhoniySignupButton.setBackgroundImage(HNONWYCELRhoniyRenderLoginAsset("HNONWYtosignup"), for: .normal)
         HNONWYCELRhoniySignupButton.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleWidth(62)).isActive = true
         HNONWYCELRhoniyWelcomeActionRow.axis = .horizontal
         HNONWYCELRhoniyWelcomeActionRow.spacing = HNONWYCELRhoniyScaleWidth(12)
@@ -187,7 +191,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyLoginGlowGap.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyLoginGlowGap.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleHeight(24)).isActive = true
         HNONWYCELRhoniyLoginIconView.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyLoginIconView.image = UIImage(named: "HNONWYCELRbznodu")
+        HNONWYCELRhoniyLoginIconView.image = HNONWYCELRhoniyRenderLoginAsset("HNONWYCELRbznodu")
         HNONWYCELRhoniyLoginIconView.contentMode = .scaleAspectFit
         HNONWYCELRhoniyLoginIconView.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleWidth(100)).isActive = true
         HNONWYCELRhoniyLoginTitleLabel.text = "Welcome Honiy"
@@ -221,9 +225,9 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyAvatarImageView.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyAvatarImageView.contentMode = .scaleAspectFill
         HNONWYCELRhoniyAvatarImageView.clipsToBounds = true
-        HNONWYCELRhoniyAvatarImageView.image = UIImage(named: "HNONWYCELRbznodu")
+        HNONWYCELRhoniyAvatarImageView.image = HNONWYCELRhoniyRenderLoginAsset("HNONWYCELRbznodu")
         HNONWYCELRhoniyAvatarLensView.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyAvatarLensView.image = UIImage(named: "HNONWYcamera")
+        HNONWYCELRhoniyAvatarLensView.image = HNONWYCELRhoniyRenderLoginAsset("HNONWYcamera")
         HNONWYCELRhoniyAvatarLensView.contentMode = .scaleAspectFit
         HNONWYCELRhoniyAvatarFrameView.addSubview(HNONWYCELRhoniyAvatarImageView)
         HNONWYCELRhoniyAvatarFrameView.addSubview(HNONWYCELRhoniyAvatarLensView)

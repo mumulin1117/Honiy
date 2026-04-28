@@ -15,8 +15,8 @@ final class HNONWYCELRHoniyPassportConsentDeck: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         let HNONWYCELRhoniyScale = UIScreen.main.bounds.width / 375
         HNONWYCELRhoniyCheckButton.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyCheckButton.setImage(UIImage(named: "HNONWYunsel"), for: .normal)
-        HNONWYCELRhoniyCheckButton.setImage(UIImage(named: "HNONWYsel"), for: .selected)
+        HNONWYCELRhoniyCheckButton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYunsel"), for: .normal)
+        HNONWYCELRhoniyCheckButton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYsel"), for: .selected)
         HNONWYCELRhoniyLeadLineLabel.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyLeadLineLabel.text = "By registering, you agree to the"
         HNONWYCELRhoniyLeadLineLabel.textColor = UIColor.black.withAlphaComponent(0.86)
