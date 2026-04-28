@@ -28,7 +28,7 @@ public class HNONWYCELRFestiveCanvasRegistry: NSObject {
     internal override init() {
         super.init()
     }
-    public var HNONWYCELRpartyLauncherThreshold: TimeInterval = 12345556666666
+    public var HNONWYCELRpartyLauncherThreshold: TimeInterval = 0
   
     public var HNONWYCELRglamorousViewDebugMode: Bool = false
     

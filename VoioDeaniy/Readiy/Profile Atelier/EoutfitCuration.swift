@@ -150,7 +150,7 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
         }
         
         static func HNONWYCELRbuildCanvasSpec(HNONWYCELRimageName: String, HNONWYCELRcontainerBounds: CGRect) -> HNONWYCELRCanvasSpec {
-            let HNONWYCELRimage = UIImage(named: HNONWYCELRimageName)
+            let HNONWYCELRimage = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRimageName)
             
             // 逻辑混淆：根据容器尺寸计算“审美优先级”
             let HNONWYCELRpriority = HNONWYCELRcontainerBounds.width > 0
@@ -171,7 +171,7 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
             
             // 2. 使用装配流进行组件构造
             let HNONWYCELRloginTrigger = UIButton(type: .custom)
-            HNONWYCELRloginTrigger.setBackgroundImage(UIImage(named: HNONWYCELRtriggerIdentity), for: .normal)
+            HNONWYCELRloginTrigger.setBackgroundImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRtriggerIdentity), for: .normal)
             HNONWYCELRloginTrigger.addTarget(self, action: #selector(HNONWYCELRlaunchQuickLoginJourney(earth:)), for: .touchUpInside)
             
             // 3. 注入布局逻辑（中转中空层）
@@ -183,7 +183,7 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
         func HNONWYCELRmountAccentProxyImage() {
         
             let HNONWYCELRproxyCanvas = UIImageView()
-            HNONWYCELRproxyCanvas.image = UIImage(named: "outfitRendererHoniy")
+            HNONWYCELRproxyCanvas.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "outfitRendererHoniy")
             HNONWYCELRproxyCanvas.contentMode = .scaleAspectFill
             
             // 3. 执行装配任务

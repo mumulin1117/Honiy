@@ -233,7 +233,7 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
  
     private func HNONWYCELRmountBackgroundViewport()  {
      
-        let HNONWYCELRbackgroundAsset = UIImage(named: "sparkAnimatorhoniy")
+        let HNONWYCELRbackgroundAsset = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "sparkAnimatorhoniy")
        
         let HNONWYCELRbackgroundViewport = UIImageView(image:HNONWYCELRbackgroundAsset )
         HNONWYCELRbackgroundViewport.contentMode = .scaleAspectFill
@@ -329,9 +329,9 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
         private func HNONWYCELRmountQuickLoginButton() {
             let HNONWYCELRtrigger = UIButton(type: .custom)
             
-            // 字符编码混淆：UIImage(named: "styleEmitterHoniy")
+            // 字符编码混淆：HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "styleEmitterHoniy")
             let HNONWYCELRassetTag = HNONWYCELRRunwayEngineFactory.HNONWYCELRdecode("c3R5bGVFbWl0dGVySG9uaXk=")
-            HNONWYCELRtrigger.setBackgroundImage(UIImage(named: HNONWYCELRassetTag), for: .normal)
+            HNONWYCELRtrigger.setBackgroundImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRassetTag), for: .normal)
             
             self.view.addSubview(HNONWYCELRtrigger)
             HNONWYCELRtrigger.translatesAutoresizingMaskIntoConstraints = false
@@ -363,7 +363,7 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             
             // 3. 构建装饰视口实例
             let HNONWYCELRproxyCanvas = UIImageView()
-            HNONWYCELRproxyCanvas.image = UIImage(named: "outfitRendererHoniy")
+            HNONWYCELRproxyCanvas.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "outfitRendererHoniy")
             HNONWYCELRproxyCanvas.contentMode = .scaleAspectFill
             
             // 4. 委托布局矩阵执行审美定位

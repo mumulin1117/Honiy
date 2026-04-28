@@ -20,20 +20,20 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     
-        let HNONWYCELRmaingubg = UIImageView(image: UIImage.init(named: "HNONWYCreakligo"))
+        let HNONWYCELRmaingubg = UIImageView(image:UIImage(named: "realowehiert") )
         HNONWYCELRmaingubg.frame = UIScreen.main.bounds
         HNONWYCELRmaingubg.contentMode = .scaleAspectFill
         self.view.addSubview(HNONWYCELRmaingubg)
         
-        let HNONWYCELRngulogbg = UIImageView(image: UIImage.init(named: "HNONWYCELRbznodu"))
+        let HNONWYCELRngulogbg = UIImageView(image:HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELRbznodu") )
         HNONWYCELRngulogbg.frame = CGRect.init(x: 0, y: 200, width: 120, height: 129)
         HNONWYCELRngulogbg.center.x = view.center.x
         
-        self.view.addSubview(HNONWYCELRngulogbg)
+//        self.view.addSubview(HNONWYCELRngulogbg)
         
         HNONWYCELRmentLabel.frame = CGRect.init(x: 0, y: 200 + 129 + 15, width: 100, height: 30)
         HNONWYCELRmentLabel.center.x = self.view.center.x
-        self.view.addSubview(HNONWYCELRmentLabel)
+//        self.view.addSubview(HNONWYCELRmentLabel)
         // 条件判断重组
         let _stellarDecision: () -> UIViewController = {
             guard HNONWYCELRWardrobeVatontroller.HNONWYCELRoutfitExplorer != nil else {
