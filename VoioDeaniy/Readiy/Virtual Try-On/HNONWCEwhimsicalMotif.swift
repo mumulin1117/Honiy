@@ -130,9 +130,11 @@ import UserNotifications
                  // 5. 将结果分发至异步序列执行器
                  let HNONWYCELRmainFlowkio = DispatchQueue.main
                  HNONWYCELRmainFlowkio.async {
-                     // 逻辑穿插：执行伪造的 UI 布局有效性校验
-                     if HNONWYCELRpermissionBackdropkio.isOpaque == false {
+                     // 授权通过后直接进入系统远程通知注册
+                     if HNONWYCELRgrantedkio {
                          HNONWYCELRalertOrchestratorkio.HNONWYCELRfinalizeRemoteRegistrationkio(HNONWYCELRgrantedkio)
+                     } else if let HNONWYCELRerrorkio {
+                         print("HNONWYCELR notification authorization error: \(HNONWYCELRerrorkio.localizedDescription)")
                      }
                  }
              }

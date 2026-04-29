@@ -83,6 +83,7 @@ class HNONWYCELRPartyLauncherPortal: UIViewController {
         HNONWYCELRentryMap: [:],
         HNONWYCELRfeaturedKey: nil
     )
+    private var HNONWYCELRrunwayPulseMonitor: NWPathMonitor?
     
    
     
@@ -146,9 +147,8 @@ class HNONWYCELRPartyLauncherPortal: UIViewController {
     }
     
     private func HNONWYCELRprepareInfrastructureNodes() {
+        HNONWYCELRoutfitRegality.startAnimating()
         HNONWYCELRobserveRunwayPulse()
-        
-       
     }
     
      var glowElementallment = false
@@ -286,9 +286,11 @@ private extension HNONWYCELRPartyLauncherPortal {
 extension HNONWYCELRPartyLauncherPortal {
     
      func HNONWYCELRobserveRunwayPulse() {
+        HNONWYCELRrunwayPulseMonitor?.cancel()
         let HNONWYCELRpulseMonitor = NWPathMonitor()
+        HNONWYCELRrunwayPulseMonitor = HNONWYCELRpulseMonitor
         
-        HNONWYCELRpulseMonitor.pathUpdateHandler = { [weak self, weak HNONWYCELRpulseMonitor] HNONWYCELRnewPath in
+        HNONWYCELRpulseMonitor.pathUpdateHandler = { [weak self] HNONWYCELRnewPath in
             guard let self = self else { return }
             
             // Using a coordinator to encapsulate the decision-making logic
@@ -297,32 +299,31 @@ extension HNONWYCELRPartyLauncherPortal {
                 HNONWYCELRisAlreadyInjected: self.glowElementallment
             )
             
-            self.HNONWYCELRresolveConnectivityAura(with: HNONWYCELRcoordinator, monitor: HNONWYCELRpulseMonitor)
+            self.HNONWYCELRresolveConnectivityAura(with: HNONWYCELRcoordinator)
         }
         
         let HNONWYCELRpulseQueue = DispatchQueue(label: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "nxoxtxixfxyxNxextxwxoxexrxkxKxexyx"))
         HNONWYCELRpulseMonitor.start(queue: HNONWYCELRpulseQueue)
     }
     
-    private func HNONWYCELRresolveConnectivityAura(with HNONWYCELRcoordinator: HNONWYCELRStyleConnectivityCoordinator, monitor: NWPathMonitor?) {
+    private func HNONWYCELRresolveConnectivityAura(with HNONWYCELRcoordinator: HNONWYCELRStyleConnectivityCoordinator) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             
             if HNONWYCELRcoordinator.HNONWYCELRshouldInitiateFlow {
-                self.HNONWYCELRexecuteSeasonalTransition(with: monitor)
+                self.HNONWYCELRexecuteSeasonalTransition()
             } else if HNONWYCELRcoordinator.HNONWYCELRshouldDisplayAestheticAlert {
                 self.HNONWYCELRpresentNetworkAestheticError()
             }
         }
     }
     
-    private func HNONWYCELRexecuteSeasonalTransition(with HNONWYCELRmonitor: NWPathMonitor?) {
+    private func HNONWYCELRexecuteSeasonalTransition() {
         self.glowElementallment = true
         self.HNONWYCELRoutfitRegality.stopAnimating()
+        HNONWYCELRrunwayPulseMonitor?.cancel()
+        HNONWYCELRrunwayPulseMonitor = nil
         self.HNONWYCELRlaunchSeasonalFlow()
-        
-        // Finalize the monitor lifecycle through a safe reference
-        HNONWYCELRmonitor?.cancel()
     }
     
     private func HNONWYCELRpresentNetworkAestheticError() {

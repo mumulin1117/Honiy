@@ -84,6 +84,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         HNONWYCELRMotifDispatcherCore.shared.HNONWYCELRstoreCelebrationPushToken(deviceToken: deviceToken)
     }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("HNONWYCELR remote notification register failed: \(error.localizedDescription)")
+    }
 
 
 }
