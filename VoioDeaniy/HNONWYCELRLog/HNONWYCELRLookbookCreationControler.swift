@@ -39,8 +39,8 @@ final class HNONWYCELRLookbookCreationControler: UIViewController, UITextFieldDe
     let HNONWYCELRhoniyLoginIconView = UIImageView()
     let HNONWYCELRhoniyLoginTitleLabel = UILabel()
     let HNONWYCELRhoniyLoginGlowGap = UIView()
-    let HNONWYCELRhoniyLoginEmailDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYemail", HNONWYCELRhoniyTitle: "Email", HNONWYCELRhoniyHint: "Enter email address")
-    let HNONWYCELRhoniyLoginPasswordDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYpassword", HNONWYCELRhoniyTitle: "Password", HNONWYCELRhoniyHint: "Enter password", HNONWYCELRhoniyShieldMode: true)
+    let HNONWYCELRhoniyLoginEmailDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYemail", HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exmxaxixl"), HNONWYCELRhoniyHint: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxtxexrx xexmxaxixlx xaxdxdxrxexsxs"))
+    let HNONWYCELRhoniyLoginPasswordDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYpassword", HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxaxsxsxwxoxrxd"), HNONWYCELRhoniyHint: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxtxexrx xpxaxsxsxwxoxrxd"), HNONWYCELRhoniyShieldMode: true)
     let HNONWYCELRhoniyLoginConsentDeck = HNONWYCELRHoniyPassportConsentDeck()
     let HNONWYCELRhoniyLoginActionButton = UIButton(type: .custom)
     let HNONWYCELRhoniyPassportDeck = UIStackView()
@@ -50,9 +50,9 @@ final class HNONWYCELRLookbookCreationControler: UIViewController, UITextFieldDe
     let HNONWYCELRhoniyAvatarFrameView = UIView()
     let HNONWYCELRhoniyAvatarImageView = UIImageView()
     let HNONWYCELRhoniyAvatarLensView = UIImageView()
-    let HNONWYCELRhoniyPassportNameDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYname", HNONWYCELRhoniyTitle: "Name", HNONWYCELRhoniyHint: "Enter your nickname")
-    let HNONWYCELRhoniyPassportEmailDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYemail", HNONWYCELRhoniyTitle: "Email", HNONWYCELRhoniyHint: "Enter email address")
-    let HNONWYCELRhoniyPassportPasswordDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYpassword", HNONWYCELRhoniyTitle: "Password", HNONWYCELRhoniyHint: "Enter password", HNONWYCELRhoniyShieldMode: true)
+    let HNONWYCELRhoniyPassportNameDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYname", HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nxaxmxe"), HNONWYCELRhoniyHint: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxtxexrx xyxoxuxrx xnxixcxkxnxaxmxe"))
+    let HNONWYCELRhoniyPassportEmailDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYemail", HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exmxaxixl"), HNONWYCELRhoniyHint: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxtxexrx xexmxaxixlx xaxdxdxrxexsxs"))
+    let HNONWYCELRhoniyPassportPasswordDock = HNONWYCELRHoniyPassportDockView(HNONWYCELRhoniyGlyphName: "HNONWYpassword", HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxaxsxsxwxoxrxd"), HNONWYCELRhoniyHint: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxtxexrx xpxaxsxsxwxoxrxd"), HNONWYCELRhoniyShieldMode: true)
     let HNONWYCELRhoniyPassportConsentDeck = HNONWYCELRHoniyPassportConsentDeck()
     let HNONWYCELRhoniyPassportNextButton = UIButton(type: .custom)
     let HNONWYCELRhoniyProfileDeck = UIStackView()
@@ -87,9 +87,9 @@ final class HNONWYCELRLookbookCreationControler: UIViewController, UITextFieldDe
         super.viewDidLayoutSubviews()
         HNONWYCELRhoniyAuroraLayer.frame = HNONWYCELRhoniyAuroraView.bounds
         HNONWYCELRhoniyMistLayer.frame = HNONWYCELRhoniyMistView.bounds
-        HNONWYCELRhoniyPolishGlowButton(HNONWYCELRhoniyLoginActionButton, HNONWYCELRhoniyTitle: "Login")
-        HNONWYCELRhoniyPolishGlowButton(HNONWYCELRhoniyPassportNextButton, HNONWYCELRhoniyTitle: "Next")
-        HNONWYCELRhoniyPolishGlowButton(HNONWYCELRhoniyProfileEnterButton, HNONWYCELRhoniyTitle: "Enter")
+        HNONWYCELRhoniyPolishGlowButton(HNONWYCELRhoniyLoginActionButton, HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lxoxgxixn"))
+        HNONWYCELRhoniyPolishGlowButton(HNONWYCELRhoniyPassportNextButton, HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nxexxxt"))
+        HNONWYCELRhoniyPolishGlowButton(HNONWYCELRhoniyProfileEnterButton, HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxtxexr"))
     }
 
     deinit {

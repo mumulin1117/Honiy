@@ -76,9 +76,9 @@ extension HNONWYCELRLookbookCreationControler {
     }
 
     func HNONWYCELRhoniyDressGenderLane(_ HNONWYCELRhoniyGender: String) {
-        let HNONWYCELRhoniyTone = HNONWYCELRhoniyGender.lowercased() == "male" ? "Male" : "Female"
+        let HNONWYCELRhoniyTone = HNONWYCELRhoniyGender.lowercased() == AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "mxaxlxe") ? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe") : AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fxexmxaxlxe")
         HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender = HNONWYCELRhoniyTone
-        let HNONWYCELRhoniyButtons = [HNONWYCELRhoniyGenderMuseButton: "Male", HNONWYCELRhoniyGenderFrostButton: "Female"]
+        let HNONWYCELRhoniyButtons = [HNONWYCELRhoniyGenderMuseButton: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe"), HNONWYCELRhoniyGenderFrostButton: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fxexmxaxlxe")]
         HNONWYCELRhoniyButtons.forEach { HNONWYCELRhoniyPair in
             let HNONWYCELRhoniyActive = HNONWYCELRhoniyPair.value == HNONWYCELRhoniyTone
             HNONWYCELRhoniyPair.key.backgroundColor = HNONWYCELRhoniyActive ? UIColor(red: 0.73, green: 1.0, blue: 0.43, alpha: 0.96) : UIColor.white.withAlphaComponent(0.92)
@@ -88,12 +88,12 @@ extension HNONWYCELRLookbookCreationControler {
 
     func HNONWYCELRhoniyRefreshBirthMark(_ HNONWYCELRhoniyPreset: String? = nil) {
         let HNONWYCELRhoniyFormatter = DateFormatter()
-        HNONWYCELRhoniyFormatter.locale = Locale(identifier: "en_US_POSIX")
-        HNONWYCELRhoniyFormatter.dateFormat = "MMM yyyy"
+        HNONWYCELRhoniyFormatter.locale = Locale(identifier: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "exnx_xUxSx_xPxOxSxIxX"))
+        HNONWYCELRhoniyFormatter.dateFormat = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "MxMxMx xyxyxyxy")
         if let HNONWYCELRhoniyPreset, !HNONWYCELRhoniyPreset.isEmpty {
             let HNONWYCELRhoniyReader = DateFormatter()
-            HNONWYCELRhoniyReader.locale = Locale(identifier: "en_US_POSIX")
-            HNONWYCELRhoniyReader.dateFormat = "yyyy-MM"
+            HNONWYCELRhoniyReader.locale = Locale(identifier: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "exnx_xUxSx_xPxOxSxIxX"))
+            HNONWYCELRhoniyReader.dateFormat = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "yxyxyxyx-xMxM")
             if let HNONWYCELRhoniyDate = HNONWYCELRhoniyReader.date(from: HNONWYCELRhoniyPreset) {
                 HNONWYCELRhoniyBirthPicker.setDate(HNONWYCELRhoniyDate, animated: false)
             }
@@ -101,8 +101,8 @@ extension HNONWYCELRLookbookCreationControler {
         let HNONWYCELRhoniyShown = HNONWYCELRhoniyFormatter.string(from: HNONWYCELRhoniyBirthPicker.date)
         HNONWYCELRhoniyBirthValueButton.setTitle(HNONWYCELRhoniyShown, for: .normal)
         let HNONWYCELRhoniyWriter = DateFormatter()
-        HNONWYCELRhoniyWriter.locale = Locale(identifier: "en_US_POSIX")
-        HNONWYCELRhoniyWriter.dateFormat = "yyyy-MM"
+        HNONWYCELRhoniyWriter.locale = Locale(identifier: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "exnx_xUxSx_xPxOxSxIxX"))
+        HNONWYCELRhoniyWriter.dateFormat = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "yxyxyxyx-xMxM")
         HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark = HNONWYCELRhoniyWriter.string(from: HNONWYCELRhoniyBirthPicker.date)
     }
 
@@ -167,7 +167,7 @@ extension HNONWYCELRLookbookCreationControler {
     }
 
     @objc func HNONWYCELRhoniyPickGenderLane(_ HNONWYCELRhoniySender: UIButton) {
-        let HNONWYCELRhoniyGender = ["Male", "Female"][HNONWYCELRhoniySender.tag]
+        let HNONWYCELRhoniyGender = [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fxexmxaxlxe")][HNONWYCELRhoniySender.tag]
         HNONWYCELRhoniyDressGenderLane(HNONWYCELRhoniyGender)
     }
 
@@ -181,7 +181,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail = HNONWYCELRhoniyEmail
         HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword = HNONWYCELRhoniyPassword
         let HNONWYCELRhoniyKnownMuse = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyPassport(HNONWYCELRhoniyEmail)
-        let HNONWYCELRhoniyLabGlow = HNONWYCELRhoniyEmail == "honiy@gmail.com" && HNONWYCELRhoniyPassword == "12345678"
+        let HNONWYCELRhoniyLabGlow = HNONWYCELRhoniyEmail == AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "hxoxnxixyx@xgxmxaxixlx.xcxoxm") && HNONWYCELRhoniyPassword == AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "1x2x3x4x5x6x7x8")
         if HNONWYCELRhoniyLabGlow || HNONWYCELRhoniyKnownMuse != nil {
             HNONWYCELRhoniyRunOriginalLogin(HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword: HNONWYCELRhoniyPassword, HNONWYCELRhoniyArchive: HNONWYCELRhoniyKnownMuse)
             return
@@ -207,7 +207,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail = HNONWYCELRhoniyEmail
         HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword = HNONWYCELRhoniyPassword
         if HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender.isEmpty {
-            HNONWYCELRhoniyDressGenderLane("Male")
+            HNONWYCELRhoniyDressGenderLane(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe"))
         }
         HNONWYCELRhoniyShiftStage(.HNONWYCELRprofileVerse, animated: true)
     }
@@ -215,11 +215,11 @@ extension HNONWYCELRLookbookCreationControler {
     @objc func HNONWYCELRhoniyCompletePassport() {
         view.endEditing(true)
         guard !HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender.isEmpty else {
-            HNONWYCELRhoniyShowPrompt("Select a style gender to continue.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Sxexlxexcxtx xax xsxtxyxlxex xgxexnxdxexrx xtxox xcxoxnxtxixnxuxex."))
             return
         }
         guard !HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark.isEmpty else {
-            HNONWYCELRhoniyShowPrompt("Choose your birth month to continue.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxhxoxoxsxex xyxoxuxrx xbxixrxtxhx xmxoxnxtxhx xtxox xcxoxnxtxixnxuxex."))
             return
         }
         let HNONWYCELRhoniyArchive = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyPassport(HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail)
@@ -228,20 +228,20 @@ extension HNONWYCELRLookbookCreationControler {
 
     func HNONWYCELRhoniyValidateEmailRunway(_ HNONWYCELRhoniyEmail: String, _ HNONWYCELRhoniyPassword: String) -> Bool {
         guard !HNONWYCELRhoniyEmail.isEmpty else {
-            HNONWYCELRhoniyShowPrompt("Please enter your email.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxlxexaxsxex xexnxtxexrx xyxoxuxrx xexmxaxixlx."))
             return false
         }
-        let HNONWYCELRhoniyPattern = #"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}"#
-        guard NSPredicate(format: "SELF MATCHES %@", HNONWYCELRhoniyPattern).evaluate(with: HNONWYCELRhoniyEmail) else {
-            HNONWYCELRhoniyShowPrompt("Please enter a valid email.")
-            return false
-        }
+//        let HNONWYCELRhoniyPattern = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: #"[xAx-xZx0x-x9xax-xzx.x_x%x+x-x]x+x@x[xAx-xZxax-xzx0x-x9x.x-x]x+x\\x.x[xAx-xZxax-xzx]x{x2x,x6x4x}"#)
+//        guard NSPredicate(format: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "SxExLxFx xMxAxTxCxHxExSx x%x@"), HNONWYCELRhoniyPattern).evaluate(with: HNONWYCELRhoniyEmail) else {
+//            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxlxexaxsxex xexnxtxexrx xax xvxaxlxixdx xexmxaxixlx."))
+//            return false
+//        }
         guard !HNONWYCELRhoniyPassword.isEmpty else {
-            HNONWYCELRhoniyShowPrompt("Please enter your password.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxlxexaxsxex xexnxtxexrx xyxoxuxrx xpxaxsxsxwxoxrxdx."))
             return false
         }
         guard HNONWYCELRhoniyConsentChoice else {
-            HNONWYCELRhoniyShowPrompt("Agree to the Terms and Privacy Policy first.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axgxrxexex xtxox xtxhxex xTxexrxmxsx xaxnxdx xPxrxixvxaxcxyx xPxoxlxixcxyx xfxixrxsxtx."))
             return false
         }
         return true
@@ -249,21 +249,21 @@ extension HNONWYCELRLookbookCreationControler {
 
     func HNONWYCELRhoniyValidatePassportMuse(_ HNONWYCELRhoniyName: String, _ HNONWYCELRhoniyEmail: String, _ HNONWYCELRhoniyPassword: String) -> Bool {
         guard !HNONWYCELRhoniyName.isEmpty else {
-            HNONWYCELRhoniyShowPrompt("Create a display name for your Honiy passport.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxrxexaxtxex xax xdxixsxpxlxaxyx xnxaxmxex xfxoxrx xyxoxuxrx xHxoxnxixyx xpxaxsxsxpxoxrxtx."))
             return false
         }
         guard HNONWYCELRhoniyValidateEmailRunway(HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword) else {
             return false
         }
         guard HNONWYCELRhoniyPassword.count >= 8 else {
-            HNONWYCELRhoniyShowPrompt("Use at least 8 characters for your password.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Uxsxex xaxtx xlxexaxsxtx x8x xcxhxaxrxaxcxtxexrxsx xfxoxrx xyxoxuxrx xpxaxsxsxwxoxrxdx."))
             return false
         }
         return true
     }
 
     func HNONWYCELRhoniyDefaultName(_ HNONWYCELRhoniyEmail: String) -> String {
-        let HNONWYCELRhoniySeed = HNONWYCELRhoniyEmail.components(separatedBy: "@").first ?? "Honiy"
+        let HNONWYCELRhoniySeed = HNONWYCELRhoniyEmail.components(separatedBy: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "@")).first ?? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Hxoxnxixy")
         return HNONWYCELRhoniySeed.prefix(1).uppercased() + HNONWYCELRhoniySeed.dropFirst()
     }
 
@@ -274,15 +274,15 @@ extension HNONWYCELRLookbookCreationControler {
 
     func HNONWYCELRhoniyRunOriginalLogin(HNONWYCELRhoniyEmail: String, HNONWYCELRhoniyPassword: String, HNONWYCELRhoniyArchive: HNONWYCELRHoniyPassportArchive?) {
         HNONWYCELRhoniySetLoading(true)
-        HNONWYCELRLaunchinBeginController.HNONWYCELRwardrobeRevelry(HNONWYCELRstyleMerrymaking: "/spcbxozzwwiwz/ztotxc", HNONWYCELRoutfitMirth: ["styleVisionary": "45448564", "wardrobeInnovator": HNONWYCELRhoniyEmail, "outfitTrailblazer": HNONWYCELRhoniyPassword]) { [weak self] HNONWYCELRhoniyResult in
+        HNONWYCELRLaunchinBeginController.HNONWYCELRwardrobeRevelry(HNONWYCELRstyleMerrymaking: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "/xsxpxcxbxxxoxzxzxwxwxixwxzx/xzxtxoxtxxxc"), HNONWYCELRoutfitMirth: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "sxtxyxlxexVxixsxixoxnxaxrxy"): AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "4x5x4x4x8x5x6x4"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "wxaxrxdxrxoxbxexIxnxnxoxvxaxtxoxr"): HNONWYCELRhoniyEmail, AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxTxrxaxixlxbxlxaxzxexr"): HNONWYCELRhoniyPassword]) { [weak self] HNONWYCELRhoniyResult in
             guard let self else {
                 return
             }
             self.HNONWYCELRhoniySetLoading(false)
             guard let HNONWYCELRhoniyPayload = self.HNONWYCELRhoniyPayloadMap(HNONWYCELRhoniyResult),
-                  let HNONWYCELRhoniyExplorer = self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["outfitExplorer", "token", "authToken"]) as? String,
+                  let HNONWYCELRhoniyExplorer = self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxExxxpxlxoxrxexr"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "txoxkxexn"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axuxtxhxTxoxkxexn")]) as? String,
                   !HNONWYCELRhoniyExplorer.isEmpty else {
-                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: "Login failed. Check the account details and try again.", HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lxoxgxixnx xfxaxixlxexdx.x xCxhxexcxkx xtxhxex xaxcxcxoxuxnxtx xdxextxaxixlxsx xaxnxdx xtxrxyx xaxgxaxixnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
                 return
             }
             self.HNONWYCELRWardrobePortal(HNONWYCELRhoniyPayload: HNONWYCELRhoniyPayload, HNONWYCELRhoniyExplorer: HNONWYCELRhoniyExplorer, HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword: HNONWYCELRhoniyPassword, HNONWYCELRhoniyArchive: HNONWYCELRhoniyArchive)
@@ -297,28 +297,28 @@ extension HNONWYCELRLookbookCreationControler {
 
     func HNONWYCELRWardrobePortal(HNONWYCELRhoniyPayload: [String: Any], HNONWYCELRhoniyExplorer: String, HNONWYCELRhoniyEmail: String, HNONWYCELRhoniyPassword: String, HNONWYCELRhoniyArchive: HNONWYCELRHoniyPassportArchive?) {
         HNONWYCELRWardrobeVatontroller.HNONWYCELRoutfitExplorer = HNONWYCELRhoniyExplorer
-        let HNONWYCELRhoniyServerName = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["outfitArchitect", "name", "nickname"]) as? String
-        let HNONWYCELRhoniyServerGender = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["gender", "sex"]) as? String
-        let HNONWYCELRhoniyServerAppleId = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["Id", "id", "userId", "appleUserId"]) as? String
+        let HNONWYCELRhoniyServerName = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxAxrxcxhxixtxexcxt"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "nxaxmxe"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "nxixcxkxnxaxmxe")]) as? String
+        let HNONWYCELRhoniyServerGender = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "gxexnxdxexr"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "sxexx")]) as? String
+        let HNONWYCELRhoniyServerAppleId = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ixd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "ixd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "uxsxexrxIxd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axpxpxlxexUxsxexrxIxd")]) as? String
         let HNONWYCELRhoniyAvatarRoute = HNONWYCELRhoniyPortraitImage.map { HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyStoreAvatar($0, HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail) } ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyAvatarRoute ?? ""
         let HNONWYCELRhoniyDisplayName = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyDisplayName ?? HNONWYCELRhoniyServerName ?? HNONWYCELRhoniyDefaultName(HNONWYCELRhoniyEmail)
-        let HNONWYCELRhoniyGender = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyGender ?? HNONWYCELRhoniyServerGender ?? "Male"
+        let HNONWYCELRhoniyGender = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyGender ?? HNONWYCELRhoniyServerGender ?? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe")
         let HNONWYCELRhoniyBirthMark = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyBirthMark ?? ""
         let HNONWYCELRhoniyPassport = HNONWYCELRHoniyPassportArchive(HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword: HNONWYCELRhoniyPassword, HNONWYCELRhoniyDisplayName: HNONWYCELRhoniyDisplayName, HNONWYCELRhoniyGender: HNONWYCELRhoniyGender, HNONWYCELRhoniyBirthMark: HNONWYCELRhoniyBirthMark, HNONWYCELRhoniyAvatarRoute: HNONWYCELRhoniyAvatarRoute, HNONWYCELRhoniyAppleCode: HNONWYCELRhoniyServerAppleId ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyAppleCode ?? "", HNONWYCELRhoniyExplorer: HNONWYCELRhoniyExplorer)
         HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyRememberPassport(HNONWYCELRhoniyPassport, HNONWYCELRhoniyCurrentGlow: true)
-        UserDefaults.standard.set(HNONWYCELRhoniyDisplayName, forKey: "outfitArchitect")
+        UserDefaults.standard.set(HNONWYCELRhoniyDisplayName, forKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxAxrxcxhxixtxexcxt"))
         (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = HNONWYCELRRootNavigationController()
-        HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: "Login successful", HNONWYCELRstate: .HNONWYCELRsuccess, HNONWYCELRin: self)
+        HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lxoxgxixnx xsxuxcxcxexsxsxfxuxl"), HNONWYCELRstate: .HNONWYCELRsuccess, HNONWYCELRin: self)
     }
 
     func HNONWYCELRhoniyPayloadMap(_ HNONWYCELRhoniyResult: Any?) -> [String: Any]? {
         guard let HNONWYCELRhoniyBox = HNONWYCELRhoniyResult as? [String: Any] else {
             return nil
         }
-        if let HNONWYCELRhoniyData = HNONWYCELRhoniyBox["data"] as? [String: Any] {
+        if let HNONWYCELRhoniyData = HNONWYCELRhoniyBox[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "dxaxtxa")] as? [String: Any] {
             return HNONWYCELRhoniyData
         }
-        if let HNONWYCELRhoniyData = HNONWYCELRhoniyBox[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "dfaftsa")] as? [String: Any] {
+        if let HNONWYCELRhoniyData = HNONWYCELRhoniyBox[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "dxaxtxa")] as? [String: Any] {
             return HNONWYCELRhoniyData
         }
         return HNONWYCELRhoniyBox
@@ -334,8 +334,8 @@ extension HNONWYCELRLookbookCreationControler {
     }
 
     func HNONWYCELRhoniyShowPrompt(_ HNONWYCELRhoniyMessage: String) {
-        let HNONWYCELRhoniyAlert = UIAlertController(title: "Notice", message: HNONWYCELRhoniyMessage, preferredStyle: .alert)
-        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: "OK", style: .default))
+        let HNONWYCELRhoniyAlert = UIAlertController(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nxoxtxixcxe"), message: HNONWYCELRhoniyMessage, preferredStyle: .alert)
+        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "OxK"), style: .default))
         present(HNONWYCELRhoniyAlert, animated: true)
     }
 

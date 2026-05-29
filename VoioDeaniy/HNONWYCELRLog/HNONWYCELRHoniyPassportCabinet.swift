@@ -21,8 +21,8 @@ struct HNONWYCELRHoniyPassportDraft {
 }
 
 enum HNONWYCELRHoniyPassportCabinet {
-    static let HNONWYCELRhoniyClosetKey = "HNONWYCELRhoniyClosetKey"
-    static let HNONWYCELRhoniyCurrentKey = "HNONWYCELRhoniyCurrentKey"
+    static let HNONWYCELRhoniyClosetKey = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "HxNxOxNxWxYxCxExLxRxhxoxnxixyxCxlxoxsxextxKxexy")
+    static let HNONWYCELRhoniyCurrentKey = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "HxNxOxNxWxYxCxExLxRxhxoxnxixyxCxuxrxrxexnxtxKxexy")
 
     static func HNONWYCELRhoniyNormalizedTrail(_ HNONWYCELRhoniyEmail: String) -> String {
         HNONWYCELRhoniyEmail.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
@@ -54,7 +54,7 @@ enum HNONWYCELRHoniyPassportCabinet {
         guard let HNONWYCELRhoniyData = HNONWYCELRhoniyImage.jpegData(compressionQuality: 0.86) else {
             return ""
         }
-        let HNONWYCELRhoniyFile = HNONWYCELRhoniyAvatarRoom().appendingPathComponent(HNONWYCELRhoniyAvatarSlug(HNONWYCELRhoniyEmail) + ".jpg")
+        let HNONWYCELRhoniyFile = HNONWYCELRhoniyAvatarRoom().appendingPathComponent(HNONWYCELRhoniyAvatarSlug(HNONWYCELRhoniyEmail) + AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: ".xjxpxg"))
         try? HNONWYCELRhoniyData.write(to: HNONWYCELRhoniyFile, options: .atomic)
         return HNONWYCELRhoniyFile.path
     }
@@ -75,7 +75,8 @@ enum HNONWYCELRHoniyPassportCabinet {
     }
 
     private static func HNONWYCELRhoniyAvatarRoom() -> URL {
-        let HNONWYCELRhoniyFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("HNONWYCELRHoniyPassportShelf", isDirectory: true) ?? URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("HNONWYCELRHoniyPassportShelf", isDirectory: true)
+        let HNONWYCELRhoniyShelfName = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "HxNxOxNxWxYxCxExLxRxHxoxnxixyxPxaxsxsxpxoxrxtxSxhxexlxf")
+        let HNONWYCELRhoniyFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(HNONWYCELRhoniyShelfName, isDirectory: true) ?? URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(HNONWYCELRhoniyShelfName, isDirectory: true)
         if !FileManager.default.fileExists(atPath: HNONWYCELRhoniyFolder.path) {
             try? FileManager.default.createDirectory(at: HNONWYCELRhoniyFolder, withIntermediateDirectories: true, attributes: nil)
         }
@@ -84,7 +85,7 @@ enum HNONWYCELRHoniyPassportCabinet {
 
     private static func HNONWYCELRhoniyAvatarSlug(_ HNONWYCELRhoniyValue: String) -> String {
         let HNONWYCELRhoniyTrail = HNONWYCELRhoniyNormalizedTrail(HNONWYCELRhoniyValue)
-        let HNONWYCELRhoniySafe = HNONWYCELRhoniyTrail.replacingOccurrences(of: "[^A-Za-z0-9]", with: "_", options: .regularExpression)
+        let HNONWYCELRhoniySafe = HNONWYCELRhoniyTrail.replacingOccurrences(of: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "[x^xAx-xZxax-xzx0x-x9x]"), with: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "_"), options: .regularExpression)
         return HNONWYCELRhoniySafe.isEmpty ? UUID().uuidString : HNONWYCELRhoniySafe
     }
 }

@@ -65,6 +65,6 @@ final class HNONWYCELRHoniyPassportDockView: UIView {
     }
 
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "ixnxixtx(xcxoxdxexrx:x)x xhxaxsx xnxoxtx xbxexexnx xixmxpxlxexmxexnxtxexd"))
     }
 }

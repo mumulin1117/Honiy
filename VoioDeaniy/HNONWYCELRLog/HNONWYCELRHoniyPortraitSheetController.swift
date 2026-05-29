@@ -21,11 +21,11 @@ final class HNONWYCELRHoniyPortraitSheetController: UIViewController {
         HNONWYCELRhoniyPanelView.layer.cornerRadius = 38
         HNONWYCELRhoniyPanelView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         HNONWYCELRhoniyPanelView.transform = CGAffineTransform(translationX: 0, y: 380)
-        let HNONWYCELRhoniyPhotoButton = HNONWYCELRhoniyActionPill(HNONWYCELRhoniyTitle: "Photo", HNONWYCELRhoniySymbol: "camera")
-        let HNONWYCELRhoniyAlbumButton = HNONWYCELRhoniyActionPill(HNONWYCELRhoniyTitle: "Album", HNONWYCELRhoniySymbol: "photo")
+        let HNONWYCELRhoniyPhotoButton = HNONWYCELRhoniyActionPill(HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxhxoxtxo"), HNONWYCELRhoniySymbol: "camera")
+        let HNONWYCELRhoniyAlbumButton = HNONWYCELRhoniyActionPill(HNONWYCELRhoniyTitle: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axlxbxuxm"), HNONWYCELRhoniySymbol: "photo")
         let HNONWYCELRhoniyCancelButton = UIButton(type: .system)
         HNONWYCELRhoniyCancelButton.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyCancelButton.setTitle("Cancel", for: .normal)
+        HNONWYCELRhoniyCancelButton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxaxnxcxexl"), for: .normal)
         HNONWYCELRhoniyCancelButton.setTitleColor(.black, for: .normal)
         HNONWYCELRhoniyCancelButton.titleLabel?.font = UIFont.systemFont(ofSize: UIScreen.main.bounds.width / 375 * 17, weight: .medium)
         HNONWYCELRhoniyCancelButton.backgroundColor = UIColor(white: 0.85, alpha: 1)

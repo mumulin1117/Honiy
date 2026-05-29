@@ -19,7 +19,7 @@ extension HNONWYCELRLookbookCreationControler {
 
     func HNONWYCELRhoniyRequestCameraMuse() {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
-            HNONWYCELRhoniyShowPrompt("Camera is not available on this device.")
+            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxaxmxexrxax xixsx xnxoxtx xaxvxaxixlxaxbxlxex xoxnx xtxhxixsx xdxexvxixcxex."))
             return
         }
         switch AVCaptureDevice.authorizationStatus(for: .video) {
@@ -60,9 +60,9 @@ extension HNONWYCELRLookbookCreationControler {
     }
 
     func HNONWYCELRhoniyPresentCameraSettings() {
-        let HNONWYCELRhoniyAlert = UIAlertController(title: "Enable camera access", message: "Open Settings to allow Honiy to capture your portrait.", preferredStyle: .alert)
-        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: "Settings", style: .default, handler: { _ in
+        let HNONWYCELRhoniyAlert = UIAlertController(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxaxbxlxex xcxaxmxexrxax xaxcxcxexsxs"), message: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Oxpxexnx xSxextxtxixnxgxsx xtxox xaxlxlxoxwx xHxoxnxixyx xtxox xcxaxpxtxuxrxex xyxoxuxrx xpxoxrxtxrxaxixtx."), preferredStyle: .alert)
+        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxaxnxcxexl"), style: .cancel))
+        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Sxextxtxixnxgxs"), style: .default, handler: { _ in
             guard let HNONWYCELRhoniyLink = URL(string: UIApplication.openSettingsURLString) else {
                 return
             }
@@ -72,9 +72,9 @@ extension HNONWYCELRLookbookCreationControler {
     }
 
     func HNONWYCELRhoniyPresentLibrarySettings() {
-        let HNONWYCELRhoniyAlert = UIAlertController(title: "Enable photo access", message: "Open Settings to choose a portrait from your library.", preferredStyle: .alert)
-        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: "Settings", style: .default, handler: { _ in
+        let HNONWYCELRhoniyAlert = UIAlertController(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Exnxaxbxlxex xpxhxoxtxox xaxcxcxexsxs"), message: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Oxpxexnx xSxextxtxixnxgxsx xtxox xcxhxoxoxsxex xax xpxoxrxtxrxaxixtx xfxrxoxmx xyxoxuxrx xlxixbxrxaxrxyx."), preferredStyle: .alert)
+        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxaxnxcxexl"), style: .cancel))
+        HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Sxextxtxixnxgxs"), style: .default, handler: { _ in
             guard let HNONWYCELRhoniyLink = URL(string: UIApplication.openSettingsURLString) else {
                 return
             }
@@ -117,31 +117,31 @@ extension HNONWYCELRLookbookCreationControler {
               let HNONWYCELRhoniyTokenData = HNONWYCELRhoniyAppleCredential.identityToken,
               let HNONWYCELRhoniyToken = String(data: HNONWYCELRhoniyTokenData, encoding: .utf8),
               !HNONWYCELRhoniyToken.isEmpty else {
-            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: "Apple login is missing an identity token.", HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axpxpxlxex xlxoxgxixnx xixsx xmxixsxsxixnxgx xaxnx xixdxexnxtxixtxyx xtxoxkxexnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
             return
         }
         let HNONWYCELRhoniyMail = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyNormalizedTrail(HNONWYCELRhoniyAppleCredential.email ?? "")
-        let HNONWYCELRhoniyDisplay = [HNONWYCELRhoniyAppleCredential.fullName?.givenName, HNONWYCELRhoniyAppleCredential.fullName?.familyName].compactMap { $0 }.joined(separator: " ").trimmingCharacters(in: .whitespacesAndNewlines)
+        let HNONWYCELRhoniyDisplay = [HNONWYCELRhoniyAppleCredential.fullName?.givenName, HNONWYCELRhoniyAppleCredential.fullName?.familyName].compactMap { $0 }.joined(separator: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: " ")).trimmingCharacters(in: .whitespacesAndNewlines)
         HNONWYCELRhoniySetLoading(true)
-        HNONWYCELRLaunchinBeginController.HNONWYCELRwardrobeRevelry(HNONWYCELRstyleMerrymaking: "/spcbxozzwcccz/ztotxc", HNONWYCELRoutfitMirth: ["outfitStyling": "45448564", "wardrobeAssistant": HNONWYCELRhoniyToken, "appleIdentityToken": HNONWYCELRhoniyToken, "fashionAI": "87787778787"]) { [weak self] HNONWYCELRhoniyResult in
+        HNONWYCELRLaunchinBeginController.HNONWYCELRwardrobeRevelry(HNONWYCELRstyleMerrymaking: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "/xsxpxcxbxxxoxzxzxwxcxcxcxzx/xzxtxoxtxxxc"), HNONWYCELRoutfitMirth: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxSxtxyxlxixnxg"): AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "4x5x4x4x8x5x6x4"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "wxaxrxdxrxoxbxexAxsxsxixsxtxaxnxt"): HNONWYCELRhoniyToken, AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axpxpxlxexIxdxexnxtxixtxyxTxoxkxexn"): HNONWYCELRhoniyToken, AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "fxaxsxhxixoxnxAxI"): AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "8x7x7x8x7x7x7x8x7x8x7")]) { [weak self] HNONWYCELRhoniyResult in
             guard let self else {
                 return
             }
             self.HNONWYCELRhoniySetLoading(false)
             guard let HNONWYCELRhoniyPayload = self.HNONWYCELRhoniyPayloadMap(HNONWYCELRhoniyResult),
-                  let HNONWYCELRhoniyExplorer = self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["outfitExplorer", "token", "authToken"]) as? String,
+                  let HNONWYCELRhoniyExplorer = self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxExxxpxlxoxrxexr"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "txoxkxexn"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axuxtxhxTxoxkxexn")]) as? String,
                   !HNONWYCELRhoniyExplorer.isEmpty else {
-                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: "Apple login did not return a valid session.", HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axpxpxlxex xlxoxgxixnx xdxixdx xnxoxtx xrxextxuxrxnx xax xvxaxlxixdx xsxexsxsxixoxnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
                 return
             }
-            let HNONWYCELRhoniyEmail = (self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["email", "mail"]) as? String).flatMap { HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyNormalizedTrail($0) }
+            let HNONWYCELRhoniyEmail = (self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "exmxaxixl"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "mxaxixl")]) as? String).flatMap { HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyNormalizedTrail($0) }
                 ?? HNONWYCELRhoniyMail
             let HNONWYCELRhoniyArchive = !HNONWYCELRhoniyEmail.isEmpty ? HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyPassport(HNONWYCELRhoniyEmail) : nil
             self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail = HNONWYCELRhoniyEmail
-            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword = HNONWYCELRhoniyArchive?.HNONWYCELRhoniyPassword ?? "12345678"
-            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName = HNONWYCELRhoniyDisplay.isEmpty ? (HNONWYCELRhoniyArchive?.HNONWYCELRhoniyDisplayName ?? self.HNONWYCELRhoniyDefaultName(HNONWYCELRhoniyEmail.isEmpty ? "Honiy" : HNONWYCELRhoniyEmail)) : HNONWYCELRhoniyDisplay
-            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender = (self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["gender", "sex"]) as? String) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyGender ?? "Other"
-            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyAppleCode = (self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: ["Id", "id", "userId", "appleUserId"]) as? String) ?? HNONWYCELRhoniyAppleCredential.user
+            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword = HNONWYCELRhoniyArchive?.HNONWYCELRhoniyPassword ?? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "1x2x3x4x5x6x7x8")
+            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName = HNONWYCELRhoniyDisplay.isEmpty ? (HNONWYCELRhoniyArchive?.HNONWYCELRhoniyDisplayName ?? self.HNONWYCELRhoniyDefaultName(HNONWYCELRhoniyEmail.isEmpty ? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Hxoxnxixy") : HNONWYCELRhoniyEmail)) : HNONWYCELRhoniyDisplay
+            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender = (self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "gxexnxdxexr"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "sxexx")]) as? String) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyGender ?? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Oxtxhxexr")
+            self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyAppleCode = (self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ixd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "ixd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "uxsxexrxIxd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axpxpxlxexUxsxexrxIxd")]) as? String) ?? HNONWYCELRhoniyAppleCredential.user
             self.HNONWYCELRWardrobePortal(HNONWYCELRhoniyPayload: HNONWYCELRhoniyPayload, HNONWYCELRhoniyExplorer: HNONWYCELRhoniyExplorer, HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail.isEmpty ? HNONWYCELRhoniyAppleCredential.user : HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword: self.HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword, HNONWYCELRhoniyArchive: HNONWYCELRhoniyArchive)
         } HNONWYCELRwardrobeHilarity: { [weak self] HNONWYCELRhoniyError in
             guard let self else {

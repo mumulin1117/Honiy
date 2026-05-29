@@ -23,8 +23,8 @@ extension HNONWYCELRLookbookCreationControler {
     }
 
     func HNONWYCELRhoniyStoryFont(_ HNONWYCELRhoniySize: CGFloat) -> UIFont {
-        UIFont(name: "MarkerFelt-Wide", size: HNONWYCELRhoniyScaleWidth(HNONWYCELRhoniySize))
-        ?? UIFont(name: "Georgia-BoldItalic", size: HNONWYCELRhoniyScaleWidth(HNONWYCELRhoniySize))
+        UIFont(name: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "MxaxrxkxexrxFxexlxtx-xWxixdxe"), size: HNONWYCELRhoniyScaleWidth(HNONWYCELRhoniySize))
+        ?? UIFont(name: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Gxexoxrxgxixax-xBxoxlxdxIxtxaxlxixc"), size: HNONWYCELRhoniyScaleWidth(HNONWYCELRhoniySize))
         ?? UIFont.systemFont(ofSize: HNONWYCELRhoniyScaleWidth(HNONWYCELRhoniySize), weight: .black)
     }
 
@@ -32,10 +32,10 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyButton.setBackgroundImage(nil, for: .normal)
         HNONWYCELRhoniyButton.setTitle(HNONWYCELRhoniyTitle, for: .normal)
         HNONWYCELRhoniyButton.setTitleColor(.black, for: .normal)
-        HNONWYCELRhoniyButton.titleLabel?.font = UIFont(name: "Georgia-BoldItalic", size: HNONWYCELRhoniyScaleWidth(22)) ?? HNONWYCELRhoniyTitleFont(22)
+        HNONWYCELRhoniyButton.titleLabel?.font = UIFont(name: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Gxexoxrxgxixax-xBxoxlxdxIxtxaxlxixc"), size: HNONWYCELRhoniyScaleWidth(22)) ?? HNONWYCELRhoniyTitleFont(22)
         HNONWYCELRhoniyButton.layer.cornerRadius = HNONWYCELRhoniyButton.bounds.height / 2
         HNONWYCELRhoniyButton.clipsToBounds = true
-        let HNONWYCELRhoniyLayerName = "HNONWYCELRhoniyGlowTrack"
+        let HNONWYCELRhoniyLayerName = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "HxNxOxNxWxYxCxExLxRxhxoxnxixyxGxlxoxwxTxrxaxcxk")
         let HNONWYCELRhoniyLayer = (HNONWYCELRhoniyButton.layer.sublayers?.first { $0.name == HNONWYCELRhoniyLayerName } as? CAGradientLayer) ?? CAGradientLayer()
         HNONWYCELRhoniyLayer.name = HNONWYCELRhoniyLayerName
         HNONWYCELRhoniyLayer.colors = [
@@ -194,7 +194,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyLoginIconView.image = HNONWYCELRhoniyRenderLoginAsset("HNONWYCELRbznodu")
         HNONWYCELRhoniyLoginIconView.contentMode = .scaleAspectFit
         HNONWYCELRhoniyLoginIconView.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleWidth(100)).isActive = true
-        HNONWYCELRhoniyLoginTitleLabel.text = "Welcome Honiy"
+        HNONWYCELRhoniyLoginTitleLabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Wxexlxcxoxmxex xHxoxnxixy")
         HNONWYCELRhoniyLoginTitleLabel.textColor = .black
         HNONWYCELRhoniyLoginTitleLabel.textAlignment = .center
         HNONWYCELRhoniyLoginTitleLabel.font = HNONWYCELRhoniyStoryFont(30)
@@ -265,22 +265,22 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyProfileDeck.spacing = HNONWYCELRhoniyScaleHeight(18)
         HNONWYCELRhoniyProfileGlowGap.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyProfileGlowGap.heightAnchor.constraint(equalToConstant: HNONWYCELRhoniyScaleHeight(24)).isActive = true
-        HNONWYCELRhoniyProfileTitleLabel.text = "Final step information"
+        HNONWYCELRhoniyProfileTitleLabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fxixnxaxlx xsxtxexpx xixnxfxoxrxmxaxtxixoxn")
         HNONWYCELRhoniyProfileTitleLabel.textColor = .black
         HNONWYCELRhoniyProfileTitleLabel.font = HNONWYCELRhoniyStoryFont(27)
         HNONWYCELRhoniyProfileTitleLabel.numberOfLines = 0
-        HNONWYCELRhoniyProfileNoteLabel.text = "Please fill in your gender and date of birth."
+        HNONWYCELRhoniyProfileNoteLabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxlxexaxsxex xfxixlxlx xixnx xyxoxuxrx xgxexnxdxexrx xaxnxdx xdxaxtxex xoxfx xbxixrxtxhx.")
         HNONWYCELRhoniyProfileNoteLabel.textColor = UIColor(white: 0.5, alpha: 1)
         HNONWYCELRhoniyProfileNoteLabel.font = HNONWYCELRhoniyBodyFont(14, HNONWYCELRhoniyWeight: .medium)
         HNONWYCELRhoniyProfileNoteLabel.numberOfLines = 0
         let HNONWYCELRhoniyGenderTitleLabel = UILabel()
-        HNONWYCELRhoniyGenderTitleLabel.text = "Gender"
+        HNONWYCELRhoniyGenderTitleLabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Gxexnxdxexr")
         HNONWYCELRhoniyGenderTitleLabel.textColor = .black
-        HNONWYCELRhoniyGenderTitleLabel.font = UIFont(name: "Georgia-BoldItalic", size: HNONWYCELRhoniyScaleWidth(24)) ?? HNONWYCELRhoniyTitleFont(24)
+        HNONWYCELRhoniyGenderTitleLabel.font = UIFont(name: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Gxexoxrxgxixax-xBxoxlxdxIxtxaxlxixc"), size: HNONWYCELRhoniyScaleWidth(24)) ?? HNONWYCELRhoniyTitleFont(24)
         HNONWYCELRhoniyGenderLane.axis = .horizontal
         HNONWYCELRhoniyGenderLane.spacing = HNONWYCELRhoniyScaleWidth(12)
         HNONWYCELRhoniyGenderLane.distribution = .fillEqually
-        [("Male", HNONWYCELRhoniyGenderMuseButton), ("Female", HNONWYCELRhoniyGenderFrostButton)].forEach { HNONWYCELRhoniyPair in
+        [(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe"), HNONWYCELRhoniyGenderMuseButton), (AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fxexmxaxlxe"), HNONWYCELRhoniyGenderFrostButton)].forEach { HNONWYCELRhoniyPair in
             HNONWYCELRhoniyPair.1.setTitle(HNONWYCELRhoniyPair.0, for: .normal)
             HNONWYCELRhoniyPair.1.setTitleColor(.black, for: .normal)
             HNONWYCELRhoniyPair.1.titleLabel?.font = HNONWYCELRhoniyBodyFont(16, HNONWYCELRhoniyWeight: .semibold)
@@ -291,9 +291,9 @@ extension HNONWYCELRLookbookCreationControler {
         }
         HNONWYCELRhoniyGenderNovaButton.isHidden = true
         HNONWYCELRhoniyBirthTitleLabel.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyBirthTitleLabel.text = "Birthday"
+        HNONWYCELRhoniyBirthTitleLabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Bxixrxtxhxdxaxy")
         HNONWYCELRhoniyBirthTitleLabel.textColor = .black
-        HNONWYCELRhoniyBirthTitleLabel.font = UIFont(name: "Georgia-BoldItalic", size: HNONWYCELRhoniyScaleWidth(24)) ?? HNONWYCELRhoniyTitleFont(24)
+        HNONWYCELRhoniyBirthTitleLabel.font = UIFont(name: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Gxexoxrxgxixax-xBxoxlxdxIxtxaxlxixc"), size: HNONWYCELRhoniyScaleWidth(24)) ?? HNONWYCELRhoniyTitleFont(24)
         HNONWYCELRhoniyBirthValueButton.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyBirthValueButton.isHidden = true
         HNONWYCELRhoniyBirthPanel.translatesAutoresizingMaskIntoConstraints = false

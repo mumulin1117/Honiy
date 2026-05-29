@@ -18,19 +18,19 @@ final class HNONWYCELRHoniyPassportConsentDeck: UIView {
         HNONWYCELRhoniyCheckButton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYunsel"), for: .normal)
         HNONWYCELRhoniyCheckButton.setImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYsel"), for: .selected)
         HNONWYCELRhoniyLeadLineLabel.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyLeadLineLabel.text = "By registering, you agree to the"
+        HNONWYCELRhoniyLeadLineLabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Bxyx xrxexgxixsxtxexrxixnxgx,x xyxoxux xaxgxrxexex xtxox xtxhxe")
         HNONWYCELRhoniyLeadLineLabel.textColor = UIColor.black.withAlphaComponent(0.86)
         HNONWYCELRhoniyLeadLineLabel.font = UIFont.systemFont(ofSize: 12.8 * HNONWYCELRhoniyScale, weight: .medium)
         HNONWYCELRhoniyTermsButton.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyTermsButton.setTitle("<Terms of Use>", for: .normal)
+        HNONWYCELRhoniyTermsButton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "<xTxexrxmxsx xoxfx xUxsxex>"), for: .normal)
         HNONWYCELRhoniyTermsButton.setTitleColor(.black, for: .normal)
         HNONWYCELRhoniyTermsButton.titleLabel?.font = UIFont.systemFont(ofSize: 12.8 * HNONWYCELRhoniyScale, weight: .heavy)
         HNONWYCELRhoniyTailLineLabel.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyTailLineLabel.text = "and"
+        HNONWYCELRhoniyTailLineLabel.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axnxd")
         HNONWYCELRhoniyTailLineLabel.textColor = UIColor.black.withAlphaComponent(0.86)
         HNONWYCELRhoniyTailLineLabel.font = UIFont.systemFont(ofSize: 12.8 * HNONWYCELRhoniyScale, weight: .medium)
         HNONWYCELRhoniyPrivacyButton.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyPrivacyButton.setTitle("<Privacy Policy>.", for: .normal)
+        HNONWYCELRhoniyPrivacyButton.setTitle(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "<xPxrxixvxaxcxyx xPxoxlxixcxyx>x."), for: .normal)
         HNONWYCELRhoniyPrivacyButton.setTitleColor(.black, for: .normal)
         HNONWYCELRhoniyPrivacyButton.titleLabel?.font = UIFont.systemFont(ofSize: 12.8 * HNONWYCELRhoniyScale, weight: .heavy)
         HNONWYCELRhoniyUpperLane.axis = .horizontal
@@ -62,6 +62,6 @@ final class HNONWYCELRHoniyPassportConsentDeck: UIView {
     }
 
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "ixnxixtx(xcxoxdxexrx:x)x xhxaxsx xnxoxtx xbxexexnx xixmxpxlxexmxexnxtxexd"))
     }
 }
