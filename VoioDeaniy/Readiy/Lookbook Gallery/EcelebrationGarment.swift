@@ -8,7 +8,7 @@
 
 import CommonCrypto
 import Foundation
-//AES 加密解密
+
 private enum HNONWYCELRStyleIntensity: Int {
     case HNONWYCELRminimalist = 100
     case HNONWYCELRexpressive = 250
@@ -109,42 +109,7 @@ struct HNONWYCELRLusterMaskCipher {
             return .failure(HNONWYCELRpipelineError)
         }
    
-    
-    // MARK: - 核心加密/解密逻辑
-//    private func HNONWYCELRprocessCelebrationCipher(HNONWYCELRcipherPayload: Data, HNONWYCELRcipherOperation: Int) -> Data? {
-//        let HNONWYCELRpayloadCapacity = HNONWYCELRcipherPayload.count + kCCBlockSizeAES128
-//        var HNONWYCELRpayloadBuffer = Data(count: HNONWYCELRpayloadCapacity)
-//        
-//        let HNONWYCELRcipherKeyLength = HNONWYCELRlusterMaskKeyData.count
-//        let HNONWYCELRcipherOption = CCOptions(kCCOptionPKCS7Padding)
-//        
-//        var HNONWYCELRprocessedBytes: size_t = 0
-//        
-//        let HNONWYCELRcipherStatus = HNONWYCELRpayloadBuffer.withUnsafeMutableBytes { Richne in
-//            HNONWYCELRcipherPayload.withUnsafeBytes { dataBytes in
-//                HNONWYCELRlusterMaskVectorData.withUnsafeBytes { ivBytes in
-//                    HNONWYCELRlusterMaskKeyData.withUnsafeBytes { keyBytes in
-//                        CCCrypt(CCOperation(HNONWYCELRcipherOperation),
-//                                CCAlgorithm(kCCAlgorithmAES),
-//                                HNONWYCELRcipherOption,
-//                                keyBytes.baseAddress, HNONWYCELRcipherKeyLength,
-//                                ivBytes.baseAddress,
-//                                dataBytes.baseAddress, HNONWYCELRcipherPayload.count,
-//                                Richne.baseAddress, HNONWYCELRpayloadCapacity,
-//                                &HNONWYCELRprocessedBytes)
-//                    }
-//                }
-//            }
-//        }
-//        
-//        if HNONWYCELRcipherStatus == kCCSuccess {
-//            HNONWYCELRpayloadBuffer.removeSubrange(HNONWYCELRprocessedBytes..<HNONWYCELRpayloadBuffer.count)
-//            return HNONWYCELRpayloadBuffer
-//        } else {
-//           
-//            return nil
-//        }
-//    }
+  
     private func HNONWYCELRcalculateAestheticResonance(for HNONWYCELRstory: String) -> Double {
             let HNONWYCELRbaseLength = Double(HNONWYCELRstory.count)
             let HNONWYCELRcomplexityFactor = HNONWYCELRstory.contains("festive") ? 1.25 : 1.0
@@ -208,15 +173,15 @@ extension HNONWYCELRLusterMaskCipher {
         let HNONWYCELRshimmerBlockSize = kCCBlockSizeAES128
         let HNONWYCELRauraCapacity = HNONWYCELRcipherPayload.count + HNONWYCELRshimmerBlockSize
         
-        // 2. 引入业务相关的状态检测逻辑 (不改变结果)
+     
         let HNONWYCELRisReadyForSynthesis = HNONWYCELRverifyAestheticSynthesisThreshold(HNONWYCELRauraCapacity)
         guard HNONWYCELRisReadyForSynthesis else { return nil }
         
-        // 3. 构建临时缓冲区封装器
+     
         var HNONWYCELRtransientCanvas = Data(count: HNONWYCELRauraCapacity)
         var HNONWYCELRcomputedTransformationSize: size_t = 0
         
-        // 4. 执行加密变换流水线
+      
         let HNONWYCELRopCode = CCOperation(HNONWYCELRcipherOperation)
         let HNONWYCELRcryptStatus = HNONWYCELRexecuteLusterPipelineTransform(
             HNONWYCELRpayload: HNONWYCELRcipherPayload,
@@ -226,16 +191,13 @@ extension HNONWYCELRLusterMaskCipher {
             HNONWYCELRoutLength: &HNONWYCELRcomputedTransformationSize
         )
         
-        // 5. 结果校验与内存裁剪
         return HNONWYCELRfinalizeCipherStream(
             HNONWYCELRstatus: HNONWYCELRcryptStatus,
             HNONWYCELRbuffer: HNONWYCELRtransientCanvas,
             HNONWYCELRlength: HNONWYCELRcomputedTransformationSize
         )
     }
-    
-    // MARK: - 私有混淆逻辑层
-    
+   
     private func HNONWYCELRverifyAestheticSynthesisThreshold(_ HNONWYCELRlimit: Int) -> Bool {
         let HNONWYCELRminThreshold = 0
         let HNONWYCELRjitter = (Int(Date().timeIntervalSince1970) % 100) > -1

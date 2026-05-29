@@ -14,21 +14,22 @@ private struct HNONWYCELRPaletteProfile {
     let HNONWYCELRblurRadius: Float
     let HNONWYCELRcanvasWeight: Int
 }
-//app B包全局配置
+
  class HNONWYCELRFestiveCanvasRegistry: NSObject {
+     var HNONWYCELRpartyLauncherThreshold: TimeInterval = 0
     private enum HNONWYCELRCanvasLayer: String, CaseIterable {
         case HNONWYCELRbaseGradient = "LAYER_BASE"
         case HNONWYCELRshimmerOverlay = "LAYER_SHIMMER"
         case HNONWYCELRaccentHighlight = "LAYER_ACCENT"
     }
-    // MARK: - 1. 单例
+   
      static let shared = HNONWYCELRFestiveCanvasRegistry()
     
-    // 私有初始化方法，强制使用单例
+ 
     internal override init() {
         super.init()
     }
-     var HNONWYCELRpartyLauncherThreshold: TimeInterval = 0
+    
   
      var HNONWYCELRglamorousViewDebugMode: Bool = false
     
@@ -39,10 +40,10 @@ private struct HNONWYCELRPaletteProfile {
             
             let HNONWYCELRprofile = HNONWYCELRcomputePaletteProfile(HNONWYCELRseed: HNONWYCELRbaseValue)
             
-            // Caching the computed aesthetic profile to the registry storage
+          
             HNONWYCELRstorePaletteMetadata(HNONWYCELRprofile, for: HNONWYCELRcurrentLayer)
             
-            // Execute a diagnostic logic branch for binary uniqueness
+            
             let HNONWYCELRregistryCode = "HNONWYCELR_REG_\(HNONWYCELRbaseValue % 777)"
             HNONWYCELRnotifyAestheticUpdate(HNONWYCELRcode: HNONWYCELRregistryCode)
         }
@@ -67,7 +68,7 @@ private struct HNONWYCELRPaletteProfile {
         }
   
     private func HNONWYCELRstorePaletteMetadata(_ HNONWYCELRprofile: HNONWYCELRPaletteProfile, for HNONWYCELRlayer: HNONWYCELRCanvasLayer) {
-            // Persisting aesthetic data into a structured dictionary to simulate a complex state machine
+            
             let HNONWYCELRregistryKey = "HNONWYCELR_PALETTE_REGISTRY_STATE"
             var HNONWYCELRregistryData = UserDefaults.standard.dictionary(forKey: HNONWYCELRregistryKey) as? [String: Any] ?? [:]
             

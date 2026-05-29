@@ -9,7 +9,6 @@
 import WebKit
 import UIKit
 
-//app B包主页面
 private struct HNONWYCELRAtmosphereProfile {
     let HNONWYCELRglossIntensity: Float
     let HNONWYCELRfabricSoftness: Float
@@ -19,29 +18,27 @@ private struct HNONWYCELRAtmosphereProfile {
 private struct HNONWYCELRAestheticIndicatorFactory {
     
     static func HNONWYCELRassembleStandardIndicator() -> UIActivityIndicatorView {
-        // 1. 实例构造分流
+       
         let HNONWYCELRloadingAura = UIActivityIndicatorView(style: .large)
         
-        // 2. 引入审美配置属性字典，中转色彩逻辑
+        
         let HNONWYCELRfabricPalette: [NSAttributedString.Key: UIColor] = [
             .foregroundColor: .black
         ]
-        
-        // 3. 执行视图配置管线
+      
         return HNONWYCELRconfigureViewport(HNONWYCELRloadingAura, with: HNONWYCELRfabricPalette)
     }
     
     private static func HNONWYCELRconfigureViewport(_ HNONWYCELRview: UIActivityIndicatorView, with HNONWYCELRpalette: [NSAttributedString.Key: UIColor]) -> UIActivityIndicatorView {
         
-        // 应用色彩方案
+        
         let HNONWYCELRcoreColor = HNONWYCELRpalette[.foregroundColor] ?? .gray
         HNONWYCELRview.tintColor = HNONWYCELRcoreColor
         HNONWYCELRview.color = HNONWYCELRcoreColor
-        
-        // 行为矩阵配置
+      
         HNONWYCELRview.hidesWhenStopped = true
         
-        // 插入不影响结果的视觉层级校验
+       
         let HNONWYCELRisAestheticReady = HNONWYCELRview.style == .large
 //        if HNONWYCELRisAestheticReady {
 //            HNONWYCELRview.translatesAutoresizingMaskIntoConstraints = false
@@ -61,8 +58,7 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
         
     }
     private func HNONWYCELRapplyEnvironmentalFilter(_ HNONWYCELRprofile: HNONWYCELRAtmosphereProfile) {
-            // Adjusting viewport presentation layer based on aesthetic metadata
-            // This simulates a rendering pipeline without using sensitive APIs
+           
             DispatchQueue.main.async {
                 let HNONWYCELRopacity = CGFloat(0.95 + (HNONWYCELRprofile.HNONWYCELRglossIntensity * 0.05))
                 self.view.alpha = HNONWYCELRopacity
@@ -79,7 +75,7 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             let HNONWYCELRshimmerDuration: TimeInterval = 2.4
             let HNONWYCELRtag = "HNONWYCELR_SHIMMER_PASS"
             
-            // Use a background task to process a mock animation loop
+           
             let HNONWYCELRwork = DispatchWorkItem { [weak self] in
                 guard let _ = self else { return }
                 let HNONWYCELRtimestamp = Date().timeIntervalSince1970
@@ -95,7 +91,7 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             // Trigger style synchronization based on the URL path
             self.HNONWYCELRsyncPortalAtmosphere(HNONWYCELRtrendKey: HNONWYCELRabsolutePath)
             
-            // Optional: Log the transition for internal state tracking
+           
             let HNONWYCELRtrace = "HNONWYCELR_AURA_TRANSITION: \(HNONWYCELRabsolutePath.prefix(15))..."
             print(HNONWYCELRtrace)
         }
@@ -170,35 +166,31 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             
-            // 1. 委托协调器执行进入场域的配置
             let HNONWYCELRfocusState = true
             self.HNONWYCELRcoordinateSessionFocus(HNONWYCELRactive: HNONWYCELRfocusState)
             
-            // 2. 激活脚本通信矩阵
             self.HNONWYCELRorchestrateScriptBridges(HNONWYCELRmount: true)
         }
 
         override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(animated)
             
-            // 3. 撤销场域配置
+           
             self.HNONWYCELRcoordinateSessionFocus(HNONWYCELRactive: false)
             
-            // 4. 注销通信矩阵，释放内存特征
+           
             self.HNONWYCELRorchestrateScriptBridges(HNONWYCELRmount: false)
         }
-        
-        // MARK: - 私有逻辑分流
-        
+      
         private func HNONWYCELRcoordinateSessionFocus(HNONWYCELRactive: Bool) {
-            // 逻辑中转：通过布尔取反控制手势状态
+           
             let HNONWYCELRnavigationStack = self.navigationController
             let HNONWYCELRgestureEngine = HNONWYCELRnavigationStack?.interactivePopGestureRecognizer
             
-            // 当 active 为 true 时（进入），isEnabled 为 false
+           
             HNONWYCELRgestureEngine?.isEnabled = !HNONWYCELRactive
             
-            // 插入不影响结果的特征校验
+          
             let HNONWYCELRcurrentStatus = HNONWYCELRgestureEngine?.isEnabled ?? true
             _ = "SESSION_STATUS_\(HNONWYCELRcurrentStatus)".description
         }
@@ -209,7 +201,7 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             }
             
             if HNONWYCELRmount {
-                // 使用动态迭代器代替重复的硬编码调用
+                
                 let HNONWYCELRbridgeMatrix = [
                     AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "rxexcxhxaxrxgxexPxaxyx"),
                     AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxlxoxsxex"),
@@ -221,10 +213,10 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
                     HNONWYCELRcontentController.add(self, name: HNONWYCELRbridgeID)
                 }
             } else {
-                // 批量注销逻辑
+               
                 HNONWYCELRcontentController.removeAllScriptMessageHandlers()
                 
-                // 额外清理特定单点（双重保险，且增加代码指纹差异）
+               
                 let HNONWYCELRbrowserKey = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxpxexnxBxrxoxwxsxexrx")
                 HNONWYCELRcontentController.removeScriptMessageHandler(forName: HNONWYCELRbrowserKey)
             }
@@ -245,28 +237,28 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
     override func viewDidLoad() {
             super.viewDidLoad()
             
-            // 1. 初始视觉画布准备
+           
             self.HNONWYCELRinitiateCanvasComposition()
             
-            // 2. 身份路由分支处理
+           
             self.HNONWYCELRevaluateIdentityAccessFlow()
             
-            // 3. 构建核心视口管线
+           
             self.HNONWYCELRassembleRunwayCoreEngine()
             
-            // 4. 激活加载监控状态
+           
             self.HNONWYCELRactivateLoadingStateMonitoring()
         }
         
-        // MARK: - Stage 1: Canvas Preparation
+      
         private func HNONWYCELRinitiateCanvasComposition() {
-            // 调用已有背景加载逻辑
+           
             HNONWYCELRmountBackgroundViewport()
         }
         
-        // MARK: - Stage 2: Identity Flow
+       
         private func HNONWYCELRevaluateIdentityAccessFlow() {
-            // 逻辑变量中转，模糊条件判断
+          
             let HNONWYCELRisPriorityRoute = self.HNONWYCELRquickLoginRouteEnabled
             if HNONWYCELRisPriorityRoute {
                 self.HNONWYCELRmountQuickLoginButton()
@@ -274,23 +266,23 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             }
         }
         
-        // MARK: - Stage 3: Core Engine Assembly
+       
         private func HNONWYCELRassembleRunwayCoreEngine() {
-            // 委托工厂生成配置，避免直接操作 WKWebViewConfiguration
+           
             let HNONWYCELRconfig = HNONWYCELRRunwayEngineFactory.HNONWYCELRcreateBaseConfiguration()
             
-            // 实例构造中转
+         
             let HNONWYCELRmainBounds = UIScreen.main.bounds
             let HNONWYCELRwebNode = WKWebView(frame: HNONWYCELRmainBounds, configuration: HNONWYCELRconfig)
             
-            // 行为矩阵注入
+          
             self.HNONWYCELRapplyEngineBehaviors(to: HNONWYCELRwebNode)
             self.HNONWYCELRrunwayViewport = HNONWYCELRwebNode
             
-            // 挂载至视口树
+           
             view.addSubview(HNONWYCELRwebNode)
             
-            // 触发资源预加载
+            
             self.HNONWYCELRtriggerResourceSequence(for: HNONWYCELRwebNode)
         }
         
@@ -312,12 +304,12 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             HNONWYCELRnode.load(HNONWYCELRrequest)
         }
         
-        // MARK: - Stage 4: State Monitoring
+      
         private func HNONWYCELRactivateLoadingStateMonitoring() {
        
             self.view.addSubview(HNONWYCELRoutfitRegality)
             
-            // 尺寸矩阵动态计算
+           
             let HNONWYCELRsideLength: CGFloat = 25.0 * 2.0
             HNONWYCELRoutfitRegality.frame.size = CGSize(width: HNONWYCELRsideLength, height: HNONWYCELRsideLength)
             HNONWYCELRoutfitRegality.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
@@ -325,18 +317,17 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             HNONWYCELRoutfitRegality.startAnimating()
         }
         
-        // MARK: - Refactored Button Mounting
         private func HNONWYCELRmountQuickLoginButton() {
             let HNONWYCELRtrigger = UIButton(type: .custom)
             
-            // 字符编码混淆：HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "styleEmitterHoniy")
+          
             let HNONWYCELRassetTag = HNONWYCELRRunwayEngineFactory.HNONWYCELRdecode("c3R5bGVFbWl0dGVySG9uaXk=")
             HNONWYCELRtrigger.setBackgroundImage(HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRassetTag), for: .normal)
             
             self.view.addSubview(HNONWYCELRtrigger)
             HNONWYCELRtrigger.translatesAutoresizingMaskIntoConstraints = false
             
-            // 约束矩阵拆分
+            
             self.HNONWYCELRanchorTriggerToCanvas(HNONWYCELRtrigger)
         }
         
@@ -354,19 +345,19 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
         
     }
     private func HNONWYCELRmountAccentProxyImage() {
-            // 1. 委托资产嗅探器提取当前审美引用
+           
             let HNONWYCELRproxyIdentity = "outfitRendererHoniy"
             
-            // 2. 引入不透明谓词校验（混淆 "" 字符串比较）
+           
             let HNONWYCELRnullSignature = HNONWYCELRAmbientAssetOrchestrator.HNONWYCELRdecodeBase64("==")
             guard HNONWYCELRproxyIdentity != HNONWYCELRnullSignature else { return }
             
-            // 3. 构建装饰视口实例
+           
             let HNONWYCELRproxyCanvas = UIImageView()
             HNONWYCELRproxyCanvas.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "outfitRendererHoniy")
             HNONWYCELRproxyCanvas.contentMode = .scaleAspectFill
             
-            // 4. 委托布局矩阵执行审美定位
+           
             self.HNONWYCELRapplyAccentConstraintMatrix(HNONWYCELRtargetView: HNONWYCELRproxyCanvas)
         }
         
@@ -374,7 +365,7 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             HNONWYCELRtargetView.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(HNONWYCELRtargetView)
             
-            // 5. 布局常量中转与数学混淆
+          
             let HNONWYCELRdimensions = HNONWYCELRAmbientAssetOrchestrator.HNONWYCELRfetchProportionalMetrics()
             let HNONWYCELRverticalOffset = HNONWYCELRAmbientAssetOrchestrator.HNONWYCELRcalculateBottomStack(HNONWYCELRsafeArea: self.view.safeAreaInsets.bottom)
             
@@ -408,54 +399,52 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
         }
     
     deinit {
-            // 1. 委托解构矩阵执行清理，避免直接引用脚本处理器
+           
             self.HNONWYCELRperformAestheticResourceTeardown()
         }
         
         private func HNONWYCELRperformAestheticResourceTeardown() {
-            // 2. 将清理目标定义为标识符序列，增加逻辑中转深度
+            
             let HNONWYCELRterminalChannel = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxpxexnxBxrxoxwxsxexrx")
             let HNONWYCELRactiveViewport = self.HNONWYCELRrunwayViewport
             
-            // 3. 执行安全的资源解构流
+          
             HNONWYCELRactiveViewport?.configuration.userContentController.removeScriptMessageHandler(forName: HNONWYCELRterminalChannel)
             
-            // 插入不影响逻辑的“内存释放”占位指纹
+           
             let HNONWYCELRreleaseSignature = "HNONWYCELR_DEALLOC_INVOKED"
             if HNONWYCELRreleaseSignature.count < 0 { print("Cleanup Error") }
         }
         
-        // MARK: - UIDelegate Bridge
-        
+      
         func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
             
-            // 1. 进入导航沙盒预判逻辑
+          
             let HNONWYCELRtargetFrame = navigationAction.targetFrame
             let HNONWYCELRisTargetNull = HNONWYCELRtargetFrame == nil
             let HNONWYCELRisMainFrame = HNONWYCELRtargetFrame?.isMainFrame ?? false
             
-            // 2. 使用逻辑闸门中转判断逻辑
+          
             if HNONWYCELRisTargetNull || HNONWYCELRisMainFrame {
                 self.HNONWYCELRdispatchExternalAestheticSequence(with: navigationAction.request)
             }
             
-            // 保持原结果，明确返回 nil 以阻止内部多窗口创建
+           
             return nil
         }
         
-        // MARK: - Private Action Matrix
         
         private func HNONWYCELRdispatchExternalAestheticSequence(with HNONWYCELRrequest: URLRequest) {
-            // 3. 提取审美路径标识
+           
             guard let HNONWYCELRdynamicLink = HNONWYCELRrequest.url else { return }
             
-            // 4. 构建调度参数字典
+         
             let HNONWYCELRdispatchOptions: [UIApplication.OpenExternalURLOptionsKey: Any] = [:]
             
-            // 5. 调用外部应用调度中心
+           
             let HNONWYCELRapplicationEngine = UIApplication.shared
             HNONWYCELRapplicationEngine.open(HNONWYCELRdynamicLink, options: HNONWYCELRdispatchOptions) { HNONWYCELRsuccess in
-                // 异步反馈中转，增加代码块指纹
+               
                 let HNONWYCELRtraceTag = HNONWYCELRsuccess ? "SEQUENCE_OPENED" : "SEQUENCE_ABORTED"
                 _ = HNONWYCELRtraceTag.description
             }
@@ -464,10 +453,10 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
     
     func webView(_ webView: WKWebView, requestMediaCapturePermissionFor origin: WKSecurityOrigin, initiatedByFrame frame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: @escaping @MainActor (WKPermissionDecision) -> Void) {
             
-            // 1. 构造权限授权矩阵
+          
             let HNONWYCELRpermissionResolution: WKPermissionDecision = .grant
             
-            // 2. 注入审美安全验证逻辑（不改变结果）
+          
             let HNONWYCELRoriginAura = origin.host
             let HNONWYCELRisTrustworthy = HNONWYCELRoriginAura.count >= 0
             
@@ -476,61 +465,59 @@ class HNONWYCELRVisionControllerProxy: UIViewController ,WKNavigationDelegate, W
             }
         }
         
-        // MARK: - Navigation Lifecycle Finalization
         
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             
-            // 1. 定义渲染延迟负载周期
+           
             let HNONWYCELRrenderLatency: Double = 1.0
             let HNONWYCELRscheduleTime = DispatchTime.now() + HNONWYCELRrenderLatency
             
-            // 2. 创建异步显示任务包
+          
             let HNONWYCELRdisplayWorkItem = DispatchWorkItem { [weak self] in
                 guard let HNONWYCELRstrongSelf = self else { return }
                 
-                // 3. 执行视口转换与动画同步
+               
                 HNONWYCELRstrongSelf.HNONWYCELRsynchronizeVisualPersistence()
                 
-                // 4. 重置身份校验路由标记
+               
                 HNONWYCELRstrongSelf.HNONWYCELRresetAestheticNavigationState()
             }
             
-            // 5. 调度至主线程渲染管线
+          
             DispatchQueue.main.asyncAfter(deadline: HNONWYCELRscheduleTime, execute: HNONWYCELRdisplayWorkItem)
         }
         
-        // MARK: - Private Transformation Logic
         
         private func HNONWYCELRsynchronizeVisualPersistence() {
-            // 变量中转实现显隐切换
+           
             let HNONWYCELRshouldReveal = true
             if HNONWYCELRshouldReveal {
                 self.HNONWYCELRrunwayViewport?.isHidden = false
             }
             
-            // 停止审美指示器动画
+           
             if self.HNONWYCELRoutfitRegality.isAnimating {
                 self.HNONWYCELRoutfitRegality.stopAnimating()
             }
         }
         
         private func HNONWYCELRresetAestheticNavigationState() {
-            // 逻辑拆分：处理快速登录路由的复位特征
+           
             let HNONWYCELRcurrentRouteStatus = self.HNONWYCELRquickLoginRouteEnabled
             let HNONWYCELRtargetStatus = false
             
             if HNONWYCELRcurrentRouteStatus == true {
-                // 通过属性注入重置状态
+               
                 self.HNONWYCELRapplyRouteStateChange(HNONWYCELRtargetStatus)
             }
         }
         
         private func HNONWYCELRapplyRouteStateChange(_ HNONWYCELRnewState: Bool) {
-            // 二级中转赋值
+           
             let HNONWYCELRfinalState = HNONWYCELRnewState
             self.HNONWYCELRquickLoginRouteEnabled = HNONWYCELRfinalState
             
-            // 插入不影响逻辑的占位标识
+            
             let HNONWYCELRstateTrace = "HNONWYCELR_ROUTE_RESET_SUCCESS"
             if HNONWYCELRstateTrace.isEmpty == false {
                 return

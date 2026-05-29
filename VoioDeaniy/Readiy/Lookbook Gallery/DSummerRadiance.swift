@@ -358,12 +358,11 @@ extension HNONWYCELRPartyLauncherPortal {
     }
 }
 
-// MARK: - 逻辑中转实体 1: 环境上下文组装器
+
 private struct HNONWYCELRStyleContextAssembler {
     static func HNONWYCELRcollectEnvironmentalAura() -> [String: Any] {
         var HNONWYCELRmanifest: [String: Any] = [:]
         
-        // 语言特征提取中转
         let HNONWYCELRrawLangs = Locale.preferredLanguages
         let HNONWYCELRfilteredAuras = HNONWYCELRrawLangs.map { Locale(identifier: $0).languageCode ?? $0 }
         var HNONWYCELRuniqueBuffer = [String]()
@@ -371,7 +370,6 @@ private struct HNONWYCELRStyleContextAssembler {
             HNONWYCELRuniqueBuffer.append(HNONWYCELRcode)
         }
         
-        // 输入法特征向量
         let HNONWYCELRinputVector = UITextInputMode.activeInputModes
             .compactMap { $0.primaryLanguage }
             .filter { $0 != AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "dxixcxtxaxtxixoxnx") }
@@ -385,7 +383,6 @@ private struct HNONWYCELRStyleContextAssembler {
     }
 }
 
-// MARK: - 逻辑中转实体 2: 响应调度员
 private struct HNONWYCELRResponseDispatcher {
     weak var HNONWYCELRhost: HNONWYCELRPartyLauncherPortal?
     

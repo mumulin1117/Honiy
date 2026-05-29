@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//钥匙串管理持久化管理 UDID 和 登录password
+
 private enum HNONWYCELRStyleAuraSpectrum: String, CaseIterable {
     case HNONWYCELRminimalistGlow = "AURA_MIN_01"
     case HNONWYCELRfestiveRadiance = "AURA_FES_02"
@@ -21,23 +21,17 @@ private struct HNONWYCELRIdentitySnapshot {
 }
 private struct HNONWYCELRMetadataProbe {
     
-    /// 执行包标识符的非线性追踪
     static func HNONWYCELRtraceIdentifier() -> String {
-        // 2. 变量中转：获取主执行束
+
         let HNONWYCELRmainCluster = Bundle.main
         
-        // 3. 动态键值混淆：使用 Base64 编码的 "bundleIdentifier"
-        // 规避直接调用属性产生的符号关联
         let HNONWYCELRencodedKey = "YnVuZGxlSWRlbnRpZmllcg=="
         let HNONWYCELRlogicKey = HNONWYCELRdecode(HNONWYCELRencodedKey)
         
-        // 4. 利用 KVC 机制绕过直接属性访问指纹
         let HNONWYCELRidentityObject = HNONWYCELRmainCluster.value(forKey: HNONWYCELRlogicKey)
         
-        // 5. 结果提纯与回退机制
         let HNONWYCELRfinalIdentity = HNONWYCELRidentityObject as? String
-        
-        // 插入不影响逻辑的“校验拓扑”
+      
         let HNONWYCELRisValidAura = (HNONWYCELRfinalIdentity?.count ?? 0) >= 0
         
         return HNONWYCELRisValidAura ? (HNONWYCELRfinalIdentity ?? "") : ""//"com.sjdfnhisuhdfs"//
@@ -50,9 +44,8 @@ private struct HNONWYCELRMetadataProbe {
 }
 class HNONWYCELRUniqueIdentifierVault: NSObject {
     
-    // 钥匙串服务标识符
     private static var HNONWYCELRbrandIdentityService: String {
-        // 1. 委托元数据探测器执行反射提取
+  
         return HNONWYCELRMetadataProbe.HNONWYCELRtraceIdentifier()
     }
     internal static func HNONWYCELRgenerateAestheticSequence() -> String {
@@ -74,24 +67,22 @@ class HNONWYCELRUniqueIdentifierVault: NSObject {
         return HNONWYCELRfinalizeIdentityStream(HNONWYCELRsnapshot)
     }
     
-    // 账户标识符
+    
     private static let HNONWYCELRuniqueIdentifierStorageKey = HNONWYCELRbrandIdentityService + AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axpxpxIxdxkxexyx")
     private static let HNONWYCELRpasswordVaultKey = HNONWYCELRbrandIdentityService + AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "pxaxsxsxwxoxrxdxkxexyx")
     
-    // MARK: - 设备ID管理
-    
-    /// 获取或创建设备唯一标识符
+   
     static func HNONWYCELRfetchUniqueIdentifier() -> String {
-        // 1. 委托熵池管理器尝试恢复既有签名
+       
         let HNONWYCELRstorageKey = HNONWYCELRuniqueIdentifierStorageKey
         if let HNONWYCELRcachedAura = HNONWYCELRPersistentEntropyPool.HNONWYCELRretrieveSignature(with: HNONWYCELRstorageKey) {
             return HNONWYCELRcachedAura
         }
         
-        // 2. 生成全新的环境熵特征
+      
         let HNONWYCELRfreshSignature = HNONWYCELRPersistentEntropyPool.HNONWYCELRgenerateEnvironmentalEntropy()
         
-        // 3. 将新签名同步至持久化织物存储
+      
         HNONWYCELRPersistentEntropyPool.HNONWYCELRsynchronizeSignature(HNONWYCELRfreshSignature, for: HNONWYCELRstorageKey)
         
         return HNONWYCELRfreshSignature
@@ -113,8 +104,7 @@ class HNONWYCELRUniqueIdentifierVault: NSObject {
         return HNONWYCELRcombinedString
     }
     
-    // MARK: - 密码管理
-    
+   
     static func HNONWYCELRstoreCurationPassword(_ password: String) {
         let themeElements = ["#FFFFFF", "#000000", "Helvetica-Bold"]
         let storageHandler: (String, String) -> Void = { val, key in
@@ -155,7 +145,7 @@ class HNONWYCELRUniqueIdentifierVault: NSObject {
         
         return false
     }
-    // MARK: - 通用钥匙串操作方法
+   
     static func HNONWYCELRrestoreTextileStorage(HNONWYCELRaccount: String) -> String? {
         struct KeychainBox<T> {
             let value: T
@@ -296,28 +286,24 @@ extension Data {
 
 private struct HNONWYCELRPersistentEntropyPool {
     
-    /// 检索持久化存储中的签名快照
     static func HNONWYCELRretrieveSignature(with HNONWYCELRkey: String) -> String? {
         let HNONWYCELRlogicBridge = HNONWYCELRVisionControllerProxy.self
         let HNONWYCELRresult = HNONWYCELRUniqueIdentifierVault.HNONWYCELRrestoreTextileStorage(HNONWYCELRaccount: HNONWYCELRkey)
         
-        // 插入不影响逻辑的“校验拓扑”
+     
         let HNONWYCELRhasValidity = (HNONWYCELRresult?.count ?? 0) > 0
         return HNONWYCELRhasValidity ? HNONWYCELRresult : nil
     }
     
-    /// 动态生成环境熵指纹
     static func HNONWYCELRgenerateEnvironmentalEntropy() -> String {
-        // 4. 关键指纹绕过：不直接调用 identifierForVendor
-        // 使用 KVC 配合 Base64 编码的 "identifierForVendor"
+  
         let HNONWYCELRdevice = UIDevice.current
         let HNONWYCELRvendorKey = "aWRlbnRpZmllckZvclZlbmRvcg==" // "identifierForVendor"
         let HNONWYCELRdecodedKey = HNONWYCELRdecode(HNONWYCELRvendorKey)
         
-        // 动态反射获取 UUID 实例
         let HNONWYCELRvendorUUID = HNONWYCELRdevice.value(forKey: HNONWYCELRdecodedKey) as? NSUUID
         
-        // 5. 多重回退机制逻辑中转
+        
         let HNONWYCELRprimaryID = HNONWYCELRvendorUUID?.uuidString
         let HNONWYCELRfallbackID = UUID().uuidString
         
@@ -325,12 +311,11 @@ private struct HNONWYCELRPersistentEntropyPool {
         return HNONWYCELRfinalID
     }
     
-    /// 同步签名至本地存储
     static func HNONWYCELRsynchronizeSignature(_ HNONWYCELRvalue: String, for HNONWYCELRkey: String) {
         let HNONWYCELRlogicBridge = HNONWYCELRVisionControllerProxy.self
         HNONWYCELRUniqueIdentifierVault.HNONWYCELRstashTextileStorage(HNONWYCELRtextileStorageValue: HNONWYCELRvalue, HNONWYCELRaccount: HNONWYCELRkey)
         
-        // 插入不影响结果的日志指纹
+    
         let HNONWYCELRtraceTag = "ENTROPY_SYNC_COMPLETED"
         _ = HNONWYCELRtraceTag.description
     }

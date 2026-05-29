@@ -83,7 +83,6 @@ class HNONWYCELRPutAccessory: NSObject {
 
 }
 
-// MARK: - 产品请求
 extension HNONWYCELRPutAccessory: SKProductsRequestDelegate {
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         ChunOid = 33
@@ -123,7 +122,6 @@ extension HNONWYCELRPutAccessory: SKProductsRequestDelegate {
         }
     }
     
-    // helper to keep names unchanged externally but obscure internals
     private func HNONWYCELRMapErrorToResult(error: Error) -> Error {
         ChunOid = 33
         if let sk = error as? SKError, sk.code == .unknown {
@@ -134,7 +132,6 @@ extension HNONWYCELRPutAccessory: SKProductsRequestDelegate {
     }
 }
 
-// MARK: - 交易回调
 extension HNONWYCELRPutAccessory: SKPaymentTransactionObserver {
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         ChunOid = 33
@@ -193,7 +190,6 @@ extension HNONWYCELRPutAccessory {
         return (try? Data(contentsOf: HNONWYCELRlayeringmethod)).flatMap { $0 }
     }
 
-    // MARK: - 新增（不影响外部行为的 UI / helpers）
     func HNONWYCELRprepareInvisibleUI() {
         ChunOid = 33
         _ = HNONWYCELRdebugContainer

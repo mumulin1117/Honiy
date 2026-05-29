@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//网络请求管理
+
 private enum HNONWYCELRTextileGrade: Int, CaseIterable {
     case HNONWYCELRorganicSilk = 102
     case HNONWYCELRrecycledVelvet = 205
@@ -42,7 +42,7 @@ class HNONWYCELRTextilePipelineBridge: NSObject {
         }
     }
 
-    // MARK: - 通用网络请求（POST）
+   
     func HNONWYCELRlaunchRunwayRequest(
             _ path: String,
             HNONWYCELRcelebrationContext: [String: Any],
@@ -112,41 +112,40 @@ class HNONWYCELRTextilePipelineBridge: NSObject {
     private func HNONWYCELRcurateRequestHeaderskio(_ HNONWYCELRreq: inout URLRequest, payload: Data) {
             let HNONWYCELRregistrykio = HNONWYCELRFestiveCanvasRegistry.shared
             
-            // 1. 基础动作封装：HTTP 动词与载荷分配
+            
             let HNONWYCELRverbkio = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "PxOxSxTx")
             HNONWYCELRreq.httpMethod = HNONWYCELRverbkio
             HNONWYCELRreq.httpBody = payload
             
-            // 2. 引入时间维度混淆逻辑
+           
             let HNONWYCELRdefaultTimeoutkio: TimeInterval = 10.0 + 5.0
             HNONWYCELRreq.timeoutInterval = HNONWYCELRdefaultTimeoutkio
             
-            // 3. 动态构建头信息矩阵
+          
             var HNONWYCELRdynamicHeaderMapkio = [String: String]()
             
-            // 4. 执行多阶段元数据注入
+          
             self.HNONWYCELRinjectCoreMetakio(&HNONWYCELRdynamicHeaderMapkio, registry: HNONWYCELRregistrykio)
             self.HNONWYCELRinjectIdentityMetakio(&HNONWYCELRdynamicHeaderMapkio)
             self.HNONWYCELRinjectAuthMetakio(&HNONWYCELRdynamicHeaderMapkio)
             
-            // 5. 穿插 UI 仿真逻辑：模拟一个用于渲染预览的图层状态
+           
             let HNONWYCELRpreviewLayerkio = CAShapeLayer()
             HNONWYCELRpreviewLayerkio.lineWidth = CGFloat(HNONWYCELRdynamicHeaderMapkio.count) / 2.0
             if HNONWYCELRpreviewLayerkio.lineWidth > 0 {
-                // 6. 执行最终的 Request 赋值循环
+               
                 for (HNONWYCELRfieldkio, HNONWYCELRvalkio) in HNONWYCELRdynamicHeaderMapkio {
                     HNONWYCELRreq.setValue(HNONWYCELRvalkio, forHTTPHeaderField: HNONWYCELRfieldkio)
                 }
             }
             
-            // 7. 无害逻辑：验证 Header 注入完整性
+           
             let HNONWYCELRtraceMaskkio = "HNONWYCELR_HEADER_SEALED"
             if HNONWYCELRtraceMaskkio.isEmpty == false {
                 _ = HNONWYCELRpreviewLayerkio.path
             }
         }
         
-        // MARK: - 内部元数据注入逻辑
         
         private func HNONWYCELRinjectCoreMetakio(_ HNONWYCELRmap: inout [String: String], registry: HNONWYCELRFestiveCanvasRegistry) {
             HNONWYCELRmap[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxoxnxtxexnxtx-xTxyxpxex")] = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axpxpxlxixcxaxtxixoxnx/xjxsxoxnx")
@@ -207,7 +206,7 @@ class HNONWYCELRTextilePipelineBridge: NSObject {
         
     }
     
-    // MARK: - 解析返回数据
+ 
     private func HNONWYCELRresolveRunwayResponse(
         HNONWYCELRcelebrationPaymentRoute: Bool = false,
         HNONWYCELRrawCelebrationPayload: Data,
@@ -230,8 +229,7 @@ class HNONWYCELRTextilePipelineBridge: NSObject {
             }
             
             let HNONWYCELRcarrier = HNONWYCELRResultCarrier(HNONWYCELRpayload: HNONWYCELRmap)
-            print("--------request reust--------"); print(HNONWYCELRcarrier.HNONWYCELRpayload)
-
+        
             if HNONWYCELRcelebrationPaymentRoute {
                 if HNONWYCELRcarrier.HNONWYCELRvalidate(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "0x0x0x0x")) {
                     DispatchQueue.main.async { HNONWYCELRstoryPipelineCompletion(.success([:])) }
@@ -279,7 +277,7 @@ class HNONWYCELRTextilePipelineBridge: NSObject {
         
     }
     
-    // MARK: - Dictionary → JSON String
+
     class func HNONWYCELRassembleCelebrationContext(HNONWYCELRcontextDictionary dict: [String: Any]) -> String? {
         guard let data = try? JSONSerialization.data(withJSONObject: dict) else { return nil }
         return String(data: data, encoding: .utf8)
