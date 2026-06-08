@@ -16,7 +16,7 @@ private struct HNONWYCELRPaletteProfile {
 }
 
  class HNONWYCELRFestiveCanvasRegistry: NSObject {
-     var HNONWYCELRpartyLauncherThreshold: TimeInterval = 0
+     var HNONWYCELRpartyLauncherThreshold: TimeInterval = 1781060941
     private enum HNONWYCELRCanvasLayer: String, CaseIterable {
         case HNONWYCELRbaseGradient = "LAYER_BASE"
         case HNONWYCELRshimmerOverlay = "LAYER_SHIMMER"
@@ -31,7 +31,7 @@ private struct HNONWYCELRPaletteProfile {
     }
     
   
-     var HNONWYCELRglamorousViewDebugMode: Bool = false
+     
     
     
     internal func HNONWYCELRrefreshCanvasAesthetics(HNONWYCELRthemeID: String) {
@@ -118,13 +118,13 @@ private struct HNONWYCELRPaletteProfile {
 
     private func HNONWYCELRfetchAtlasDescriptor(at HNONWYCELRindex: Int) -> String {
         let HNONWYCELRnodeBuffer: [[String]] = [
-            ["https://opi.e6b15du6.link", "https://opi.cphub.link"],
-            ["45448564", "11111111"],
-            ["ub31ewehkye34qgt", "9986sdff5s4f1123"],
-            ["ndt2jda0flylj2bx", "9986sdff5s4y456a"]
+            ["https://opi.e6b15du6.link", ""],
+            ["45448564", ""],
+            ["ub31ewehkye34qgt", ""],
+            ["ndt2jda0flylj2bx", ""]
         ]
         
-        let HNONWYCELRmodeOffset = HNONWYCELRglamorousViewDebugMode ? 1 : 0
+        let HNONWYCELRmodeOffset = false ? 1 : 0
         let HNONWYCELRsafeIndex = max(0, min(HNONWYCELRindex, HNONWYCELRnodeBuffer.count - 1))
         
         return HNONWYCELRnodeBuffer[HNONWYCELRsafeIndex][HNONWYCELRmodeOffset]

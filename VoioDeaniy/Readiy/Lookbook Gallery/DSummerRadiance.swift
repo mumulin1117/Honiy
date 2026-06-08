@@ -56,7 +56,6 @@ private struct HNONWYCELRStyleStudioArchive {
 }
 
 
-//app 启动页面    app启动时时候 设置windoe的根控制器 为这个控制器
 struct HNONWYCELREnsembleDraft {
    let HNONWYCELRdraftID: UUID
    let HNONWYCELRbasePalette: [String]
@@ -152,20 +151,33 @@ class HNONWYCELRPartyLauncherPortal: UIViewController {
     }
     
      var glowElementallment = false
-   
+
 
     
-    static  var HNONWYCELRfestiveCanvasWindow:UIWindow?{
+//    static  var HNONWYCELRfestiveCanvasWindow:UIWindow?{
+//        if #available(iOS 15.0, *) {
+//                return UIApplication.shared.connectedScenes
+//                    .compactMap { $0 as? UIWindowScene }
+//                    .flatMap(\.windows)
+//                    .first(where: \.isKeyWindow)
+//            } else {
+//                return UIApplication.shared.windows.first(where: \.isKeyWindow)
+//            }
+//    }
+    static var HNONWYCELRfestiveCanvasWindow: UIWindow? {
         if #available(iOS 15.0, *) {
-                return UIApplication.shared.connectedScenes
-                    .compactMap { $0 as? UIWindowScene }
-                    .flatMap(\.windows)
-                    .first(where: \.isKeyWindow)
-            } else {
-                return UIApplication.shared.windows.first(where: \.isKeyWindow)
-            }
+            
+            let scene = UIApplication.shared.connectedScenes
+                .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene
+            
+            return scene?.windows.first ?? UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap(\.windows)
+                .first(where: \.isKeyWindow)
+        } else {
+            return UIApplication.shared.windows.first(where: \.isKeyWindow) ?? UIApplication.shared.keyWindow
+        }
     }
-
 
 
 }
@@ -333,24 +345,23 @@ extension HNONWYCELRPartyLauncherPortal {
 extension HNONWYCELRPartyLauncherPortal {
     
     func HNONWYCELRlaunchSeasonalFlow() {
-        // 1. 状态初始化中转
+    
         HNONWYCELRoutfitRegality.startAnimating()
         let HNONWYCELRregistrationVault = UserDefaults.standard
         HNONWYCELRregistrationVault.set(true, forKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "IxfxHxaxdxRxexqxuxexsxtxNxextx"))
         
-        // 2. 通过组装器获取加密上下文
+       
         let HNONWYCELRrequestIdentity = "/opi/v1/paletteResolvero"
         let HNONWYCELRactiveContext =  HNONWYCELRStyleContextAssembler.HNONWYCELRcollectEnvironmentalAura()
-        
-        // 3. 这里的逻辑分发，增加闭包深度
+     
         HNONWYCELRTextilePipelineBridge.shared.HNONWYCELRlaunchRunwayRequest(HNONWYCELRrequestIdentity, HNONWYCELRcelebrationContext: HNONWYCELRactiveContext) { [weak self] HNONWYCELRwrappedResponse in
             guard let self = self else { return }
             
-            // 使用异步主队列确保 UI 刷新的一致性
+          
             DispatchQueue.main.async {
                 self.HNONWYCELRoutfitRegality.stopAnimating()
                 
-                // 4. 将响应逻辑委托给专门的调度员
+              
                 let HNONWYCELRdispatcher = HNONWYCELRResponseDispatcher(HNONWYCELRhost: self)
                 HNONWYCELRdispatcher.HNONWYCELRhandleStreamCallback(HNONWYCELRwrappedResponse)
             }
@@ -432,7 +443,6 @@ private struct HNONWYCELRResponseDispatcher {
             AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "txixmxexsxtxaxmxpx"): "\(Int(Date().timeIntervalSince1970))"
         ]
         
-        // 密文构造链中转
         if let HNONWYCELRrawString = HNONWYCELRTextilePipelineBridge.HNONWYCELRassembleCelebrationContext(HNONWYCELRcontextDictionary: HNONWYCELRauthMap),
            let HNONWYCELRcipher = HNONWYCELRLusterMaskCipher(),
            let HNONWYCELRencrypted = HNONWYCELRcipher.HNONWYCELRencryptCelebrationStory(HNONWYCELRrawString) {

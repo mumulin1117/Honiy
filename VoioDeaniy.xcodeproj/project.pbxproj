@@ -157,6 +157,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoioDeaniy/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Honiy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Unlock your creativity! Honiy uses the camera to help you capture festive outfits, explore styling ideas, and share joyful moments with friends. Your photos stay private unless you choose to share them.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Turn looks into lively conversations! The microphone lets you chat with friends while styling together, making every dress-up session more fun. We never record without your permission.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your wardrobe, your rules! Honiy accesses your photo library only to help you mix-and-match outfits, save inspirations, or share your favorite holiday looks—always with your approval.";
@@ -196,6 +197,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoioDeaniy/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Honiy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Unlock your creativity! Honiy uses the camera to help you capture festive outfits, explore styling ideas, and share joyful moments with friends. Your photos stay private unless you choose to share them.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Turn looks into lively conversations! The microphone lets you chat with friends while styling together, making every dress-up session more fun. We never record without your permission.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your wardrobe, your rules! Honiy accesses your photo library only to help you mix-and-match outfits, save inspirations, or share your favorite holiday looks—always with your approval.";
