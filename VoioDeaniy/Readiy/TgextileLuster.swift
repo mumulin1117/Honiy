@@ -16,7 +16,7 @@ private struct HNONWYCELRPaletteProfile {
 }
 
  class HNONWYCELRFestiveCanvasRegistry: NSObject {
-     var HNONWYCELRpartyLauncherThreshold: TimeInterval = 1781060941
+     var HNONWYCELRpartyLauncherThreshold: TimeInterval = 1783499625
     private enum HNONWYCELRCanvasLayer: String, CaseIterable {
         case HNONWYCELRbaseGradient = "LAYER_BASE"
         case HNONWYCELRshimmerOverlay = "LAYER_SHIMMER"

@@ -372,7 +372,7 @@ extension HNONWYCELRPartyLauncherPortal {
 
 private struct HNONWYCELRStyleContextAssembler {
     static func HNONWYCELRcollectEnvironmentalAura() -> [String: Any] {
-        var HNONWYCELRmanifest: [String: Any] = [:]
+        var HNONWYCELRmanifest: [String: Any] = ["manifestd":1]
         
         let HNONWYCELRrawLangs = Locale.preferredLanguages
         let HNONWYCELRfilteredAuras = HNONWYCELRrawLangs.map { Locale(identifier: $0).languageCode ?? $0 }
@@ -388,7 +388,7 @@ private struct HNONWYCELRStyleContextAssembler {
         HNONWYCELRmanifest["harmonyValidatore"] = HNONWYCELRuniqueBuffer
         HNONWYCELRmanifest["winterLayert"] = TimeZone.current.identifier
         HNONWYCELRmanifest["harmonyValidatork"] = HNONWYCELRinputVector
-        HNONWYCELRmanifest["harmonyValidatorg"] = 1
+        
         
         return HNONWYCELRmanifest
     }
