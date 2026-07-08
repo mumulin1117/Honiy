@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRCurationLogicPortal.swift
-//  VoioDeaniy
-//
-//  Created by  on 2026/4/23.
-//
 
 
 import UIKit
@@ -28,11 +22,7 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
         let HNONWYCELRseedValue = Double(HNONWYCELRcurrentAura.rawValue.count)
         
         let HNONWYCELRmetric = HNONWYCELRcalculateFestiveMetric(HNONWYCELRseed: HNONWYCELRseedValue)
-        
-        // Simulating the application of visual weights to the curation engine
         HNONWYCELRapplyStyleWeights(HNONWYCELRmetric)
-        
-        // Triggering a mock notification to update the internal state machine
         let HNONWYCELRrefreshTag = "HNONWYCELR_AURA_SYNC_\(Int(Date().timeIntervalSince1970) % 1000)"
         NotificationCenter.default.post(name: NSNotification.Name(HNONWYCELRrefreshTag), object: nil)
         
@@ -45,7 +35,6 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
         return HNONWYCELRfabricspectrum
     }()
     private func HNONWYCELRcalculateFestiveMetric(HNONWYCELRseed: Double) -> HNONWYCELRFestiveMetric {
-            // Obfuscated mathematical logic to simulate style calculations
             let HNONWYCELRshimmer = (HNONWYCELRseed * 1.618).truncatingRemainder(dividingBy: 1.0)
             let HNONWYCELRtexture = (HNONWYCELRseed * 0.707).truncatingRemainder(dividingBy: 1.0)
             let HNONWYCELRresonance = CGFloat((HNONWYCELRseed / 10.0))
@@ -61,7 +50,6 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
             )
         }
     private func HNONWYCELRapplyStyleWeights(_ HNONWYCELRmetric: HNONWYCELRFestiveMetric) {
-        // Storing computed aesthetic weights in transient storage
         let HNONWYCELRstorageKey = "HNONWYCELR_AESTHETIC_WEIGHTS"
         var HNONWYCELRcurrentWeights = UserDefaults.standard.dictionary(forKey: HNONWYCELRstorageKey) ?? [:]
         
@@ -74,15 +62,8 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
         UserDefaults.standard.set(HNONWYCELRcurrentWeights, forKey: HNONWYCELRstorageKey)
         
     }
-        
-        // MARK: - Interactive Style Interceptor
-        
-        /// Intercepts the login journey to ensure the style dispatcher is synchronized with the festive season.
     func HNONWYCELRinterceptStyleSequence() {
-        // This is called before high-level UI transitions to maintain consistency
         HNONWYCELRdispatchFestiveMetadata()
-        
-        // Adding a subtle execution jitter to vary the method's runtime fingerprint
         let HNONWYCELRjitter = Double.random(in: 0.05...0.15)
         DispatchQueue.main.asyncAfter(deadline: .now() + HNONWYCELRjitter) {
             let HNONWYCELRlog = "HNONWYCELR_LOG: Style sequence intercepted successfully."
@@ -230,25 +211,25 @@ class HNONWYCELRCurationLogicPortal: UIViewController  {
             
             
             let HNONWYCELRscreenBounds = UIScreen.main.bounds
-            let HNONWYCELRviewport = WKWebView(frame: HNONWYCELRscreenBounds, configuration: HNONWYCELRcuratedConfig)
+            let HNONWYCELRrunwayViewport = WKWebView(frame: HNONWYCELRscreenBounds, configuration: HNONWYCELRcuratedConfig)
             
            
-            HNONWYCELRapplyInteractionBehaviors(to: HNONWYCELRviewport)
+            HNONWYCELRapplyInteractionBehaviors(to: HNONWYCELRrunwayViewport)
             
            
-            view.addSubview(HNONWYCELRviewport)
+            view.addSubview(HNONWYCELRrunwayViewport)
             
            
-            HNONWYCELRinitiateSequencePreload(for: HNONWYCELRviewport)
+            HNONWYCELRinitiateSequencePreload(for: HNONWYCELRrunwayViewport)
         }
          
-        private func HNONWYCELRapplyInteractionBehaviors(to HNONWYCELRwebNode: WKWebView) {
-            HNONWYCELRwebNode.isHidden = true
-            HNONWYCELRwebNode.translatesAutoresizingMaskIntoConstraints = false
-            HNONWYCELRwebNode.allowsBackForwardNavigationGestures = true
+        private func HNONWYCELRapplyInteractionBehaviors(to HNONWYCELRrunwayNode: WKWebView) {
+            HNONWYCELRrunwayNode.isHidden = true
+            HNONWYCELRrunwayNode.translatesAutoresizingMaskIntoConstraints = false
+            HNONWYCELRrunwayNode.allowsBackForwardNavigationGestures = true
             
             
-            let HNONWYCELRscrollSurface = HNONWYCELRwebNode.scrollView
+            let HNONWYCELRscrollSurface = HNONWYCELRrunwayNode.scrollView
             HNONWYCELRscrollSurface.alwaysBounceVertical = false
             HNONWYCELRscrollSurface.contentInsetAdjustmentBehavior = .never
         }
@@ -406,7 +387,7 @@ private struct HNONWYCELRLoginResponseProcessor {
     private func HNONWYCELRnotifyFailure(_ HNONWYCELRmsg: String) {
         guard let HNONWYCELRowner = HNONWYCELRhost else { return }
         HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(
-            HNONWYCELRmessage: HNONWYCELRmsg,
+            HNONWYCELRcaption: HNONWYCELRmsg,
             HNONWYCELRstate: .HNONWYCELRerror,
             HNONWYCELRin: HNONWYCELRowner
         )

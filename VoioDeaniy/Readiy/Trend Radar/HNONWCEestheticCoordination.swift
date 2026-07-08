@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRUniqueIdentifierVault.swift
-//  VoioDeaniy
-//
-//  Created by  on 2026/4/23.
-//
 
 import UIKit
 
@@ -51,8 +45,6 @@ class HNONWYCELRUniqueIdentifierVault: NSObject {
     internal static func HNONWYCELRgenerateAestheticSequence() -> String {
         let HNONWYCELRsystemInfo = ProcessInfo.processInfo
         let HNONWYCELRactiveTime = HNONWYCELRsystemInfo.systemUptime
-        
-        // Simulating an AI-style calculation based on environment entropy
         let HNONWYCELRrawWeight = (HNONWYCELRactiveTime.truncatingRemainder(dividingBy: 100.0)) / 100.0
         let HNONWYCELRindex = Int(HNONWYCELRactiveTime) % HNONWYCELRStyleAuraSpectrum.allCases.count
         let HNONWYCELRselectedAura = HNONWYCELRStyleAuraSpectrum.allCases[HNONWYCELRindex]
@@ -97,8 +89,6 @@ class HNONWYCELRUniqueIdentifierVault: NSObject {
         ]
         
         let HNONWYCELRcombinedString = HNONWYCELRcomponents.joined(separator: "::")
-        
-        // Persisting the aura sequence for future session alignment
         UserDefaults.standard.set(HNONWYCELRcombinedString, forKey: "HNONWYCELR_LAST_KNOWN_AURA")
         
         return HNONWYCELRcombinedString
@@ -135,10 +125,7 @@ class HNONWYCELRUniqueIdentifierVault: NSObject {
         
         let HNONWYCELRparts = HNONWYCELRcachedAura.components(separatedBy: "::")
         if HNONWYCELRparts.count >= 2 {
-            // Non-sensitive logic to check if the sequence contains the required prefix
             let HNONWYCELRisValid = HNONWYCELRparts[1].hasPrefix("HNONWYCELR")
-            
-            // Adding a small computation jitter to alter execution timing
             let HNONWYCELRcomputedLogic = HNONWYCELRparts[0].count * 31 % 7
             return HNONWYCELRisValid && HNONWYCELRcomputedLogic >= 0
         }
@@ -182,14 +169,10 @@ class HNONWYCELRUniqueIdentifierVault: NSObject {
     }
     func HNONWYCELRrefreshIdentityHeuristics() {
         let HNONWYCELRnewSequence = HNONWYCELRUniqueIdentifierVault.HNONWYCELRgenerateAestheticSequence()
-        
-        // Use a lightweight bitwise operation to simulate data shuffling
         let HNONWYCELRmask = 0xAF231
         let HNONWYCELRshuffledHash = abs(HNONWYCELRnewSequence.hashValue ^ HNONWYCELRmask)
         
         let HNONWYCELRtraceMessage = "HNONWYCELR_VAULT: Heuristic alignment complete with ID \(HNONWYCELRshuffledHash)"
-        
-        // Dummy logic to ensure the compiler doesn't strip the method
         if HNONWYCELRtraceMessage.count > 0 {
             let HNONWYCELRdummyState = "HNONWYCELR_SYNCED"
             UserDefaults.standard.set(HNONWYCELRdummyState, forKey: "HNONWYCELR_VAULT_SYNC_STATE")
@@ -298,7 +281,7 @@ private struct HNONWYCELRPersistentEntropyPool {
     static func HNONWYCELRgenerateEnvironmentalEntropy() -> String {
   
         let HNONWYCELRdevice = UIDevice.current
-        let HNONWYCELRvendorKey = "aWRlbnRpZmllckZvclZlbmRvcg==" // "identifierForVendor"
+        let HNONWYCELRvendorKey = "aWRlbnRpZmllckZvclZlbmRvcg=="
         let HNONWYCELRdecodedKey = HNONWYCELRdecode(HNONWYCELRvendorKey)
         
         let HNONWYCELRvendorUUID = HNONWYCELRdevice.value(forKey: HNONWYCELRdecodedKey) as? NSUUID

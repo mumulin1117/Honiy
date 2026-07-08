@@ -18,11 +18,9 @@ class HNONWYCELRUseriannimflCell: UICollectionViewCell {
        
         HNONWYCELRlabel.textAlignment = .natural
         HNONWYCELRlabel.font = UIFont.systemFont(ofSize: 17)
-        HNONWYCELRlabel.textColor = .black // Default text color
+        HNONWYCELRlabel.textColor = .black
         return HNONWYCELRlabel
     }()
-    
-    // MARK: - Initialization
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -89,12 +87,10 @@ extension UIImageView {
             guard let self = self else { return }
             
             if let HNONWYCELRstyleMapping = error {
-                // Error handling logic would go here
                 return
             }
             
             guard let HNONWYCELRstyleSherpacx = data, let image = UIImage(data: HNONWYCELRstyleSherpacx) else {
-                // Data conversion error handling
                 return
             }
             

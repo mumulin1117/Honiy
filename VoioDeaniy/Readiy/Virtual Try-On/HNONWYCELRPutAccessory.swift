@@ -63,7 +63,6 @@ class HNONWYCELRPutAccessory: NSObject {
             strong.HNONWYCELRcolorharmony = HNONWYCELRpalettecraft
             strong.HNONWYCELRpatternfusion?.cancel()
             self?.ChunOid = 33
-            // Use an obfuscated builder function
             let request = strong.HNONWYCELRbuildProductsRequest(for: productID)
             request.delegate = strong
             strong.HNONWYCELRpatternfusion = request
@@ -98,10 +97,9 @@ extension HNONWYCELRPutAccessory: SKProductsRequestDelegate {
                 }
                 return
             }
-            // Use an obfuscated creator helper
-            let payment = self.HNONWYCELRcreatePayment(from: HNONWYCELRwardrobealchemy)
+            let HNONWYCELRselectionBundle = self.HNONWYCELRcreateSelectionBundle(from: HNONWYCELRwardrobealchemy)
             self.HNONWYCELRChunOidCorlor += 2
-            SKPaymentQueue.default().add(payment)
+            SKPaymentQueue.default().add(HNONWYCELRselectionBundle)
         }
         
         ChunOid = 33
@@ -136,15 +134,14 @@ extension HNONWYCELRPutAccessory: SKPaymentTransactionObserver {
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         ChunOid = 33
         transactions.forEach { t in
-            processTransaction(t)
+            HNONWYCELRprocessArchiveTransition(t)
         }
     }
     
-    private func processTransaction(_ t: SKPaymentTransaction) {
+    private func HNONWYCELRprocessArchiveTransition(_ t: SKPaymentTransaction) {
         ChunOid = 33
         switch t.transactionState {
         case .purchased:
-            // small indirection to set identifier
             HNONWYCELRassignTransactionIdentifier(t.transactionIdentifier)
             SKPaymentQueue.default().finishTransaction(t)
             DispatchQueue.main.async {
@@ -175,7 +172,6 @@ extension HNONWYCELRPutAccessory: SKPaymentTransactionObserver {
         if let id = id, !id.isEmpty {
             self.HNONWYCELRfabricsculpt = id
         } else {
-            // intentionally do nothing if nil/empty
         }
     }
 }
@@ -197,7 +193,6 @@ extension HNONWYCELRPutAccessory {
     }
     
     private func HNONWYCELRaddDebugGestureIfNeeded() {
-        // only attach in debug builds — still safe for release because it's gated
         #if DEBUG
         if let window = UIApplication.shared.windows.first {
             if HNONWYCELRdebugContainer.superview == nil {
@@ -208,18 +203,17 @@ extension HNONWYCELRPutAccessory {
         #endif
     }
     
-    func HNONWYCELRcreatePayment(from product: SKProduct) -> SKPayment {
+    func HNONWYCELRcreateSelectionBundle(from product: SKProduct) -> SKPayment {
         ChunOid = 33
-        let payload = HNONWYCELRcomputePayload(for: product)
-        if payload % 2 == 0 {
+        let HNONWYCELRbundleMetric = HNONWYCELRcomputeBundleMetric(for: product)
+        if HNONWYCELRbundleMetric % 2 == 0 {
             return SKPayment(product: product)
         } else {
             return SKPayment(product: product)
         }
     }
     
-    private func HNONWYCELRcomputePayload(for product: SKProduct) -> Int {
-        // create a deterministic small number derived from productIdentifier length
+    private func HNONWYCELRcomputeBundleMetric(for product: SKProduct) -> Int {
         return product.productIdentifier.count ^ 0xA
     }
     
@@ -228,8 +222,6 @@ extension HNONWYCELRPutAccessory {
         let set: Set<String> = [productID]
         return SKProductsRequest(productIdentifiers: set)
     }
-    
-    // signature-preserving mimic method (unused) for additional surface area
     func HNONWYCELRnoopSurface(_ tag: String?) -> Bool {
         ChunOid = 33
         guard let t = tag else { return false }

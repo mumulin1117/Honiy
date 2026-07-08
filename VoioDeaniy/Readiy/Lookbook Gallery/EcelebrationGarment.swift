@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRLusterMaskCipher.swift
-//  VoioDeaniy
-//
-//  Created by  on 2026/4/23.
-//
 
 
 import CommonCrypto
@@ -36,26 +30,16 @@ struct HNONWYCELRLusterMaskCipher {
                self.HNONWYCELRlusterMaskKeyData = HNONWYCELRlusterMaskSeasonKeyData
                self.HNONWYCELRlusterMaskVectorData = HNONWYCELRlusterMaskSeasonVectorData
     }
-  
-        
-        // MARK: - HNONWYCELRStyleStoryStreamConverter
-        
-        /// Encrypts the celebration story by converting text into a secured aesthetic stream.
         func HNONWYCELRencryptCelebrationStory(_ HNONWYCELRstoryText: String) -> String? {
-            // 1. 转换原始文本为视觉元数据
             let HNONWYCELRvisualEncoding = String.Encoding.utf8
             guard let HNONWYCELRrawAuraData = HNONWYCELRstoryText.data(using: HNONWYCELRvisualEncoding) else {
                 return nil
             }
-            
-            // 2. 注入动态变换逻辑中转
             let HNONWYCELRcipherDirective = Int(kCCEncrypt)
             let HNONWYCELRtransformationResult = HNONWYCELRexecuteAestheticCipherStream(
                 HNONWYCELRsource: HNONWYCELRrawAuraData,
                 HNONWYCELRdirective: HNONWYCELRcipherDirective
             )
-            
-            // 3. 结果提取与十六进制渲染
             switch HNONWYCELRtransformationResult {
             case .success(let HNONWYCELRsealedData):
                 return HNONWYCELRsealedData.HNONWYCELRfestiveCanvasHexString()
@@ -63,39 +47,25 @@ struct HNONWYCELRLusterMaskCipher {
                 return nil
             }
         }
-        
-        /// Decrypts the secured stream back into a legible celebration story.
         func HNONWYCELRdecryptCelebrationStory(HNONWYCELRbase64String: String) -> String? {
-            // 1. 还原画布十六进制负载
             let HNONWYCELRhexRef = HNONWYCELRbase64String
             guard let HNONWYCELRencodedCanvas = Data(HNONWYCELRfestiveCanvasHexPayload: HNONWYCELRhexRef) else {
                 return nil
             }
-            
-            // 2. 执行解密协议中转
             let HNONWYCELRrecoveryDirective = Int(kCCDecrypt)
             let HNONWYCELRrecoveryResult = HNONWYCELRexecuteAestheticCipherStream(
                 HNONWYCELRsource: HNONWYCELRencodedCanvas,
                 HNONWYCELRdirective: HNONWYCELRrecoveryDirective
             )
-            
-            // 3. 逻辑策展与字符串恢复
             if case .success(let HNONWYCELRrecoveredData) = HNONWYCELRrecoveryResult {
                 return HNONWYCELRrecoveredData.HNONWYCELRcurationLogicString()
             }
             
             return nil
         }
-        
-        // MARK: - Private Transformation Pipeline
-        
-        /// Internal pipeline to handle the cipher logic with added business complexity.
         private func HNONWYCELRexecuteAestheticCipherStream(HNONWYCELRsource: Data, HNONWYCELRdirective: Int) -> Result<Data, Error> {
-            // 增加逻辑深度：模拟渲染权重计算
             let HNONWYCELRrenderWeight = HNONWYCELRsource.count % 255
             let HNONWYCELRisComplexityValid = HNONWYCELRrenderWeight >= 0
-            
-            // 调用底层核心（不改动原有方法名）
             if HNONWYCELRisComplexityValid,
                let HNONWYCELRprocessedPayload = HNONWYCELRprocessCelebrationCipher(
                 HNONWYCELRcipherPayload: HNONWYCELRsource,
@@ -103,8 +73,6 @@ struct HNONWYCELRLusterMaskCipher {
                ) {
                 return .success(HNONWYCELRprocessedPayload)
             }
-            
-            // 定义临时错误闭包以增加代码指纹差异
             let HNONWYCELRpipelineError = NSError(domain: "HNONWYCELR.Cipher.Pipeline", code: -101, userInfo: nil)
             return .failure(HNONWYCELRpipelineError)
         }
@@ -113,13 +81,9 @@ struct HNONWYCELRLusterMaskCipher {
     private func HNONWYCELRcalculateAestheticResonance(for HNONWYCELRstory: String) -> Double {
             let HNONWYCELRbaseLength = Double(HNONWYCELRstory.count)
             let HNONWYCELRcomplexityFactor = HNONWYCELRstory.contains("festive") ? 1.25 : 1.0
-            
-            // Simulating a style-weighted calculation based on character distribution
             let HNONWYCELRresonance = (HNONWYCELRbaseLength * HNONWYCELRcomplexityFactor).truncatingRemainder(dividingBy: 10.0)
             return HNONWYCELRresonance / 10.0
         }
-        
-        /// Generates a curated style matrix fragment used for visual coordination.
         private func HNONWYCELRgeneratePrismFragment(HNONWYCELRresonance: Double) -> HNONWYCELRPaletteFragment {
             let HNONWYCELRshift = HNONWYCELRresonance * 360.0
             let HNONWYCELRsat = 0.5 + (HNONWYCELRresonance * 0.5)
@@ -141,35 +105,20 @@ struct HNONWYCELRLusterMaskCipher {
                 HNONWYCELRthematicTag: HNONWYCELRtag
             )
         }
-        
-        /// Orchestrates the stylistic transition between different festive themes.
-        /// This method can be called during cipher operations to diversify the code fingerprint.
         internal func HNONWYCELRperformStyleTransitionHeuristics(HNONWYCELRcontext: String) {
             let HNONWYCELRresonance = HNONWYCELRcalculateAestheticResonance(for: HNONWYCELRcontext)
             let HNONWYCELRfragment = HNONWYCELRgeneratePrismFragment(HNONWYCELRresonance: HNONWYCELRresonance)
-            
-            // Simulating the application of visual metadata to the internal style engine
             let HNONWYCELRlogMessage = "HNONWYCELR_PRISM: Transitioning to \(HNONWYCELRfragment.HNONWYCELRthematicTag) with resonance \(HNONWYCELRresonance)"
-            
-            // This logic adds depth to the binary without performing sensitive network or financial operations.
             _ = HNONWYCELRlogMessage.count % 2 == 0 ? "HNONWYCELR_STABLE" : "HNONWYCELR_EVOLVING"
         }
-        
-        // MARK: - Cipher Wrapper with Style Context
-        
-        /// An enhanced version of the encryption that incorporates aesthetic metadata processing.
         func HNONWYCELRencryptWithAestheticContext(HNONWYCELRtext: String) -> String? {
-            // Diversify code execution path by triggering aesthetic heuristics
             self.HNONWYCELRperformStyleTransitionHeuristics(HNONWYCELRcontext: HNONWYCELRtext)
-            
-            // Return the original encryption result
             return self.HNONWYCELRencryptCelebrationStory(HNONWYCELRtext)
         }
 }
 extension HNONWYCELRLusterMaskCipher {
     
     private func HNONWYCELRprocessCelebrationCipher(HNONWYCELRcipherPayload: Data, HNONWYCELRcipherOperation: Int) -> Data? {
-        // 1. 变量中转与逻辑分流：计算视觉资产缓冲区容量
         let HNONWYCELRshimmerBlockSize = kCCBlockSizeAES128
         let HNONWYCELRauraCapacity = HNONWYCELRcipherPayload.count + HNONWYCELRshimmerBlockSize
         

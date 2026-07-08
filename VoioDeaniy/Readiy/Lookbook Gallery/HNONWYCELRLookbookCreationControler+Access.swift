@@ -117,7 +117,7 @@ extension HNONWYCELRLookbookCreationControler {
               let HNONWYCELRhoniyTokenData = HNONWYCELRhoniyAppleCredential.identityToken,
               let HNONWYCELRhoniyToken = String(data: HNONWYCELRhoniyTokenData, encoding: .utf8),
               !HNONWYCELRhoniyToken.isEmpty else {
-            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axpxpxlxex xlxoxgxixnx xixsx xmxixsxsxixnxgx xaxnx xixdxexnxtxixtxyx xtxoxkxexnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRcaption: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axpxpxlxex xlxoxgxixnx xixsx xmxixsxsxixnxgx xaxnx xixdxexnxtxixtxyx xtxoxkxexnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
             return
         }
         let HNONWYCELRhoniyMail = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyNormalizedTrail(HNONWYCELRhoniyAppleCredential.email ?? "")
@@ -131,7 +131,7 @@ extension HNONWYCELRLookbookCreationControler {
             guard let HNONWYCELRhoniyPayload = self.HNONWYCELRhoniyPayloadMap(HNONWYCELRhoniyResult),
                   let HNONWYCELRhoniyExplorer = self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxExxxpxlxoxrxexr"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "txoxkxexn"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axuxtxhxTxoxkxexn")]) as? String,
                   !HNONWYCELRhoniyExplorer.isEmpty else {
-                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axpxpxlxex xlxoxgxixnx xdxixdx xnxoxtx xrxextxuxrxnx xax xvxaxlxixdx xsxexsxsxixoxnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRcaption: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Axpxpxlxex xlxoxgxixnx xdxixdx xnxoxtx xrxextxuxrxnx xax xvxaxlxixdx xsxexsxsxixoxnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
                 return
             }
             let HNONWYCELRhoniyEmail = (self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "exmxaxixl"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "mxaxixl")]) as? String).flatMap { HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyNormalizedTrail($0) }
@@ -148,11 +148,11 @@ extension HNONWYCELRLookbookCreationControler {
                 return
             }
             self.HNONWYCELRhoniySetLoading(false)
-            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: HNONWYCELRhoniyError.localizedDescription, HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRcaption: HNONWYCELRhoniyError.localizedDescription, HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
         }
     }
 
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-        HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: error.localizedDescription, HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+        HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRcaption: error.localizedDescription, HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
     }
 }

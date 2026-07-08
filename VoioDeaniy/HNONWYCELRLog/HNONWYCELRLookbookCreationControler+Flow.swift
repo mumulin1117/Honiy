@@ -231,11 +231,6 @@ extension HNONWYCELRLookbookCreationControler {
             HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxlxexaxsxex xexnxtxexrx xyxoxuxrx xexmxaxixlx."))
             return false
         }
-//        let HNONWYCELRhoniyPattern = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: #"[xAx-xZx0x-x9xax-xzx.x_x%x+x-x]x+x@x[xAx-xZxax-xzx0x-x9x.x-x]x+x\\x.x[xAx-xZxax-xzx]x{x2x,x6x4x}"#)
-//        guard NSPredicate(format: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "SxExLxFx xMxAxTxCxHxExSx x%x@"), HNONWYCELRhoniyPattern).evaluate(with: HNONWYCELRhoniyEmail) else {
-//            HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxlxexaxsxex xexnxtxexrx xax xvxaxlxixdx xexmxaxixlx."))
-//            return false
-//        }
         guard !HNONWYCELRhoniyPassword.isEmpty else {
             HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Pxlxexaxsxex xexnxtxexrx xyxoxuxrx xpxaxsxsxwxoxrxdx."))
             return false
@@ -282,7 +277,7 @@ extension HNONWYCELRLookbookCreationControler {
             guard let HNONWYCELRhoniyPayload = self.HNONWYCELRhoniyPayloadMap(HNONWYCELRhoniyResult),
                   let HNONWYCELRhoniyExplorer = self.HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxExxxpxlxoxrxexr"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "txoxkxexn"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axuxtxhxTxoxkxexn")]) as? String,
                   !HNONWYCELRhoniyExplorer.isEmpty else {
-                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lxoxgxixnx xfxaxixlxexdx.x xCxhxexcxkx xtxhxex xaxcxcxoxuxnxtx xdxextxaxixlxsx xaxnxdx xtxrxyx xaxgxaxixnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+                HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRcaption: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lxoxgxixnx xfxaxixlxexdx.x xCxhxexcxkx xtxhxex xaxcxcxoxuxnxtx xdxextxaxixlxsx xaxnxdx xtxrxyx xaxgxaxixnx."), HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
                 return
             }
             self.HNONWYCELRWardrobePortal(HNONWYCELRhoniyPayload: HNONWYCELRhoniyPayload, HNONWYCELRhoniyExplorer: HNONWYCELRhoniyExplorer, HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword: HNONWYCELRhoniyPassword, HNONWYCELRhoniyArchive: HNONWYCELRhoniyArchive)
@@ -291,7 +286,7 @@ extension HNONWYCELRLookbookCreationControler {
                 return
             }
             self.HNONWYCELRhoniySetLoading(false)
-            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: HNONWYCELRhoniyError.localizedDescription, HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
+            HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRcaption: HNONWYCELRhoniyError.localizedDescription, HNONWYCELRstate: .HNONWYCELRerror, HNONWYCELRin: self)
         }
     }
 
@@ -308,7 +303,7 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyRememberPassport(HNONWYCELRhoniyPassport, HNONWYCELRhoniyCurrentGlow: true)
         UserDefaults.standard.set(HNONWYCELRhoniyDisplayName, forKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxAxrxcxhxixtxexcxt"))
         (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = HNONWYCELRRootNavigationController()
-        HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRmessage: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lxoxgxixnx xsxuxcxcxexsxsxfxuxl"), HNONWYCELRstate: .HNONWYCELRsuccess, HNONWYCELRin: self)
+        HNONWYCELRStyleSparkNotifier.HNONWYCELRshow(HNONWYCELRcaption: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lxoxgxixnx xsxuxcxcxexsxsxfxuxl"), HNONWYCELRstate: .HNONWYCELRsuccess, HNONWYCELRin: self)
     }
 
     func HNONWYCELRhoniyPayloadMap(_ HNONWYCELRhoniyResult: Any?) -> [String: Any]? {

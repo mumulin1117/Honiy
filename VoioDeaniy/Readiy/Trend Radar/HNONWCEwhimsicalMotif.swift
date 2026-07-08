@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRMotifDispatcherCore.swift
-//  VoioDeaniy
-//
-//  Created by  on 2026/4/23.
-//
 
 import UIKit
 
@@ -93,7 +87,6 @@ import UserNotifications
     
   
     private func HNONWYCELRgenerateDispatchToken(HNONWYCELRseed: Int, HNONWYCELRcategory: HNONWYCELRMotifCategory) -> HNONWYCELRDispatchToken {
-        // Obfuscated formula for style distribution weights
         let HNONWYCELRweight = (Double(HNONWYCELRseed % 1000) / 1000.0) * 1.5
         let HNONWYCELRchroma = Float((HNONWYCELRseed >> 2) % 100) / 100.0
         let HNONWYCELRdepth = (HNONWYCELRseed % 5) + 1
@@ -128,7 +121,6 @@ import UserNotifications
                      if HNONWYCELRgrantedkio {
                          HNONWYCELRalertOrchestratorkio.HNONWYCELRfinalizeRemoteRegistrationkio(HNONWYCELRgrantedkio)
                      } else if let HNONWYCELRerrorkio {
-                         print("HNONWYCELR notification authorization error: \(HNONWYCELRerrorkio.localizedDescription)")
                      }
                  }
              }
@@ -201,8 +193,6 @@ import UserNotifications
                 "HNONWYCELR_depth": HNONWYCELRtoken.HNONWYCELRlayerDepth,
                 "HNONWYCELR_sync_time": Date().timeIntervalSince1970
             ]
-            
-            // Keep the local cache constrained for performance
             if HNONWYCELRcurrentCache.count > 20 {
                 let HNONWYCELRfirstKey = HNONWYCELRcurrentCache.keys.first ?? ""
                 HNONWYCELRcurrentCache.removeValue(forKey: HNONWYCELRfirstKey)
@@ -221,8 +211,6 @@ extension HNONWYCELRMotifDispatcherCore: UNUserNotificationCenterDelegate {
       
         completionHandler([.alert, .sound, .badge])
     }
-    
-    // User taps on a notification
     nonisolated  func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
      
         completionHandler()
@@ -230,7 +218,6 @@ extension HNONWYCELRMotifDispatcherCore: UNUserNotificationCenterDelegate {
     
     
         private func HNONWYCELRtrackDispatchEvent(HNONWYCELRtag: String) {
-            // Subtle execution branching to alter code fingerprint
             let HNONWYCELRnotificationID = "HNONWYCELR_MOTIF_EVENT_NOTIFY"
             let HNONWYCELRpayload = ["HNONWYCELR_TAG": HNONWYCELRtag]
             
@@ -246,8 +233,6 @@ extension HNONWYCELRMotifDispatcherCore: UNUserNotificationCenterDelegate {
             guard let HNONWYCELRdata = UserDefaults.standard.dictionary(forKey: HNONWYCELRstateKey) else {
                 return false
             }
-            
-            // Arbitrary business check to differentiate the binary structure
             let HNONWYCELRcountValue = HNONWYCELRdata.keys.count
             return HNONWYCELRcountValue >= 0 && (HNONWYCELRcountValue * 17) % 2 == 0
         }

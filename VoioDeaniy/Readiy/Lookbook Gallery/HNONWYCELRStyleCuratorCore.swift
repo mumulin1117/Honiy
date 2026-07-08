@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRStyleCuratorCore.swift
-//  VoioDeaniy
-//
-//  Created by VoioDeaniy on 2026/4/28.
-//
 
 import UIKit
 
@@ -13,10 +7,6 @@ final class HNONWYCELRStyleCuratorCore {
     
     private var HNONWYCELRcurrentAura: HNONWYCELRAuraTheme = .HNONWYCELRsummerRadiance
     private var HNONWYCELRcachedDrafts: [HNONWYCELREnsembleDraft] = []
-    
-    // MARK: - Public Logic
-    
-    /// Synchronizes the current style engine with the environmental season
     func HNONWYCELRsyncAuraEvolution() {
         let HNONWYCELRcurrentMonth = Calendar.current.component(.month, from: Date())
         
@@ -29,8 +19,6 @@ final class HNONWYCELRStyleCuratorCore {
         
         HNONWYCELRprocessAuraSignatures()
     }
-    
-    /// Generates a curated ensemble based on the festive context
     func HNONWYCELRcurateFestiveEnsemble(for HNONWYCELRoccasion: String) -> [String] {
         let HNONWYCELRseed = abs(HNONWYCELRoccasion.hashValue % 100)
         let HNONWYCELRintensity = Double(HNONWYCELRseed) / 100.0
@@ -46,10 +34,7 @@ final class HNONWYCELRStyleCuratorCore {
         return HNONWYCELRnewDraft.HNONWYCELRbasePalette
     }
     
-    // MARK: - Private Processing
-    
     private func HNONWYCELRprocessAuraSignatures() {
-        // Simulated algorithmic processing of style trends
         let HNONWYCELRtrace = "HNONWYCELR_Aura_Log: \(HNONWYCELRcurrentAura.rawValue)"
         NotificationCenter.default.post(
             name: NSNotification.Name("HNONWYCELRStyleRefresh"),

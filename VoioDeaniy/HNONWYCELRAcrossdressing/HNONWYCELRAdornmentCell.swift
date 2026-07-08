@@ -1,21 +1,13 @@
 import UIKit
 
-// MARK: - Delegate Protocol
-
 protocol HNONWYCELRAdornmentCelldelegate: AnyObject {
     func HNONWYCELRadornmentCell(_ data: Dictionary<String, Any>)
     func HNONWYCELRgiventerUserInafomation(_ dataID: Int?)
 }
 
-// MARK: - Table View Cell Implementation
-
 class HNONWYCELRAdornmentCell: UITableViewCell {
     
-    // MARK: - Properties
-    
     weak var HNONWYCELRdarm: HNONWYCELRAdornmentCelldelegate?
-    
-    // Equivalent to UILabel "Popular" (XQX-F3-asp in XIB)
     let HNONWYCELRdresscrafting: UILabel = {
         let HNONWYCELRlookconstruction = UILabel()
         HNONWYCELRlookconstruction.translatesAutoresizingMaskIntoConstraints = false
@@ -24,8 +16,6 @@ class HNONWYCELRAdornmentCell: UITableViewCell {
         HNONWYCELRlookconstruction.textColor = .black
         return HNONWYCELRlookconstruction
     }()
-    
-    // Equivalent to UICollectionView (outfitDecoration in XIB)
     let HNONWYCELRoutfitDecoration: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let HNONWYCELRfashionperception = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -40,8 +30,6 @@ class HNONWYCELRAdornmentCell: UITableViewCell {
             self.HNONWYCELRoutfitDecoration.reloadData()
         }
     }
-    
-    // MARK: - Initialization
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -56,8 +44,6 @@ class HNONWYCELRAdornmentCell: UITableViewCell {
         HNONWYCELRstyleEmbellishment()
         self.backgroundColor = .clear
     }
-    
-    // MARK: - View Setup
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -77,7 +63,6 @@ class HNONWYCELRAdornmentCell: UITableViewCell {
         HNONWYCELRoutfitDecoration.dataSource = self
         HNONWYCELRoutfitDecoration.backgroundColor = .clear
         HNONWYCELRoutfitDecoration.showsHorizontalScrollIndicator = false
-        // Assumes StyleRaimentCell is defined elsewhere
         HNONWYCELRoutfitDecoration.register(HNONWYCELRStyleRaimentCell.self, forCellWithReuseIdentifier: "HNONWYCELRStyleRaimentCell")
     }
     
@@ -86,11 +71,8 @@ class HNONWYCELRAdornmentCell: UITableViewCell {
         contentView.addSubview(HNONWYCELRoutfitDecoration)
         
         NSLayoutConstraint.activate([
-            // titleLabel Constraints (XQX-F3-asp)
             HNONWYCELRdresscrafting.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
             HNONWYCELRdresscrafting.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
-            
-            // outfitDecoration Constraints (AkP-7E-MGo)
             HNONWYCELRoutfitDecoration.topAnchor.constraint(equalTo: HNONWYCELRdresscrafting.bottomAnchor, constant: 10),
             HNONWYCELRoutfitDecoration.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
             HNONWYCELRoutfitDecoration.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
@@ -98,9 +80,6 @@ class HNONWYCELRAdornmentCell: UITableViewCell {
         ])
     }
 }
-
-
-// MARK: - Collection View Delegate & Data Source
 
 extension HNONWYCELRAdornmentCell: UICollectionViewDelegate, UICollectionViewDataSource {
     

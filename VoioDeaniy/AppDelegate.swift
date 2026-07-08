@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  VoioDeaniy
-//
-//  Created by  on 2025/8/9.
-//
 
 import UIKit
 
@@ -73,7 +67,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        print("HNONWYCELR remote notification register failed: \(error.localizedDescription)")
     }
 
 

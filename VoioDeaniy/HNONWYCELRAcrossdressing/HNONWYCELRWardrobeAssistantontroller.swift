@@ -101,7 +101,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         let HNONWYCELRbtn = UILabel()
         HNONWYCELRbtn.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRbtn.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Miym iPqovsyt")
-        HNONWYCELRbtn.font = UIFont(name: "GillSans-BoldItalic", size: 22) // 使用 xib 中的指定字体
+        HNONWYCELRbtn.font = UIFont(name: "GillSans-BoldItalic", size: 22)
         HNONWYCELRbtn.textColor = .black
         return HNONWYCELRbtn
     }()
@@ -120,7 +120,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         HNONWYCELRlbl.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRlbl.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Neoo fdeaqtvaq kpkowsmt")
         HNONWYCELRlbl.textAlignment = .center
-        HNONWYCELRlbl.font = UIFont(name: "GillSans", size: 15) // 使用 xib 中的指定字体
+        HNONWYCELRlbl.font = UIFont(name: "GillSans", size: 15)
         HNONWYCELRlbl.textColor = .lightGray
         return HNONWYCELRlbl
     }()
@@ -263,7 +263,6 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
     }
     
     private func HNONWYCELRsetupActions() {
-        // 连接按钮的 action
         HNONWYCELRfabrictone.addTarget(self, action: #selector(HNONWYCELRwardrobePipe(_:)), for: .touchUpInside)
         HNONWYCELRoutfitpulse.addTarget(self, action: #selector(HNONWYCELRwardrobePipe(_:)), for: .touchUpInside)
         HNONWYCELRTriw.addTarget(self, action: #selector(HNONWYCELRwardrobePipe(_:)), for: .touchUpInside)

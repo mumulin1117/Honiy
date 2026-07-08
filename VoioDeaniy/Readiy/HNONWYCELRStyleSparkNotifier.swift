@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRStyleSparkNotifier.swift
-//  VoioDeaniy
-//
-//  Created by  on 2025/12/10.
-//
 
 import UIKit
 
@@ -18,24 +12,22 @@ class HNONWYCELRStyleSparkNotifier {
             case .HNONWYCELRsuccess:
                 return UIColor(red: 0.20, green: 0.70, blue: 0.30, alpha: 0.95)
             case .HNONWYCELRerror:
-                return UIColor(red: 0.90, green: 0.30, blue: 0.30, alpha: 0.95) // Dark Red
+                return UIColor(red: 0.90, green: 0.30, blue: 0.30, alpha: 0.95)
             }
         }
         
         var HNONWYCELRicon: UIImage? {
             switch self {
             case .HNONWYCELRsuccess:
-                // System checkmark icon
                 return UIImage(systemName: "checkmark.circle.fill")
             case .HNONWYCELRerror:
-                // System cross icon
                 return UIImage(systemName: "xmark.octagon.fill")
             }
         }
     }
     
    
-    static func HNONWYCELRshow(HNONWYCELRmessage: String, HNONWYCELRstate: HNONWYCELRState, HNONWYCELRin viewController: UIViewController) {
+    static func HNONWYCELRshow(HNONWYCELRcaption: String, HNONWYCELRstate: HNONWYCELRState, HNONWYCELRin viewController: UIViewController) {
       
         let HNONWYCELRdisplayDuration: TimeInterval = 3.0
         let HNONWYCELRanimationDuration: TimeInterval = 0.4
@@ -58,7 +50,7 @@ class HNONWYCELRStyleSparkNotifier {
         
         
         let HNONWYCELRgeLabel = UILabel()
-        HNONWYCELRgeLabel.text = HNONWYCELRmessage
+        HNONWYCELRgeLabel.text = HNONWYCELRcaption
         HNONWYCELRgeLabel.textColor = .white
         HNONWYCELRgeLabel.font = UIFont.systemFont(ofSize: 15, weight: .medium)
         HNONWYCELRgeLabel.numberOfLines = 0
@@ -99,14 +91,14 @@ class HNONWYCELRStyleSparkNotifier {
         
       
         HNONWYCELRsuperview.layoutIfNeeded()
-        HNONWYCELRConstraint.constant = HNONWYCELRsafeAreaTop + 10 // 滑入到安全区域下方 10 点
+        HNONWYCELRConstraint.constant = HNONWYCELRsafeAreaTop + 10
         
         UIView.animate(withDuration: HNONWYCELRanimationDuration, delay: 0, options: .curveEaseOut, animations: {
             HNONWYCELRsuperview.layoutIfNeeded()
         }, completion: { _ in
             
             DispatchQueue.main.asyncAfter(deadline: .now() + HNONWYCELRdisplayDuration) {
-                HNONWYCELRConstraint.constant = -HNONWYCELRsparkView.frame.height - 10 // 再次移出屏幕
+                HNONWYCELRConstraint.constant = -HNONWYCELRsparkView.frame.height - 10
                 
                 UIView.animate(withDuration: HNONWYCELRanimationDuration, delay: 0, options: .curveEaseIn, animations: {
                     HNONWYCELRsuperview.layoutIfNeeded()
@@ -117,4 +109,3 @@ class HNONWYCELRStyleSparkNotifier {
         })
     }
 }
-

@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRHoliaCell.swift
-//  VoioDeaniy
-//
-//  Created by  on 2025/8/11.
-//
 
 import UIKit
 protocol HNONWYCELRHoliaCellDelegate {

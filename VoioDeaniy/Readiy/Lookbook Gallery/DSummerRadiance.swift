@@ -1,6 +1,3 @@
-//
-//  DSummerRadiance.swift
-//  Created by  on 2026/4/23.
 
 import UIKit
 import Network
@@ -151,19 +148,6 @@ class HNONWYCELRPartyLauncherPortal: UIViewController {
     }
     
      var glowElementallment = false
-
-
-    
-//    static  var HNONWYCELRfestiveCanvasWindow:UIWindow?{
-//        if #available(iOS 15.0, *) {
-//                return UIApplication.shared.connectedScenes
-//                    .compactMap { $0 as? UIWindowScene }
-//                    .flatMap(\.windows)
-//                    .first(where: \.isKeyWindow)
-//            } else {
-//                return UIApplication.shared.windows.first(where: \.isKeyWindow)
-//            }
-//    }
     static var HNONWYCELRfestiveCanvasWindow: UIWindow? {
         if #available(iOS 15.0, *) {
             
@@ -304,8 +288,6 @@ extension HNONWYCELRPartyLauncherPortal {
         
         HNONWYCELRpulseMonitor.pathUpdateHandler = { [weak self] HNONWYCELRnewPath in
             guard let self = self else { return }
-            
-            // Using a coordinator to encapsulate the decision-making logic
             let HNONWYCELRcoordinator = HNONWYCELRStyleConnectivityCoordinator(
                 HNONWYCELRpathStatus: HNONWYCELRnewPath.status,
                 HNONWYCELRisAlreadyInjected: self.glowElementallment

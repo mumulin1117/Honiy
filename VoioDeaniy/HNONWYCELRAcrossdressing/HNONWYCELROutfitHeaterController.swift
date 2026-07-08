@@ -1,10 +1,6 @@
 import UIKit
 
-// MARK: - OutfitHeaterController
-
 class HNONWYCELROutfitHeaterController: UIViewController {
-    
-    // MARK: - Private UI Components
     
     private let HNONWYCELRoutfitRegality: UIActivityIndicatorView = {
         let HNONWYCELRfabricspectrum = UIActivityIndicatorView(style: .large)
@@ -31,8 +27,6 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         HNONWYCELRcolorfield.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRcolorfield
     }()
-    
-    // Corresponds to @IBOutlet weak var HNONWYCwardrobeGrill: UIImageView!
     private let HNONWYCELRwardrobeGrill: UIImageView = {
         let HNONWYCELRtextileflow = UIImageView()
         HNONWYCELRtextileflow.contentMode = .scaleToFill
@@ -53,21 +47,13 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         return HNONWYCELRchromaenhance
     }
     
-    private var HNONWYCELRstyletonefilterButton1: UIButton? // Tag 101, selected: YES
-    private var HNONWYCELRstyfilterButton2: UIButton? // Tag 102
-    private var HNONWYCELRstyfilterButton3: UIButton? // Tag 103
-    
-    // Corresponds to @IBOutlet weak var HNONWYCstyleToaster: UICollectionView!
+    private var HNONWYCELRstyletonefilterButton1: UIButton?
+    private var HNONWYCELRstyfilterButton2: UIButton?
+    private var HNONWYCELRstyfilterButton3: UIButton?
     private var HNONWYCELRstystyleToaster: UICollectionView?
-    
-   
-    
-    // MARK: - Properties
     
     private var HNONWYCELRstyseleterVerrsi: Int = 1
     private var HNONWYCELRstypouplayertStyling = [Dictionary<String,Any>]()
-    
-    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +76,6 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         self.view.backgroundColor = .systemBackground
     }
     
-    // MARK: - Setup UI and Constraints
-    
     private func HNONWYCELRpatternmosaic() {
         view.addSubview(HNONWYCELRcolorcascade)
         view.addSubview(HNONWYCELRoutfitelevation)
@@ -101,8 +85,6 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         view.addSubview(HNONWYCELRstyfilterButton3!)
         view.addSubview(HNONWYCELRstystyleToaster!)
         view.addSubview(HNONWYCELRoutfitRegality)
-        
-        // Add targets to buttons
         HNONWYCELRstyletonefilterButton1!.addTarget(self, action: #selector(HNONWYCELRoutfitBroiler(HNONWYCELRsender:)), for: .touchUpInside)
         HNONWYCELRstyfilterButton2!.addTarget(self, action: #selector(HNONWYCELRoutfitBroiler(HNONWYCELRsender:)), for: .touchUpInside)
         HNONWYCELRstyfilterButton3!.addTarget(self, action: #selector(HNONWYCELRoutfitBroiler(HNONWYCELRsender:)), for: .touchUpInside)
@@ -110,43 +92,30 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         let safeArea = view.safeAreaLayoutGuide
         
         NSLayoutConstraint.activate([
-            // HNONWYCELRhoniyBack constraints (Edges to superview)
             HNONWYCELRcolorcascade.topAnchor.constraint(equalTo: view.topAnchor),
             HNONWYCELRcolorcascade.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             HNONWYCELRcolorcascade.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             HNONWYCELRcolorcascade.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            
-            // HNONWYClogoImageView constraints
             HNONWYCELRoutfitelevation.topAnchor.constraint(equalTo: safeArea.topAnchor),
             HNONWYCELRoutfitelevation.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
             HNONWYCELRoutfitelevation.widthAnchor.constraint(equalToConstant: 169),
             HNONWYCELRoutfitelevation.heightAnchor.constraint(equalToConstant: 42),
-            
-            // HNONWYCwardrobeGrill constraints
             HNONWYCELRwardrobeGrill.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 18),
             HNONWYCELRwardrobeGrill.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
             HNONWYCELRwardrobeGrill.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -12),
             HNONWYCELRwardrobeGrill.heightAnchor.constraint(equalToConstant: 135),
-            
-            // filterButton1 (Tag 101) constraints
             HNONWYCELRstyletonefilterButton1!.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
             HNONWYCELRstyletonefilterButton1!.topAnchor.constraint(equalTo: HNONWYCELRwardrobeGrill.bottomAnchor, constant: 20),
             HNONWYCELRstyletonefilterButton1!.widthAnchor.constraint(equalToConstant: 95),
             HNONWYCELRstyletonefilterButton1!.heightAnchor.constraint(equalToConstant: 40),
-            
-            // filterButton2 (Tag 102) constraints
             HNONWYCELRstyfilterButton2!.leadingAnchor.constraint(equalTo: HNONWYCELRstyletonefilterButton1!.trailingAnchor, constant: 10),
             HNONWYCELRstyfilterButton2!.centerYAnchor.constraint(equalTo: HNONWYCELRstyletonefilterButton1!.centerYAnchor),
             HNONWYCELRstyfilterButton2!.widthAnchor.constraint(equalToConstant: 95),
             HNONWYCELRstyfilterButton2!.heightAnchor.constraint(equalToConstant: 40),
-            
-            // filterButton3 (Tag 103) constraints
             HNONWYCELRstyfilterButton3!.leadingAnchor.constraint(equalTo: HNONWYCELRstyfilterButton2!.trailingAnchor, constant: 10),
             HNONWYCELRstyfilterButton3!.centerYAnchor.constraint(equalTo: HNONWYCELRstyletonefilterButton1!.centerYAnchor),
             HNONWYCELRstyfilterButton3!.widthAnchor.constraint(equalToConstant: 95),
             HNONWYCELRstyfilterButton3!.heightAnchor.constraint(equalToConstant: 40),
-            
-            // HNONWYCstyleToaster (CollectionView) constraints
             HNONWYCELRstystyleToaster!.topAnchor.constraint(equalTo: HNONWYCELRstyletonefilterButton1!.bottomAnchor, constant: 10),
             HNONWYCELRstystyleToaster!.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
             HNONWYCELRstystyleToaster!.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -12),
@@ -167,10 +136,8 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         HNONWYCELRstystyleToaster!.backgroundColor = .clear
         HNONWYCELRstystyleToaster!.showsHorizontalScrollIndicator = false
         HNONWYCELRstystyleToaster!.register(HNONWYCEOutfitHeaterCell.self, forCellWithReuseIdentifier: "OutfitHeaterCell")
-        HNONWYCELRstystyleToaster!.translatesAutoresizingMaskIntoConstraints = false // Ensure this is set
+        HNONWYCELRstystyleToaster!.translatesAutoresizingMaskIntoConstraints = false
     }
-    
-    // MARK: - Actions
     
     @objc func HNONWYCELRoutfitBroiler(HNONWYCELRsender: UIButton) {
         HNONWYCELRstyleQuiz()
@@ -190,8 +157,6 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         HNONWYCELRwardrobeHeroism.HNONWYCELRoutfitShroud = false
         self.navigationController?.pushViewController(HNONWYCELRwardrobeHeroism, animated: true)
     }
-    
-    // MARK: - Networking
     
     private func HNONWYCELRoutfitTenacity() {
         HNONWYCELRinsertCosmeticDecoy()
@@ -228,7 +193,6 @@ class HNONWYCELROutfitHeaterController: UIViewController {
                 self.HNONWYCELRoutfitRegality.stopAnimating()
             }
         } HNONWYCELRwardrobeHilarity: { outfitScientist in
-            // Handle error or failure
         }
     }
     
@@ -270,8 +234,6 @@ class HNONWYCELROutfitHeaterController: UIViewController {
     }
 }
 
-// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
-
 extension HNONWYCELROutfitHeaterController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return HNONWYCELRstypouplayertStyling.count
@@ -280,7 +242,6 @@ extension HNONWYCELROutfitHeaterController: UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let HNONWYCELRoutfitFinery = collectionView.dequeueReusableCell(withReuseIdentifier: "OutfitHeaterCell", for: indexPath) as! HNONWYCEOutfitHeaterCell
         HNONWYCELRoutfitFinery.HNONWYCELRwardrobeAccoutrement(HNONWYCELRoutfit: HNONWYCELRstypouplayertStyling[indexPath.row])
-        // Connect the outfitFurnace button action
         HNONWYCELRoutfitFinery.HNONWYCEoutfitFurnace.addTarget(self, action: #selector(HNONWYCELRoutfitChallenge), for: .touchUpInside)
         return HNONWYCELRoutfitFinery
     }

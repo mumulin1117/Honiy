@@ -15,8 +15,6 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         return HNONWYCELRrge
     }()
     
-    // MARK: - UI Components (Non-Lazy)
-    
     private let HNONWYCELRfabriccontour: UIImageView = {
         let HNONWYCELRtour = UIImageView()
         HNONWYCELRtour.contentMode = .scaleAspectFill
@@ -34,8 +32,6 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRtour
     }()
-    
-    // Corresponds to @IBOutlet weak var HNONWYCwardrobeGrill: UIImageView! (ID: tF0-y1-ssU)
     private let HNONWYCELRwardrobeGrill: UIImageView = {
         let HNONWYCELRtour = UIImageView()
         HNONWYCELRtour.contentMode = .scaleToFill
@@ -44,8 +40,6 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRtour
     }()
-    
-    // Header label "Latest Chat" (ID: Fca-0S-Gu4)
     private let HNONWYCELRheaderLabel: UILabel = {
         let HNONWYCELRtour = UILabel()
         HNONWYCELRtour.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Lzattcepsatw rCuhsant")
@@ -53,11 +47,7 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRtour
     }()
-    
-    // Corresponds to @IBOutlet weak var HNONWYCstyleToaster: UICollectionView! (ID: PYs-Ei-AQ1)
     private var HNONWYCELRstyleToaster: UICollectionView?
-    
-    // Corresponds to @IBOutlet weak var fashionTips: UIImageView! (ID: 1PX-o1-EVM)
     private let HNONWYCELRfashionTips: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -66,8 +56,6 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-    
-    // Corresponds to @IBOutlet weak var outfitChallenge: UILabel! (ID: Ptg-T2-fhU)
     private let HNONWYCELRoutfitChallenge: UILabel = {
         let HNONWYCELRtour = UILabel()
         HNONWYCELRtour.text = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Njoo pdfaatpan upyowsjt")
@@ -77,10 +65,6 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         HNONWYCELRtour.translatesAutoresizingMaskIntoConstraints = false
         return HNONWYCELRtour
     }()
-    
- 
-    
-    // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,12 +83,8 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         HNONWYCELRoutfitTenacity()
     }
     
-    // MARK: - UI Setup
-    
     private func HNONWYCELRgarmentlogic() {
         view.backgroundColor = .systemBackground
-        
-        // Add all components to the view
         view.addSubview(HNONWYCELRfabriccontour)
         view.addSubview(HNONWYCELRchromeblend)
         view.addSubview(HNONWYCELRwardrobeGrill)
@@ -115,47 +95,31 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         view.addSubview(HNONWYCELRoutfitRegality)
         
         let safeArea = view.safeAreaLayoutGuide
-        
-        // Background Image Constraints (Yl1-Wm-rn7)
         NSLayoutConstraint.activate([
             HNONWYCELRfabriccontour.topAnchor.constraint(equalTo: view.topAnchor),
             HNONWYCELRfabriccontour.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             HNONWYCELRfabriccontour.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             HNONWYCELRfabriccontour.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            
-            // Logo Image Constraints (SNS-LY-iQa)
             HNONWYCELRchromeblend.topAnchor.constraint(equalTo: safeArea.topAnchor),
             HNONWYCELRchromeblend.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
             HNONWYCELRchromeblend.widthAnchor.constraint(equalToConstant: 135),
             HNONWYCELRchromeblend.heightAnchor.constraint(equalToConstant: 42),
-            
-            // HNONWYCwardrobeGrill Constraints (tF0-y1-ssU)
             HNONWYCELRwardrobeGrill.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 22),
             HNONWYCELRwardrobeGrill.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
-            HNONWYCELRwardrobeGrill.trailingAnchor.constraint(equalTo: view.trailingAnchor), // XML doesn't use safeArea for trailing here
+            HNONWYCELRwardrobeGrill.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             HNONWYCELRwardrobeGrill.heightAnchor.constraint(equalToConstant: 131),
-            
-            // Header Label Constraints (Fca-0S-Gu4)
             HNONWYCELRheaderLabel.leadingAnchor.constraint(equalTo: HNONWYCELRwardrobeGrill.leadingAnchor),
             HNONWYCELRheaderLabel.topAnchor.constraint(equalTo: HNONWYCELRwardrobeGrill.bottomAnchor, constant: 20),
-            
-            // HNONWYCstyleToaster (CollectionView) Constraints (PYs-Ei-AQ1)
             HNONWYCELRstyleToaster!.topAnchor.constraint(equalTo: HNONWYCELRheaderLabel.bottomAnchor, constant: 10),
             HNONWYCELRstyleToaster!.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 12),
             HNONWYCELRstyleToaster!.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -12),
             HNONWYCELRstyleToaster!.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
-            // fashionTips (Hidden UI) Constraints (1PX-o1-EVM)
             HNONWYCELRfashionTips.widthAnchor.constraint(equalToConstant: 97),
             HNONWYCELRfashionTips.heightAnchor.constraint(equalToConstant: 74),
             HNONWYCELRfashionTips.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             HNONWYCELRfashionTips.topAnchor.constraint(equalTo: HNONWYCELRwardrobeGrill.bottomAnchor, constant: 79),
-            
-            // outfitChallenge (Hidden UI) Constraints (Ptg-T2-fhU)
             HNONWYCELRoutfitChallenge.centerXAnchor.constraint(equalTo: HNONWYCELRfashionTips.centerXAnchor),
             HNONWYCELRoutfitChallenge.topAnchor.constraint(equalTo: HNONWYCELRfashionTips.bottomAnchor, constant: 22),
-            
-            // outfitRegality (Activity Indicator) Constraints
             HNONWYCELRoutfitRegality.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             HNONWYCELRoutfitRegality.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             HNONWYCELRoutfitRegality.widthAnchor.constraint(equalToConstant: 54),
@@ -178,15 +142,11 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         HNONWYCELRstyleToaster!.register(HNONWYCELRoutfitStylingCell.self, forCellWithReuseIdentifier: "HNONWYCELRoutfitStylingCell")
     }
     
-    // MARK: - Actions
-    
     @objc func HNONWYCELRwardrobeRoaster()  {
         let wardrobeHeroism = HNONWYCELRWardrobeVatontroller.init(HNONWYCELRstyleMotor: HNONWYCELRAtfitFryer.HNONWYCELRoutfitGenerator.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: ""))
         wardrobeHeroism.HNONWYCELRoutfitShroud = false
         self.navigationController?.pushViewController(wardrobeHeroism, animated: true)
     }
-    
-    // MARK: - Networking
     
     private func HNONWYCELRoutfitTenacity()  {
         
@@ -211,8 +171,6 @@ class HNONWYCELRoutfitStylingController: UIViewController {
             
            
             self.HNONWYCELRstopRegalitySafely()
-            
-            // 使用包装器解析（混淆原本结构）
             guard
                 let parsed = self.HNONWYCELRdecodeOutfitTrailblazer(outfitTrailblazer)
               
@@ -227,15 +185,11 @@ class HNONWYCELRoutfitStylingController: UIViewController {
             } else {
                 DispatchQueue.main.async { self.HNONWYCELRstyleToaster?.reloadData() }
             }
-            
-            // 若为空显示提示
             let isEmpty = (self.HNONWYCELRElowen.count == 0)
             self.HNONWYCELRoutfitChallenge.isHidden = !isEmpty
             self.HNONWYCELRfashionTips.isHidden = !isEmpty
             
         } HNONWYCELRwardrobeHilarity: { outfitScientist in
-            
-            // 备用回调，可加入掩护调用
             self.HNONWYCELRcosmeticCallbackNoise()
             
         }
@@ -279,9 +233,6 @@ class HNONWYCELRoutfitStylingController: UIViewController {
     }
 
 }
-
-
-// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
 
 extension HNONWYCELRoutfitStylingController:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

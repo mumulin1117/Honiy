@@ -1,15 +1,7 @@
-//
-//  OutfitBoulevard Controler.swift
-//  VoioDeaniy
-//
-//  Created by  on 2025/8/11.
-//
 
 import UIKit
 
 class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDelegate, HNONWYCELRAdornmentCelldelegate, HNONWYCELRstyleDevicewCelldelegate {
-    
-    // MARK: - Delegates
     
     func HNONWYCELRgiventerUserInafomation(_ HNONWYCELRdataID: Int?) {
         if HNONWYCELRdataID == nil {
@@ -50,8 +42,6 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
         HNONWYCELRwardrobeHeroism.HNONWYCELRoutfitShroud = false
         self.navigationController?.pushViewController(HNONWYCELRwardrobeHeroism, animated: true)
     }
-    
-    // MARK: - Properties
     
     private let HNONWYCELRoutfitRegality: UIActivityIndicatorView = {
         let HNONWYCELRlarge = UIActivityIndicatorView.init(style: .large)
@@ -97,8 +87,6 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
     private var HNONWYCELRpouplayertStyling = Array <Dictionary<String,Any>>()
     private var HNONWYCELRdesaauptStyling = Array <Dictionary<String,Any>>()
     
-    // MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         HNONWYCELRcontourlayer()
@@ -106,8 +94,6 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
         self.view.addSubview(HNONWYCELRoutfitRegality)
         self.view.backgroundColor = .systemBackground
     }
-    
-    // MARK: - Setup
     
     func HNONWYCELRcontourlayer() {
         
@@ -119,25 +105,18 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
         HNONWYCELRwardrobeContraptionButton.addTarget(self, action: #selector(HNONWYCELRwardrobeContraption(_:)), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
-            // HNONWYCELRhoniyBack constraints
             HNONWYCELRpalettefusion.topAnchor.constraint(equalTo: view.topAnchor),
             HNONWYCELRpalettefusion.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             HNONWYCELRpalettefusion.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             HNONWYCELRpalettefusion.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            
-            // HNONWYClogoImageView constraints
             HNONWYCELRseasonalexpress.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             HNONWYCELRseasonalexpress.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 12),
             HNONWYCELRseasonalexpress.widthAnchor.constraint(equalToConstant: 97),
             HNONWYCELRseasonalexpress.heightAnchor.constraint(equalToConstant: 42),
-            
-            // wardrobeContraptionButton constraints
             HNONWYCELRwardrobeContraptionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -12),
             HNONWYCELRwardrobeContraptionButton.widthAnchor.constraint(equalToConstant: 42),
             HNONWYCELRwardrobeContraptionButton.heightAnchor.constraint(equalToConstant: 42),
             HNONWYCELRwardrobeContraptionButton.centerYAnchor.constraint(equalTo: HNONWYCELRseasonalexpress.centerYAnchor),
-            
-            // styleDevice constraints
             HNONWYCELRshadedimension.topAnchor.constraint(equalTo: HNONWYCELRseasonalexpress.bottomAnchor, constant: 21),
             HNONWYCELRshadedimension.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             HNONWYCELRshadedimension.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -158,8 +137,6 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
         
         HNONWYCELRoutfitTenacity()
     }
-
-    // MARK: - Actions
     
     @objc func HNONWYCELRwardrobeContraption(_ sender: UIButton) {
         let HNONWYCELRwardrobeHeroism =  HNONWYCELRWardrobeVatontroller.init(HNONWYCELRstyleMotor: HNONWYCELRAtfitFryer.HNONWYCELRstyleRadiator.HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: ""))
@@ -262,9 +239,6 @@ class HNONWYCELROutfitBoulevardntroler: UIViewController, HNONWYCELRHoliaCellDel
         let _ = Date().timeIntervalSince1970 * Double.random(in: 0.1...0.9)
     }
 }
-
-
-// MARK: - UITableViewDelegate, UITableViewDataSource
 
 extension HNONWYCELROutfitBoulevardntroler:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

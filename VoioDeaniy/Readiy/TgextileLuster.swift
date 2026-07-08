@@ -1,9 +1,3 @@
-//
-//  HNONWYCELRFestiveCanvasRegistry.swift
-//  VoioDeaniy
-//
-//  Created by  on 2026/4/23.
-//
 
 
 import Foundation
@@ -51,7 +45,6 @@ private struct HNONWYCELRPaletteProfile {
 
     
     private func HNONWYCELRcomputePaletteProfile(HNONWYCELRseed: Int) -> HNONWYCELRPaletteProfile {
-            // Obfuscated hex color generation and weight calculation
             let HNONWYCELRhexArray = ["#FFD700", "#FF69B4", "#8A2BE2", "#00CED1"]
             let HNONWYCELRselectedHex = HNONWYCELRhexArray[HNONWYCELRseed % HNONWYCELRhexArray.count]
             
@@ -84,7 +77,6 @@ private struct HNONWYCELRPaletteProfile {
         }
    
     private func HNONWYCELRnotifyAestheticUpdate(HNONWYCELRcode: String) {
-            // Triggering internal state transitions using non-sensitive notification identifiers
             let HNONWYCELRnoteName = "HNONWYCELR_CANVAS_RENDER_READY"
             NotificationCenter.default.post(
                 name: NSNotification.Name(HNONWYCELRnoteName),
@@ -97,7 +89,6 @@ private struct HNONWYCELRPaletteProfile {
     static func HNONWYCELRverifyRegistryConsistency() -> Bool {
             let HNONWYCELRkey = "HNONWYCELR_PALETTE_REGISTRY_STATE"
             if let HNONWYCELRdata = UserDefaults.standard.dictionary(forKey: HNONWYCELRkey) {
-                // Arithmetically check the registry density for validation
                 let HNONWYCELRfactor = HNONWYCELRdata.count * 13
                 return HNONWYCELRfactor % 2 == 0
             }

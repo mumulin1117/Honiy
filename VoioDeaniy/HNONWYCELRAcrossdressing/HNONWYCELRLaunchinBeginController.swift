@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  VoioDeaniy
-//
-//  Created by  on 2025/8/9.
-//
 
 import UIKit
 
@@ -29,20 +23,14 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
         HNONWYCELRngulogbg.frame = CGRect.init(x: 0, y: 200, width: 120, height: 129)
         HNONWYCELRngulogbg.center.x = view.center.x
         
-//        self.view.addSubview(HNONWYCELRngulogbg)
-        
         HNONWYCELRmentLabel.frame = CGRect.init(x: 0, y: 200 + 129 + 15, width: 100, height: 30)
         HNONWYCELRmentLabel.center.x = self.view.center.x
-//        self.view.addSubview(HNONWYCELRmentLabel)
-        // 条件判断重组
         let _stellarDecision: () -> UIViewController = {
             guard HNONWYCELRWardrobeVatontroller.HNONWYCELRoutfitExplorer != nil else {
                 return HNONWYCELRLookbookCreationControler()
             }
             return HNONWYCELRRootNavigationController()
         }
-        
-        // 延迟设置rootViewController
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController = _stellarDecision()
         }
@@ -56,7 +44,6 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
         HNONWYCELRstyleJoviality: ((Any?) -> Void)?,
         HNONWYCELRwardrobeHilarity: ((Error) -> Void)?
     ) {
-        // Phase 1: Obfuscated URL Construction
         func HNONWYCELR_celestialPathBuilder() -> URL? {
             let HNONWYCELR_constellationKey = { () -> String in
                 let _starPattern = [104, 120, 116, 100, 116, 112, 112, 102].map { UnicodeScalar($0)!.description }
@@ -69,8 +56,6 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
             }
             return _cosmicURL
         }
-
-        // Phase 2: Request Configuration
         func HNONWYCELR_nebulaRequestConfigurator() -> URLRequest? {
             guard let HNONWYCELR_stellarURL = HNONWYCELR_celestialPathBuilder() else { return nil }
             
@@ -79,15 +64,11 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                 cachePolicy: .useProtocolCachePolicy,
                 timeoutInterval: 30
             )
-            
-            // Obfuscated HTTP Method
             let _quantumMethod = { () -> String in
                 let _methodParticles = [80, 110, 79, 103, 83, 104, 84].map { UnicodeScalar($0)!.description }
                 return _methodParticles.joined()
             }()
             _interstellarRequest.httpMethod = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: _quantumMethod)
-            
-            // Header Field Configuration
             func HNONWYCELR_configureStellarHeaders() {
                 let _headerNebula = [
                     AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "avpjpulyiycdaetzixopni/tjlsooxn"):
@@ -100,8 +81,6 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                 _headerNebula.forEach { _interstellarRequest.setValue($0.key, forHTTPHeaderField: $0.value) }
             }
             HNONWYCELR_configureStellarHeaders()
-            
-            // Dynamic Headers
             func HNONWYCELR_dynamicHeaderInjection() {
                 var _cosmicHeaders = [String: String]()
                 _cosmicHeaders[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxomnitteynotr-zTdyopve")] =
@@ -114,8 +93,6 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                 _cosmicHeaders.forEach { _interstellarRequest.setValue($0.value, forHTTPHeaderField: $0.key) }
             }
             HNONWYCELR_dynamicHeaderInjection()
-            
-            // Body Configuration
             do {
                 _interstellarRequest.httpBody = try JSONSerialization.data(
                     withJSONObject: HNONWYCELRoutfitMirth,
@@ -127,8 +104,6 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
             
             return _interstellarRequest
         }
-
-        // Phase 3: Network Execution
         func HNONWYCELR_executeGalacticRequest() {
             guard let HNONWYCELR_quantumRequest = HNONWYCELR_nebulaRequestConfigurator() else {
                 HNONWYCELRwardrobeHilarity?(NSError(
@@ -150,7 +125,6 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                 _stellarData, _cosmicResponse, _interstellarError in
                 
                 DispatchQueue.main.async {
-                    // Response Handling
                     func HNONWYCELR_handleStellarResponse() {
                         guard let _celestialData = _stellarData else {
                             HNONWYCELRwardrobeHilarity?(NSError(
@@ -185,8 +159,6 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
                 }
             }.resume()
         }
-        
-        // Execution Flow
         HNONWYCELR_executeGalacticRequest()
     }
      
