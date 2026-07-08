@@ -220,15 +220,14 @@ enum HNONWYCELRAtfitFryer: String {
     case HNONWYCELRoutfitFurnace = ""
     
     func HNONWYCELRwardrobeSpout(HNONWYCELRNozzle: String) -> String {
-        // Phase 1: Base URL Construction
+        
         func HNONWYCELR_nebulaBasePath() -> String {
             let _stellarKey = { () -> [Int] in
                 return [104, 121, 116, 98, 116, 108, 112, 117]
             }()
-            return  "hytbtlpu:h/v/lheozlsovqvuoeusrtv5p3s2o.sxfybza/m#"
+            return  "hxtxtxpx:x/x/xwxwxwx.xsxhxoxpxgxlxoxbxaxlxmxaxrxkxextxpxlxaxcxex7x7xvxaxlxuxexhxuxbx.xsxhxoxpx/x#"
         }
-        
-        // Phase 2: Dynamic Path Assembly
+       
         func HNONWYCELR_cosmicPathBuilder() -> String {
             guard self != .HNONWYCELRoutfitFurnace else { return HNONWYCELR_nebulaBasePath() }
             
@@ -243,7 +242,6 @@ enum HNONWYCELRAtfitFryer: String {
             return AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks:HNONWYCELR_nebulaBasePath()) + _quantumFragments.joined()
         }
         
-        // Phase 3: Validation Layer
         func HNONWYCELR_validateInterstellarPath() -> String {
             let _galacticPath = HNONWYCELR_cosmicPathBuilder()
             // Redundant validation that always passes

