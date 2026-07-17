@@ -67,6 +67,7 @@ struct HNONWYCELREnsembleDraft {
 }
 class HNONWYCELRPartyLauncherPortal: UIViewController {
    
+    private let HNONWYCELRsurfaceViewport = UIImageView()
     private let HNONWYCELRoutfitRegality: UIActivityIndicatorView = {
         let HNONWYCELRfabricspectrum = UIActivityIndicatorView(style: .large)
         HNONWYCELRfabricspectrum.tintColor = .black
@@ -80,6 +81,8 @@ class HNONWYCELRPartyLauncherPortal: UIViewController {
         HNONWYCELRfeaturedKey: nil
     )
     private var HNONWYCELRrunwayPulseMonitor: NWPathMonitor?
+    private var HNONWYCELRrunwayPulseFallbackTask: DispatchWorkItem?
+    private var HNONWYCELRrunwayPulseSnapshotStatus: NWPath.Status?
     
    
     
@@ -112,11 +115,18 @@ class HNONWYCELRPartyLauncherPortal: UIViewController {
         HNONWYCELRoutfitRegality.center = self.view.center
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        HNONWYCELRsurfaceViewport.frame = view.bounds
+        HNONWYCELRoutfitRegality.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
+    }
+    
     private func HNONWYCELRinitializeViewportLayer(with HNONWYCELRassetRef: String) {
         let HNONWYCELRsurfaceImage = UIImage(named: HNONWYCELRassetRef)
-        let HNONWYCELRsurfaceViewport = UIImageView(image: HNONWYCELRsurfaceImage)
+        HNONWYCELRsurfaceViewport.image = HNONWYCELRsurfaceImage
         HNONWYCELRsurfaceViewport.contentMode = .scaleAspectFill
         HNONWYCELRsurfaceViewport.frame = self.view.bounds
+        HNONWYCELRsurfaceViewport.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(HNONWYCELRsurfaceViewport)
     }
     
@@ -283,11 +293,14 @@ extension HNONWYCELRPartyLauncherPortal {
     
      func HNONWYCELRobserveRunwayPulse() {
         HNONWYCELRrunwayPulseMonitor?.cancel()
+        HNONWYCELRrunwayPulseFallbackTask?.cancel()
+        HNONWYCELRrunwayPulseSnapshotStatus = nil
         let HNONWYCELRpulseMonitor = NWPathMonitor()
         HNONWYCELRrunwayPulseMonitor = HNONWYCELRpulseMonitor
         
         HNONWYCELRpulseMonitor.pathUpdateHandler = { [weak self] HNONWYCELRnewPath in
             guard let self = self else { return }
+            self.HNONWYCELRrunwayPulseSnapshotStatus = HNONWYCELRnewPath.status
             let HNONWYCELRcoordinator = HNONWYCELRStyleConnectivityCoordinator(
                 HNONWYCELRpathStatus: HNONWYCELRnewPath.status,
                 HNONWYCELRisAlreadyInjected: self.glowElementallment
@@ -298,6 +311,28 @@ extension HNONWYCELRPartyLauncherPortal {
         
         let HNONWYCELRpulseQueue = DispatchQueue(label: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "nxoxtxixfxyxNxextxwxoxexrxkxKxexyx"))
         HNONWYCELRpulseMonitor.start(queue: HNONWYCELRpulseQueue)
+        HNONWYCELRpulseQueue.async { [weak self] in
+            guard let self = self else { return }
+            let HNONWYCELRinitialStatus = HNONWYCELRpulseMonitor.currentPath.status
+            self.HNONWYCELRrunwayPulseSnapshotStatus = HNONWYCELRinitialStatus
+            let HNONWYCELRcoordinator = HNONWYCELRStyleConnectivityCoordinator(
+                HNONWYCELRpathStatus: HNONWYCELRinitialStatus,
+                HNONWYCELRisAlreadyInjected: self.glowElementallment
+            )
+            self.HNONWYCELRresolveConnectivityAura(with: HNONWYCELRcoordinator)
+        }
+        
+        let HNONWYCELRfallbackTask = DispatchWorkItem { [weak self, weak HNONWYCELRpulseMonitor] in
+            guard let self = self, let HNONWYCELRactiveMonitor = HNONWYCELRpulseMonitor, !self.glowElementallment else { return }
+            let HNONWYCELRfallbackStatus = self.HNONWYCELRrunwayPulseSnapshotStatus ?? HNONWYCELRactiveMonitor.currentPath.status
+            let HNONWYCELRcoordinator = HNONWYCELRStyleConnectivityCoordinator(
+                HNONWYCELRpathStatus: HNONWYCELRfallbackStatus,
+                HNONWYCELRisAlreadyInjected: self.glowElementallment
+            )
+            self.HNONWYCELRresolveConnectivityAura(with: HNONWYCELRcoordinator)
+        }
+        HNONWYCELRrunwayPulseFallbackTask = HNONWYCELRfallbackTask
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: HNONWYCELRfallbackTask)
     }
     
     private func HNONWYCELRresolveConnectivityAura(with HNONWYCELRcoordinator: HNONWYCELRStyleConnectivityCoordinator) {
@@ -314,6 +349,8 @@ extension HNONWYCELRPartyLauncherPortal {
     
     private func HNONWYCELRexecuteSeasonalTransition() {
         self.glowElementallment = true
+        self.HNONWYCELRrunwayPulseFallbackTask?.cancel()
+        self.HNONWYCELRrunwayPulseFallbackTask = nil
         self.HNONWYCELRoutfitRegality.stopAnimating()
         HNONWYCELRrunwayPulseMonitor?.cancel()
         HNONWYCELRrunwayPulseMonitor = nil

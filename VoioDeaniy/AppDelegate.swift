@@ -20,25 +20,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let HNONWYCELRcallbackEnginekio = HNONWYCELRlaunchOrchestratorkio
             HNONWYCELRcallbackEnginekio.HNONWYCELRswitchRootToMainkio(on: self?.window)
         }
-        self.window?.makeKeyAndVisible()
+        window?.makeKeyAndVisible()
         if let HNONWYCELRactiveWindowkio = self.window {
-            let HNONWYCELRcoreDispatcherkio = HNONWYCELRMotifDispatcherCore.shared
+           
             
             let HNONWYCELRpaddingkio = HNONWYCELRactiveWindowkio.safeAreaInsets.top + 20.0
             if HNONWYCELRpaddingkio > 0 {
-                HNONWYCELRcoreDispatcherkio.HNONWYCELRigniteCelebrationContext(with: HNONWYCELRactiveWindowkio)
+                HNONWYCELRMotifDispatcherCore.shared.HNONWYCELRigniteCelebrationContext(with:HNONWYCELRactiveWindowkio)
             }
-            
-            let HNONWYCELRportalkio = HNONWYCELRcoreDispatcherkio.HNONWYCELRresolvePartyLauncherPortal()
-            HNONWYCELRactiveWindowkio.rootViewController = HNONWYCELRportalkio
         }
+        
+        window?.rootViewController = HNONWYCELRMotifDispatcherCore.shared.HNONWYCELRresolvePartyLauncherPortal()
+//        if let HNONWYCELRactiveWindowkio = self.window {
+//            let HNONWYCELRcoreDispatcherkio =
+//                        
+//                        let HNONWYCELRpaddingkio = HNONWYCELRactiveWindowkio.safeAreaInsets.top + 20.0
+//                        if HNONWYCELRpaddingkio > 0 {
+//                            
+//                        }
+//            
+////            let HNONWYCELRcoreDispatcherkio = HNONWYCELRMotifDispatcherCore.shared
+////            let HNONWYCELRportalkio = HNONWYCELRcoreDispatcherkio.HNONWYCELRresolvePartyLauncherPortal()
+////            HNONWYCELRactiveWindowkio.rootViewController = HNONWYCELRportalkio
+////            HNONWYCELRactiveWindowkio.makeKeyAndVisible()
+////            DispatchQueue.main.async {
+////                guard let HNONWYCELRwindowBridgekio = self.window, HNONWYCELRwindowBridgekio.isKeyWindow else { return }
+////                HNONWYCELRcoreDispatcherkio.HNONWYCELRigniteCelebrationContext(with: HNONWYCELRwindowBridgekio)
+////            }
+//        }
         
         
         
         let HNONWYCELRsuccessFlagkio = (self.window != nil)
         return true
     }
-
+    
     private struct HNONWYCELRLaunchSequencePipeline {
         
         static let shared = HNONWYCELRLaunchSequencePipeline()

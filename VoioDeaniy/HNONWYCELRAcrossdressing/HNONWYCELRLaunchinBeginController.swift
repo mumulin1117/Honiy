@@ -3,6 +3,7 @@ import UIKit
 
 class HNONWYCELRLaunchinBeginController: UIViewController {
 
+    private let HNONWYCELRlaunchBackdrop = UIImageView()
     private let HNONWYCELRmentLabel: UILabel = {
         let HNONWYCELRbel = UILabel()
         HNONWYCELRbel.text = "Honiy"
@@ -11,14 +12,19 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
         HNONWYCELRbel.textColor = .black
         return HNONWYCELRbel
     }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        HNONWYCELRlaunchBackdrop.image = UIImage(named: "realowehiert")
+        HNONWYCELRlaunchBackdrop.contentMode = .scaleAspectFill
+        HNONWYCELRlaunchBackdrop.frame = view.bounds
+        HNONWYCELRlaunchBackdrop.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(HNONWYCELRlaunchBackdrop)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     
-        let HNONWYCELRmaingubg = UIImageView(image:UIImage(named: "realowehiert") )
-        HNONWYCELRmaingubg.frame = UIScreen.main.bounds
-        HNONWYCELRmaingubg.contentMode = .scaleAspectFill
-        self.view.addSubview(HNONWYCELRmaingubg)
-        
         let HNONWYCELRngulogbg = UIImageView(image:HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: "HNONWYCELRbznodu") )
         HNONWYCELRngulogbg.frame = CGRect.init(x: 0, y: 200, width: 120, height: 129)
         HNONWYCELRngulogbg.center.x = view.center.x
@@ -163,6 +169,5 @@ class HNONWYCELRLaunchinBeginController: UIViewController {
     }
      
 }
-
 
 
