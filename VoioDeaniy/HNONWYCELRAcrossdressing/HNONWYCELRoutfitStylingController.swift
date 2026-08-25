@@ -172,7 +172,7 @@ class HNONWYCELRoutfitStylingController: UIViewController {
            
             self.HNONWYCELRstopRegalitySafely()
             guard
-                let parsed = self.HNONWYCELRdecodeOutfitTrailblazer(outfitTrailblazer)
+                let parsed = self.HNONWYCELRstyleBlossomTrailblazer(outfitTrailblazer)
               
             else {
                 return
@@ -213,7 +213,7 @@ class HNONWYCELRoutfitStylingController: UIViewController {
         }
     }
 
-    private func HNONWYCELRdecodeOutfitTrailblazer(_ input: Any?) -> Array<[String: Any]>? {
+    private func HNONWYCELRstyleBlossomTrailblazer(_ input: Any?) -> Array<[String: Any]>? {
         guard
             let HNONWYCELRtigator = input as? [String: Any],
             let HNONWYCELRpecialist = HNONWYCELRtigator[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "draktra")] as? Array<[String: Any]>

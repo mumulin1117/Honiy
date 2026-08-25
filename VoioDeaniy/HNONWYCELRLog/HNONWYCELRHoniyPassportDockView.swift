@@ -5,7 +5,7 @@ final class HNONWYCELRHoniyPassportDockView: UIView {
     let textField = UITextField()
     private let HNONWYCELRhoniyGlyphShell = UIView()
     private let HNONWYCELRhoniyGlyphView = UIImageView()
-    private let HNONWYCELRhoniyTitleLabel = UILabel()
+    private let HNONWYCELRhoniycozyStyling = UILabel()
     private let HNONWYCELRhoniyFieldShell = UIView()
 
     init(HNONWYCELRhoniyGlyphName: String, HNONWYCELRhoniyTitle: String, HNONWYCELRhoniyHint: String, HNONWYCELRhoniyShieldMode: Bool = false) {
@@ -19,10 +19,10 @@ final class HNONWYCELRHoniyPassportDockView: UIView {
         HNONWYCELRhoniyGlyphView.image = HNONWYCELRcolorfusioning.HNONWYCELRgarmentripple(HNONWYCELRpaletteform: HNONWYCELRhoniyGlyphName)
         HNONWYCELRhoniyGlyphView.contentMode = .scaleAspectFit
         HNONWYCELRhoniyGlyphView.tintColor = .white
-        HNONWYCELRhoniyTitleLabel.translatesAutoresizingMaskIntoConstraints = false
-        HNONWYCELRhoniyTitleLabel.text = HNONWYCELRhoniyTitle
-        HNONWYCELRhoniyTitleLabel.textColor = .black
-        HNONWYCELRhoniyTitleLabel.font = UIFont.systemFont(ofSize: 19 * HNONWYCELRhoniyScale, weight: .black)
+        HNONWYCELRhoniycozyStyling.translatesAutoresizingMaskIntoConstraints = false
+        HNONWYCELRhoniycozyStyling.text = HNONWYCELRhoniyTitle
+        HNONWYCELRhoniycozyStyling.textColor = .black
+        HNONWYCELRhoniycozyStyling.font = UIFont.systemFont(ofSize: 19 * HNONWYCELRhoniyScale, weight: .black)
         HNONWYCELRhoniyFieldShell.translatesAutoresizingMaskIntoConstraints = false
         HNONWYCELRhoniyFieldShell.backgroundColor = UIColor(white: 0.95, alpha: 1)
         HNONWYCELRhoniyFieldShell.layer.cornerRadius = 22 * HNONWYCELRhoniyScale
@@ -37,7 +37,7 @@ final class HNONWYCELRHoniyPassportDockView: UIView {
         textField.isSecureTextEntry = HNONWYCELRhoniyShieldMode
         addSubview(HNONWYCELRhoniyGlyphShell)
         HNONWYCELRhoniyGlyphShell.addSubview(HNONWYCELRhoniyGlyphView)
-        addSubview(HNONWYCELRhoniyTitleLabel)
+        addSubview(HNONWYCELRhoniycozyStyling)
         addSubview(HNONWYCELRhoniyFieldShell)
         HNONWYCELRhoniyFieldShell.addSubview(textField)
         NSLayoutConstraint.activate([
@@ -49,9 +49,9 @@ final class HNONWYCELRHoniyPassportDockView: UIView {
             HNONWYCELRhoniyGlyphView.centerYAnchor.constraint(equalTo: HNONWYCELRhoniyGlyphShell.centerYAnchor),
             HNONWYCELRhoniyGlyphView.widthAnchor.constraint(equalToConstant: 16 * HNONWYCELRhoniyScale),
             HNONWYCELRhoniyGlyphView.heightAnchor.constraint(equalTo: HNONWYCELRhoniyGlyphView.widthAnchor),
-            HNONWYCELRhoniyTitleLabel.leadingAnchor.constraint(equalTo: HNONWYCELRhoniyGlyphShell.trailingAnchor, constant: 13 * HNONWYCELRhoniyScale),
-            HNONWYCELRhoniyTitleLabel.centerYAnchor.constraint(equalTo: HNONWYCELRhoniyGlyphShell.centerYAnchor),
-            HNONWYCELRhoniyTitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            HNONWYCELRhoniycozyStyling.leadingAnchor.constraint(equalTo: HNONWYCELRhoniyGlyphShell.trailingAnchor, constant: 13 * HNONWYCELRhoniyScale),
+            HNONWYCELRhoniycozyStyling.centerYAnchor.constraint(equalTo: HNONWYCELRhoniyGlyphShell.centerYAnchor),
+            HNONWYCELRhoniycozyStyling.trailingAnchor.constraint(equalTo: trailingAnchor),
             HNONWYCELRhoniyFieldShell.topAnchor.constraint(equalTo: HNONWYCELRhoniyGlyphShell.bottomAnchor, constant: 14 * HNONWYCELRhoniyScale),
             HNONWYCELRhoniyFieldShell.leadingAnchor.constraint(equalTo: leadingAnchor),
             HNONWYCELRhoniyFieldShell.trailingAnchor.constraint(equalTo: trailingAnchor),

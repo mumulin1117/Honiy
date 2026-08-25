@@ -28,14 +28,14 @@ extension HNONWYCELRLookbookCreationControler {
             $0.element.tag = $0.offset
             $0.element.addTarget(self, action: #selector(HNONWYCELRhoniyPickGenderLane(_:)), for: .touchUpInside)
         }
-        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELRhoniyCheckButton, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELRhoniyCheckButton].forEach {
+        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELminimalStyling, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELminimalStyling].forEach {
             $0.addTarget(self, action: #selector(HNONWYCELRhoniyFlipConsent), for: .touchUpInside)
         }
-        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELRhoniyTermsButton, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELRhoniyTermsButton].forEach {
+        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELclassicStyling, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELclassicStyling].forEach {
             $0.tag = 45
             $0.addTarget(self, action: #selector(HNONWYCELRhoniyOpenPolicy(_:)), for: .touchUpInside)
         }
-        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELRhoniyPrivacyButton, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELRhoniyPrivacyButton].forEach {
+        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELromanticStyling, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELromanticStyling].forEach {
             $0.tag = 55
             $0.addTarget(self, action: #selector(HNONWYCELRhoniyOpenPolicy(_:)), for: .touchUpInside)
         }
@@ -46,38 +46,38 @@ extension HNONWYCELRLookbookCreationControler {
         HNONWYCELRhoniyRefreshConsent()
     }
 
-    func HNONWYCELRhoniySeedLocalPassport() {
+    func HNONWYCELRhoniyelegantStyling() {
         guard let HNONWYCELRhoniyArchive = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyCurrentPassport() else {
             return
         }
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail = HNONWYCELRhoniyArchive.HNONWYCELRhoniyEmail
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword = HNONWYCELRhoniyArchive.HNONWYCELRhoniyPassword
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName = HNONWYCELRhoniyArchive.HNONWYCELRhoniyDisplayName
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender = HNONWYCELRhoniyArchive.HNONWYCELRhoniyGender
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark = HNONWYCELRhoniyArchive.HNONWYCELRhoniyBirthMark
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyAppleCode = HNONWYCELRhoniyArchive.HNONWYCELRhoniyAppleCode
-        HNONWYCELRhoniyLoginEmailDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyEmail
-        HNONWYCELRhoniyLoginPasswordDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyPassword
-        HNONWYCELRhoniyPassportNameDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyDisplayName
-        HNONWYCELRhoniyPassportEmailDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyEmail
-        HNONWYCELRhoniyPassportPasswordDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyPassword
+        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniywarmToneStyling = HNONWYCELRhoniyArchive.HNONWYCELRhoniyfestiveStylel
+        HNONWYCELRhoniyPassportDraft.HNONWYCELcoolToneStyling = HNONWYCELRhoniyArchive.HNONWYCELRhoniyseasonalWardrobe
+        HNONWYCELRhoniyPassportDraft.HNONWYCEbrightToneStyling = HNONWYCELRhoniyArchive.HNONWYCELRhoniyholidayLook
+        HNONWYCELRhoniyPassportDraft.HNONWYCELprintStyling = HNONWYCELRhoniyArchive.HNONWYCELRhoniycelebrationWear
+        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark = HNONWYCELRhoniyArchive.HNONWYCELRhoniyoccasionDressing
+        HNONWYCELRhoniyPassportDraft.HNONWYCELstatementStyling = HNONWYCELRhoniyArchive.HNONWYCELRhoniyAppleCode
+        HNONWYCELRhoniyLoginEmailDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyfestiveStylel
+        HNONWYCELRhoniyLoginPasswordDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyseasonalWardrobe
+        HNONWYCELRhoniyPassportNameDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyholidayLook
+        HNONWYCELRhoniyPassportEmailDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyfestiveStylel
+        HNONWYCELRhoniyPassportPasswordDock.textField.text = HNONWYCELRhoniyArchive.HNONWYCELRhoniyseasonalWardrobe
         if let HNONWYCELRhoniyPortrait = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyAvatarFrame(HNONWYCELRhoniyArchive) {
             HNONWYCELRhoniyPortraitImage = HNONWYCELRhoniyPortrait
             HNONWYCELRhoniyAvatarImageView.image = HNONWYCELRhoniyPortrait
         }
-        HNONWYCELRhoniyDressGenderLane(HNONWYCELRhoniyArchive.HNONWYCELRhoniyGender)
-        HNONWYCELRhoniyRefreshBirthMark(HNONWYCELRhoniyArchive.HNONWYCELRhoniyBirthMark)
+        HNONWYCELRhoniyDressGenderLane(HNONWYCELRhoniyArchive.HNONWYCELRhoniycelebrationWear)
+        HNONWYCELRhoniyRefreshBirthMark(HNONWYCELRhoniyArchive.HNONWYCELRhoniyoccasionDressing)
     }
 
     func HNONWYCELRhoniyRefreshConsent() {
-        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELRhoniyCheckButton, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELRhoniyCheckButton].forEach {
+        [HNONWYCELRhoniyLoginConsentDeck.HNONWYCELminimalStyling, HNONWYCELRhoniyPassportConsentDeck.HNONWYCELminimalStyling].forEach {
             $0.isSelected = HNONWYCELRhoniyConsentChoice
         }
     }
 
     func HNONWYCELRhoniyDressGenderLane(_ HNONWYCELRhoniyGender: String) {
         let HNONWYCELRhoniyTone = HNONWYCELRhoniyGender.lowercased() == AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "mxaxlxe") ? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe") : AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fxexmxaxlxe")
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender = HNONWYCELRhoniyTone
+        HNONWYCELRhoniyPassportDraft.HNONWYCELprintStyling = HNONWYCELRhoniyTone
         let HNONWYCELRhoniyButtons = [HNONWYCELRhoniyGenderMuseButton: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe"), HNONWYCELRhoniyGenderFrostButton: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Fxexmxaxlxe")]
         HNONWYCELRhoniyButtons.forEach { HNONWYCELRhoniyPair in
             let HNONWYCELRhoniyActive = HNONWYCELRhoniyPair.value == HNONWYCELRhoniyTone
@@ -126,11 +126,11 @@ extension HNONWYCELRLookbookCreationControler {
 
     @objc func HNONWYCELRhoniyOpenPassportMuse() {
         HNONWYCELRhoniyRoute = .HNONWYCELRsignupGlow
-        if HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName.isEmpty {
+        if HNONWYCELRhoniyPassportDraft.HNONWYCEbrightToneStyling.isEmpty {
             HNONWYCELRhoniyPassportNameDock.textField.text = nil
         }
-        HNONWYCELRhoniyPassportEmailDock.textField.text = HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail
-        HNONWYCELRhoniyPassportPasswordDock.textField.text = HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword
+        HNONWYCELRhoniyPassportEmailDock.textField.text = HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniywarmToneStyling
+        HNONWYCELRhoniyPassportPasswordDock.textField.text = HNONWYCELRhoniyPassportDraft.HNONWYCELcoolToneStyling
         HNONWYCELRhoniyShiftStage(.HNONWYCELRpassportMuse, animated: true)
     }
 
@@ -178,8 +178,8 @@ extension HNONWYCELRLookbookCreationControler {
         guard HNONWYCELRhoniyValidateEmailRunway(HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword) else {
             return
         }
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail = HNONWYCELRhoniyEmail
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword = HNONWYCELRhoniyPassword
+        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniywarmToneStyling = HNONWYCELRhoniyEmail
+        HNONWYCELRhoniyPassportDraft.HNONWYCELcoolToneStyling = HNONWYCELRhoniyPassword
         let HNONWYCELRhoniyKnownMuse = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyPassport(HNONWYCELRhoniyEmail)
         let HNONWYCELRhoniyLabGlow = HNONWYCELRhoniyEmail == AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "hxoxnxixyx@xgxmxaxixlx.xcxoxm") && HNONWYCELRhoniyPassword == AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "1x2x3x4x5x6x7x8")
         if HNONWYCELRhoniyLabGlow || HNONWYCELRhoniyKnownMuse != nil {
@@ -203,10 +203,10 @@ extension HNONWYCELRLookbookCreationControler {
         guard HNONWYCELRhoniyValidatePassportMuse(HNONWYCELRhoniyName, HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword) else {
             return
         }
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName = HNONWYCELRhoniyName
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail = HNONWYCELRhoniyEmail
-        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword = HNONWYCELRhoniyPassword
-        if HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender.isEmpty {
+        HNONWYCELRhoniyPassportDraft.HNONWYCEbrightToneStyling = HNONWYCELRhoniyName
+        HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniywarmToneStyling = HNONWYCELRhoniyEmail
+        HNONWYCELRhoniyPassportDraft.HNONWYCELcoolToneStyling = HNONWYCELRhoniyPassword
+        if HNONWYCELRhoniyPassportDraft.HNONWYCELprintStyling.isEmpty {
             HNONWYCELRhoniyDressGenderLane(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe"))
         }
         HNONWYCELRhoniyShiftStage(.HNONWYCELRprofileVerse, animated: true)
@@ -214,7 +214,7 @@ extension HNONWYCELRLookbookCreationControler {
 
     @objc func HNONWYCELRhoniyCompletePassport() {
         view.endEditing(true)
-        guard !HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender.isEmpty else {
+        guard !HNONWYCELRhoniyPassportDraft.HNONWYCELprintStyling.isEmpty else {
             HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Sxexlxexcxtx xax xsxtxyxlxex xgxexnxdxexrx xtxox xcxoxnxtxixnxuxex."))
             return
         }
@@ -222,8 +222,8 @@ extension HNONWYCELRLookbookCreationControler {
             HNONWYCELRhoniyShowPrompt(AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Cxhxoxoxsxex xyxoxuxrx xbxixrxtxhx xmxoxnxtxhx xtxox xcxoxnxtxixnxuxex."))
             return
         }
-        let HNONWYCELRhoniyArchive = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyPassport(HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail)
-        HNONWYCELRhoniyRunOriginalLogin(HNONWYCELRhoniyEmail: HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword: HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyPassword, HNONWYCELRhoniyArchive: HNONWYCELRhoniyArchive)
+        let HNONWYCELRhoniyArchive = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyPassport(HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniywarmToneStyling)
+        HNONWYCELRhoniyRunOriginalLogin(HNONWYCELRhoniyEmail: HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniywarmToneStyling, HNONWYCELRhoniyPassword: HNONWYCELRhoniyPassportDraft.HNONWYCELcoolToneStyling, HNONWYCELRhoniyArchive: HNONWYCELRhoniyArchive)
     }
 
     func HNONWYCELRhoniyValidateEmailRunway(_ HNONWYCELRhoniyEmail: String, _ HNONWYCELRhoniyPassword: String) -> Bool {
@@ -295,11 +295,11 @@ extension HNONWYCELRLookbookCreationControler {
         let HNONWYCELRhoniyServerName = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxAxrxcxhxixtxexcxt"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "nxaxmxe"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "nxixcxkxnxaxmxe")]) as? String
         let HNONWYCELRhoniyServerGender = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "gxexnxdxexr"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "sxexx")]) as? String
         let HNONWYCELRhoniyServerAppleId = HNONWYCELRhoniyPayloadValue(HNONWYCELRhoniyPayload, HNONWYCELRhoniyKeys: [AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Ixd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "ixd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "uxsxexrxIxd"), AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "axpxpxlxexUxsxexrxIxd")]) as? String
-        let HNONWYCELRhoniyAvatarRoute = HNONWYCELRhoniyPortraitImage.map { HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyStoreAvatar($0, HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail) } ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyAvatarRoute ?? ""
-        let HNONWYCELRhoniyDisplayName = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyDisplayName) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyDisplayName ?? HNONWYCELRhoniyServerName ?? HNONWYCELRhoniyDefaultName(HNONWYCELRhoniyEmail)
-        let HNONWYCELRhoniyGender = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyGender) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyGender ?? HNONWYCELRhoniyServerGender ?? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe")
-        let HNONWYCELRhoniyBirthMark = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyBirthMark ?? ""
-        let HNONWYCELRhoniyPassport = HNONWYCELRHoniyPassportArchive(HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail, HNONWYCELRhoniyPassword: HNONWYCELRhoniyPassword, HNONWYCELRhoniyDisplayName: HNONWYCELRhoniyDisplayName, HNONWYCELRhoniyGender: HNONWYCELRhoniyGender, HNONWYCELRhoniyBirthMark: HNONWYCELRhoniyBirthMark, HNONWYCELRhoniyAvatarRoute: HNONWYCELRhoniyAvatarRoute, HNONWYCELRhoniyAppleCode: HNONWYCELRhoniyServerAppleId ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyAppleCode ?? "", HNONWYCELRhoniyExplorer: HNONWYCELRhoniyExplorer)
+        let HNONWYCELRhoniyAvatarRoute = HNONWYCELRhoniyPortraitImage.map { HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyStoreAvatar($0, HNONWYCELRhoniyEmail: HNONWYCELRhoniyEmail) } ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniystyleInspiration ?? ""
+        let HNONWYCELRhoniyDisplayName = (HNONWYCELRhoniyPassportDraft.HNONWYCEbrightToneStyling.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCEbrightToneStyling) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyholidayLook ?? HNONWYCELRhoniyServerName ?? HNONWYCELRhoniyDefaultName(HNONWYCELRhoniyEmail)
+        let HNONWYCELRhoniyGender = (HNONWYCELRhoniyPassportDraft.HNONWYCELprintStyling.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELprintStyling) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniycelebrationWear ?? HNONWYCELRhoniyServerGender ?? AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Mxaxlxe")
+        let HNONWYCELRhoniyBirthMark = (HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark.isEmpty ? nil : HNONWYCELRhoniyPassportDraft.HNONWYCELRhoniyBirthMark) ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyoccasionDressing ?? ""
+        let HNONWYCELRhoniyPassport = HNONWYCELRHoniyPassportArchive(HNONWYCELRhoniyfestiveStylel: HNONWYCELRhoniyEmail, HNONWYCELRhoniyseasonalWardrobe: HNONWYCELRhoniyPassword, HNONWYCELRhoniyholidayLook: HNONWYCELRhoniyDisplayName, HNONWYCELRhoniycelebrationWear: HNONWYCELRhoniyGender, HNONWYCELRhoniyoccasionDressing: HNONWYCELRhoniyBirthMark, HNONWYCELRhoniystyleInspiration: HNONWYCELRhoniyAvatarRoute, HNONWYCELRhoniyAppleCode: HNONWYCELRhoniyServerAppleId ?? HNONWYCELRhoniyArchive?.HNONWYCELRhoniyAppleCode ?? "", HNONWYCELRhoniywardrobeCuration: HNONWYCELRhoniyExplorer)
         HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyRememberPassport(HNONWYCELRhoniyPassport, HNONWYCELRhoniyCurrentGlow: true)
         UserDefaults.standard.set(HNONWYCELRhoniyDisplayName, forKey: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "oxuxtxfxixtxAxrxcxhxixtxexcxt"))
         (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = HNONWYCELRRootNavigationController()
@@ -328,8 +328,8 @@ extension HNONWYCELRLookbookCreationControler {
         return nil
     }
 
-    func HNONWYCELRhoniyShowPrompt(_ HNONWYCELRhoniyMessage: String) {
-        let HNONWYCELRhoniyAlert = UIAlertController(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nxoxtxixcxe"), message: HNONWYCELRhoniyMessage, preferredStyle: .alert)
+    func HNONWYCELRhoniyShowPrompt(_ HNONWYCELRhoniystyleCorner: String) {
+        let HNONWYCELRhoniyAlert = UIAlertController(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "Nxoxtxixcxe"), message: HNONWYCELRhoniystyleCorner, preferredStyle: .alert)
         HNONWYCELRhoniyAlert.addAction(UIAlertAction(title: AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "OxK"), style: .default))
         present(HNONWYCELRhoniyAlert, animated: true)
     }

@@ -79,7 +79,7 @@ final class HNONWYCELRLookbookCreationControler: UIViewController, UITextFieldDe
         super.viewDidLoad()
         HNONWYCELRhoniyBuildPortal()
         HNONWYCELRhoniyBindPortal()
-        HNONWYCELRhoniySeedLocalPassport()
+        HNONWYCELRhoniyelegantStyling()
         HNONWYCELRhoniyShiftStage(.HNONWYCELRwelcomeGlow, animated: false)
     }
 

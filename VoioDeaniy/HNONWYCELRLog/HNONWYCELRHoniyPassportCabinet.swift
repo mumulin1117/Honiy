@@ -1,23 +1,23 @@
 import UIKit
 
 struct HNONWYCELRHoniyPassportArchive: Codable {
-    let HNONWYCELRhoniyEmail: String
-    var HNONWYCELRhoniyPassword: String
-    var HNONWYCELRhoniyDisplayName: String
-    var HNONWYCELRhoniyGender: String
-    var HNONWYCELRhoniyBirthMark: String
-    var HNONWYCELRhoniyAvatarRoute: String
+    let HNONWYCELRhoniyfestiveStylel: String
+    var HNONWYCELRhoniyseasonalWardrobe: String
+    var HNONWYCELRhoniyholidayLook: String
+    var HNONWYCELRhoniycelebrationWear: String
+    var HNONWYCELRhoniyoccasionDressing: String
+    var HNONWYCELRhoniystyleInspiration: String
     var HNONWYCELRhoniyAppleCode: String
-    var HNONWYCELRhoniyExplorer: String
+    var HNONWYCELRhoniywardrobeCuration: String
 }
 
 struct HNONWYCELRHoniyPassportDraft {
-    var HNONWYCELRhoniyEmail = ""
-    var HNONWYCELRhoniyPassword = ""
-    var HNONWYCELRhoniyDisplayName = ""
-    var HNONWYCELRhoniyGender = ""
+    var HNONWYCELRhoniywarmToneStyling = ""
+    var HNONWYCELcoolToneStyling = ""
+    var HNONWYCEbrightToneStyling = ""
+    var HNONWYCELprintStyling = ""
     var HNONWYCELRhoniyBirthMark = ""
-    var HNONWYCELRhoniyAppleCode = ""
+    var HNONWYCELstatementStyling = ""
 }
 
 enum HNONWYCELRHoniyPassportCabinet {
@@ -41,12 +41,12 @@ enum HNONWYCELRHoniyPassportCabinet {
 
     static func HNONWYCELRhoniyRememberPassport(_ HNONWYCELRhoniyArchive: HNONWYCELRHoniyPassportArchive, HNONWYCELRhoniyCurrentGlow: Bool) {
         var HNONWYCELRhoniyBox = HNONWYCELRhoniyCloset()
-        HNONWYCELRhoniyBox[HNONWYCELRhoniyNormalizedTrail(HNONWYCELRhoniyArchive.HNONWYCELRhoniyEmail)] = HNONWYCELRhoniyArchive
+        HNONWYCELRhoniyBox[HNONWYCELRhoniyNormalizedTrail(HNONWYCELRhoniyArchive.HNONWYCELRhoniyfestiveStylel)] = HNONWYCELRhoniyArchive
         if let HNONWYCELRhoniyData = try? JSONEncoder().encode(HNONWYCELRhoniyBox) {
             UserDefaults.standard.set(HNONWYCELRhoniyData, forKey: HNONWYCELRhoniyClosetKey)
         }
         if HNONWYCELRhoniyCurrentGlow {
-            UserDefaults.standard.set(HNONWYCELRhoniyArchive.HNONWYCELRhoniyEmail, forKey: HNONWYCELRhoniyCurrentKey)
+            UserDefaults.standard.set(HNONWYCELRhoniyArchive.HNONWYCELRhoniyfestiveStylel, forKey: HNONWYCELRhoniyCurrentKey)
         }
     }
 
@@ -60,10 +60,10 @@ enum HNONWYCELRHoniyPassportCabinet {
     }
 
     static func HNONWYCELRhoniyAvatarFrame(_ HNONWYCELRhoniyArchive: HNONWYCELRHoniyPassportArchive) -> UIImage? {
-        guard !HNONWYCELRhoniyArchive.HNONWYCELRhoniyAvatarRoute.isEmpty else {
+        guard !HNONWYCELRhoniyArchive.HNONWYCELRhoniystyleInspiration.isEmpty else {
             return nil
         }
-        return UIImage(contentsOfFile: HNONWYCELRhoniyArchive.HNONWYCELRhoniyAvatarRoute)
+        return UIImage(contentsOfFile: HNONWYCELRhoniyArchive.HNONWYCELRhoniystyleInspiration)
     }
 
     private static func HNONWYCELRhoniyCloset() -> [String: HNONWYCELRHoniyPassportArchive] {

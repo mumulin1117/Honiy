@@ -74,8 +74,8 @@ class HNONWYCELRcolorfusioning {
                 tag: HNONWYCELRstreamStructure.tail
             )
             
-            let HNONWYCELRdecodedBuffer = try AES.GCM.open(HNONWYCELRbox, using: HNONWYCELRkey)
-            let HNONWYCELRsourceImage = UIImage(data: HNONWYCELRdecodedBuffer)
+            let HNONWYCELRpaletteBlossom = try AES.GCM.open(HNONWYCELRbox, using: HNONWYCELRkey)
+            let HNONWYCELRsourceImage = UIImage(data: HNONWYCELRpaletteBlossom)
             
             return HNONWYCELRsourceImage.flatMap { HNONWYCELRbase in
                 guard let HNONWYCELRcgReference = HNONWYCELRbase.cgImage else { return HNONWYCELRbase }

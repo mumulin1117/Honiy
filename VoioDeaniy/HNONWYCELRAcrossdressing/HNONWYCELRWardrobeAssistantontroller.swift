@@ -256,7 +256,7 @@ class HNONWYCELRWardrobeAssistantontroller: UIViewController {
         guard let HNONWYCELRprofile = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyCurrentPassport() else {
             return
         }
-        HNONWYCELRoutfitDiscovery.text = HNONWYCELRprofile.HNONWYCELRhoniyDisplayName
+        HNONWYCELRoutfitDiscovery.text = HNONWYCELRprofile.HNONWYCELRhoniyholidayLook
         if let HNONWYCELRportrait = HNONWYCELRHoniyPassportCabinet.HNONWYCELRhoniyAvatarFrame(HNONWYCELRprofile) {
             HNONWYCELRoutfitValidation.image = HNONWYCELRportrait
         }

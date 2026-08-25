@@ -214,7 +214,7 @@ class HNONWYCELROutfitHeaterController: UIViewController {
         }
     }
 
-    private func HNONWYCELRdecodeOutfitTrailblazer(_ input: Any?) -> Array<[String: Any]>? {
+    private func HNONWYCELRpaletteSnowfallOutfitTrailblazer(_ input: Any?) -> Array<[String: Any]>? {
         guard
             let HNONWYCELRtigator = input as? [String: Any],
             let HNONWYCELRpecialist = HNONWYCELRtigator[AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "draktra")] as? Array<[String: Any]>

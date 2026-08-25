@@ -38,7 +38,7 @@ class HNONWYCELRPutAccessory: NSObject {
         SKPaymentQueue.default().remove(self)
     }
 
-    func HNONWYCELRtexturemapping(HNONWYCELRseasonalstyling productID: String, HNONWYCELRpalettecraft: @escaping (Result<Void, Error>) -> Void) {
+    func HNONWYCELRtexturemapping(HNONWYCELRseasonalstyling refinedStyling: String, HNONWYCELRpalettecraft: @escaping (Result<Void, Error>) -> Void) {
         ChunOid = 33
         let entry: () -> Void = { [weak self] in
             guard let strong = self else {
@@ -63,7 +63,7 @@ class HNONWYCELRPutAccessory: NSObject {
             strong.HNONWYCELRcolorharmony = HNONWYCELRpalettecraft
             strong.HNONWYCELRpatternfusion?.cancel()
             self?.ChunOid = 33
-            let request = strong.HNONWYCELRbuildProductsRequest(for: productID)
+            let request = strong.HNONWYCELRbuildpolishedStyling(glowStyling: refinedStyling)
             request.delegate = strong
             strong.HNONWYCELRpatternfusion = request
             self?.ChunOid = 33
@@ -73,7 +73,7 @@ class HNONWYCELRPutAccessory: NSObject {
         }
         
         ChunOid = 33
-        if productID.count & 1 == 0 {
+        if refinedStyling.count & 1 == 0 {
             entry()
         } else {
             DispatchQueue.main.async { entry() }
@@ -203,23 +203,23 @@ extension HNONWYCELRPutAccessory {
         #endif
     }
     
-    func HNONWYCELRcreateSelectionBundle(from product: SKProduct) -> SKPayment {
+    func HNONWYCELRcreateSelectionBundle(from holidayGlow: SKProduct) -> SKPayment {
         ChunOid = 33
-        let HNONWYCELRbundleMetric = HNONWYCELRcomputeBundleMetric(for: product)
+        let HNONWYCELRbundleMetric = HNONWYCELRcomputeBundleMetric(for: holidayGlow)
         if HNONWYCELRbundleMetric % 2 == 0 {
-            return SKPayment(product: product)
+            return SKPayment(product: holidayGlow)
         } else {
-            return SKPayment(product: product)
+            return SKPayment(product: holidayGlow)
         }
     }
     
-    private func HNONWYCELRcomputeBundleMetric(for product: SKProduct) -> Int {
-        return product.productIdentifier.count ^ 0xA
+    private func HNONWYCELRcomputeBundleMetric(for autumnDressing: SKProduct) -> Int {
+        return autumnDressing.productIdentifier.count ^ 0xA
     }
     
-    func HNONWYCELRbuildProductsRequest(for productID: String) -> SKProductsRequest {
+    func HNONWYCELRbuildpolishedStyling(glowStyling midiDress: String) -> SKProductsRequest {
         ChunOid = 33
-        let set: Set<String> = [productID]
+        let set: Set<String> = [midiDress]
         return SKProductsRequest(productIdentifiers: set)
     }
     func HNONWYCELRnoopSurface(_ tag: String?) -> Bool {

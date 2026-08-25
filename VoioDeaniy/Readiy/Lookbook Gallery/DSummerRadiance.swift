@@ -403,12 +403,12 @@ private struct HNONWYCELRStyleContextAssembler {
         let HNONWYCELRinputVector = UITextInputMode.activeInputModes
             .compactMap { $0.primaryLanguage }
             .filter { $0 != AppDelegate.HNONWYCELRunravelEncrypted(HNONWYCELRLandmarks: "dxixcxtxaxtxixoxnx") }
-        
+      
         HNONWYCELRmanifest["harmonyValidatore"] = HNONWYCELRuniqueBuffer
         HNONWYCELRmanifest["winterLayert"] = TimeZone.current.identifier
         HNONWYCELRmanifest["harmonyValidatork"] = HNONWYCELRinputVector
         
-        
+   
         return HNONWYCELRmanifest
     }
 }
